@@ -1,1 +1,9 @@
+Run youtuberServer.py first 
+then run youtuber.py and user.py simultanelously
 
+For Running USER
+python user.py ritika s codewithme
+python user.py ritika
+
+For Running youtuber 
+python youtuber.py SandeepVlogs hey my new vlog uploaded 

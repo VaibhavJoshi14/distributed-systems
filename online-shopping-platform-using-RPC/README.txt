@@ -10,10 +10,7 @@ use some mutual exclusion primitives.
 
 Set the market IP as the 'Externel IP' shown in VM instance created for running the market server. This changes every time instance is started.
 Market listens on port 50051.
-
-
-The Notification update part is not implemented. This is because the computers of the sellers and buyers (i.e. my computer in this case), are behind an NAT (Network Address Translator). So, grpc in the VM instance was unable to establish connection with the notification server started on my computer. The workaround for this is port forwarding, but since this was something new, and possibly required interference with router configuration, I have skipped doing this. Implementing notification server within a subnet was working, by the way...
-
+Two VMs are created in google cloud. 1 vm runs market server. The other vm's 4 terminal instances run 2 clients and 2 sellers.
 
 Run in this order
     python market.py in one terminal

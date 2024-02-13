@@ -11,17 +11,27 @@ from requests import get
 #unique id of seller
 uid = str(uuid.uuid1())
 #address of market (ip:port)
-market_ip = "34.132.190.240"# "localhost" #
+market_ip = "34.70.175.244"#"localhost" 
 market_address = market_ip + ":" + "50051"
 
 notification_port = "50056"
-seller_ip =get('https://api.ipify.org').content.decode('utf8')  #"localhost" # 
+seller_ip =get('https://api.ipify.org').content.decode('utf8') #"localhost"#
 seller_address = seller_ip +":" + notification_port
 notification_address = seller_ip + ":" + notification_port
 
+class Notify(market_pb2_grpc.NotifyServicer):
+    def NotifyUpdate(self, request, context):
+        print("\n-------------------------------------------------------------------------")
+        print("Seller received a notification from market.")
+        print(request.__str__())
+        return market_pb2.Reply(message="SUCCESS.")
 
 def run():
-    
+    notif_server = grpc.server(futures.ThreadPoolExecutor(max_workers=1)) #max_workers = 1 necessary for now since mutual exclusion not handled explicitly
+    market_pb2_grpc.add_NotifyServicer_to_server(Notify(), notif_server)
+    notif_server.add_insecure_port("[::]:" + notification_port)
+    notif_server.start()
+    print("Notification server started, listening on " + notification_port)
     
     with grpc.insecure_channel(market_address) as channel:
         # a seller registers for the first time (calls RegisterSeller).
@@ -88,7 +98,7 @@ def run():
         response = stub.UpdateItemRequest(market_pb2.UpdateItem(seller_uid=uid, item_id=2, new_price=3800, new_quantity=400, seller_address=seller_address))
         print("Seller received: ", response.__str__())
 
-   # notif_server.wait_for_termination() 
+    notif_server.wait_for_termination() 
 
 if __name__ == "__main__":
     logging.basicConfig()

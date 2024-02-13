@@ -72,6 +72,19 @@ class Update(market_pb2_grpc.UpdateServicer):
         print("\nItem update request by (uid, seller_address):", request.seller_uid, request.seller_address, "is successful. One item updated, with details:")
         pprint.pprint(ITEMS[request.item_id])
 
+         # trigger all clients who have wishlisted the product
+        print("Notifying all clients who have wishlisted this item")
+        for client_uid in WISH_LIST:
+            if request.item_id in WISH_LIST[client_uid]:
+                #print(WISH_LIST[client_addr])
+                with grpc.insecure_channel(CLIENT_NOTIFICATION_ADDRESSES[client_uid]) as channel:
+                    stub = market_pb2_grpc.NotifyStub(channel)
+
+                    response = stub.NotifyUpdate(market_pb2.Item2(item_id=request.item_id, type=ITEMS[request.item_id]["type"],
+                                                          name=ITEMS[request.item_id]["name"], quantity=ITEMS[request.item_id]["quantity"],
+                                                          description=ITEMS[request.item_id]["description"], price=ITEMS[request.item_id]["price"],
+                                                          rating=ITEMS[request.item_id]["rating"], seller_address=ITEMS[request.item_id]["seller_address"],
+                                                          seller_uid=ITEMS[request.item_id]["seller_uid"]))
        
         return market_pb2.Reply(message = "SUCCESS")
 
@@ -150,6 +163,17 @@ class BuyItem(market_pb2_grpc.BuyItemServicer):
         ITEMS[request.item_id]["quantity"] -= request.quantity
         print("SUCCESS.")
         
+        # trigger notification to the seller.
+        print("Notifying seller about the purchase")
+        with grpc.insecure_channel(ITEMS[request.item_id]["seller_address"]) as channel:
+            stub = market_pb2_grpc.NotifyStub(channel)
+
+            response = stub.NotifyUpdate(market_pb2.Item2(item_id=request.item_id, type=ITEMS[request.item_id]["type"],
+                                                          name=ITEMS[request.item_id]["name"], quantity=ITEMS[request.item_id]["quantity"],
+                                                          description=ITEMS[request.item_id]["description"], price=ITEMS[request.item_id]["price"],
+                                                          rating=ITEMS[request.item_id]["rating"], seller_address=ITEMS[request.item_id]["seller_address"],
+                                                          seller_uid=ITEMS[request.item_id]["seller_uid"]))
+
         return market_pb2.Reply(message="SUCCESS.")
 
 

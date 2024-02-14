@@ -8,7 +8,7 @@ if __name__ == "__main__":
         fail = "FAILED".encode ("UTF-8")
         socket = None
 
-        message_server_ip = "localhost"
+        message_server_ip = "34.16.125.69"
         message_server_port = 5555
         
 

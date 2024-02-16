@@ -1,3 +1,5 @@
+Change the IP address to the VM's external IP address in each of the three files. (Set up on instance-1 of google cloud)
+
 Run youtuberServer.py first 
 then run youtuber.py and user.py simultanelously
 
@@ -7,3 +9,8 @@ python user.py ritika
 
 For Running youtuber 
 python youtuber.py SandeepVlogs hey my new vlog uploaded 
+
+
+python user.py ritika s SandeepVlogs
+python user.py ritika
+python user.py ritika u SandeepVlogs

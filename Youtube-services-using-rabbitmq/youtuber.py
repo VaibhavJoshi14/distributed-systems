@@ -8,7 +8,7 @@ class Youtuber:
         
         # Establish connection
         self.connection = pika.BlockingConnection(
-            pika.ConnectionParameters(host='localhost'))
+            pika.ConnectionParameters('35.225.139.226'))
         self.channel = self.connection.channel()
         
         #declare queues 

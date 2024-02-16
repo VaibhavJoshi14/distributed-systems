@@ -8,7 +8,7 @@ class User:
         self.username=username
         
         #establishing connection
-        self.connection=pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+        self.connection=pika.BlockingConnection(pika.ConnectionParameters('35.225.139.226'))
         self.channel=self.connection.channel()
         self.channel.queue_declare(queue='user_queue')
         
@@ -19,9 +19,12 @@ class User:
         
         
     def update_subscription(self, youtuber_name, subscribe_flag):
-        message=f"{self.username}:{youtuber_name}:{'subscribe' if {subscribe_flag} else 'unsubscribe'}"
+        message=f"{self.username}:{youtuber_name}:{'subscribe' if (subscribe_flag == True) else 'unsubscribe'}"
         self.channel.basic_publish(exchange='', routing_key='user_queue', body=message)
-        print("SUCCESS: Subscription request sent to server.")
+        if (subscribe_flag == True):
+            print("SUCCESS: Subscription request sent to server.")
+        else:
+            print("SUCCESS: Unsubscribe request sent to server.")
     
     def start_receive_notifications(self):
         def callback(ch, method, properties, body):
@@ -69,7 +72,7 @@ if __name__=="__main__":
         
         if action=='s':
             user.subscribe(youtuber_name)
-        if action=='u':
+        elif action=='u':
             user.unsubscribe(youtuber_name)
         else:
             print("WARNING: Invalid action")

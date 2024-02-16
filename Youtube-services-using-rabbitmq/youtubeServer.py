@@ -6,14 +6,14 @@ class YoutubeServer:
         print("")
         
         #establish connnection
-        self.connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+        self.connection = pika.BlockingConnection(pika.ConnectionParameters(host='35.225.139.226'))
         self.channel=self.connection.channel()
         
         #declare queues 
         # 1. video queue 
         self.video_queue=self.channel.queue_declare(queue='video_queue')
         #2. user queue 
-        self.video_queue=self.channel.queue_declare(queue='user_queue')
+        self.user_queue=self.channel.queue_declare(queue='user_queue')
         
         #Subscribed users 
         self.user_subscriptions={} 
@@ -36,6 +36,7 @@ class YoutubeServer:
             
         def consume_user_request(ch,method,properties,body):
             username, youtuber_name, action = body.decode().split(':')
+            
             if action=='subscribe':
                 print(f"{username} subscribed to {youtuber_name}")
                 

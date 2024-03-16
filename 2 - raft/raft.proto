@@ -12,16 +12,11 @@ message AppendEntriesMsg {
     int32 prevLogTerm = 4;
     repeated logEntry entries = 5;
     int32 leaderCommit = 6;
-
 }
 
 message Response {
     int32 term = 1;
     bool success = 2;
-}
-
-service AppendEntries {
-    rpc Send(AppendEntriesMsg) returns (Response) {}
 }
 
 message RequestVoteMsg {
@@ -31,6 +26,24 @@ message RequestVoteMsg {
     int32 lastLogTerm = 4;
 }
 
-service RequestVote {
-    rpc Send(RequestVoteMsg) returns (Response) {}
+
+service RaftNodeServices {
+    rpc AppendEntries(AppendEntriesMsg) returns (Response) {}
+
+    rpc RequestVote(RequestVoteMsg) returns (Response) {}
+}
+
+// Service for a raft client 
+message ServeClientArgs {
+  string Request = 1;
+}
+
+message ServeClientReply {
+  string Data = 1;
+  string LeaderID = 2;
+  bool Success = 3;
+}
+
+service RaftClientService {
+    rpc ServeClient(ServeClientArgs) returns (ServeClientReply) {}
 }

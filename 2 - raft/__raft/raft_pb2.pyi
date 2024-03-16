@@ -14,22 +14,24 @@ class logEntry(_message.Message):
     def __init__(self, msg: _Optional[str] = ..., term: _Optional[int] = ...) -> None: ...
 
 class AppendEntriesMsg(_message.Message):
-    __slots__ = ("term", "leaderId", "prevLogIndex", "prevLogTerm", "entries", "leaderCommit")
+    __slots__ = ("term", "leaderId", "prevLogIndex", "prevLogTerm", "entries", "leaderCommit", "leaseDuration")
     TERM_FIELD_NUMBER: _ClassVar[int]
     LEADERID_FIELD_NUMBER: _ClassVar[int]
     PREVLOGINDEX_FIELD_NUMBER: _ClassVar[int]
     PREVLOGTERM_FIELD_NUMBER: _ClassVar[int]
     ENTRIES_FIELD_NUMBER: _ClassVar[int]
     LEADERCOMMIT_FIELD_NUMBER: _ClassVar[int]
+    LEASEDURATION_FIELD_NUMBER: _ClassVar[int]
     term: int
     leaderId: int
     prevLogIndex: int
     prevLogTerm: int
     entries: _containers.RepeatedCompositeFieldContainer[logEntry]
     leaderCommit: int
-    def __init__(self, term: _Optional[int] = ..., leaderId: _Optional[int] = ..., prevLogIndex: _Optional[int] = ..., prevLogTerm: _Optional[int] = ..., entries: _Optional[_Iterable[_Union[logEntry, _Mapping]]] = ..., leaderCommit: _Optional[int] = ...) -> None: ...
+    leaseDuration: float
+    def __init__(self, term: _Optional[int] = ..., leaderId: _Optional[int] = ..., prevLogIndex: _Optional[int] = ..., prevLogTerm: _Optional[int] = ..., entries: _Optional[_Iterable[_Union[logEntry, _Mapping]]] = ..., leaderCommit: _Optional[int] = ..., leaseDuration: _Optional[float] = ...) -> None: ...
 
-class Response(_message.Message):
+class AppendEntriesReply(_message.Message):
     __slots__ = ("term", "success")
     TERM_FIELD_NUMBER: _ClassVar[int]
     SUCCESS_FIELD_NUMBER: _ClassVar[int]
@@ -49,6 +51,16 @@ class RequestVoteMsg(_message.Message):
     lastLogTerm: int
     def __init__(self, term: _Optional[int] = ..., candidateId: _Optional[int] = ..., lastLogIndex: _Optional[int] = ..., lastLogTerm: _Optional[int] = ...) -> None: ...
 
+class RequestVoteReply(_message.Message):
+    __slots__ = ("term", "voteGranted", "longestRemainingOldLeaderLease")
+    TERM_FIELD_NUMBER: _ClassVar[int]
+    VOTEGRANTED_FIELD_NUMBER: _ClassVar[int]
+    LONGESTREMAININGOLDLEADERLEASE_FIELD_NUMBER: _ClassVar[int]
+    term: int
+    voteGranted: bool
+    longestRemainingOldLeaderLease: float
+    def __init__(self, term: _Optional[int] = ..., voteGranted: bool = ..., longestRemainingOldLeaderLease: _Optional[float] = ...) -> None: ...
+
 class ServeClientArgs(_message.Message):
     __slots__ = ("Request",)
     REQUEST_FIELD_NUMBER: _ClassVar[int]
@@ -56,11 +68,11 @@ class ServeClientArgs(_message.Message):
     def __init__(self, Request: _Optional[str] = ...) -> None: ...
 
 class ServeClientReply(_message.Message):
-    __slots__ = ("Data", "LeaderID", "Success")
+    __slots__ = ("data", "leaderID", "success")
     DATA_FIELD_NUMBER: _ClassVar[int]
     LEADERID_FIELD_NUMBER: _ClassVar[int]
     SUCCESS_FIELD_NUMBER: _ClassVar[int]
-    Data: str
-    LeaderID: str
-    Success: bool
-    def __init__(self, Data: _Optional[str] = ..., LeaderID: _Optional[str] = ..., Success: bool = ...) -> None: ...
+    data: str
+    leaderID: str
+    success: bool
+    def __init__(self, data: _Optional[str] = ..., leaderID: _Optional[str] = ..., success: bool = ...) -> None: ...

@@ -1,0 +1,8 @@
+from __raft import database, raftNode
+
+nodeId = 0
+db_path = 'data' + str(nodeId) + '.txt' # to store the key-value pairs of data
+
+db = database.DatabaseKV(db_path)
+node = raftNode.RaftNode(nodeId, database_path)
+

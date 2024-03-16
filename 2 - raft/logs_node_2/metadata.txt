@@ -1,4 +1,4 @@
-nodeId: 0
+nodeId: 2
 currentTerm: 0
 votedFor: None
 commitLength: 0

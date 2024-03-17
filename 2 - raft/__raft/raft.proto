@@ -37,13 +37,6 @@ message RequestVoteReply {
     double longestRemainingOldLeaderLease = 3;
 }
 
-
-service RaftNodeServices {
-    rpc AppendEntries(AppendEntriesMsg) returns (AppendEntriesReply) {}
-
-    rpc RequestVote(RequestVoteMsg) returns (RequestVoteReply) {}
-}
-
 // Service for a raft client 
 message ServeClientArgs {
   string Request = 1;
@@ -51,10 +44,16 @@ message ServeClientArgs {
 
 message ServeClientReply {
   string data = 1;
-  string leaderID = 2;
+  int32 leaderID = 2;
   bool success = 3;
 }
 
 service RaftClientService {
     rpc ServeClient(ServeClientArgs) returns (ServeClientReply) {}
+}
+
+service RaftNodeServices {
+    rpc AppendEntries(AppendEntriesMsg) returns (AppendEntriesReply) {}
+
+    rpc RequestVote(RequestVoteMsg) returns (RequestVoteReply) {}
 }

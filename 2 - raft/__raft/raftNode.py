@@ -4,7 +4,7 @@ import raft_pb2
 import raft_pb2_grpc
 import grpc
 
-class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
+class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientServiceServicer):
     def __init__(self, nodeId, db, node_address):
         self.node_address = node_address
         self.cluster_nodes = [] # to fill.
@@ -53,6 +53,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
         # nodes trying to become candidates at the same time.
         self.timeoutLeaderFailed = random.randint(10, 15)
         self.election_timeout =  self.generate_random_timeout()
+        
+        self.next_index = {}
+        self.match_index = {}
 
 
     def writeMetadata(self):
@@ -141,32 +144,59 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
         return raft_pb2.RequestVoteReply(term=self.currentTerm, vote_granted=vote_granted)
 
 
-    def send_heartbeat(self, follower_address):
+    def send_heartbeat(self):
         """
-        Send heartbeat to a follower.
+        Send heartbeat messages to followers.
+        """
+        for follower_id in self.cluster_nodes:
+            if follower_id != self.nodeId:
+                self.send_append_entries(follower_id)
+
+ 
+    def last_log_term(self):
+        return None if len(self.log) == 0 else int(self.log[-1].split()[-1])
+
+
+    def last_log_index(self):
+        return len(self.log) - 1
+
+
+    def send_append_entries(self, follower_id):
+        """
+        Send AppendEntries RPC to a follower.
         """
         # Prepare AppendEntries request
         request = raft_pb2.AppendEntriesRequest(
-            term = self.currentTerm,
-            leader_id = self.nodeId,
-            prev_log_index = len(self.log) - 1, # index of last log entry 
-            prev_log_term = None if len(self.log) == 0 else int(self.log[-1].split()[-1]), # self.last_log_term,
-            entries = [],  # No new entries for heartbeat
-            leader_commit = self.commit_index
+            term=self.currentTerm,
+            leader_id=self.nodeId,
+            prev_log_index= self.last_log_index(),
+            prev_log_term= self.last_log_term(),
+            entries=[],  # No new entries for heartbeat
+            leader_commit=self.commit_index
         )
 
-        # Establish gRPC channel to follower
-        channel = grpc.insecure_channel(follower_address)
+        # Send AppendEntries RPC to follower
+        response = self.send_append_entries_rpc(follower_id, request)
+
+        # Handle response if necessary
+        if response.term > self.current_term:
+            # If follower's term is higher, step down as leader
+            self.current_term = response.term
+            self.step_down()
+
+
+    def send_append_entries_rpc(self, follower_id, request):
+        """
+        Send AppendEntries RPC to a follower.
+        """
+        # Establish gRPC channel to the follower
+        channel = grpc.insecure_channel(self.cluster_nodes[follower_id])
         stub = raft_pb2_grpc.RaftServiceStub(channel)
 
         # Send AppendEntries RPC
         response = stub.AppendEntries(request)
 
-        # Handle response if necessary
-        if response.term > self.current_term:
-            # Update current term and step down as leader
-            self.current_term = response.term
-            self.step_down()
+        return response
 
 
     def become_follower(self, term, leader_id):
@@ -199,26 +229,38 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
         """
         # Increment current term
         self.currentTerm += 1
-        
+
         # Vote for self
-        self.votedFor = self.nodeId
-        
+        self.voted_for = self.nodeId
+
         # Reset election timeout
         self.reset_election_timeout()
-        
+
         # Prepare RequestVote request
         request = raft_pb2.RequestVoteRequest(
-            term = self.currentTerm,
-            candidate_id = self.nodeId,
-            last_log_index = len(self.log) - 1,#self.last_log_index,
-            last_log_term = None if len(self.log) == 0 else int(self.log[-1].split()[-1]),#self.last_log_term
-        ) 
-        
+            term=self.currentTerm,
+            candidate_id=self.nodeId,
+            last_log_index=self.last_log_index(),
+            last_log_term=self.last_log_term()
+        )
+
+        # Variables to track votes received
+        votes_received = 1  # Vote for self
+        votes_needed = (len(self.cluster_nodes) + 1) // 2  # Majority of votes needed
+
         # Send RequestVote RPC to other nodes
-        for node_address in self.cluster_nodes:
-            if node_address != self.node_address:
+        for node_id, node_address in self.cluster_nodes.items():
+            if node_id != self.node_id:
                 response = self.send_request_vote(node_address, request)
-                # Process response and handle vote counting
+                if response.vote_granted:
+                    votes_received += 1
+
+        # Check if received a majority of votes
+        if votes_received > votes_needed:
+            self.become_leader()
+        else:
+            # Not enough votes received, start a new election timer
+            self.reset_election_timeout()
 
 
     def send_request_vote(self, node_address, request):
@@ -227,7 +269,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
         """
         # Establish gRPC channel to the target node
         channel = grpc.insecure_channel(node_address)
-        stub = raft_pb2_grpc.RaftServiceStub(channel)
+        stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
 
         # Send RequestVote RPC
         response = stub.RequestVote(request)
@@ -247,12 +289,73 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer):
         
         # Start sending heartbeat messages
         self.send_heartbeat()
+
+
+    def step_down(self):
+        """
+        Step down as leader.
+        """
+        # Set node state to follower
+        self.state = "follower"
+        
+        # Clear next_index and match_index
+        self.next_index = {}
+        self.match_index = {}
+        
+        # Reset election timeout
+        self.reset_election_timeout()
+
+
+    def ServeClient(self, request, context):
+        """
+        Handle client requests.
+        """
+        if self.state != "leader":
+            return raft_pb2.ServeClientReply(data="", leaderID=self.currentLeader, success=False)
+        else:
+            # If leader, process the request
+            entry = request.Request + " " + self.currentTerm 
+            self.log.append(entry)
+
+            # save the entry to file
+            with open(self.log_file, 'a') as f:
+                f.write(entry + "\n")
+            
+            self.replicate_log_entry(entry)
+
+            return raft_pb2.ServeClientReply(success=True)
+
+
+    def replicate_log_entry(self, log_entry):
+        """
+        Replicate a log entry to other nodes in the cluster.
+        """
+        if self.state != "leader":
+            return  # Only leaders replicate log entries
+
+        # Prepare AppendEntries request
+        append_entries_request = raft_pb2.AppendEntriesMsg(
+            term=log_entry.term,
+            leaderId=self.nodeId,
+            prevLogIndex=self.last_log_index(),
+            prevLogTerm=self.last_log_term(),
+            entries=[log_entry],
+            leaderCommit=self.commitLength
+        )
+
+        # Send AppendEntries RPC to followers
+        for follower_id, follower_address in self.cluster_nodes.items():
+            if follower_id != self.nodeId:
+                try:
+                    channel = grpc.insecure_channel(follower_address)
+                    stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
+                    response = stub.AppendEntries(append_entries_request)
+                    # Process response if needed
+                except grpc.RpcError as e:
+                    # Handle communication errors
+                    print(f"Error communicating with node {follower_id}: {e}")
+
 """
-
-
-    def handle_client_request(self, key, value):
-        # Logic for handling client requests to store data
-
     def get_value(self, key):
         # Logic for retrieving value from the local database"""
 

@@ -56,7 +56,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
         self.next_index = {}
         self.match_index = {}
-
+        self.last_applied = -1
+        self.leader_alive = False
+        self.heartbeat_interval = 1  # 1 seconds
 
     def writeMetadata(self):
         with open(self.meta_file, 'w') as f:
@@ -144,21 +146,44 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         return raft_pb2.RequestVoteReply(term=self.currentTerm, vote_granted=vote_granted)
 
 
-    def send_heartbeat(self):
+    def start_heartbeat(self):
         """
-        Send heartbeat messages to followers.
+        Start sending periodic heartbeats to followers.
         """
-        for follower_id in self.cluster_nodes:
-            if follower_id != self.nodeId:
-                self.send_append_entries(follower_id)
+        # Start a background thread for sending heartbeats
+        heartbeat_thread = threading.Thread(target=self.send_heartbeats)
+        heartbeat_thread.daemon = True  # Daemonize the thread
+        heartbeat_thread.start()
 
- 
+
     def last_log_term(self):
         return None if len(self.log) == 0 else int(self.log[-1].split()[-1])
 
 
     def last_log_index(self):
         return len(self.log) - 1
+
+
+    def send_heartbeats(self):
+        """
+        Send periodic heartbeats to followers.
+        """
+        self.leader_alive = True
+
+        while self.leader_alive:
+            # Send AppendEntries RPCs with empty entries to followers
+            self.send_append_entries_to_followers()
+            # Sleep for the heartbeat interval
+            time.sleep(self.heartbeat_interval)
+        
+
+    def send_append_entries_to_followers(self):
+        """
+        Send heartbeat messages to followers.
+        """
+        for follower_id in self.cluster_nodes:
+            if follower_id != self.nodeId:
+                self.send_append_entries(follower_id)
 
 
     def send_append_entries(self, follower_id):
@@ -175,20 +200,6 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             leader_commit=self.commit_index
         )
 
-        # Send AppendEntries RPC to follower
-        response = self.send_append_entries_rpc(follower_id, request)
-
-        # Handle response if necessary
-        if response.term > self.current_term:
-            # If follower's term is higher, step down as leader
-            self.current_term = response.term
-            self.step_down()
-
-
-    def send_append_entries_rpc(self, follower_id, request):
-        """
-        Send AppendEntries RPC to a follower.
-        """
         # Establish gRPC channel to the follower
         channel = grpc.insecure_channel(self.cluster_nodes[follower_id])
         stub = raft_pb2_grpc.RaftServiceStub(channel)
@@ -196,7 +207,12 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         # Send AppendEntries RPC
         response = stub.AppendEntries(request)
 
-        return response
+        # Handle response if necessary
+        if response.term > self.current_term:
+            # If follower's term is higher, step down as leader
+            self.current_term = response.term
+            self.step_down()
+
 
 
     def become_follower(self, term, leader_id):
@@ -284,20 +300,21 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         self.state = "leader"
         
         # Initialize next_index and match_index for each follower
-        self.next_index = {follower_id: self.last_log_index + 1 for follower_id in self.cluster_nodes}
+        self.next_index = {follower_id: self.last_log_index() + 1 for follower_id in self.cluster_nodes}
         self.match_index = {follower_id: 0 for follower_id in self.cluster_nodes}
         
         # Start sending heartbeat messages
-        self.send_heartbeat()
+        self.start_heartbeat()
 
 
     def step_down(self):
         """
         Step down as leader.
         """
-        # Set node state to follower
+        # Set node state to follower 
+        self.leader_alive = False
         self.state = "follower"
-        
+       
         # Clear next_index and match_index
         self.next_index = {}
         self.match_index = {}
@@ -314,6 +331,11 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             return raft_pb2.ServeClientReply(data="", leaderID=self.currentLeader, success=False)
         else:
             # If leader, process the request
+            if request.Request.split()[0] == "GET":
+                key = request.Request.split()[1]
+                return raft_pb2.ServeClientReply(data=self.db[key], success=True)
+            
+            # Process the SET type request.
             entry = request.Request + " " + self.currentTerm 
             self.log.append(entry)
 
@@ -350,12 +372,57 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     channel = grpc.insecure_channel(follower_address)
                     stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
                     response = stub.AppendEntries(append_entries_request)
-                    # Process response if needed
+                    self.process_appended_entries_response(response)
                 except grpc.RpcError as e:
                     # Handle communication errors
                     print(f"Error communicating with node {follower_id}: {e}")
 
-"""
-    def get_value(self, key):
-        # Logic for retrieving value from the local database"""
+
+    def process_append_entries_response(self, response):
+        """
+        Process response of AppendEntries RPC.
+        """
+        if response.success:
+            # If the AppendEntries RPC was successful, update commit_index
+            if response.last_log_index > self.commit_index:
+                self.commit_index = min(response.last_log_index, len(self.log) - 1)
+                # Check if the entry is committed by a majority quorum
+                if self.is_majority_committed(self.commit_index):
+                    # Apply committed log entries to the database
+                    self.apply_committed_entries_to_database()
+
+
+    def is_majority_committed(self, index):
+        """
+        Check if a log entry at the given index is committed by a majority quorum.
+        """
+        # Calculate the number of nodes required for a majority quorum
+        majority_count = (len(self.cluster_nodes) // 2) + 1
+        # Check if the count of nodes that have replicated the log entry is greater than or equal to the majority count
+        committed_count = sum(1 for node_id, match_index in self.match_index.items() if match_index >= index)
+        return committed_count >= majority_count
+
+
+    def apply_committed_entries_to_database(self):
+        """
+        Apply committed log entries to the database.
+        """
+        for index in range(self.last_applied + 1, self.commitLength + 1):
+            log_entry = self.log[index]
+            # Apply the command from the log entry to the database
+            self.apply_command_to_database(log_entry.command)
+            # Update last_applied index
+            self.last_applied = index
+
+
+    def apply_command_to_database(self, command):
+        """
+        Apply a command to the database.
+        """
+        # Logic to apply the command to the database
+        # For example:
+        cmd, key, value = command.split(" ")
+        if cmd == "SET":
+            self.db.store(key, value)
+
 

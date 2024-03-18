@@ -1,1 +1,37 @@
 Node 0 election timer timed out, Starting election.
+Node 0 became the leader for term 1.
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Leader 0 sending heartbeat
+Node 0 election timer timed out, Starting election.
+Node 0 became the leader for term 2.
+Leader 0 sending heartbeat
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.
+Node 0 election timer timed out, Starting election.

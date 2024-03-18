@@ -1,1 +1,119 @@
 Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 1.
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 2.
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 2.
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat

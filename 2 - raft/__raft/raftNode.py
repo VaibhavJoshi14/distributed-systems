@@ -146,28 +146,6 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         """
         Implementation of RequestVote function.
         """
-        """
-        if request.term > self.currentTerm:
-            self.currentTerm = request.term
-            self.state = "follower"
-            votedFor = None
-            self.writeMetadata()
-    
-        lastTerm = 0
-
-        if len(self.log) > 0:
-            lastTerm = int(self.log[-1].split()[-1]) # log[-1].term
-
-        logOk = request.lastLogTerm > self.last_log_term() or (request.lastLogTerm == self.last_log_term() and request.lastLogIndex + 1 >= len(self.log))
-
-        if request.term == self.currentTerm and logOk and self.votedFor in {request.candidateId, None}:
-            self.votedFor = request.candidateId
-            self.writeMetadata()
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=True)
-        else:
-            print(request.term, self.currentTerm, request.lastLogTerm, self.last_log_term, )
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=False)"""
-
         
         candidate_id = request.candidateId
         last_log_index = request.lastLogIndex
@@ -175,6 +153,10 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
         vote_granted = False
         
+        if self.state == "leader":
+            print("I am the leader")
+            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
+
         # If candidate's term is outdated, reject the vote request
         if request.term < self.currentTerm:
             print(f"Request term {request.term} is lesser than current term {self.currentTerm}")
@@ -221,6 +203,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         """
         Send periodic heartbeats to followers.
         """
+        # reset the votedFor metadata
+        self.votedFor = None
+        self.writeMetadata()
 
         while self.state == "leader":
             # update this time for the leader itself
@@ -232,6 +217,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             self.last_leader_communication_time = time.time()
             # Send AppendEntries RPCs with empty entries to followers
             self.send_append_entries_to_followers()
+            
             # Sleep for the heartbeat interval
             time.sleep(self.heartbeat_interval)
         

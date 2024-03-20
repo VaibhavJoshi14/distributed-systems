@@ -1,17 +1,9 @@
 from google.protobuf.internal import containers as _containers
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
-from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Mapping, Optional as _Optional, Union as _Union
+from typing import ClassVar as _ClassVar, Iterable as _Iterable, Optional as _Optional
 
 DESCRIPTOR: _descriptor.FileDescriptor
-
-class logEntry(_message.Message):
-    __slots__ = ("msg", "term")
-    MSG_FIELD_NUMBER: _ClassVar[int]
-    TERM_FIELD_NUMBER: _ClassVar[int]
-    msg: str
-    term: int
-    def __init__(self, msg: _Optional[str] = ..., term: _Optional[int] = ...) -> None: ...
 
 class AppendEntriesMsg(_message.Message):
     __slots__ = ("term", "leaderId", "prevLogIndex", "prevLogTerm", "entries", "leaderCommit", "leaseDuration")
@@ -26,10 +18,10 @@ class AppendEntriesMsg(_message.Message):
     leaderId: int
     prevLogIndex: int
     prevLogTerm: int
-    entries: _containers.RepeatedCompositeFieldContainer[logEntry]
+    entries: _containers.RepeatedScalarFieldContainer[str]
     leaderCommit: int
     leaseDuration: float
-    def __init__(self, term: _Optional[int] = ..., leaderId: _Optional[int] = ..., prevLogIndex: _Optional[int] = ..., prevLogTerm: _Optional[int] = ..., entries: _Optional[_Iterable[_Union[logEntry, _Mapping]]] = ..., leaderCommit: _Optional[int] = ..., leaseDuration: _Optional[float] = ...) -> None: ...
+    def __init__(self, term: _Optional[int] = ..., leaderId: _Optional[int] = ..., prevLogIndex: _Optional[int] = ..., prevLogTerm: _Optional[int] = ..., entries: _Optional[_Iterable[str]] = ..., leaderCommit: _Optional[int] = ..., leaseDuration: _Optional[float] = ...) -> None: ...
 
 class AppendEntriesReply(_message.Message):
     __slots__ = ("term", "success")
@@ -68,11 +60,11 @@ class ServeClientArgs(_message.Message):
     def __init__(self, Request: _Optional[str] = ...) -> None: ...
 
 class ServeClientReply(_message.Message):
-    __slots__ = ("data", "leaderID", "success")
+    __slots__ = ("data", "leaderId", "success")
     DATA_FIELD_NUMBER: _ClassVar[int]
     LEADERID_FIELD_NUMBER: _ClassVar[int]
     SUCCESS_FIELD_NUMBER: _ClassVar[int]
     data: str
-    leaderID: str
+    leaderId: int
     success: bool
-    def __init__(self, data: _Optional[str] = ..., leaderID: _Optional[str] = ..., success: bool = ...) -> None: ...
+    def __init__(self, data: _Optional[str] = ..., leaderId: _Optional[int] = ..., success: bool = ...) -> None: ...

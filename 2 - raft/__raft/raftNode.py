@@ -8,12 +8,11 @@ import time
 from concurrent import futures
 
 class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientServiceServicer):
-    def __init__(self, nodeId, db, node_address, cluster):
+    def __init__(self, nodeId, db_path, node_address, cluster):
         self.node_address = node_address
         self.cluster_nodes = cluster
-        self.db = db # database object which stores the (key, value) pairs of data, in storage.
+        self.db = database.DatabaseKV(db_path) # database object which stores the (key, value) pairs of data, in storage.
 
-        
         self.meta_file = 'logs_node_' + str(nodeId) + '/metadata.txt' # saves nodeId, currentTerm, votedFor, commitLength
         # the following is stored on stable storage in disk
         with open(self.meta_file, 'r') as f:
@@ -97,6 +96,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         self.last_leader_communication_time = time.time()
         self.leader_alive = True
         self.votedFor = None
+        self.currentLeader = request.leaderId
         self.writeMetadata()
         
         response = raft_pb2.AppendEntriesReply()
@@ -426,17 +426,17 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         Handle client requests.
         """
         if self.state != "leader":
-            return raft_pb2.ServeClientReply(data="", leaderID=self.currentLeader, success=False)
+            return raft_pb2.ServeClientReply(data="Fail: Not a leader", leaderId=self.currentLeader, success=False)
         else:
-            if "NO-OP" not in request.Request:
-                with open(self.dump_file, 'a') as f:
-                    f.write(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
-                    print(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+            
+            with open(self.dump_file, 'a') as f:
+                f.write(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+                print(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
 
             # If leader, process the request
             if request.Request.split()[0] == "GET":
                 key = request.Request.split()[1]
-                return raft_pb2.ServeClientReply(data=self.db[key], success=True)
+                return raft_pb2.ServeClientReply(data=self.db.get(key), success=True)
             
             # Process the SET type request.
             entry = request.Request + " " + str(self.currentTerm) 
@@ -461,7 +461,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
         # Prepare AppendEntries request
         append_entries_request = raft_pb2.AppendEntriesMsg(
-            term=log_entry.term,
+            term=int(log_entry.split()[-1]),
             leaderId=self.nodeId,
             prevLogIndex=self.last_log_index(),
             prevLogTerm=self.last_log_term(),
@@ -476,7 +476,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     channel = grpc.insecure_channel(follower_address)
                     stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
                     response = stub.AppendEntries(append_entries_request)
-                    self.process_appended_entries_response(response)
+                    self.process_append_entries_response(response)
                 except grpc.RpcError as e:
                     with open(self.dump_file, 'a') as f:
                         f.write(f"Error occurred while sending RPC to Node {follower_id}.\n")

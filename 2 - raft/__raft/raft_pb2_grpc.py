@@ -5,6 +5,67 @@ import grpc
 from __raft import raft_pb2 as raft__pb2
 
 
+class RaftClientServiceStub(object):
+    """Missing associated documentation comment in .proto file."""
+
+    def __init__(self, channel):
+        """Constructor.
+
+        Args:
+            channel: A grpc.Channel.
+        """
+        self.ServeClient = channel.unary_unary(
+                '/RaftClientService/ServeClient',
+                request_serializer=raft__pb2.ServeClientArgs.SerializeToString,
+                response_deserializer=raft__pb2.ServeClientReply.FromString,
+                )
+
+
+class RaftClientServiceServicer(object):
+    """Missing associated documentation comment in .proto file."""
+
+    def ServeClient(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+
+def add_RaftClientServiceServicer_to_server(servicer, server):
+    rpc_method_handlers = {
+            'ServeClient': grpc.unary_unary_rpc_method_handler(
+                    servicer.ServeClient,
+                    request_deserializer=raft__pb2.ServeClientArgs.FromString,
+                    response_serializer=raft__pb2.ServeClientReply.SerializeToString,
+            ),
+    }
+    generic_handler = grpc.method_handlers_generic_handler(
+            'RaftClientService', rpc_method_handlers)
+    server.add_generic_rpc_handlers((generic_handler,))
+
+
+ # This class is part of an EXPERIMENTAL API.
+class RaftClientService(object):
+    """Missing associated documentation comment in .proto file."""
+
+    @staticmethod
+    def ServeClient(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/RaftClientService/ServeClient',
+            raft__pb2.ServeClientArgs.SerializeToString,
+            raft__pb2.ServeClientReply.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+
 class RaftNodeServicesStub(object):
     """Missing associated documentation comment in .proto file."""
 
@@ -95,66 +156,5 @@ class RaftNodeServices(object):
         return grpc.experimental.unary_unary(request, target, '/RaftNodeServices/RequestVote',
             raft__pb2.RequestVoteMsg.SerializeToString,
             raft__pb2.RequestVoteReply.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-
-class RaftClientServiceStub(object):
-    """Missing associated documentation comment in .proto file."""
-
-    def __init__(self, channel):
-        """Constructor.
-
-        Args:
-            channel: A grpc.Channel.
-        """
-        self.ServeClient = channel.unary_unary(
-                '/RaftClientService/ServeClient',
-                request_serializer=raft__pb2.ServeClientArgs.SerializeToString,
-                response_deserializer=raft__pb2.ServeClientReply.FromString,
-                )
-
-
-class RaftClientServiceServicer(object):
-    """Missing associated documentation comment in .proto file."""
-
-    def ServeClient(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-
-def add_RaftClientServiceServicer_to_server(servicer, server):
-    rpc_method_handlers = {
-            'ServeClient': grpc.unary_unary_rpc_method_handler(
-                    servicer.ServeClient,
-                    request_deserializer=raft__pb2.ServeClientArgs.FromString,
-                    response_serializer=raft__pb2.ServeClientReply.SerializeToString,
-            ),
-    }
-    generic_handler = grpc.method_handlers_generic_handler(
-            'RaftClientService', rpc_method_handlers)
-    server.add_generic_rpc_handlers((generic_handler,))
-
-
- # This class is part of an EXPERIMENTAL API.
-class RaftClientService(object):
-    """Missing associated documentation comment in .proto file."""
-
-    @staticmethod
-    def ServeClient(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/RaftClientService/ServeClient',
-            raft__pb2.ServeClientArgs.SerializeToString,
-            raft__pb2.ServeClientReply.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

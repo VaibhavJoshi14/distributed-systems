@@ -1,0 +1,8 @@
+Vote granted for Node 1 in term 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.
+Node 0 accepted AppendEntries RPC from 1.

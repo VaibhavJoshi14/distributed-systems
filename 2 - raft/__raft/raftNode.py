@@ -6,6 +6,7 @@ import grpc
 import threading
 import time
 from concurrent import futures
+from math import ceil
 
 class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientServiceServicer):
     def __init__(self, nodeId, db_path, node_address, cluster):
@@ -44,20 +45,16 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             self.log = lines[:-1]
         
         # the following can be in transient storage, can be lost in a crash with no issue
-        self.state = 'follower'  # Possible states: follower, candidate, leader
+        self.currentRole = 'follower'  # Possible states: follower, candidate, leader
         self.currentLeader = None
-        self.votesReceived = {}
-        self.sentLength = []
-        self.ackedLength = []
-
+        self.sentLength = [0 for i in self.cluster_nodes]
+        self.ackedLength = [0 for i in self.cluster_nodes]
         # assume that the leader has failed after 10 seconds if no heartbeat arrives, since the lease expires 
         # after 10s, and a heartbeat should have come in every 1 to 2 secs. Randomize it: to avoid having lots of 
         # nodes trying to become candidates at the same time.
-        self.election_timeout =  self.generate_random_timeout()
+        self.election_timeout = None
+        self.reset_election_timeout()
         
-        self.next_index = {}
-        self.match_index = {}
-        self.last_applied = -1
         self.leader_alive = False
         self.heartbeat_interval = 1 # seconds
 
@@ -90,128 +87,153 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     "commitLength: " + str(self.commitLength) + "\n")
 
 
-    # RPC for AppendEntries
+    def term(self, entry):
+        return int(entry.split()[-1])
+
+
+    def write_log_to_file(self):
+        with open(self.log_file, 'w') as f:
+            for line in self.log:
+                f.write(line + "\n")
+
+
+    # When the leader wants to append the log entries (after checking log is ok) to the followers' log, it uses AppendEntries RPC.
     def AppendEntries(self, request, context):
-        # know that the leader is alive
-        self.last_leader_communication_time = time.time()
-        self.leader_alive = True
-        self.votedFor = None
-        self.currentLeader = request.leaderId
-        self.writeMetadata()
+        # Receiving log request.
+        # When the term number in the request is greater than our term number, we accept it as the new term
+        if request.term > self.currentTerm:
+            self.currentTerm = request.term
+            self.votedFor = None
+            self.leader_alive = True
+            self.last_leader_communication_time = time.time()
+            self.writeMetadata()
+
+        if request.term == self.currentTerm:
+            self.currentRole = "follower"
+            self.currentLeader = request.leaderId
+            self.leader_alive = True
+            self.votedFor = None
+            self.last_leader_communication_time = time.time()
+            self.writeMetadata()
         
+        # Log is ok when
+        #     *follower's log length is less than the length of the prefix, then the log is not ok,
+        #      implies there are some log entries that the leader did not send us, we have to fill that 
+        #      gap first.
+        #     *And prefixLength should be either 0 or when it is greater than zero, then we have to look at the 
+        #      last log entry in the prefix, its term, that should be equal to the prefixTerm. This guarantees
+        #      that the entire log up to and including index prefixTerm will be identical among the follower and 
+        #      the leader.
+        logOk = len(self.log) >= request.prefixLen and (request.prefixLen == 0 or 
+                                                        (request.prefixLen > 0 and self.term(self.log[request.prefixLen - 1]) == request.prefixTerm)
+                                                        )
+
         response = raft_pb2.AppendEntriesReply()
 
-        """if request.term < self.currentTerm:
-            response.term = self.currentTerm
-            response.success = False
-            
+        # When the log is not ok or the request term is not equal to the current term of the follower, reject the log request
+        if not(request.term == self.currentTerm and logOk):
             with open(self.dump_file, 'a') as f:
                 f.write(f"Node {self.nodeId} rejected AppendEntries RPC from {request.leaderId}.\n")
                 print(f"Node {self.nodeId} rejected AppendEntries RPC from {request.leaderId}.")
-            
-            return response"""
-
-
-        # Step 2: Verify the log consistency.
-        if request.prevLogIndex >= len(self.log) or (request.prevLogIndex > 0 and 
-                                                    len(self.log) > request.prevLogIndex and self.log[request.prevLogIndex].split()[-1] != request.prevLogTerm):
-            response.term = self.currentTerm
             response.success = False
-            
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Node {self.nodeId} rejected AppendEntries RPC from {request.leaderId}.\n")
-                print(f"Node {self.nodeId} rejected AppendEntries RPC from {request.leaderId}.")
-            
             return response
 
+        # --------------When the above if condition is false, then process the log request.----------------------------------
 
-        with open(self.dump_file, 'a') as f:
-            f.write(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.\n")
-            print(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.")
+        # suffix is the new log entries that the leader wants the follower to append
+        suffix = list(request.suffix)
+        prefixLen = request.prefixLen
+        leaderCommit = request.leaderCommit
 
-        # Step 3: Append new entries to the log.
-        self.log = self.log[:request.prevLogIndex + 1] + list(request.entries)
+        # When the follower already has more than prefixLen records, in that case,
+        # find the last log entry index between follower and leader state ('index').
+        if len(suffix) > 0 and len(self.log) > prefixLen:
+            index = min(len(self.log), prefixLen + len(suffix)) - 1
+            # for that index, we will compare the term number in the follower's log
+            # with the corresponding entry in the suffix (new log entry). If those 
+            # are not the same term number, we have an inconsistency in the log, 
+            # truncate the log upto prefixLen. Those truncated entries might have come
+            # from a previous leader that might not have got commited.
+            if self.term(self.log[index]) != self.term(suffix[index - prefixLen]):
+                self.log = self.log[ : prefixLen]
+                self.write_log_to_file()
+        
+        # Append the new suffix entries (start from what the follower does not already have, upto the end of suffix)
+        if prefixLen + len(suffix) > len(self.log):
+            for i in range(len(self.log) - prefixLen, len(suffix)):
+                self.log.append(suffix[i])
+            self.write_log_to_file()
 
-        # Step 4: Update commit index.
-        if request.leaderCommit > self.commitLength:
-            self.commitIndex = min(request.leaderCommit, len(self.log) - 1)
-
-        response.term = self.currentTerm
+        # self.commitLength tells how many log entries have been committed so far.
+        # If the number of entries commited on leader is greater than the number of entries commited on the 
+        # follower, that means, the follower needs to now commit the log entries from indices self.commitLength upto
+        # leaderCommit - 1
+        if leaderCommit > self.commitLength:
+            for i in range(self.commitLength, leaderCommit):
+                # In our case, store the SET request on the database
+                self.db.commitToDatabase(self.log[i])
+                with open(self.dump_file, 'a') as f:
+                    f.write(f"Node {self.nodeId} (follower) committed the entry {self.log[i]} to the state machine.\n")
+                    print(f"Node {self.nodeId} (follower) committed the entry {self.log[i]} to the state machine.")   
+            
+            # set self.commitLength equal to leaderCommit since we have committed the uncommitted entries as
+            # suggested by leader.
+            self.commitLength = leaderCommit
+        
+        if len(suffix) > 0:
+            with open(self.dump_file, 'a') as f:
+                f.write(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.\n")
+                print(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.")
+        
         response.success = True
+        # ack tells how many log entries from the start have been successfully received by the follower.
+        response.ack = prefixLen + len(suffix)
+        response.senderId = self.nodeId
         return response
+
 
 
     def reset_election_timeout(self):
         """
         Reset the election timeout.
         """
-        self.election_timeout = self.generate_random_timeout()
-
-    
-    def generate_random_timeout(self):
-        """
-        Generate a random election timeout between a certain range.
-        """
         # Adjust these values based on your requirements
         min_timeout = 11000   # in milliseconds
         max_timeout = 20000   # in milliseconds
-        return random.randint(min_timeout, max_timeout) / 1000  # Convert to seconds
+        self.election_timeout = random.randint(min_timeout, max_timeout) / 1000  # Convert to seconds
+
 
 
     def RequestVote(self, request, context):
-        """
-        Implementation of RequestVote function.
-        """
-        
-        candidate_id = request.candidateId
-        last_log_index = request.lastLogIndex
-        last_log_term = request.lastLogTerm
+        # if candidate's term is greater than our term, we set the term as the candidate's term,
+        # transition to follower state.
+        if request.cTerm > self.currentTerm:
+            self.currentTerm = request.cTerm
+            self.currentRole = "follower"
+            self.votedFor = None
+            self.writeMetadata()
 
-        vote_granted = False
+        lastTerm = 0
+        if len(self.log) > 0:
+            lastTerm = self.term(self.log[-1])
         
-        if self.state == "leader":
-            #print("I am the leader")
+        # we don't want a leader which has an outdated log.
+        logOk = request.cLogTerm > lastTerm or (request.cLogTerm == lastTerm and request.cLogLength >= len(self.log))
+
+        if request.cTerm == self.currentTerm and logOk and self.votedFor in {request.cId, None}:
+            self.votedFor = request.cId
+            self.writeMetadata()
             with open(self.dump_file, 'a') as f:
-                f.write(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.\n")
-                print(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.")
-
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
-
-        # If candidate's term is outdated, reject the vote request
-        if request.term < self.currentTerm:
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.\n")
-                print(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.")
-            #print(f"Request term {request.term} is lesser than current term {self.currentTerm}")
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
+                f.write(f"Vote granted for Node {request.cId} in term {self.currentTerm}.\n")
+                print(f"Vote granted for Node {request.cId} in term {self.currentTerm}.")
+            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=True)
         
-        # If this node has already voted for another candidate in this term, reject the vote request
-        if self.votedFor is not None and self.votedFor != candidate_id:
+        else:
             with open(self.dump_file, 'a') as f:
-                f.write(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.\n")
-                print(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.")
-            #print(f"I have voted someone, voted", self.votedFor)
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
-        
-        # Check if candidate's log is at least as up-to-date as this node's log
-        if last_log_term < self.last_log_term() or \
-            (last_log_term == self.last_log_term() and last_log_index < self.last_log_index()):
-            #print("Those is false")
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.\n")
-                print(f"Vote denied for Node {request.candidateId} in term {self.currentTerm}.")
-            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
-        
-        # Grant the vote since candidate's log is up-to-date
-        self.currentTerm = request.term
-        self.votedFor = candidate_id
-        vote_granted = True
-
-        with open(self.dump_file, 'a') as f:
-            f.write(f"Vote granted for Node {request.candidateId} in term {self.currentTerm}.\n")
-            print(f"Vote granted for Node {request.candidateId} in term {self.currentTerm}.")
-
-        return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=vote_granted)
+                f.write(f"Vote denied for Node {request.cId} in term {self.currentTerm}.\n")
+                print(f"Vote denied for Node {request.cId} in term {self.currentTerm}.")
+            return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=False)
+            
 
 
     def start_heartbeat(self):
@@ -240,184 +262,88 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         self.votedFor = None
         self.writeMetadata()
 
-        while self.state == "leader":
-            # update this time for the leader itself
-            
+        while self.currentRole == "leader":  
             with open(self.dump_file, 'a') as f:
                 f.write(f"Leader {self.nodeId} sending heartbeat\n")
                 print(f"Leader {self.nodeId} sending heartbeat")
             
             self.last_leader_communication_time = time.time()
-            # Send AppendEntries RPCs with empty entries to followers
-            self.send_append_entries_to_followers()
             
+            # Send AppendEntries RPC to the followers
+            for follower_id in self.cluster_nodes:
+                if follower_id != self.nodeId:
+                    self.replicateLog(self.nodeId, follower_id)
+ 
             # Sleep for the heartbeat interval
             time.sleep(self.heartbeat_interval)
         
 
 
-    def send_append_entries_to_followers(self):
-        """
-        Send heartbeat messages to followers.
-        """
-        for follower_id in self.cluster_nodes:
-            if follower_id != self.nodeId:
-                self.send_append_entries(follower_id)
-
-
-
-    def send_append_entries(self, follower_id):
-        """
-        Send AppendEntries RPC to a follower.
-        """
-        # Prepare AppendEntries request
-        request = raft_pb2.AppendEntriesMsg(
-            term=self.currentTerm,
-            leaderId=self.nodeId,
-            prevLogIndex= self.last_log_index(),
-            prevLogTerm= self.last_log_term(),
-            entries=[],  # No new entries for heartbeat
-            leaderCommit=self.commitLength
-        )
-
-        # Establish gRPC channel to the follower
-        channel = grpc.insecure_channel(self.cluster_nodes[follower_id])
-        stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
-        try:
-            # Send AppendEntries RPC
-            response = stub.AppendEntries(request)
-        except grpc.RpcError as e:
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Error occurred while sending RPC to Node {follower_id}.\n")
-                print(f"Error occurred while sending RPC to Node {follower_id}.")
-        # Handle response if necessary
-        #if response.term > self.currentTerm:
-            # If follower's term is higher, step down as leader
-        #    self.currentTerm = response.term
-        #    self.step_down()
-
-
-
-    def become_follower(self, term, leader_id):
-        self.state = 'follower'
-        self.currentTerm = term
-        self.votedFor = None
-        self.leaderId = leader_id
-        self.writeMetadata()
-
-
-
-    def become_candidate(self):
-        """
-        Transition to the candidate state.
-        """
-        # Increment current term
-        self.currentTerm += 1
-        
-        # Vote for self
-        self.votedFor = self.nodeId
-        
-        self.writeMetadata()
-        
-        # Reset election timeout
-        self.reset_election_timeout()
-        
-        # Start a new election
-        self.start_election()
-
-
-
     def start_election(self):
         """
-        Start a new election by sending RequestVote RPCs to other nodes.
+        Start a new election by sending RequestVote RPCs to all nodes.
         """
-
-        # Prepare RequestVote request
+        self.currentTerm += 1
+        self.votedFor = self.nodeId
+        self.writeMetadata()
+        
         request = raft_pb2.RequestVoteMsg(
-            term = self.currentTerm,
-            candidateId = self.nodeId,
-            lastLogIndex = self.last_log_index(),
-            lastLogTerm = self.last_log_term()
+            cId = self.nodeId,
+            cTerm = self.currentTerm,
+            cLogLength = len(self.log),
+            cLogTerm = self.last_log_term()
         )
 
-        # Variables to track votes received
-        votes_received = 1  # Vote for self
-        votes_needed = (len(self.cluster_nodes) + 1) // 2  # Majority of votes needed
+        votesReceived = set()
+        votesReceived.add(self.nodeId)
+        votesNeeded = int(ceil((len(self.cluster_nodes) + 1) / 2)) # Majority of votes needed
 
         # Send RequestVote RPC to other nodes
         for node_id, node_address in self.cluster_nodes.items():
             if node_id != self.nodeId:
-                #print("sending")
-                response = self.send_request_vote(node_address, request)
                 
-                if response != None and response.voteGranted:
-                    votes_received += 1
-        print(votes_needed, votes_received)
-        # Check if received a majority of votes
-        if votes_received >= votes_needed:
-            self.become_leader()
-        else:
-            # Not enough votes received, start a new election timer
-            self.reset_election_timeout()
+                with grpc.insecure_channel(node_address) as channel:
+                    try:
+                        stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
+                        response = stub.RequestVote(request)
+                    except grpc.RpcError as e:
+                        response = None
+                
+                if response == None:
+                    continue
 
-
-
-    def send_request_vote(self, node_address, request):
-        """
-        Send RequestVote RPC to a node.
-        """
-        # Establish gRPC channel to the target node
-        channel = grpc.insecure_channel(node_address)
-        try:
-            stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
-            response = stub.RequestVote(request)
-        except grpc.RpcError as e:
-            response = None
-        # Send RequestVote RPC
+                if self.currentRole == "candidate" and response.term == self.currentTerm and response.voteGranted == True:
+                    votesReceived.add(node_id)
+                #print(votesNeeded, len(votesReceived))
+                if len(votesReceived) >= votesNeeded:
+                    self.currentRole = "leader"
+                    self.leader_alive = True
+                    self.currentLeader = self.nodeId
+                    self.reset_election_timeout()
+                    self.last_leader_communication_time = time.time()
         
-        return response
+                    with open(self.dump_file, 'a') as f:
+                        f.write(f"Node {self.nodeId} became the leader for term {self.currentTerm}.\n")
+                        print(f"Node {self.nodeId} became the leader for term {self.currentTerm}.")
+                    
+                    
+                    for fid in self.cluster_nodes:
+                        if fid != self.nodeId:
+                            self.sentLength[fid] = len(self.log)
+                            self.ackedLength[fid] = 0
+                            self.replicateLog(self.nodeId, fid)
 
+                    # Start sending heartbeat messages
+                    self.start_heartbeat()
+                    break
 
-
-    def become_leader(self):
-        """
-        Transition to the leader state.
-        """
-        # Set node state to leader
-        self.leader_alive = True
-        self.state = "leader"
-        
-        with open(self.dump_file, 'a') as f:
-            f.write(f"Node {self.nodeId} became the leader for term {self.currentTerm}.\n")
-            print(f"Node {self.nodeId} became the leader for term {self.currentTerm}.")
-        
-        # Initialize next_index and match_index for each follower
-        self.next_index = {follower_id: self.last_log_index() + 1 for follower_id in self.cluster_nodes}
-        self.match_index = {follower_id: 0 for follower_id in self.cluster_nodes}
-        
-        # Start sending heartbeat messages
-        self.start_heartbeat()
-
-
-
-    def step_down(self):
-        """
-        Step down as leader.
-        """
-        with open(self.dump_file, 'a') as f:
-            f.write(f"{self.nodeId} Stepping down\n")
-            print(f"{self.nodeId} Stepping down")
-        
-        # Set node state to follower 
-        self.leader_alive = False
-        self.state = "follower"
-       
-        # Clear next_index and match_index
-        self.next_index = {}
-        self.match_index = {}
-        
-        # Reset election timeout
-        self.reset_election_timeout()
+                elif response.term > self.currentTerm:
+                    self.currentTerm = response.term
+                    self.currentRole = "follower"
+                    self.votedFor = None
+                    self.reset_election_timeout()
+                    self.last_leader_communication_time = time.time()
+                    self.writeMetadata()
 
 
 
@@ -425,124 +351,129 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         """
         Handle client requests.
         """
-        if self.state != "leader":
+        if self.currentRole != "leader":
             return raft_pb2.ServeClientReply(data="Fail: Not a leader", leaderId=self.currentLeader, success=False)
+        
+        
+        with open(self.dump_file, 'a') as f:
+            f.write(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+            print(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+
+        # If leader, process the request
+        if request.Request.split()[0] == "GET":
+            key = request.Request.split()[1]
+            return raft_pb2.ServeClientReply(data=self.db.get(key), success=True)
+            
+        # Append the set type request to leader's log
+        entry = request.Request + " " + str(self.currentTerm) 
+        self.log.append(entry)
+
+        # save the entry to file
+        with open(self.log_file, 'a') as f:
+            f.write(entry + "\n")
+        
+        # the leader itself acknowledges the delivery of message
+        self.ackedLength[self.nodeId] = len(self.log)
+            
+        for fid in self.cluster_nodes:
+            if fid != self.nodeId:
+                self.replicateLog(self.nodeId, fid)
+
+        return raft_pb2.ServeClientReply(success=True)
+
+
+
+    # This is the log append request sending rpc.
+    def replicateLog(self, leaderId, followerId):
+        prefixLen = self.sentLength[followerId]
+        # all remaining log entries that need to be sent
+        if len(self.log) > 0:
+            suffix = self.log[prefixLen:]
         else:
-            
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
-                print(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+            suffix = []
+        prefixTerm = 0
+        if prefixLen > 0:
+            # look at the term in the last sent log.
+            prefixTerm = self.term(self.log[prefixLen-1])
+        
+        # ------------------Send to the follower------------------------------------
+        request = raft_pb2.AppendEntriesMsg(
+                        prefixLen = prefixLen,
+                        leaderCommit = self.commitLength,
+                        suffix = suffix,
+                        leaderId = leaderId,
+                        term = self.currentTerm,
+                        prefixTerm = prefixTerm
+                    )
 
-            # If leader, process the request
-            if request.Request.split()[0] == "GET":
-                key = request.Request.split()[1]
-                return raft_pb2.ServeClientReply(data=self.db.get(key), success=True)
-            
-            # Process the SET type request.
-            entry = request.Request + " " + str(self.currentTerm) 
-            self.log.append(entry)
-
-            # save the entry to file
-            with open(self.log_file, 'a') as f:
-                f.write(entry + "\n")
-            
-            self.replicate_log_entry(entry)
-
-            return raft_pb2.ServeClientReply(success=True)
-
-
-
-    def replicate_log_entry(self, log_entry):
-        """
-        Replicate a log entry to other nodes in the cluster.
-        """
-        if self.state != "leader":
-            return  # Only leaders replicate log entries
-
-        # Prepare AppendEntries request
-        append_entries_request = raft_pb2.AppendEntriesMsg(
-            term=int(log_entry.split()[-1]),
-            leaderId=self.nodeId,
-            prevLogIndex=self.last_log_index(),
-            prevLogTerm=self.last_log_term(),
-            entries=[log_entry],
-            leaderCommit=self.commitLength
-        )
-
-        # Send AppendEntries RPC to followers
-        for follower_id, follower_address in self.cluster_nodes.items():
-            if follower_id != self.nodeId:
-                try:
-                    channel = grpc.insecure_channel(follower_address)
-                    stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
-                    response = stub.AppendEntries(append_entries_request)
-                    self.process_append_entries_response(response)
-                except grpc.RpcError as e:
-                    with open(self.dump_file, 'a') as f:
-                        f.write(f"Error occurred while sending RPC to Node {follower_id}.\n")
-                        print(f"Error occurred while sending RPC to Node {follower_id}.")
+        # Establish gRPC channel to the follower
+        #print("sending at ", followerId, self.cluster_nodes[followerId])
+        with grpc.insecure_channel(self.cluster_nodes[followerId]) as channel:
+            stub = raft_pb2_grpc.RaftNodeServicesStub(channel)
+            try:
+                # Send AppendEntries RPC
+                response = stub.AppendEntries(request)
+                # After leader gets the response, the leader needs to decide which log entries are ready 
+                # to be commited.
+                self.processLogResponse(response)
+            except grpc.RpcError as e:
+                with open(self.dump_file, 'a') as f:
+                    f.write(f"Error occurred while sending RPC to Node {followerId}.\n")
+                    print(f"Error occurred while sending RPC to Node {followerId}.")
 
 
 
-    def process_append_entries_response(self, response):
-        """
-        Process response of AppendEntries RPC.
-        """
-        if response.success:
-            # Update last leader communication time upon successful AppendEntries RPC
+    def processLogResponse(self, response):
+        # A log entry is ready to be committed if it is acknowledged by a quorum of raft nodes.
+        if response.term == self.currentTerm and self.currentRole == "leader":
+            if response.success == True and response.ack >= self.ackedLength[response.senderId]:
+                self.sentLength[response.senderId] = ack
+                self.ackedLength[response.senderId] = ack
+                self.commitLogEntries()
+            # if not successfull, it could be that there was a gap, we decrement the sentLength[follower] variable,
+            # and send one more log entry to the follower. This could take a number of iterations to do this.
+            elif self.sentLength[response.senderId] > 0:
+                self.sentLength[response.senderId] = self.sentLength[response.senderId] - 1
+                self.replicateLog(seld.nodeId, response.senderId)
+        # when the follower is at a higher term, then the leader should shift to a 'follower' state.
+        elif response.term > self.currentTerm:
+            self.currentTerm = response.term
+            self.currentRole = "follower"
+            self.votedFor = None
             self.last_leader_communication_time = time.time()
-            self.leader_alive = True
-            # If the AppendEntries RPC was successful, update commit_index
-            if response.last_log_index > self.commitLength:
-                self.commitLength = min(response.last_log_index, len(self.log) - 1)
-                # Check if the entry is committed by a majority quorum
-                if self.is_majority_committed(self.commitLength):
-                    # Apply committed log entries to the database
-                    self.apply_committed_entries_to_database()
+            self.reset_election_timeout()
+            self.writeMetadata()
+            with open(self.dump_file, 'a') as f:
+                f.write(f"{self.nodeId} Stepping down\n")
+                print(f"{self.nodeId} Stepping down")
 
 
 
-    def is_majority_committed(self, index):
-        """
-        Check if a log entry at the given index is committed by a majority quorum.
-        """
-        # Calculate the number of nodes required for a majority quorum
-        majority_count = (len(self.cluster_nodes) // 2) + 1
-        # Check if the count of nodes that have replicated the log entry is greater than or equal to the majority count
-        committed_count = sum(1 for node_id, match_index in self.match_index.items() if match_index >= index)
-        return committed_count >= majority_count
-
-
-
-    def apply_committed_entries_to_database(self):
-        """
-        Apply committed log entries to the database.
-        """
-        for index in range(self.last_applied + 1, self.commitLength + 1):
-            log_entry = self.log[index]
-            # Apply the command from the log entry to the database
-            self.apply_command_to_database(log_entry)
-            # Update last_applied index
-            self.last_applied = index
+    def commitLogEntries(self):
+        # A log entry is ready to be committed if it is acknowledged by a quorum of raft nodes.
+        while self.commitLength < len(self.log):
+            acks = 0
+            for node in range(len(self.cluster_nodes)):
+                if self.ackedLength[node] > self.commitLength:
+                    acks += 1
             
-            if self.state == "follower":
+            if acks >= int(ceil((len(self.cluster_nodes) + 1) / 2)):
+                # deliver the message to the application
+                self.db.commitToDatabase(self.log[self.commitLength])
+                self.commitLength += 1
+
                 with open(self.dump_file, 'a') as f:
-                    f.write(f"Node {self.nodeId} (follower) committed the entry {log_entry} to the state machine.\n")
-                    print(f"Node {self.nodeId} (follower) committed the entry {log_entry} to the state machine.")    
-            
-            if self.state == "leader":
-                with open(self.dump_file, 'a') as f:
-                    f.write(f"Node {self.nodeId} (leader) committed the entry {log_entry} to the state machine.\n")
-                    print(f"Node {self.nodeId} (leader) committed the entry {log_entry} to the state machine.")  
+                    f.write(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.\n")
+                    print(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.")  
+
+            else:
+                break
 
 
-    def apply_command_to_database(self, command):
-        """
-        Apply a command to the database.
-        """
-        # Logic to apply the command to the database
-        cmd, key, value, term = command.split(" ")
-        if cmd == "SET":
+
+    def commitToDatabase(self, command):
+        if "SET" in command:
+            cmd, key, value, term = command.split()
             self.db.store(key, value)
 
 
@@ -562,13 +493,14 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         Monitor leader communication to detect leader failure.
         """
         while True:
-            if self.state == "leader":
-                current_time = time.time()
+            if self.currentRole == "leader":
+                self.last_leader_communication_time = time.time()
+                #current_time = time.time()
                 #print("Times ", current_time-self.last_leader_communication_time, self.election_timeout)
                 time.sleep(self.leader_check_interval)
                 continue
             current_time = time.time()
-            #print("Times ", current_time-self.last_leader_communication_time, self.election_timeout, " node ", self.nodeId, "state", self.state)
+            #print("Times ", current_time-self.last_leader_communication_time, self.election_timeout, " node ", self.nodeId, "state", self.currentRole)
             if current_time - self.last_leader_communication_time > self.election_timeout:
                 # if this condition is satisfied, assume that leader has failed, and start a new election.
                                
@@ -578,7 +510,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     print(f"Node {self.nodeId} election timer timed out, Starting election.")
 
                 self.leader_alive = False
-                self.become_candidate()
+                self.currentRole = "candidate"
+                self.reset_election_timeout()
+                self.start_election()
                 
             time.sleep(self.leader_check_interval)
 

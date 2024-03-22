@@ -1,27 +1,27 @@
 syntax = "proto3";
 
 message AppendEntriesMsg {
-    int32 term = 1;
-    int32 leaderId = 2;
-    int32 prevLogIndex = 3;
-    int32 prevLogTerm = 4;
-    repeated string entries = 5;
-    int32 leaderCommit = 6;
-
-    // leader lease duration
-    double leaseDuration = 7;
+    int32 prefixLen = 1;
+    int32 leaderCommit = 2; // called 'commitLength' in leader's perspective.
+    repeated string suffix = 3;
+    int32 leaderId = 4;
+    int32 term = 5;
+    int32 prefixTerm = 6;
 }
+
 
 message AppendEntriesReply {
     int32 term = 1;
     bool success = 2;
+    int32 ack = 3;
+    int32 senderId = 4;
 }
 
 message RequestVoteMsg {
-    int32 term = 1;
-    int32 candidateId = 2;
-    int32 lastLogIndex = 3;
-    int32 lastLogTerm = 4;
+    int32 cId = 1;
+    int32 cTerm = 2;
+    int32 cLogLength = 3; // length of the candidate's log
+    int32 cLogTerm = 4; // term number in the candidate's last log entry
 }
 
 message RequestVoteReply {

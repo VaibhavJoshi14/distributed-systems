@@ -1,0 +1,21 @@
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 1.
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Node 1 (leader) received an SET name1 Gaurav request.
+Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 2.
+Node 1 (leader) received an GET name1 request.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat

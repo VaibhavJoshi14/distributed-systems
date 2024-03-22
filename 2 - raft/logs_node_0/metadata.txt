@@ -1,0 +1,4 @@
+nodeId: 0
+currentTerm: 1
+votedFor: None
+commitLength: 0

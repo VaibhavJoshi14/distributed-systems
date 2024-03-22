@@ -1,0 +1,45 @@
+Node 0 election timer timed out, Starting election.
+Node 0 became the leader for term 1.
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Error occurred while sending RPC to Node 3.
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat
+Vote granted for Node 3 in term 1.
+Node 0 (follower) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 0 (follower) committed the entry SET name2 Abhi 1 to the state machine.
+Node 0 (follower) committed the entry SET name3 Rahul 1 to the state machine.

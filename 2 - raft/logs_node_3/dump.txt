@@ -1,0 +1,278 @@
+Vote granted for Node 2 in term 1.
+Node 3 election timer timed out, Starting election.
+Node 3 rejected AppendEntries RPC from 2.
+Node 3 became the leader for term 2.
+Error occurred while sending RPC to Node 0.
+Vote denied for Node 4 in term 2.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Vote granted for Node 2 in term 1.
+Node 3 election timer timed out, Starting election.
+Node 3 rejected AppendEntries RPC from 2.
+Vote denied for Node 4 in term 2.
+Node 3 election timer timed out, Starting election.
+Node 3 became the leader for term 3.
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+3 Stepping down
+Vote granted for Node 2 in term 4.
+Vote denied for Node 4 in term 4.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 1.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 2.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 3.
+Vote granted for Node 4 in term 4.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 5.
+Node 3 became the leader for term 5.
+Error occurred while sending RPC to Node 0.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 1.
+Vote denied for Node 2 in term 1.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 2.
+Vote denied for Node 2 in term 2.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 3.
+Vote denied for Node 2 in term 3.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 4.
+Vote denied for Node 2 in term 4.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 5.
+Vote denied for Node 2 in term 5.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 6.
+Vote denied for Node 2 in term 6.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 7.
+Vote denied for Node 2 in term 7.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 8.
+Vote denied for Node 2 in term 8.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 9.
+Vote denied for Node 2 in term 9.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 10.
+Vote denied for Node 2 in term 10.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 11.
+Vote denied for Node 2 in term 11.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 12.
+Vote denied for Node 2 in term 12.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 13.
+Vote denied for Node 2 in term 13.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 14.
+Vote denied for Node 2 in term 14.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 15.
+Vote denied for Node 2 in term 15.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 16.
+Vote denied for Node 2 in term 16.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 17.
+Vote denied for Node 2 in term 17.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 18.
+Vote denied for Node 2 in term 18.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 19.
+Vote denied for Node 2 in term 19.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 20.
+Vote denied for Node 2 in term 20.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 21.
+Vote denied for Node 2 in term 21.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 22.
+Vote denied for Node 2 in term 22.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 23.
+Vote denied for Node 2 in term 23.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 24.
+Vote denied for Node 2 in term 24.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 25.
+Vote denied for Node 2 in term 25.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 26.
+Vote denied for Node 2 in term 26.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 27.
+Vote denied for Node 2 in term 27.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 28.
+Vote denied for Node 2 in term 28.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 29.
+Vote denied for Node 2 in term 29.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 1.
+Vote denied for Node 4 in term 1.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 2.
+Vote denied for Node 4 in term 2.
+Vote granted for Node 4 in term 3.
+Vote granted for Node 4 in term 1.
+Node 3 election timer timed out, Starting election.
+Vote granted for Node 2 in term 2.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 3.
+Vote denied for Node 2 in term 3.
+Node 3 election timer timed out, Starting election.
+Node 3 became the leader for term 4.
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 1.
+Vote denied for Node 2 in term 1.
+Vote granted for Node 2 in term 2.
+Node 3 election timer timed out, Starting election.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 4 in term 1.
+Node 3 election timer timed out, Starting election.
+Vote denied for Node 2 in term 2.
+Vote denied for Node 4 in term 2.
+Node 3 election timer timed out, Starting election.
+Node 3 became the leader for term 1.
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Node 3 (leader) received an SET name1 Gaurav request.
+Node 3 (leader) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 3 (leader) received an SET name2 Abhi request.
+Node 3 (leader) committed the entry SET name2 Abhi 1 to the state machine.
+Node 3 (leader) received an SET name3 Rahul request.
+Node 3 (leader) committed the entry SET name3 Rahul 1 to the state machine.
+Node 3 (leader) received an GET name1 request.
+Node 3 (leader) received an GET name2 request.
+Leader 3 sending heartbeat
+Node 3 (leader) received an GET name3 request.
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) received an SET name12 Gaurav2 request.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) committed the entry SET name12 Gaurav2 1 to the state machine.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Node 3 (leader) received an SET name12 Gaurav2 request.
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) committed the entry SET name12 Gaurav2 1 to the state machine.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Node 3 (leader) received an SET name12 Gaurav2 request.
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) committed the entry SET name12 Gaurav2 1 to the state machine.
+Error occurred while sending RPC to Node 4.
+Node 3 (leader) received an SET name22 Abhi2 request.
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) committed the entry SET name22 Abhi2 1 to the state machine.
+Error occurred while sending RPC to Node 4.
+Node 3 (leader) received an SET name32 Rahul2 request.
+Error occurred while sending RPC to Node 0.
+Node 3 (leader) committed the entry SET name32 Rahul2 1 to the state machine.
+Error occurred while sending RPC to Node 4.
+Node 3 (leader) received an GET name12 request.
+Node 3 (leader) received an GET name22 request.
+Node 3 (leader) received an GET name32 request.
+Vote granted for Node 1 in term 2.
+Vote denied for Node 2 in term 2.

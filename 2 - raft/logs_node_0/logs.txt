@@ -1,0 +1,3 @@
+SET name1 Gaurav 1
+SET name2 Abhi 1
+SET name3 Rahul 1

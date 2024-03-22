@@ -1,0 +1,11 @@
+Vote granted for Node 0 in term 1.
+Vote granted for Node 3 in term 1.
+Node 1 (follower) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 1 (follower) committed the entry SET name2 Abhi 1 to the state machine.
+Node 1 (follower) committed the entry SET name3 Rahul 1 to the state machine.
+Node 1 (follower) committed the entry SET name12 Gaurav2 1 to the state machine.
+Node 1 (follower) committed the entry SET name12 Gaurav2 1 to the state machine.
+Node 1 (follower) committed the entry SET name12 Gaurav2 1 to the state machine.
+Node 1 (follower) committed the entry SET name22 Abhi2 1 to the state machine.
+Node 1 election timer timed out, Starting election.
+Vote denied for Node 2 in term 2.

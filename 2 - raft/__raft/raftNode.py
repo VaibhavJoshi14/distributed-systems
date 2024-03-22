@@ -16,7 +16,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
         self.meta_file = 'logs_node_' + str(nodeId) + '/metadata.txt' # saves nodeId, currentTerm, votedFor, commitLength
         # the following is stored on stable storage in disk
-        with open(self.meta_file, 'r') as f:
+        with open(self.meta_file, 'a+') as f:
             lines = f.read().split("\n")
 
         # if a new node is starting, then nothing to be found in lines
@@ -203,8 +203,8 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         Reset the election timeout.
         """
         # Adjust these values based on your requirements
-        min_timeout = 11000   # in milliseconds
-        max_timeout = 20000   # in milliseconds
+        min_timeout = 15000   # in milliseconds
+        max_timeout = 21000   # in milliseconds
         self.election_timeout = random.randint(min_timeout, max_timeout) / 1000  # Convert to seconds
 
 
@@ -217,6 +217,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             self.currentRole = "follower"
             self.votedFor = None
             self.writeMetadata()
+        
+        self.reset_election_timeout()
+        self.last_leader_communication_time = time.time() # this resets the election timeout
 
         lastTerm = 0
         if len(self.log) > 0:
@@ -231,12 +234,14 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             with open(self.dump_file, 'a') as f:
                 f.write(f"Vote granted for Node {request.cId} in term {self.currentTerm}.\n")
                 print(f"Vote granted for Node {request.cId} in term {self.currentTerm}.")
+            
             return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=True)
         
         else:
             with open(self.dump_file, 'a') as f:
                 f.write(f"Vote denied for Node {request.cId} in term {self.currentTerm}.\n")
                 print(f"Vote denied for Node {request.cId} in term {self.currentTerm}.")
+            
             return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=False)
             
 

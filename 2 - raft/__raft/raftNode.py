@@ -36,7 +36,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
         self.log_file = 'logs_node_' + str(nodeId) + '/logs.txt' # log saved on file
         # retrieve the logs   
-        with open(self.log_file) as f:
+        with open(self.log_file, 'a+') as f:
             lines = f.read().split('\n')
         #logs to be stored as: message term\n
         if (len(lines) == 1 and lines[0] == '') or len(lines) == 0:
@@ -127,7 +127,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         logOk = len(self.log) >= request.prefixLen and (request.prefixLen == 0 or 
                                                         (request.prefixLen > 0 and self.term(self.log[request.prefixLen - 1]) == request.prefixTerm)
                                                         )
-
+        #print(len(self.log), request.prefixLen, request.prefixTerm )
         response = raft_pb2.AppendEntriesReply()
 
         # When the log is not ok or the request term is not equal to the current term of the follower, reject the log request
@@ -165,6 +165,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             for i in range(len(self.log) - prefixLen, len(suffix)):
                 self.log.append(suffix[i])
             self.write_log_to_file()
+            with open(self.dump_file, 'a') as f:
+                f.write(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.\n")
+                print(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.")
             
         # self.commitLength tells how many log entries have been committed so far.
         # If the number of entries commited on leader is greater than the number of entries commited on the 
@@ -184,10 +187,6 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             self.commitLength = leaderCommit
         
         #print(leaderCommit, self.commitLength)
-        if prefixLen + len(suffix) > len(self.log):
-            with open(self.dump_file, 'a') as f:
-                f.write(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.\n")
-                print(f"Node {self.nodeId} accepted AppendEntries RPC from {request.leaderId}.")
         
         response.success = True
         # ack tells how many log entries from the start have been successfully received by the follower.
@@ -398,12 +397,10 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
     def replicateLog(self, leaderId, followerId):
         prefixLen = self.sentLength[followerId]
         # all remaining log entries that need to be sent
-        if len(self.log) > 0:
-            suffix = self.log[prefixLen:]
-        else:
-            suffix = []
+        suffix = self.log[prefixLen:]
+        
         prefixTerm = 0
-        if prefixLen > 0 and len(self.log) > 0:
+        if prefixLen > 0:
             # look at the term in the last sent log.
             prefixTerm = self.term(self.log[prefixLen-1])
         
@@ -447,7 +444,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             # and send one more log entry to the follower. This could take a number of iterations to do this.
             elif self.sentLength[response.senderId] > 0:
                 self.sentLength[response.senderId] = self.sentLength[response.senderId] - 1
-                self.replicateLog(seld.nodeId, response.senderId)
+                self.replicateLog(self.nodeId, response.senderId)
         # when the follower is at a higher term, then the leader should shift to a 'follower' state.
         elif response.term > self.currentTerm:
             self.currentTerm = response.term
@@ -471,12 +468,14 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     acks += 1
             
             if acks >= int(ceil((len(self.cluster_nodes) + 1) / 2)):
+                print("lengthoflog vs commitlength", len(self.log), self.commitLength)
+                print(self.log)
                 # deliver the message to the application
-                self.commitToDatabase(self.log[self.commitLength])
+                committed = self.commitToDatabase(self.log[self.commitLength])
 
                 with open(self.dump_file, 'a') as f:
-                    f.write(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.\n")
-                    print(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.")  
+                    f.write(f"Node {self.nodeId} (leader) committed the entry {committed} to the state machine.\n")
+                    print(f"Node {self.nodeId} (leader) committed the entry {committed} to the state machine.")  
 
                 self.commitLength += 1
                 
@@ -489,7 +488,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         if "SET" in command:
             cmd, key, value, term = command.split()
             self.db.store(key, value)
-
+            return cmd + " " + key + " " + value
 
 
     def start_leader_communication_monitoring(self):
@@ -533,9 +532,11 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
 
     def join(self):
-        if self.communication_monitor_thread:
-            self.communication_monitor_thread.join()
-        if self.heartbeat_thread:
-            self.heartbeat_thread.join()
+        while (self.communication_monitor_thread and self.communication_monitor_thread.is_alive()) or \
+            (self.heartbeat_thread and self.heartbeat_thread.is_alive()):
+            if self.communication_monitor_thread:
+                self.communication_monitor_thread.join(1)
+            if self.heartbeat_thread:
+                self.heartbeat_thread.join(1)
         
         self.server.wait_for_termination()

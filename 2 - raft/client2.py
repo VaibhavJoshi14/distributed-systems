@@ -1,6 +1,6 @@
 from __raft import raft_pb2, raft_pb2_grpc
 import grpc 
-import time
+import time 
 
 client_addr = "localhost:50050"
 # addresses of each raft node
@@ -65,7 +65,7 @@ class Client:
 if __name__ == "__main__":
     client = Client(client_addr, cluster_nodes)
     # create a menu
-    """client.set("name1", "Gaurav")
+    client.set("name1", "Gaurav")
     time.sleep(1)
     client.set("name2", "Abhi")
     time.sleep(1)
@@ -78,13 +78,8 @@ if __name__ == "__main__":
     client.get("name3")
     """
     client.set("name12", "Gaurav2")
-    time.sleep(1)
     client.set("name22", "Abhi2")
-    time.sleep(1)
     client.set("name32", "Rahul2")
-    time.sleep(1)
     client.get("name12")
-    time.sleep(1)
     client.get("name22")
-    time.sleep(1)
-    client.get("name32")
+    client.get("name32")"""

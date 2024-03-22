@@ -56,4 +56,4 @@ if __name__ == "__main__":
     # create a menu
     client.set("name1", "Gaurav")
     client.get("name1")
-
+    client.set("name2", "Abhi")

@@ -158,13 +158,14 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             if self.term(self.log[index]) != self.term(suffix[index - prefixLen]):
                 self.log = self.log[ : prefixLen]
                 self.write_log_to_file()
+            
         
         # Append the new suffix entries (start from what the follower does not already have, upto the end of suffix)
         if prefixLen + len(suffix) > len(self.log):
             for i in range(len(self.log) - prefixLen, len(suffix)):
                 self.log.append(suffix[i])
             self.write_log_to_file()
-
+            
         # self.commitLength tells how many log entries have been committed so far.
         # If the number of entries commited on leader is greater than the number of entries commited on the 
         # follower, that means, the follower needs to now commit the log entries from indices self.commitLength upto
@@ -172,6 +173,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         if leaderCommit > self.commitLength:
             for i in range(self.commitLength, leaderCommit):
                 # In our case, store the SET request on the database
+                
                 self.commitToDatabase(self.log[i])
                 with open(self.dump_file, 'a') as f:
                     f.write(f"Node {self.nodeId} (follower) committed the entry {self.log[i]} to the state machine.\n")
@@ -376,8 +378,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             f.write(entry + "\n")
         
         # the leader itself acknowledges the delivery of message
+        
         self.ackedLength[self.nodeId] = len(self.log)
-            
+        
         for fid in self.cluster_nodes:
             if fid != self.nodeId:
                 self.replicateLog(self.nodeId, fid)
@@ -395,7 +398,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         else:
             suffix = []
         prefixTerm = 0
-        if prefixLen > 0:
+        if prefixLen > 0 and len(self.log) > 0:
             # look at the term in the last sent log.
             prefixTerm = self.term(self.log[prefixLen-1])
         
@@ -430,7 +433,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         # A log entry is ready to be committed if it is acknowledged by a quorum of raft nodes.
         #print("It cam heer", response.term, self.currentTerm)
         if response.term == self.currentTerm and self.currentRole == "leader":
-            print("here ", response.ack, self.ackedLength[response.senderId])
+            #print("here ", response.ack, self.ackedLength[response.senderId])
             if response.success == True and response.ack >= self.ackedLength[response.senderId]:
                 self.sentLength[response.senderId] = response.ack
                 self.ackedLength[response.senderId] = response.ack
@@ -453,24 +456,25 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                 print(f"{self.nodeId} Stepping down")
 
 
-
     def commitLogEntries(self):
         # A log entry is ready to be committed if it is acknowledged by a quorum of raft nodes.
         while self.commitLength < len(self.log):
             acks = 0
+            
             for node in range(len(self.cluster_nodes)):
                 if self.ackedLength[node] > self.commitLength:
                     acks += 1
-            print("num acks", acks, int(ceil((len(self.cluster_nodes) + 1) / 2)))
+            
             if acks >= int(ceil((len(self.cluster_nodes) + 1) / 2)):
                 # deliver the message to the application
                 self.commitToDatabase(self.log[self.commitLength])
-                self.commitLength += 1
 
                 with open(self.dump_file, 'a') as f:
                     f.write(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.\n")
                     print(f"Node {self.nodeId} (leader) committed the entry {self.log[self.commitLength]} to the state machine.")  
 
+                self.commitLength += 1
+                
             else:
                 break
 

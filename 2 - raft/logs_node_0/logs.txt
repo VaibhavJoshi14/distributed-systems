@@ -1,1 +1,0 @@
-SET name1 Gaurav 1

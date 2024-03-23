@@ -1,11 +1,326 @@
-Vote granted for Node 3 in term 1.
-Node 1 accepted AppendEntries RPC from 3.
+Vote granted for Node 2 in term 1.
+Node 1 accepted AppendEntries RPC from 2.
 Node 1 (follower) committed the entry SET name12 Gaurav2 1 to the state machine.
-Node 1 accepted AppendEntries RPC from 3.
+Node 1 accepted AppendEntries RPC from 2.
 Node 1 (follower) committed the entry SET name22 Abhi2 1 to the state machine.
-Node 1 accepted AppendEntries RPC from 3.
+Node 1 accepted AppendEntries RPC from 2.
 Node 1 (follower) committed the entry SET name32 Rahul2 1 to the state machine.
-Node 1 accepted AppendEntries RPC from 3.
+Node 1 accepted AppendEntries RPC from 2.
+Node 1 accepted AppendEntries RPC from 2.
 Node 1 (follower) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 1 accepted AppendEntries RPC from 2.
 Node 1 (follower) committed the entry SET name2 Abhi 1 to the state machine.
 Node 1 (follower) committed the entry SET name3 Rahul 1 to the state machine.
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 2.
+Vote denied for Node 4 in term 2.
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Node 1 (leader) received an SET name5 Rajesh request.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 2.
+Node 1 (leader) committed the entry SET name5 Rajesh to the state machine.
+Leader 1 sending heartbeat
+Node 1 (leader) received an SET name6 Sunil request.
+Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 2.
+Node 1 (leader) committed the entry SET name6 Sunil to the state machine.
+Leader 1 sending heartbeat
+Node 1 (leader) received an GET name3 request.
+Node 1 (leader) received an GET name6 request.
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Error occurred while sending RPC to Node 2.
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat
+Leader 1 sending heartbeat

@@ -1,10 +1,17 @@
-Node 4 accepted AppendEntries RPC from 3.
+Node 4 accepted AppendEntries RPC from 2.
 Node 4 (follower) committed the entry SET name12 Gaurav2 1 to the state machine.
-Node 4 accepted AppendEntries RPC from 3.
+Node 4 accepted AppendEntries RPC from 2.
 Node 4 (follower) committed the entry SET name22 Abhi2 1 to the state machine.
-Node 4 accepted AppendEntries RPC from 3.
+Node 4 accepted AppendEntries RPC from 2.
 Node 4 (follower) committed the entry SET name32 Rahul2 1 to the state machine.
-Node 4 accepted AppendEntries RPC from 3.
+Node 4 accepted AppendEntries RPC from 2.
 Node 4 (follower) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 4 accepted AppendEntries RPC from 2.
+Node 4 accepted AppendEntries RPC from 2.
 Node 4 (follower) committed the entry SET name2 Abhi 1 to the state machine.
 Node 4 (follower) committed the entry SET name3 Rahul 1 to the state machine.
+Node 4 election timer timed out, Starting election.
+Node 4 accepted AppendEntries RPC from 1.
+Node 4 (follower) committed the entry SET name5 Rajesh 2 to the state machine.
+Node 4 accepted AppendEntries RPC from 1.
+Node 4 (follower) committed the entry SET name6 Sunil 2 to the state machine.

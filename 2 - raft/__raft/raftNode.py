@@ -202,6 +202,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             # set self.commitLength equal to leaderCommit since we have committed the uncommitted entries as
             # suggested by leader.
             self.commitLength = leaderCommit
+            self.writeMetadata()
         
         
         response.success = True
@@ -375,7 +376,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
         with open(self.dump_file, 'a') as f:
             f.write(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
-            print(f"Node {self.nodeId} (leader) received an {request.Request} request.\n")
+            print(f"Node {self.nodeId} (leader) received an {request.Request} request.")
 
         # If leader, process the request
         if request.Request.split()[0] == "GET":
@@ -483,6 +484,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                 # deliver the message to the application
                 self.commitLength += 1
                 committed = self.commitToDatabase(self.log[self.commitLength-1])
+                self.writeMetadata() # to update the commitLength in file
                 
                 with open(self.dump_file, 'a') as f:
                     f.write(f"Node {self.nodeId} (leader) committed the entry {committed} to the state machine.\n")

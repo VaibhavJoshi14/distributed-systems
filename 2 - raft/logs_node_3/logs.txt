@@ -4,3 +4,5 @@ SET name32 Rahul2 1
 SET name1 Gaurav 1
 SET name2 Abhi 1
 SET name3 Rahul 1
+SET name5 Rajesh 2
+SET name6 Sunil 2

@@ -1,7 +1,7 @@
 Run each of the nodes from a terminal in the same directory as the node python files.
 
-Empty each of the metadata.txt for a fresh start of raft nodes. Empty them properly so that only one empty line remains. Or delete these files, but 
-do not delete the corresponding directories.
+For a fresh start of raft nodes, delete the files inside logs_node_i for each i, but 
+do not delete the directories.
 
 The data of each database (of each node <i>) is stored in data/data<i>.txt. These files can also be deleted for a fresh start.
 

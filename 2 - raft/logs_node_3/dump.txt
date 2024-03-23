@@ -8,7 +8,6 @@ Leader 3 sending heartbeat
 Leader 3 sending heartbeat
 Leader 3 sending heartbeat
 Leader 3 sending heartbeat
-Leader 3 sending heartbeat
 Node 3 (leader) received an SET name12 Gaurav2 request.
 Node 3 (leader) committed the entry SET name12 Gaurav2 to the state machine.
 Leader 3 sending heartbeat
@@ -31,80 +30,142 @@ Leader 3 sending heartbeat
 Leader 3 sending heartbeat
 Leader 3 sending heartbeat
 Leader 3 sending heartbeat
-Leader 3 sending heartbeat
-Leader 3 sending heartbeat
 Error occurred while sending RPC to Node 4.
 Leader 3 sending heartbeat
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 1.
 Node 3 (leader) received an SET name1 Gaurav request.
+Error occurred while sending RPC to Node 4.
+Error occurred while sending RPC to Node 1.
 Node 3 (leader) committed the entry SET name1 Gaurav to the state machine.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Node 3 (leader) received an SET name2 Abhi request.
-Node 3 (leader) committed the entry SET name2 Abhi to the state machine.
-Error occurred while sending RPC to Node 2.
-Node 3 (leader) received an SET name2 Abhi request.
-Node 3 (leader) committed the entry SET name2 Abhi to the state machine.
-Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 2.
 Leader 3 sending heartbeat
 Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 1.
+Node 3 (leader) received an SET name2 Abhi request.
+Error occurred while sending RPC to Node 4.
+Error occurred while sending RPC to Node 1.
+Node 3 (leader) committed the entry SET name2 Abhi to the state machine.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 4.
+Error occurred while sending RPC to Node 1.
 Node 3 (leader) received an SET name3 Rahul request.
-Node 3 (leader) committed the entry SET name3 Rahul to the state machine.
 Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 1.
+Node 3 (leader) committed the entry SET name3 Rahul to the state machine.
 Leader 3 sending heartbeat
 Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 1.
 Node 3 (leader) received an GET name1 request.
 Node 3 (leader) received an GET name2 request.
+Error occurred while sending RPC to Node 4.
 Node 3 (leader) received an GET name3 request.
-Error occurred while sending RPC to Node 4.
 Leader 3 sending heartbeat
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Error occurred while sending RPC to Node 2.
-Node 3 (leader) received an SET name1 Gaurav request.
-Node 3 (leader) committed the entry SET name1 Gaurav to the state machine.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Node 3 (leader) received an SET name2 Abhi request.
-Node 3 (leader) committed the entry SET name2 Abhi to the state machine.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Node 3 (leader) received an SET name3 Rahul request.
-Node 3 (leader) committed the entry SET name3 Rahul to the state machine.
-Node 3 (leader) committed the entry SET name3 Rahul to the state machine.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 2.
-Error occurred while sending RPC to Node 4.
-Error occurred while sending RPC to Node 4.
-Leader 3 sending heartbeat
-Node 3 (leader) received an GET name1 request.
-Error occurred while sending RPC to Node 0.
 Error occurred while sending RPC to Node 1.
-Node 3 (leader) received an GET name2 request.
-Node 3 (leader) received an GET name3 request.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 1.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 1.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 1.
 Error occurred while sending RPC to Node 2.
 Error occurred while sending RPC to Node 4.
 Leader 3 sending heartbeat
 Error occurred while sending RPC to Node 0.
-Error occurred while sending RPC to Node 1.

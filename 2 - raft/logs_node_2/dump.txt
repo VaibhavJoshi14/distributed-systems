@@ -4,3 +4,9 @@ Node 2 accepted AppendEntries RPC from 3.
 Node 2 (follower) committed the entry SET name22 Abhi2 1 to the state machine.
 Node 2 accepted AppendEntries RPC from 3.
 Node 2 (follower) committed the entry SET name32 Rahul2 1 to the state machine.
+Node 2 accepted AppendEntries RPC from 3.
+Node 2 (follower) committed the entry SET name1 Gaurav 1 to the state machine.
+Node 2 accepted AppendEntries RPC from 3.
+Node 2 (follower) committed the entry SET name2 Abhi 1 to the state machine.
+Node 2 accepted AppendEntries RPC from 3.
+Node 2 (follower) committed the entry SET name3 Rahul 1 to the state machine.

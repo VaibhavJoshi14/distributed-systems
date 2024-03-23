@@ -170,3 +170,9 @@ Error occurred while sending RPC to Node 4.
 Leader 3 sending heartbeat
 Error occurred while sending RPC to Node 0.
 Error occurred while sending RPC to Node 1.
+Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 4.
+Leader 3 sending heartbeat
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 1.
+Error occurred while sending RPC to Node 2.

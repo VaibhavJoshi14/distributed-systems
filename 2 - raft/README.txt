@@ -5,7 +5,7 @@ do not delete the directories.
 
 The data of each database (of each node <i>) is stored in data/data<i>.txt. These files can also be deleted for a fresh start.
 
-
+A menu-driven client is provided in clientMenu.py.
 -----------------------------------------------
 
 If a new raft node i needs to be created, first create a folder logs_node_i, and create three empty files inside it: dump.txt, logs.txt, metadata.txt.

@@ -6,20 +6,22 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Optional as _Op
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class AppendEntriesMsg(_message.Message):
-    __slots__ = ("prefixLen", "leaderCommit", "suffix", "leaderId", "term", "prefixTerm")
+    __slots__ = ("prefixLen", "leaderCommit", "suffix", "leaderId", "term", "prefixTerm", "leaseDuration")
     PREFIXLEN_FIELD_NUMBER: _ClassVar[int]
     LEADERCOMMIT_FIELD_NUMBER: _ClassVar[int]
     SUFFIX_FIELD_NUMBER: _ClassVar[int]
     LEADERID_FIELD_NUMBER: _ClassVar[int]
     TERM_FIELD_NUMBER: _ClassVar[int]
     PREFIXTERM_FIELD_NUMBER: _ClassVar[int]
+    LEASEDURATION_FIELD_NUMBER: _ClassVar[int]
     prefixLen: int
     leaderCommit: int
     suffix: _containers.RepeatedScalarFieldContainer[str]
     leaderId: int
     term: int
     prefixTerm: int
-    def __init__(self, prefixLen: _Optional[int] = ..., leaderCommit: _Optional[int] = ..., suffix: _Optional[_Iterable[str]] = ..., leaderId: _Optional[int] = ..., term: _Optional[int] = ..., prefixTerm: _Optional[int] = ...) -> None: ...
+    leaseDuration: int
+    def __init__(self, prefixLen: _Optional[int] = ..., leaderCommit: _Optional[int] = ..., suffix: _Optional[_Iterable[str]] = ..., leaderId: _Optional[int] = ..., term: _Optional[int] = ..., prefixTerm: _Optional[int] = ..., leaseDuration: _Optional[int] = ...) -> None: ...
 
 class AppendEntriesReply(_message.Message):
     __slots__ = ("term", "success", "ack", "senderId")
@@ -46,14 +48,14 @@ class RequestVoteMsg(_message.Message):
     def __init__(self, cId: _Optional[int] = ..., cTerm: _Optional[int] = ..., cLogLength: _Optional[int] = ..., cLogTerm: _Optional[int] = ...) -> None: ...
 
 class RequestVoteReply(_message.Message):
-    __slots__ = ("term", "voteGranted", "longestRemainingOldLeaderLease")
+    __slots__ = ("term", "voteGranted", "oldLeaderRemainingLease")
     TERM_FIELD_NUMBER: _ClassVar[int]
     VOTEGRANTED_FIELD_NUMBER: _ClassVar[int]
-    LONGESTREMAININGOLDLEADERLEASE_FIELD_NUMBER: _ClassVar[int]
+    OLDLEADERREMAININGLEASE_FIELD_NUMBER: _ClassVar[int]
     term: int
     voteGranted: bool
-    longestRemainingOldLeaderLease: float
-    def __init__(self, term: _Optional[int] = ..., voteGranted: bool = ..., longestRemainingOldLeaderLease: _Optional[float] = ...) -> None: ...
+    oldLeaderRemainingLease: int
+    def __init__(self, term: _Optional[int] = ..., voteGranted: bool = ..., oldLeaderRemainingLease: _Optional[int] = ...) -> None: ...
 
 class ServeClientArgs(_message.Message):
     __slots__ = ("Request",)

@@ -1,4 +1,0 @@
-nodeId: 3
-currentTerm: 5
-votedFor: 3
-commitLength: 8

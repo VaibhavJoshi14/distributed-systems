@@ -7,6 +7,8 @@ message AppendEntriesMsg {
     int32 leaderId = 4;
     int32 term = 5;
     int32 prefixTerm = 6;
+
+    int32 leaseDuration = 7;
 }
 
 
@@ -29,7 +31,7 @@ message RequestVoteReply {
     bool voteGranted = 2;
 
     // old leader's remaining lease
-    double longestRemainingOldLeaderLease = 3;
+    int32 oldLeaderRemainingLease = 3;
 }
 
 // Service for a raft client 

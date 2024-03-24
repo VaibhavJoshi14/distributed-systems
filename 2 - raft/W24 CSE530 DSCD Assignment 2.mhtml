@@ -1,24 +1,24 @@
 From: <Saved by Blink>
-Snapshot-Content-Location: https://docs.google.com/document/d/e/2PACX-1vSy3psit4UbAQci5vZhj-NhRQCIm5eBRdCDIXnnAe_cNPouWomX6P95MSuZdoSMd_rV0ugUJvJaVnGY/pub
+Snapshot-Content-Location: https://docs.google.com/document/u/0/d/e/2PACX-1vSy3psit4UbAQci5vZhj-NhRQCIm5eBRdCDIXnnAe_cNPouWomX6P95MSuZdoSMd_rV0ugUJvJaVnGY/pub
 Subject: W24 CSE530 DSCD Assignment 2
-Date: Fri, 15 Mar 2024 10:03:36 +0530
+Date: Sun, 24 Mar 2024 10:23:48 +0530
 MIME-Version: 1.0
 Content-Type: multipart/related;
 	type="text/html";
-	boundary="----MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----"
+	boundary="----MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----"
 
 
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/html
-Content-ID: <frame-3702518AE2418BB13AF0F64E98C726D0@mhtml.blink>
+Content-ID: <frame-42DC9D5811CFB2F5F552F877B9531953@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
-Content-Location: https://docs.google.com/document/d/e/2PACX-1vSy3psit4UbAQci5vZhj-NhRQCIm5eBRdCDIXnnAe_cNPouWomX6P95MSuZdoSMd_rV0ugUJvJaVnGY/pub
+Content-Location: https://docs.google.com/document/u/0/d/e/2PACX-1vSy3psit4UbAQci5vZhj-NhRQCIm5eBRdCDIXnnAe_cNPouWomX6P95MSuZdoSMd_rV0ugUJvJaVnGY/pub
 
 <!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
 t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
-"cid:css-73a71e14-9dbe-401d-8913-1df5389715e3@mhtml.blink" /><link rel=3D"s=
-tylesheet" type=3D"text/css" href=3D"cid:css-beaf7954-132d-43b2-9021-eb0367=
-03f3c7@mhtml.blink" /><title>W24 CSE530 DSCD Assignment 2</title><link rel=
+"cid:css-4577bc3a-6f42-430d-8c02-3af9c025ae64@mhtml.blink" /><link rel=3D"s=
+tylesheet" type=3D"text/css" href=3D"cid:css-3822d3fa-32b6-4b7c-a8dd-f37418=
+c74313@mhtml.blink" /><title>W24 CSE530 DSCD Assignment 2</title><link rel=
 =3D"shortcut icon" href=3D"https://ssl.gstatic.com/docs/documents/images/ki=
 x-favicon-2023q4.ico"><meta name=3D"referrer" content=3D"strict-origin-when=
 -cross-origin"></head><body><div id=3D"banners"><div id=3D"publish-banner">=
@@ -34,558 +34,578 @@ blank" title=3D"Learn more" href=3D"https://support.google.com/docs/answer/=
 183965">Learn more</a></span></div></div><div id=3D"title-banner"><div id=
 =3D"title">W24 CSE530 DSCD Assignment 2</div><div id=3D"interval"><span>Upd=
 ated automatically every 5 minutes</span></div></div></div><div id=3D"conte=
-nts"><div class=3D"c66 doc-content"><p class=3D"c28 title" id=3D"h.kubxwtgq=
-dxjh"><span class=3D"c32 c41">Winter 2024 CSE530 Distributed Systems</span>=
-</p><p class=3D"c28 title" id=3D"h.z2l7nswu2jm9"><span class=3D"c41 c32">As=
-signment 2</span></p><p class=3D"c28 title" id=3D"h.ykcxkj1s6sgz"><span cla=
-ss=3D"c32">RAFT Application</span></p><p class=3D"c9"><span class=3D"c16 c6=
-"></span></p><p class=3D"c9"><span class=3D"c16 c6"></span></p><p class=3D"=
-c12"><span class=3D"c6 c16">VERY IMPORTANT: </span></p><p class=3D"c21"><sp=
-an class=3D"c1">Use of LLM-based tools such as ChatGPT, etc., is ALLOWED. B=
-ut if you are not able to answer questions in the demo/viva or if you are n=
-ot able to explain your code, then you will be penalized. You cannot justif=
-y - =E2=80=9CChatGPT produced the code, I don=E2=80=99t know the exact purp=
-ose of this line of code!=E2=80=9D </span></p><ol class=3D"c0 lst-kix_wtyou=
-yuv6qg7-0 start" start=3D"1"><li class=3D"c10 li-bullet-0"><span>Similar to=
- assignment 1, we will be asking you to share your relevant conversations w=
-ith ChatGPT and other LLM-based tools. This will not be used for judging yo=
-u in any way. But it will be used for research purposes so that we can buil=
-d better LLM-based tools for students (you!!). </span><span class=3D"c6">Do=
- note that we will have </span><span class=3D"c6 c54">10% weightage</span><=
-span class=3D"c11 c6">&nbsp;in this assignment=E2=80=99s evaluation for sha=
-ring these details. </span></li><li class=3D"c10 li-bullet-0"><span class=
-=3D"c20 c6">Please fill </span><span class=3D"c5 c20 c6"><a class=3D"c4" hr=
-ef=3D"https://www.google.com/url?q=3Dhttps://forms.gle/Xh4KF1Judh9chynB8&am=
-p;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778644337&amp;usg=3DAOvVaw2Y=
-8xfp90mOHyFhNE7ZcBa_">this google form</a></span><span class=3D"c11 c20 c6"=
->&nbsp;for sharing all your interactions with LLM-based tools.</span></li><=
-/ol><ol class=3D"c0 lst-kix_wtyouyuv6qg7-1 start" start=3D"1"><li class=3D"=
-c21 c18 li-bullet-0"><span class=3D"c20 c6">Please go through the above goo=
-gle form before you start using LLMs so that you are aware of the kind of i=
-nformation you need to share with us.</span><span class=3D"c6 c58">&nbsp;</=
-span></li></ol><h1 class=3D"c51" id=3D"h.mvacpkiglfp"><span class=3D"c6 c44=
-">Resources</span></h1><p class=3D"c12"><span class=3D"c15">Important:</spa=
-n></p><ul class=3D"c0 lst-kix_wqgtjotcdoj2-0 start"><li class=3D"c8 c27 li-=
-bullet-0"><span class=3D"c5"><a class=3D"c4" href=3D"https://www.google.com=
-/url?q=3Dhttps://raft.github.io/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D=
-1710480778644735&amp;usg=3DAOvVaw3EQ6QPDwzJrHQ8lLPxdG69">Raft</a></span><sp=
-an class=3D"c48">&nbsp;</span><span class=3D"c1">(Main Algorithm)</span></l=
-i></ul><ul class=3D"c0 lst-kix_wqgtjotcdoj2-1 start"><li class=3D"c12 c18 l=
-i-bullet-0"><span class=3D"c5"><a class=3D"c4" href=3D"https://www.google.c=
-om/url?q=3Dhttps://raft.github.io/raft.pdf&amp;sa=3DD&amp;source=3Deditors&=
-amp;ust=3D1710480778644872&amp;usg=3DAOvVaw0x4_p3dAJTzTre-uKBe486">Original=
- Paper</a></span><span>&nbsp;</span></li></ul><ul class=3D"c0 lst-kix_wqgtj=
-otcdoj2-0"><li class=3D"c8 c27 li-bullet-0"><span>Medium Explanations </spa=
-n><span class=3D"c5"><a class=3D"c4" href=3D"https://www.google.com/url?q=
-=3Dhttps://towardsdatascience.com/raft-algorithm-explained-a7c856529f40&amp=
-;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778645043&amp;usg=3DAOvVaw2uu=
-9NI1eSmnRM6nwxeIuuv">Part 1</a></span><span>, </span><span class=3D"c5"><a =
-class=3D"c4" href=3D"https://www.google.com/url?q=3Dhttps://towardsdatascie=
-nce.com/raft-algorithm-explained-2-30db4790cdef&amp;sa=3DD&amp;source=3Dedi=
-tors&amp;ust=3D1710480778645149&amp;usg=3DAOvVaw3zXPX-ZBR0_l4xohweQyeN">Par=
-t 2</a></span></li><li class=3D"c8 c27 li-bullet-0"><span class=3D"c5"><a c=
-lass=3D"c4" href=3D"https://www.google.com/url?q=3Dhttp://thesecretlivesofd=
-ata.com/raft/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778645270&am=
-p;usg=3DAOvVaw23jalDwthLaPqTX0bWn2Yi">Raft Visualization</a></span><span cl=
-ass=3D"c1">&nbsp;</span></li><li class=3D"c8 c27 li-bullet-0"><span class=
-=3D"c5"><a class=3D"c4" href=3D"https://www.google.com/url?q=3Dhttps://www.=
-yugabyte.com/blog/low-latency-reads-in-geo-distributed-sql-with-raft-leader=
--leases/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778645436&amp;usg=
-=3DAOvVaw1w_tYQGERq9VXhJ0EED4FK">Low Latency Reads in Geo-Distributed SQL w=
-ith Raft Leader Leases | Yugabyte</a></span><span class=3D"c1">&nbsp;(To un=
-derstand the problem with leader reads and how leader leases work to solve =
-this issue)</span></li></ul><p class=3D"c12"><span class=3D"c48 c59">Additi=
-onal:</span></p><ul class=3D"c0 lst-kix_xz2m5vmuv5yx-0 start"><li class=3D"=
-c8 c27 li-bullet-0"><span class=3D"c5"><a class=3D"c4" href=3D"https://www.=
-google.com/url?q=3Dhttps://www.cockroachlabs.com/docs/stable/architecture/r=
-eplication-layer&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778645650=
-&amp;usg=3DAOvVaw2IHBtXFUEnujdan6MyqcfJ">Replication Layer (cockroachlabs.c=
-om)</a></span></li></ul><h1 class=3D"c47" id=3D"h.4em8j6ci58qo"><span class=
-=3D"c44 c6">Introduction</span></h1><p class=3D"c13"><span>This assignment =
-focuses on implementing</span><span class=3D"c1">&nbsp;a modified Raft syst=
+nts"><div class=3D"c37 doc-content"><p class=3D"c15 title" id=3D"h.kubxwtgq=
+dxjh"><span class=3D"c10 c29">Winter 2024 CSE530 Distributed Systems</span>=
+</p><p class=3D"c15 title" id=3D"h.z2l7nswu2jm9"><span class=3D"c29 c10">As=
+signment 2</span></p><p class=3D"c15 title" id=3D"h.ykcxkj1s6sgz"><span cla=
+ss=3D"c46">RAFT Application</span></p><p class=3D"c8 c17"><span class=3D"c4=
+1 c0 c42"></span></p><p class=3D"c8 c17"><span class=3D"c42 c41 c0"></span>=
+</p><p class=3D"c8"><span class=3D"c42 c41 c0">VERY IMPORTANT: </span></p><=
+p class=3D"c1"><span class=3D"c6 c10">Use of LLM-based tools such as ChatGP=
+T, etc., is ALLOWED. But if you are not able to answer questions in the dem=
+o/viva or if you are not able to explain your code, then you will be penali=
+zed. You cannot justify - =E2=80=9CChatGPT produced the code, I don=E2=80=
+=99t know the exact purpose of this line of code!=E2=80=9D </span></p><ol c=
+lass=3D"c5 lst-kix_wtyouyuv6qg7-0 start" start=3D"1"><li class=3D"c1 c13 c9=
+ li-bullet-0"><span>Similar to assignment 1, we will be asking you to share=
+ your relevant conversations with ChatGPT and other LLM-based tools. This w=
+ill not be used for judging you in any way. But it will be used for researc=
+h purposes so that we can build better LLM-based tools for students (you!!)=
+. </span><span class=3D"c0">Do note that we will have </span><span class=3D=
+"c41 c0 c51">10% weightage</span><span class=3D"c6 c0">&nbsp;in this assign=
+ment=E2=80=99s evaluation for sharing these details. </span></li><li class=
+=3D"c1 c13 c9 li-bullet-0"><span class=3D"c34 c0">Please fill </span><span =
+class=3D"c35 c34 c0"><a class=3D"c26" href=3D"https://www.google.com/url?q=
+=3Dhttps://forms.gle/Xh4KF1Judh9chynB8&amp;sa=3DD&amp;source=3Deditors&amp;=
+ust=3D1711259583579612&amp;usg=3DAOvVaw1okC6laWDHGJDUK0uTxfnp">this google =
+form</a></span><span class=3D"c6 c34 c0">&nbsp;for sharing all your interac=
+tions with LLM-based tools.</span></li></ol><ol class=3D"c5 lst-kix_wtyouyu=
+v6qg7-1 start" start=3D"1"><li class=3D"c1 c9 c12 li-bullet-0"><span class=
+=3D"c34 c0">Please go through the above google form before you start using =
+LLMs so that you are aware of the kind of information you need to share wit=
+h us.</span><span class=3D"c0 c62">&nbsp;</span></li></ol><h1 class=3D"c40"=
+ id=3D"h.mvacpkiglfp"><span class=3D"c44 c0">Resources</span></h1><p class=
+=3D"c8"><span class=3D"c18 c10 c57">Important:</span></p><ul class=3D"c5 ls=
+t-kix_wqgtjotcdoj2-0 start"><li class=3D"c2 c9 li-bullet-0"><span class=3D"=
+c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttps://raft.g=
+ithub.io/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711259583580098&amp;us=
+g=3DAOvVaw3jhJtRjH0ourP9jhcM9KRE">Raft</a></span><span class=3D"c39">&nbsp;=
+</span><span class=3D"c6 c10">(Main Algorithm)</span></li></ul><ul class=3D=
+"c5 lst-kix_wqgtjotcdoj2-1 start"><li class=3D"c8 c9 c12 li-bullet-0"><span=
+ class=3D"c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttp=
+s://raft.github.io/raft.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D17112=
+59583580283&amp;usg=3DAOvVaw2rlhZzv0r1yJDcMMSrjLDx">Original Paper</a></spa=
+n><span>&nbsp;</span></li></ul><ul class=3D"c5 lst-kix_wqgtjotcdoj2-0"><li =
+class=3D"c2 c9 li-bullet-0"><span>Medium Explanations </span><span class=3D=
+"c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttps://towar=
+dsdatascience.com/raft-algorithm-explained-a7c856529f40&amp;sa=3DD&amp;sour=
+ce=3Deditors&amp;ust=3D1711259583580501&amp;usg=3DAOvVaw041oLW7mSqzWz4ddxbC=
+jF2">Part 1</a></span><span>, </span><span class=3D"c35"><a class=3D"c26" h=
+ref=3D"https://www.google.com/url?q=3Dhttps://towardsdatascience.com/raft-a=
+lgorithm-explained-2-30db4790cdef&amp;sa=3DD&amp;source=3Deditors&amp;ust=
+=3D1711259583580653&amp;usg=3DAOvVaw1EJTlSE_Mt4xDizHDB2cqL">Part 2</a></spa=
+n></li><li class=3D"c2 c9 li-bullet-0"><span class=3D"c35"><a class=3D"c26"=
+ href=3D"https://www.google.com/url?q=3Dhttp://thesecretlivesofdata.com/raf=
+t/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711259583580823&amp;usg=3DAOv=
+Vaw3VeRW9l19-iz-QnXV6iUKE">Raft Visualization</a></span><span class=3D"c6 c=
+10">&nbsp;</span></li><li class=3D"c2 c9 li-bullet-0"><span class=3D"c35"><=
+a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttps://www.yugabyte=
+.com/blog/low-latency-reads-in-geo-distributed-sql-with-raft-leader-leases/=
+&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711259583581032&amp;usg=3DAOvVa=
+w2stFNzWKysujl5KJEA9UJc">Low Latency Reads in Geo-Distributed SQL with Raft=
+ Leader Leases | Yugabyte</a></span><span class=3D"c6 c10">&nbsp;(To unders=
+tand the problem with leader reads and how leader leases work to solve this=
+ issue)</span></li></ul><p class=3D"c8"><span class=3D"c18">Additional:</sp=
+an></p><ul class=3D"c5 lst-kix_xz2m5vmuv5yx-0 start"><li class=3D"c2 c9 li-=
+bullet-0"><span class=3D"c35"><a class=3D"c26" href=3D"https://www.google.c=
+om/url?q=3Dhttps://www.cockroachlabs.com/docs/stable/architecture/replicati=
+on-layer&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711259583581292&amp;usg=
+=3DAOvVaw1AIJ_Za8nbE3cDdzpwSQOc">Replication Layer (cockroachlabs.com)</a><=
+/span></li></ul><h1 class=3D"c40 c49" id=3D"h.4em8j6ci58qo"><span class=3D"=
+c44 c0">Introduction</span></h1><p class=3D"c16"><span>This assignment focu=
+ses on implementing</span><span class=3D"c6 c10">&nbsp;a modified Raft syst=
 em similar to those used by geo-distributed Database clusters such as Cockr=
 oachDB or YugabyteDB. Raft is a consensus algorithm designed for distribute=
 d systems to ensure fault tolerance and consistency. It operates through le=
 ader election, log replication, and commitment of entries across a cluster =
-of nodes.</span></p><p class=3D"c9"><span class=3D"c1"></span></p><p class=
-=3D"c12"><span>We aim to build a database that stores key-value pairs </spa=
-n><span>mapping string (key) to string (value)</span><span>. The Raft clust=
-er maintains this database and ensures fault tolerance and </span><span cla=
-ss=3D"c5"><a class=3D"c4" href=3D"https://www.google.com/url?q=3Dhttps://en=
-.wikipedia.org/wiki/Strong_consistency&amp;sa=3DD&amp;source=3Deditors&amp;=
-ust=3D1710480778646049&amp;usg=3DAOvVaw351faHKn_G8zA41fDiH-6q">strong </a><=
-/span><span class=3D"c5"><a class=3D"c4" href=3D"https://www.google.com/url=
-?q=3Dhttps://en.wikipedia.org/wiki/Strong_consistency&amp;sa=3DD&amp;source=
-=3Deditors&amp;ust=3D1710480778646131&amp;usg=3DAOvVaw1pW_7WMrxzq1P3rojStJJ=
-k">consistency</a></span><span>. The client requests the server to perform =
-operations on this database reliably.</span></p><hr><p class=3D"c13 c40 c22=
-"><span class=3D"c1"></span></p><h1 class=3D"c47" id=3D"h.8phkv1azdzj7"><sp=
-an class=3D"c44 c6">Raft Modification (for faster Reads)</span></h1><p clas=
-s=3D"c13"><span>Traditionally, Raft requires the leader to exchange a heart=
-beat with a majority of peers before responding to a read request (</span><=
-span class=3D"c5"><a class=3D"c4" href=3D"https://www.google.com/url?q=3Dht=
-tps://www.ditsing.com/read-only-requests-in-raft-part-1/&amp;sa=3DD&amp;sou=
-rce=3Deditors&amp;ust=3D1710480778646456&amp;usg=3DAOvVaw1pjvLKcLmB-Psj6J70=
-zXCZ">How Raft handles read requests</a></span><span>).</span><span class=
-=3D"c1">&nbsp;If there are n nodes in the cluster, each read operation cost=
-s O(n). By requiring these heartbeats, Raft introduces a network hop betwee=
-n peers in a read operation, which can result in high read latencies. The l=
-atencies get much worse in the case of multi-region geo-distributed databas=
-es where the nodes are located physically far apart.</span></p><p class=3D"=
-c13 c22"><span class=3D"c1"></span></p><h2 class=3D"c24" id=3D"h.9tamwyws8l=
-kb"><span class=3D"c29 c6">Leader Lease</span></h2><p class=3D"c13"><span c=
-lass=3D"c1">It is possible to rely on a time-based =E2=80=9Clease=E2=80=9D =
-for Raft leadership that gets propagated through the heartbeat mechanism. A=
-nd if we have well-behaved clocks, we can obtain linearizable reads without=
- paying a round-trip latency penalty. This is achieved using the concept of=
- Leases.</span></p><p class=3D"c13"><span class=3D"c5 c6"><a class=3D"c4" h=
-ref=3D"https://www.google.com/url?q=3Dhttps://www.yugabyte.com/blog/low-lat=
-ency-reads-in-geo-distributed-sql-with-raft-leader-leases/%23:~:text%3DThis=
-%2520is%2520shown%2520in%2520the%2520animation%2520sequence%2520below.&amp;=
-sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778646949&amp;usg=3DAOvVaw0yHe=
-ZJ7pKSAiIEmAtAXAvm">This animation</a></span><span class=3D"c1">&nbsp;shows=
- how leader leases work.</span></p><p class=3D"c13"><span class=3D"c36">Wha=
-t is a Leader Lease?</span></p><p class=3D"c13"><span>Leases can be conside=
-red as tokens that are valid for a certain period of time, known as </span>=
-<span class=3D"c60">lease duration</span><span class=3D"c1">. A node can se=
-rve read and write requests from the client if and only if the node has thi=
-s valid token/lease.</span></p><p class=3D"c13"><span class=3D"c1">In Raft,=
- it is possible for more than one leader to exist (which is why even read r=
-equests require a quorum to fetch the latest value), but leases are designe=
-d in such a way that, at a time, only one lease can exist. Only leader node=
-s are allowed to acquire a lease; therefore, the lease is known as the lead=
-er lease.</span></p><p class=3D"c13 c22"><span class=3D"c1"></span></p><p c=
-lass=3D"c13"><span class=3D"c36">Behavior of Leader &amp; Follower</span></=
-p><p class=3D"c13"><span class=3D"c1">The leader acquires and renews the le=
-ase using its heartbeat mechanism. When the leader has acquired/renewed its=
- lease, it starts a countdown (lease duration). If the leader is unable to =
-renew its lease within this countdown, it needs to step down from being the=
- leader. </span></p><p class=3D"c13"><span class=3D"c1">The leader also pro=
-pagates the end time of the acquired lease in its heartbeat. All the follow=
-er nodes keep track of this leader lease timeout and use this information i=
-n the next election process. </span></p><p class=3D"c13 c22"><span class=3D=
-"c1"></span></p><p class=3D"c13"><span class=3D"c36">Leader Election</span>=
-</p><p class=3D"c13"><span>During a leader election, a voter must propagate=
- the old leader=E2=80=99s lease timeout known to that voter to the new cand=
-idate it is voting for. Upon receiving a majority of votes, the new leader =
-must wait out the longest old leader=E2=80=99s lease duration before acquir=
-ing its lease</span><span class=3D"c1">. The old leader steps down and no l=
-onger functions as a leader upon the expiry of its leader lease.</span></p>=
-<p class=3D"c13 c22"><span class=3D"c1"></span></p><hr><p class=3D"c13 c22 =
-c40"><span class=3D"c1"></span></p><h1 class=3D"c47" id=3D"h.plmdnygfyhpr">=
-<span class=3D"c44 c6">Implementation Details</span></h1><h2 class=3D"c30" =
-id=3D"h.rsnypq80alac"><span class=3D"c6">0. </span><span class=3D"c29 c6">O=
-verview</span></h2><p class=3D"c13"><span>In this assignment, you must impl=
-ement the Raft algorithm with the leader lease modification. Each node will=
- be a process hosted on a separate Virtual Machine on Google Cloud, and the=
- client can reside either in Google Cloud=E2=80=99s Virtual Machine or in t=
-he </span><span>local machine</span><span>. You can use </span><span class=
-=3D"c20 c6">gRPC</span><span>&nbsp;(RECOMMENDED) or </span><span class=3D"c=
-20 c6">ZeroMQ</span><span>&nbsp;for communication between nodes along with =
-client-node interaction </span><span class=3D"c6">[NO other communication l=
-ibrary is allowed]</span><span class=3D"c1">. </span></p><p class=3D"c13"><=
-span>Changes related to leader lease have been highlighted in </span><span =
-class=3D"c20">cyan</span><span class=3D"c1">.</span></p><p class=3D"c13 c22=
-"><span class=3D"c1"></span></p><h2 class=3D"c30" id=3D"h.qqn1a8hx4x2t"><sp=
-an class=3D"c6">1. Pseudo Code</span></h2><p class=3D"c17"><span>Many edge =
-cases need to be handled while implementing the Raft algorithm. To ensure t=
-hat all those edge cases have been handled correctly, you need to refer to =
-the </span><span class=3D"c5 c6"><a class=3D"c4" href=3D"https://www.google=
-.com/url?q=3Dhttps://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-not=
-es.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778648587&amp;usg=
-=3DAOvVaw1OM2y_kCLSTDW9X9zNEsxc">pseudo code</a></span><span>&nbsp;(pg 60 t=
-o 66) while implementing. This </span><span class=3D"c5"><a class=3D"c4" hr=
-ef=3D"https://www.google.com/url?q=3Dhttps://www.youtube.com/watch?v%3DuXEY=
-uDwm7e4&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778648688&amp;usg=
-=3DAOvVaw3rDAr-iU-jdPsEISSz7brS">lecture video</a></span><span>&nbsp;explai=
-ns the same. You can also refer to </span><span class=3D"c5"><a class=3D"c4=
-" href=3D"https://www.google.com/url?q=3Dhttps://mecha-mind.medium.com/unde=
-rstanding-and-implementing-raft-consensus-protocol-in-python-dd4e9f23b784&a=
-mp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778648826&amp;usg=3DAOvVaw3=
-2bSGWGPyNOVkb26Xo0DvD">this medium blog</a></span><span class=3D"c1">&nbsp;=
-implementing Raft in Python.</span></p><p class=3D"c17 c22"><span class=3D"=
-c1"></span></p><h2 class=3D"c30" id=3D"h.gc2slk4z0iau"><span class=3D"c6">2=
-. </span><span class=3D"c6">Storage and Database </span><span class=3D"c6">=
-Operations</span></h2><p class=3D"c12"><span>As mentioned in the introducti=
-on, we are</span><span>&nbsp;building a database that stores key-value pair=
-s </span><span>mapping string (key) to string (value)</span><span class=3D"=
-c1">. The Raft Nodes serve the client for storing and retrieving these key-=
-value pairs and replicating this data among other nodes in a fault-tolerant=
- manner.</span></p><p class=3D"c9"><span class=3D"c1"></span></p><ol class=
-=3D"c0 lst-kix_zhiyg7gae7ze-0 start" start=3D"1"><li class=3D"c8 c27 li-bul=
-let-0"><span>The nodes must be persistent, i.e., even after stopping the no=
-de, the data (logs) must be stored somewhere (in any </span><span class=3D"=
-c5"><a class=3D"c4" href=3D"https://www.google.com/url?q=3Dhttps://en.wikip=
-edia.org/wiki/Human-readable_medium_and_data%23:~:text%3DIn%2520computing%2=
-52C%2520a%2520human%252Dreadable,rather%2520than%2520as%2520binary%2520data=
-.&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1710480778649368&amp;usg=3DAOvV=
-aw2iTtLI_tcIXlKrYAfRSSy1">human-readable format</a></span><span>, e.g., .tx=
-t) along with other important metadata (commitLength, Term, and NodeID whic=
-h the current node voted for in this term) and retrieved when the node star=
-ts again</span><span class=3D"c1">.</span></li></ol><p class=3D"c9"><span c=
-lass=3D"c1"></span></p><ol class=3D"c0 lst-kix_zhiyg7gae7ze-0" start=3D"2">=
-<li class=3D"c8 c27 li-bullet-0"><span class=3D"c1">Follow the following na=
-ming convention for storing files:</span></li></ol><p class=3D"c8"><span>Fo=
-r a node with node ID </span><span class=3D"c37">x</span><span>, make a dir=
-ectory with the name </span><span class=3D"c37">logs_node_x</span><span>&nb=
-sp;and store the logs, metadata, and </span><span class=3D"c6">dump file (r=
-efer to the Print Statements Section - 9 for dump file details)</span><span=
- class=3D"c1">. An example is shown below.</span></p><p class=3D"c9"><span =
-class=3D"c1"></span></p><p class=3D"c3"><span class=3D"c14"></span></p><p c=
-lass=3D"c3"><span class=3D"c14"></span></p><p class=3D"c3"><span class=3D"c=
-14"></span></p><p class=3D"c3"><span class=3D"c14"></span></p><p class=3D"c=
-3"><span class=3D"c14"></span></p><p class=3D"c8"><span class=3D"c37">assig=
-nment</span><span class=3D"c14">/</span></p><p class=3D"c8"><span class=3D"=
-c14">=E2=94=9C=E2=94=80 logs_node_0/</span></p><p class=3D"c8"><span class=
-=3D"c14">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 logs.txt</span></p><p class=3D"=
-c8"><span class=3D"c14">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 metadata.txt</sp=
-an></p><p class=3D"c8"><span class=3D"c14">=E2=94=82 &nbsp;=E2=94=9C=E2=94=
-=80 dump.txt</span></p><p class=3D"c8"><span class=3D"c14">=E2=94=9C=E2=94=
-=80 logs_node_1/</span></p><p class=3D"c8"><span class=3D"c14">=E2=94=82 &n=
-bsp;=E2=94=9C=E2=94=80 logs.txt</span></p><p class=3D"c8"><span class=3D"c1=
-4">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 metadata.txt</span></p><p class=3D"c8=
-"><span class=3D"c37">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 dump.txt</span></p=
-><p class=3D"c9"><span class=3D"c1"></span></p><ol class=3D"c0 lst-kix_zhiy=
-g7gae7ze-0" start=3D"3"><li class=3D"c8 c27 li-bullet-0"><span class=3D"c1"=
->The data (logs) will only store all the WRITE OPERATIONS and NO-OP operati=
-ons as it is, along with the term number mentioned in the Logs section. An =
-example log.txt file:</span></li></ol><p class=3D"c12"><span class=3D"c14">=
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p class=3D"c8">=
-<span class=3D"c14">NO-OP 0</span></p><p class=3D"c8"><span class=3D"c37">S=
-ET name1 Jaggu 0 [</span><span class=3D"c48 c50">SET {key} {value} {term}</=
-span><span class=3D"c14">]</span></p><p class=3D"c8"><span class=3D"c14">SE=
-T name2 Raju 0</span></p><p class=3D"c8"><span class=3D"c14">SET name3 Bhee=
-m 1</span></p><p class=3D"c9"><span class=3D"c1"></span></p><p class=3D"c12=
-"><span class=3D"c1">The operations supported for the client on this databa=
-se are as follows:</span></p><ol class=3D"c0 lst-kix_9358ozhgmza5-0 start" =
-start=3D"1"><li class=3D"c8 c27 li-bullet-0"><span class=3D"c6">SET K V</sp=
-an><span>: Maps the key K to value V; for example, {SET x hello} will map t=
-he key =E2=80=9Cx=E2=80=9D to value =E2=80=9Chello.=E2=80=9D (WRITE OPERATI=
-ON)</span></li><li class=3D"c8 c27 li-bullet-0"><span class=3D"c6">GET K:</=
-span><span>&nbsp;Returns the latest committed value of key K. If K doesn=E2=
-=80=99t exist in the database, an empty string will be returned as value by=
- default</span><span class=3D"c1">. (READ OPERATION)</span></li></ol><p cla=
-ss=3D"c9"><span class=3D"c1"></span></p><p class=3D"c12"><span class=3D"c1"=
->Apart from the abovementioned operations, a node can also initiate an empt=
-y instruction known as the NO-OP operation. This operation has been elabora=
-ted on in the Election Functionalities section.</span></p><p class=3D"c13 c=
-22"><span class=3D"c1"></span></p><h2 class=3D"c55" id=3D"h.8mcinc4x3fio"><=
-span class=3D"c29 c6">3. Client Interaction</span></h2><p class=3D"c13"><sp=
-an class=3D"c1">Followers, candidates, and a leader form a Raft cluster ser=
-ving Raft clients. A Raft client implements the following functionality:</s=
-pan></p><ol class=3D"c0 lst-kix_f1ej2jkhho2v-0 start" start=3D"1"><li class=
-=3D"c13 c27 c35 li-bullet-0"><span class=3D"c2">Leader Information:</span><=
-/li></ol><ol class=3D"c0 lst-kix_f1ej2jkhho2v-1 start" start=3D"1"><li clas=
-s=3D"c13 c18 li-bullet-0"><span class=3D"c1">The client stores the IP addre=
-sses and ports of all the nodes.</span></li><li class=3D"c13 c18 li-bullet-=
-0"><span class=3D"c1">The client stores the current leader ID, although thi=
-s information might get outdated.<br></span></li></ol><ol class=3D"c0 lst-k=
-ix_f1ej2jkhho2v-0" start=3D"2"><li class=3D"c13 c35 c27 li-bullet-0"><span =
-class=3D"c2">Request Server:</span></li></ol><ol class=3D"c0 lst-kix_f1ej2j=
-khho2v-1 start" start=3D"1"><li class=3D"c13 c18 li-bullet-0"><span class=
-=3D"c1">It sends a GET/SET request to the leader node. (Refer to the Storag=
-e and Database Operations section)</span></li></ol><ol class=3D"c0 lst-kix_=
-f1ej2jkhho2v-2 start" start=3D"1"><li class=3D"c13 c19 li-bullet-0"><span c=
-lass=3D"c1">In case of a failure, it updates its leader ID and resends the =
-request to the updated leader.</span></li></ol><ol class=3D"c0 lst-kix_f1ej=
-2jkhho2v-3 start" start=3D"1"><li class=3D"c13 c43 c27 li-bullet-0"><span c=
-lass=3D"c1">The node returns what it thinks is the current leader and a fai=
-lure message</span></li><li class=3D"c13 c27 c43 li-bullet-0"><span class=
-=3D"c1">If there is no leader in the system, then the node will return NULL=
- for the current leader and a failure message</span></li></ol><ol class=3D"=
-c0 lst-kix_f1ej2jkhho2v-2" start=3D"2"><li class=3D"c13 c19 li-bullet-0"><s=
-pan class=3D"c1">The client continues sending the request until it receives=
- a SUCCESS reply from any node.</span></li></ol><p class=3D"c13"><span>Refe=
-r to the following RPC &amp; Protobuf for the client:</span></p><a id=3D"t.=
-a9fec2e780a7ce45b419cdd35687e1a48988e83c"></a><a id=3D"t.0"></a><table clas=
-s=3D"c63"><tbody><tr class=3D"c39"><td class=3D"c57" colspan=3D"1" rowspan=
-=3D"1"><p class=3D"c23"><span class=3D"c62">rpc</span><span class=3D"c53">&=
-nbsp;</span><span class=3D"c49">ServeClient (</span><span class=3D"c53">Ser=
-veClientArgs</span><span class=3D"c49">) returns (</span><span class=3D"c53=
-">ServeClientReply</span><span class=3D"c33">) {}</span></p><p class=3D"c23=
- c22"><span class=3D"c33"></span></p><p class=3D"c23"><span class=3D"c53">m=
-essage</span><span class=3D"c34">&nbsp;ServeClientArgs {<br> &nbsp; </span>=
-<span class=3D"c26">string</span><span class=3D"c34">&nbsp;Request =3D </sp=
-an><span class=3D"c26">1</span><span class=3D"c34">;<br>}<br><br></span><sp=
-an class=3D"c53">message</span><span class=3D"c34">&nbsp;ServeClientReply {=
-<br> &nbsp; </span><span class=3D"c26">string</span><span class=3D"c34">&nb=
-sp;Data =3D </span><span class=3D"c26">1</span><span class=3D"c34">;<br> &n=
-bsp; </span><span class=3D"c26">string</span><span class=3D"c34">&nbsp;Lead=
-erID =3D </span><span class=3D"c26">2</span><span class=3D"c34">;<br> &nbsp=
-; </span><span class=3D"c46">bool</span><span class=3D"c34">&nbsp;Success =
-=3D </span><span class=3D"c26">3</span><span class=3D"c34">;<br>}</span></p=
-></td></tr></tbody></table><p class=3D"c13 c22"><span class=3D"c1"></span><=
-/p><h2 class=3D"c30" id=3D"h.67l4i78kngrz"><span class=3D"c6">4. Standard</=
-span><span class=3D"c6">&nbsp;Raft RPCs</span></h2><p class=3D"c12"><span>C=
-</span><span>ommunication between nodes/servers requires two RPCs (AppendEn=
-try and RequestVote). These RPCs have been explained in further detail in t=
-he</span><span>&nbsp;</span><span class=3D"c5"><a class=3D"c4" href=3D"http=
-s://www.google.com/url?q=3Dhttps://raft.github.io/raft.pdf&amp;sa=3DD&amp;s=
-ource=3Deditors&amp;ust=3D1710480778653984&amp;usg=3DAOvVaw22pYOriYOT5IMT4E=
-mnivEQ">original Raft paper</a></span><span>:</span></p><p class=3D"c17"><s=
-pan style=3D"overflow: hidden; display: inline-block; margin: 0.00px 0.00px=
-; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px);=
- -webkit-transform: rotate(0.00rad) translateZ(0px); width: 298.18px; heigh=
-t: 380.50px;"><img alt=3D"" src=3D"https://lh7-us.googleusercontent.com/eHk=
-Ckh0XcfO6-fDZeIzZv1gEatj5UHYGd46ZNraJtnJCmFTCyzvaVPJHZ1-RxwcdqAx4YZMibo8OR6=
-G2t1jVfaoy6leRXsLGdtSMkWoR1umBl8wUaJyHheuUSf-8dxGxNTkyxwCVvgnHPHcZJK7XdTo" =
-style=3D"width: 298.18px; height: 380.50px; margin-left: 0.00px; margin-top=
-: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: ro=
-tate(0.00rad) translateZ(0px);" title=3D""></span><span style=3D"overflow: =
-hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid =
-#000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rot=
-ate(0.00rad) translateZ(0px); width: 323.05px; height: 243.50px;"><img alt=
-=3D"" src=3D"https://lh7-us.googleusercontent.com/r4apLRSXkL37CONGVVuBHalnu=
-2P1qGImAi_P9Hb6YCtGtO6aJmgdTAg_vbXF3skz6PkLKM-JUQDieMR3fvH0BBeuqVvi_0vmm1M4=
-GpQbuyCKZ786_xChE7YNnAawAlQzpMQ-utGil1lGXv4Ky4oHQWg" style=3D"width: 323.05=
-px; height: 243.50px; margin-left: 0.00px; margin-top: 0.00px; transform: r=
-otate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translat=
-eZ(0px);" title=3D""></span></p><p class=3D"c17 c22"><span class=3D"c1"></s=
-pan></p><p class=3D"c17 c22"><span class=3D"c1"></span></p><p class=3D"c17"=
-><span style=3D"overflow: hidden; display: inline-block; margin: 0.00px 0.0=
-0px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0p=
-x); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 304.73px; he=
-ight: 361.42px;"><img alt=3D"" src=3D"https://lh7-us.googleusercontent.com/=
-R6SQzLVrzyO2C_kVsCmypIamUgh1vWnoNY5VlTwSlfaJOU1_azn95l3aPrgS9qAlFnvU-6lp8Tm=
--uPyla72qTQbvOnGYIugDHS3WyDIXypdhrE0iUkuQkRJs6wvdG_lk9DaZUKpZos7S5aI0Q9U-2H=
-w" style=3D"width: 304.73px; height: 361.42px; margin-left: 0.00px; margin-=
-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform:=
- rotate(0.00rad) translateZ(0px);" title=3D""></span></p><p class=3D"c12"><=
-span class=3D"c1">These RPCs can be modified as follows for leader lease:</=
-span></p><ul class=3D"c0 lst-kix_31e50zwf0vj-0 start"><li class=3D"c8 c27 l=
-i-bullet-0"><span class=3D"c1 c20">The AppendEntry RPC must also send the l=
+of nodes.</span></p><p class=3D"c8 c17"><span class=3D"c6 c10"></span></p><=
+p class=3D"c8"><span>We aim to build a database that stores key-value pairs=
+ </span><span>mapping string (key) to string (value)</span><span>. The Raft=
+ cluster maintains this database and ensures fault tolerance and </span><sp=
+an class=3D"c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dht=
+tps://en.wikipedia.org/wiki/Strong_consistency&amp;sa=3DD&amp;source=3Dedit=
+ors&amp;ust=3D1711259583581772&amp;usg=3DAOvVaw1ouJESvb7Wkh6ee2pzyHxQ">stro=
+ng </a></span><span class=3D"c35"><a class=3D"c26" href=3D"https://www.goog=
+le.com/url?q=3Dhttps://en.wikipedia.org/wiki/Strong_consistency&amp;sa=3DD&=
+amp;source=3Deditors&amp;ust=3D1711259583581900&amp;usg=3DAOvVaw11ghoBFVmJ2=
+DiaRiMziSuW">consistency</a></span><span>. The client requests the server t=
+o perform operations on this database reliably.</span></p><hr><p class=3D"c=
+16 c45 c17"><span class=3D"c6 c10"></span></p><h1 class=3D"c40 c49" id=3D"h=
+.8phkv1azdzj7"><span class=3D"c44 c0">Raft Modification (for faster Reads)<=
+/span></h1><p class=3D"c16"><span>Traditionally, Raft requires the leader t=
+o exchange a heartbeat with a majority of peers before responding to a read=
+ request (</span><span class=3D"c35"><a class=3D"c26" href=3D"https://www.g=
+oogle.com/url?q=3Dhttps://www.ditsing.com/read-only-requests-in-raft-part-1=
+/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711259583582425&amp;usg=3DAOvV=
+aw2ZKVtzg_VlwoJHzV2qQm5J">How Raft handles read requests</a></span><span>).=
+</span><span class=3D"c6 c10">&nbsp;If there are n nodes in the cluster, ea=
+ch read operation costs O(n). By requiring these heartbeats, Raft introduce=
+s a network hop between peers in a read operation, which can result in high=
+ read latencies. The latencies get much worse in the case of multi-region g=
+eo-distributed databases where the nodes are located physically far apart.<=
+/span></p><p class=3D"c16 c17"><span class=3D"c6 c10"></span></p><h2 class=
+=3D"c23 c24" id=3D"h.9tamwyws8lkb"><span class=3D"c0 c7">Leader Lease</span=
+></h2><p class=3D"c16"><span class=3D"c6 c10">It is possible to rely on a t=
+ime-based =E2=80=9Clease=E2=80=9D for Raft leadership that gets propagated =
+through the heartbeat mechanism. And if we have well-behaved clocks, we can=
+ obtain linearizable reads without paying a round-trip latency penalty. Thi=
+s is achieved using the concept of Leases.</span></p><p class=3D"c16"><span=
+ class=3D"c35 c0"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dh=
+ttps://www.yugabyte.com/blog/low-latency-reads-in-geo-distributed-sql-with-=
+raft-leader-leases/%23:~:text%3DThis%2520is%2520shown%2520in%2520the%2520an=
+imation%2520sequence%2520below.&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1=
+711259583582902&amp;usg=3DAOvVaw1Dt9ERQSxfnCwYnd3rEfCA">This animation</a><=
+/span><span class=3D"c6 c10">&nbsp;shows how leader leases work.</span></p>=
+<p class=3D"c16"><span class=3D"c30 c10">What is a Leader Lease?</span></p>=
+<p class=3D"c16"><span>Leases can be considered as tokens that are valid fo=
+r a certain period of time, known as </span><span class=3D"c41">lease durat=
+ion</span><span class=3D"c6 c10">. A node can serve read and write requests=
+ from the client if and only if the node has this valid token/lease.</span>=
+</p><p class=3D"c16"><span class=3D"c6 c10">In Raft, it is possible for mor=
+e than one leader to exist (which is why even read requests require a quoru=
+m to fetch the latest value), but leases are designed in such a way that, a=
+t a time, only one lease can exist. Only leader nodes are allowed to acquir=
+e a lease; therefore, the lease is known as the leader lease.</span></p><p =
+class=3D"c16 c17"><span class=3D"c6 c10"></span></p><p class=3D"c16"><span =
+class=3D"c30 c10">Behavior of Leader &amp; Follower</span></p><p class=3D"c=
+16"><span class=3D"c6 c10">The leader acquires and renews the lease using i=
+ts heartbeat mechanism. When the leader has acquired/renewed its lease, it =
+starts a countdown (lease duration). If the leader is unable to renew its l=
+ease within this countdown, it needs to step down from being the leader. </=
+span></p><p class=3D"c16"><span class=3D"c6 c10">The leader also propagates=
+ the end time of the acquired lease in its heartbeat. All the follower node=
+s keep track of this leader lease timeout and use this information in the n=
+ext election process. </span></p><p class=3D"c16 c17"><span class=3D"c6 c10=
+"></span></p><p class=3D"c16"><span class=3D"c10 c30">Leader Election</span=
+></p><p class=3D"c16"><span>During a leader election, a voter must propagat=
+e the old leader=E2=80=99s lease timeout known to that voter to the new can=
+didate it is voting for. Upon receiving a majority of votes, the new leader=
+ must wait out the longest old leader=E2=80=99s lease duration before acqui=
+ring its lease</span><span class=3D"c6 c10">. The old leader steps down and=
+ no longer functions as a leader upon the expiry of its leader lease.</span=
+></p><p class=3D"c16 c17"><span class=3D"c6 c10"></span></p><hr><p class=3D=
+"c16 c17 c45"><span class=3D"c6 c10"></span></p><h1 class=3D"c40 c49" id=3D=
+"h.plmdnygfyhpr"><span class=3D"c0 c44">Implementation Details</span></h1><=
+h2 class=3D"c23" id=3D"h.rsnypq80alac"><span class=3D"c0">0. </span><span c=
+lass=3D"c7 c0">Overview</span></h2><p class=3D"c16"><span>In this assignmen=
+t, you must implement the Raft algorithm with the leader lease modification=
+. Each node will be a process hosted on a separate Virtual Machine on Googl=
+e Cloud, and the client can reside either in Google Cloud=E2=80=99s Virtual=
+ Machine or in the </span><span>local machine</span><span>. You can use </s=
+pan><span class=3D"c34 c0">gRPC</span><span>&nbsp;(RECOMMENDED) or </span><=
+span class=3D"c34 c0">ZeroMQ</span><span>&nbsp;for communication between no=
+des along with client-node interaction </span><span class=3D"c0">[NO other =
+communication library is allowed]</span><span class=3D"c6 c10">. </span></p=
+><p class=3D"c16"><span>Changes related to leader lease have been highlight=
+ed in </span><span class=3D"c34">cyan</span><span class=3D"c6 c10">.</span>=
+</p><p class=3D"c16 c17"><span class=3D"c6 c10"></span></p><h2 class=3D"c23=
+" id=3D"h.qqn1a8hx4x2t"><span class=3D"c0">1. Pseudo Code</span></h2><p cla=
+ss=3D"c43"><span>Many edge cases need to be handled while implementing the =
+Raft algorithm. To ensure that all those edge cases have been handled corre=
+ctly, you need to refer to the </span><span class=3D"c35 c0"><a class=3D"c2=
+6" href=3D"https://www.google.com/url?q=3Dhttps://www.cl.cam.ac.uk/teaching=
+/2122/ConcDisSys/dist-sys-notes.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=
+=3D1711259583584423&amp;usg=3DAOvVaw2iaK3FxKU-xxh2Nf1dPQIK">pseudo code</a>=
+</span><span>&nbsp;(pg 60 to 66) while implementing. This </span><span clas=
+s=3D"c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttps://w=
+ww.youtube.com/watch?v%3DuXEYuDwm7e4&amp;sa=3DD&amp;source=3Deditors&amp;us=
+t=3D1711259583584555&amp;usg=3DAOvVaw3DVYVhbQcz_P5jXvXOofsr">lecture video<=
+/a></span><span>&nbsp;explains the same. You can also refer to </span><span=
+ class=3D"c35"><a class=3D"c26" href=3D"https://www.google.com/url?q=3Dhttp=
+s://mecha-mind.medium.com/understanding-and-implementing-raft-consensus-pro=
+tocol-in-python-dd4e9f23b784&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1711=
+259583584716&amp;usg=3DAOvVaw1eDUGQO_t5vTVF40XZUeub">this medium blog</a></=
+span><span class=3D"c6 c10">&nbsp;implementing Raft in Python.</span></p><p=
+ class=3D"c11"><span class=3D"c6 c10"></span></p><h2 class=3D"c23" id=3D"h.=
+gc2slk4z0iau"><span class=3D"c0">2. </span><span class=3D"c0">Storage and D=
+atabase </span><span class=3D"c0">Operations</span></h2><p class=3D"c8"><sp=
+an>As mentioned in the introduction, we are</span><span>&nbsp;building a da=
+tabase that stores key-value pairs </span><span>mapping string (key) to str=
+ing (value)</span><span class=3D"c6 c10">. The Raft Nodes serve the client =
+for storing and retrieving these key-value pairs and replicating this data =
+among other nodes in a fault-tolerant manner.</span></p><p class=3D"c8 c17"=
+><span class=3D"c6 c10"></span></p><ol class=3D"c5 lst-kix_zhiyg7gae7ze-0 s=
+tart" start=3D"1"><li class=3D"c2 c9 li-bullet-0"><span>The nodes must be p=
+ersistent, i.e., even after stopping the node, the data (logs) must be stor=
+ed somewhere (in any </span><span class=3D"c35"><a class=3D"c26" href=3D"ht=
+tps://www.google.com/url?q=3Dhttps://en.wikipedia.org/wiki/Human-readable_m=
+edium_and_data%23:~:text%3DIn%2520computing%252C%2520a%2520human%252Dreadab=
+le,rather%2520than%2520as%2520binary%2520data.&amp;sa=3DD&amp;source=3Dedit=
+ors&amp;ust=3D1711259583585301&amp;usg=3DAOvVaw2vhq2ICQh8bNVtBOGyujiz">huma=
+n-readable format</a></span><span>, e.g., .txt) along with other important =
+metadata (commitLength, Term, and NodeID which the current node voted for i=
+n this term) and retrieved when the node starts again</span><span class=3D"=
+c6 c10">.</span></li></ol><p class=3D"c8 c17"><span class=3D"c6 c10"></span=
+></p><ol class=3D"c5 lst-kix_zhiyg7gae7ze-0" start=3D"2"><li class=3D"c2 c9=
+ li-bullet-0"><span class=3D"c6 c10">Follow the following naming convention=
+ for storing files:</span></li></ol><p class=3D"c2"><span>For a node with n=
+ode ID </span><span class=3D"c10 c33">x</span><span>, make a directory with=
+ the name </span><span class=3D"c10 c33">logs_node_x</span><span>&nbsp;and =
+store the logs, metadata, and </span><span class=3D"c0">dump file (refer to=
+ the Print Statements Section - 9 for dump file details)</span><span class=
+=3D"c6 c10">. An example is shown below.</span></p><p class=3D"c8 c17"><spa=
+n class=3D"c6 c10"></span></p><p class=3D"c2 c17"><span class=3D"c22 c10"><=
+/span></p><p class=3D"c2 c17"><span class=3D"c10 c22"></span></p><p class=
+=3D"c2 c17"><span class=3D"c22 c10"></span></p><p class=3D"c2 c17"><span cl=
+ass=3D"c22 c10"></span></p><p class=3D"c2 c17"><span class=3D"c22 c10"></sp=
+an></p><p class=3D"c2"><span class=3D"c10 c33">assignment</span><span class=
+=3D"c22 c10">/</span></p><p class=3D"c2"><span class=3D"c22 c10">=E2=94=9C=
+=E2=94=80 logs_node_0/</span></p><p class=3D"c2"><span class=3D"c22 c10">=
+=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 logs.txt</span></p><p class=3D"c2"><span=
+ class=3D"c22 c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 metadata.txt</span></=
+p><p class=3D"c2"><span class=3D"c22 c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=
+=80 dump.txt</span></p><p class=3D"c2"><span class=3D"c22 c10">=E2=94=9C=E2=
+=94=80 logs_node_1/</span></p><p class=3D"c2"><span class=3D"c22 c10">=E2=
+=94=82 &nbsp;=E2=94=9C=E2=94=80 logs.txt</span></p><p class=3D"c2"><span cl=
+ass=3D"c22 c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 metadata.txt</span></p><=
+p class=3D"c2"><span class=3D"c10 c33">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 d=
+ump.txt</span></p><p class=3D"c8 c17"><span class=3D"c6 c10"></span></p><ol=
+ class=3D"c5 lst-kix_zhiyg7gae7ze-0" start=3D"3"><li class=3D"c2 c9 li-bull=
+et-0"><span class=3D"c6 c10">The data (logs) will only store all the WRITE =
+OPERATIONS and NO-OP operations as it is, along with the term number mentio=
+ned in the Logs section. An example log.txt file:</span></li></ol><p class=
+=3D"c8"><span class=3D"c22 c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;</span></p><p class=3D"c2"><span class=3D"c22 c10">NO-OP 0</span></p><=
+p class=3D"c2"><span class=3D"c10 c33">SET name1 Jaggu 0 [</span><span clas=
+s=3D"c39 c52">SET {key} {value} {term}</span><span class=3D"c22 c10">]</spa=
+n></p><p class=3D"c2"><span class=3D"c22 c10">SET name2 Raju 0</span></p><p=
+ class=3D"c2"><span class=3D"c22 c10">SET name3 Bheem 1</span></p><p class=
+=3D"c8 c17"><span class=3D"c6 c10"></span></p><p class=3D"c8"><span class=
+=3D"c6 c10">The operations supported for the client on this database are as=
+ follows:</span></p><ol class=3D"c5 lst-kix_9358ozhgmza5-0 start" start=3D"=
+1"><li class=3D"c2 c9 li-bullet-0"><span class=3D"c0">SET K V</span><span>:=
+ Maps the key K to value V; for example, {SET x hello} will map the key =E2=
+=80=9Cx=E2=80=9D to value =E2=80=9Chello.=E2=80=9D (WRITE OPERATION)</span>=
+</li><li class=3D"c2 c9 li-bullet-0"><span class=3D"c0">GET K:</span><span>=
+&nbsp;Returns the latest committed value of key K. If K doesn=E2=80=99t exi=
+st in the database, an empty string will be returned as value by default</s=
+pan><span class=3D"c6 c10">. (READ OPERATION)</span></li></ol><p class=3D"c=
+8 c17"><span class=3D"c6 c10"></span></p><p class=3D"c8"><span class=3D"c6 =
+c10">Apart from the abovementioned operations, a node can also initiate an =
+empty instruction known as the NO-OP operation. This operation has been ela=
+borated on in the Election Functionalities section.</span></p><p class=3D"c=
+16 c17"><span class=3D"c6 c10"></span></p><h2 class=3D"c50" id=3D"h.8mcinc4=
+x3fio"><span class=3D"c7 c0">3. Client Interaction</span></h2><p class=3D"c=
+16"><span class=3D"c6 c10">Followers, candidates, and a leader form a Raft =
+cluster serving Raft clients. A Raft client implements the following functi=
+onality:</span></p><ol class=3D"c5 lst-kix_f1ej2jkhho2v-0 start" start=3D"1=
+"><li class=3D"c16 c13 c9 li-bullet-0"><span class=3D"c3">Leader Informatio=
+n:</span></li></ol><ol class=3D"c5 lst-kix_f1ej2jkhho2v-1 start" start=3D"1=
+"><li class=3D"c16 c9 c12 li-bullet-0"><span class=3D"c6 c10">The client st=
+ores the IP addresses and ports of all the nodes.</span></li><li class=3D"c=
+16 c9 c12 li-bullet-0"><span class=3D"c6 c10">The client stores the current=
+ leader ID, although this information might get outdated.<br></span></li></=
+ol><ol class=3D"c5 lst-kix_f1ej2jkhho2v-0" start=3D"2"><li class=3D"c16 c13=
+ c9 li-bullet-0"><span class=3D"c3">Request Server:</span></li></ol><ol cla=
+ss=3D"c5 lst-kix_f1ej2jkhho2v-1 start" start=3D"1"><li class=3D"c16 c9 c12 =
+li-bullet-0"><span class=3D"c6 c10">It sends a GET/SET request to the leade=
+r node. (Refer to the Storage and Database Operations section)</span></li><=
+/ol><ol class=3D"c5 lst-kix_f1ej2jkhho2v-2 start" start=3D"1"><li class=3D"=
+c16 c9 c21 li-bullet-0"><span class=3D"c6 c10">In case of a failure, it upd=
+ates its leader ID and resends the request to the updated leader.</span></l=
+i></ol><ol class=3D"c5 lst-kix_f1ej2jkhho2v-3 start" start=3D"1"><li class=
+=3D"c16 c53 c9 li-bullet-0"><span class=3D"c6 c10">The node returns what it=
+ thinks is the current leader and a failure message</span></li><li class=3D=
+"c16 c9 c53 li-bullet-0"><span class=3D"c6 c10">If there is no leader in th=
+e system, then the node will return NULL for the current leader and a failu=
+re message</span></li></ol><ol class=3D"c5 lst-kix_f1ej2jkhho2v-2" start=3D=
+"2"><li class=3D"c16 c9 c21 li-bullet-0"><span class=3D"c6 c10">The client =
+continues sending the request until it receives a SUCCESS reply from any no=
+de.</span></li></ol><p class=3D"c16"><span>Refer to the following RPC &amp;=
+ Protobuf for the client:</span></p><a id=3D"t.a9fec2e780a7ce45b419cdd35687=
+e1a48988e83c"></a><a id=3D"t.0"></a><table class=3D"c25"><tbody><tr class=
+=3D"c59"><td class=3D"c61" colspan=3D"1" rowspan=3D"1"><p class=3D"c47"><sp=
+an class=3D"c10 c51 c60">rpc</span><span class=3D"c4">&nbsp;</span><span cl=
+ass=3D"c38 c10">ServeClient (</span><span class=3D"c4">ServeClientArgs</spa=
+n><span class=3D"c10 c38">) returns (</span><span class=3D"c4">ServeClientR=
+eply</span><span class=3D"c10 c36">) {}</span></p><p class=3D"c47 c17"><spa=
+n class=3D"c36 c10"></span></p><p class=3D"c47"><span class=3D"c4">message<=
+/span><span class=3D"c31 c10">&nbsp;ServeClientArgs {<br> &nbsp; </span><sp=
+an class=3D"c10 c19">string</span><span class=3D"c31 c10">&nbsp;Request =3D=
+ </span><span class=3D"c19 c10">1</span><span class=3D"c31 c10">;<br>}<br><=
+br></span><span class=3D"c4">message</span><span class=3D"c31 c10">&nbsp;Se=
+rveClientReply {<br> &nbsp; </span><span class=3D"c19 c10">string</span><sp=
+an class=3D"c31 c10">&nbsp;Data =3D </span><span class=3D"c19 c10">1</span>=
+<span class=3D"c31 c10">;<br> &nbsp; </span><span class=3D"c19 c10">string<=
+/span><span class=3D"c31 c10">&nbsp;LeaderID =3D </span><span class=3D"c19 =
+c10">2</span><span class=3D"c31 c10">;<br> &nbsp; </span><span class=3D"c10=
+ c56">bool</span><span class=3D"c31 c10">&nbsp;Success =3D </span><span cla=
+ss=3D"c19 c10">3</span><span class=3D"c10 c31">;<br>}</span></p></td></tr><=
+/tbody></table><p class=3D"c16 c17"><span class=3D"c6 c10"></span></p><h2 c=
+lass=3D"c23" id=3D"h.67l4i78kngrz"><span class=3D"c0">4. Standard</span><sp=
+an class=3D"c0">&nbsp;Raft RPCs</span></h2><p class=3D"c8"><span>C</span><s=
+pan>ommunication between nodes/servers requires two RPCs (AppendEntry and R=
+equestVote). These RPCs have been explained in further detail in the</span>=
+<span>&nbsp;</span><span class=3D"c35"><a class=3D"c26" href=3D"https://www=
+.google.com/url?q=3Dhttps://raft.github.io/raft.pdf&amp;sa=3DD&amp;source=
+=3Deditors&amp;ust=3D1711259583589647&amp;usg=3DAOvVaw1I4-6Qfxst7pk4zCkgbyr=
+a">original Raft paper</a></span><span>:</span></p><p class=3D"c43"><span s=
+tyle=3D"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; bor=
+der: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -web=
+kit-transform: rotate(0.00rad) translateZ(0px); width: 298.18px; height: 38=
+0.50px;"><img alt=3D"" src=3D"https://lh7-us.googleusercontent.com/fJIW9QPv=
+6g8Ps5OiatGjt0giX5Nrct6hF8DDJ_5GNj8YK61POTmy6oXQa1uXPaxwgPuSI1ggkr4n3s46ksY=
+8yU-M9jhsCsJpNW4gJlOqUu3A2D7IPpmamLfvUs9S1XDqIlpyOIpKuC5j9AqDLkOV4Ng" style=
+=3D"width: 298.18px; height: 380.50px; margin-left: 0.00px; margin-top: 0.0=
+0px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(=
+0.00rad) translateZ(0px);" title=3D""></span><span style=3D"overflow: hidde=
+n; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #0000=
+00; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0=
+.00rad) translateZ(0px); width: 323.05px; height: 243.50px;"><img alt=3D"" =
+src=3D"https://lh7-us.googleusercontent.com/OEIAGyewIEde3txds9Er_cLhiJ6pQ_g=
+yRUKuJmc5fZFV6Byj-9wYoc5F5BfMICPA3_3tkvagjjRwjLlwMQ4og0797xrnqRJwfreSYQXzQ4=
+FOt7v-h537dsF979tbztHQVyGws6MLjlJxzAAZEL_xP5E" style=3D"width: 323.05px; he=
+ight: 243.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(=
+0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px=
+);" title=3D""></span></p><p class=3D"c11"><span class=3D"c6 c10"></span></=
+p><p class=3D"c11"><span class=3D"c6 c10"></span></p><p class=3D"c43"><span=
+ style=3D"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; b=
+order: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -w=
+ebkit-transform: rotate(0.00rad) translateZ(0px); width: 304.73px; height: =
+361.42px;"><img alt=3D"" src=3D"https://lh7-us.googleusercontent.com/NV_O1U=
+cSilKJCq76jgagRxbsHplP1wLQsmYO-t2ooBIXa06Y0fczsTIBHBs8xOnSrtzbJWZv27niETUC1=
+47W_zUwsC4OI_A_etlpRP2rVUoLlt-ldEW5vkn3S6JF0jQFkBWMm_bUb_SzmKzixAqKm9s" sty=
+le=3D"width: 304.73px; height: 361.42px; margin-left: 0.00px; margin-top: 0=
+.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotat=
+e(0.00rad) translateZ(0px);" title=3D""></span></p><p class=3D"c8"><span cl=
+ass=3D"c6 c10">These RPCs can be modified as follows for leader lease:</spa=
+n></p><ul class=3D"c5 lst-kix_31e50zwf0vj-0 start"><li class=3D"c2 c9 li-bu=
+llet-0"><span class=3D"c6 c10 c34">The AppendEntry RPC must also send the l=
 ease interval duration whenever the leader starts the lease timer.</span></=
-li><li class=3D"c8 c27 li-bullet-0"><span class=3D"c1 c20">Through the Requ=
-estVoteReply RPC, the voters must also propagate the longest remaining dura=
-tion time of an old leader=E2=80=99s lease (known to that voter) to the new=
- candidate it is voting for.</span></li></ul><h2 class=3D"c30" id=3D"h.f5tm=
-d4g04go"><span class=3D"c6">5</span><span class=3D"c29 c6">. Election Funct=
-ionalities</span></h2><p class=3D"c21"><span class=3D"c1">Nodes must implem=
-ent the following functionality with regard to the leader election process.=
-</span></p><p class=3D"c21 c22"><span class=3D"c1"></span></p><ol class=3D"=
-c0 lst-kix_fpy1luvoz4gw-0 start" start=3D"1"><li class=3D"c10 li-bullet-0">=
-<span class=3D"c2">Start Election: </span></li></ol><ol class=3D"c0 lst-kix=
-_fpy1luvoz4gw-1 start" start=3D"1"><li class=3D"c12 c18 li-bullet-0"><span =
-class=3D"c1">All follower nodes keep an election timer and listen to either=
- the heartbeat event or a request for a vote event. </span></li><li class=
-=3D"c12 c18 li-bullet-0"><span>The election timeout should be</span><span>&=
-nbsp;</span><span class=3D"c6">randomized</span><span class=3D"c6">&nbsp;</=
-span><span>(</span><span>5-10 seconds</span><span class=3D"c1">) to prevent=
- multiple candidates from starting the election.</span></li><li class=3D"c1=
-2 c18 li-bullet-0"><span class=3D"c1">If no event is received in this durat=
-ion, the node converts to a candidate, increments the term number, and send=
-s vote requests to other nodes.</span></li><li class=3D"c12 c18 li-bullet-0=
-"><span class=3D"c1 c20">While receiving votes, the candidate must keep tra=
-ck of the maximum old leader lease duration received from voters.</span></l=
-i></ol><p class=3D"c9"><span class=3D"c1"></span></p><ol class=3D"c0 lst-ki=
-x_fpy1luvoz4gw-0" start=3D"2"><li class=3D"c10 li-bullet-0"><span class=3D"=
-c2">Receive Voting Request</span></li></ol><ol class=3D"c0 lst-kix_fpy1luvo=
-z4gw-1 start" start=3D"1"><li class=3D"c21 c18 li-bullet-0"><span class=3D"=
-c1">For a specific term, any node should vote for only one candidate.</span=
-></li><li class=3D"c21 c18 li-bullet-0"><span class=3D"c1">A node votes for=
- a candidate only when certain conditions are met. Please refer to the pseu=
-do-code for more information.</span></li></ol><p class=3D"c21 c22 c45"><spa=
-n class=3D"c1"></span></p><ol class=3D"c0 lst-kix_fpy1luvoz4gw-0" start=3D"=
-3"><li class=3D"c10 li-bullet-0"><span class=3D"c2">Leader State</span></li=
-></ol><ol class=3D"c0 lst-kix_fpy1luvoz4gw-1 start" start=3D"1"><li class=
-=3D"c13 c18 li-bullet-0"><span class=3D"c1">If a candidate node receives a =
-majority of votes, it moves to the Leader state. </span></li><li class=3D"c=
-12 c18 li-bullet-0"><span class=3D"c1 c20">Any new leader must also wait fo=
-r the maximum of the old leader's lease timer (received through the Request=
-Vote Reply RPC and its own) to run out before acquiring its own lease.</spa=
-n></li><li class=3D"c13 c18 li-bullet-0"><span>Once in the Leader state </s=
-pan><span class=3D"c20">and the old lease timer has run out, the node start=
-s its lease timer,</span><span>&nbsp;appends a </span><span class=3D"c6">NO=
--OP</span><span>&nbsp;entry to the log, and sends heartbeats to all other n=
-odes.</span></li><li class=3D"c13 c18 li-bullet-0"><span>Implementing Leade=
-r Lease requires additional changes, specified in detail in a later section=
- on </span><span class=3D"c6">Modifications to Standard Raft</span><span>.<=
-/span></li></ol><h2 class=3D"c30" id=3D"h.ur5ve0ec9o6t"><span class=3D"c29 =
-c6">6. Log Replication Functionalities</span></h2><p class=3D"c21"><span cl=
-ass=3D"c1">The nodes perform the following functionality in order to replic=
-ate the logs correctly to all nodes and maintain log integrity.</span></p><=
-p class=3D"c21 c22"><span class=3D"c1"></span></p><ol class=3D"c0 lst-kix_i=
-9ca40vqrhsb-0 start" start=3D"1"><li class=3D"c10 li-bullet-0"><span class=
-=3D"c2">Periodic Heartbeats:</span></li></ol><ol class=3D"c0 lst-kix_i9ca40=
-vqrhsb-1 start" start=3D"1"><li class=3D"c21 c18 li-bullet-0"><span>The lea=
-der sends periodic heartbeats </span><span class=3D"c6">(~1 second/heartbea=
-t)</span><span class=3D"c1">&nbsp;to all nodes to maintain its leader state=
-.</span></li><li class=3D"c21 c18 li-bullet-0"><span>This heartbeat utilize=
-s the same appendEntriesRPC.</span></li><li class=3D"c12 c18 li-bullet-0"><=
-span class=3D"c20">The leader also reacquires its lease at each heartbeat b=
-y restarting the lease timer and propagating the lease duration </span><spa=
-n class=3D"c20 c6">(</span><span class=3D"c6 c25">~10 seconds</span><span c=
-lass=3D"c6 c20">)</span><span class=3D"c1 c20">. </span></li><li class=3D"c=
-12 c18 li-bullet-0"><span class=3D"c1 c20">The leader needs to step down if=
- it cannot reacquire the lease (did not receive a successful acknowledgment=
- from the majority of followers within the lease duration).</span></li><li =
-class=3D"c12 c18 li-bullet-0"><span class=3D"c20">At each heartbeat, the fo=
-llowers also monitor and keep track of the duration of the lease.</span><sp=
-an class=3D"c1"><br></span></li></ol><ol class=3D"c0 lst-kix_i9ca40vqrhsb-0=
-" start=3D"2"><li class=3D"c10 li-bullet-0"><span class=3D"c2">Replicate Lo=
-g Request:</span></li></ol><ol class=3D"c0 lst-kix_i9ca40vqrhsb-1 start" st=
-art=3D"1"><li class=3D"c21 c18 li-bullet-0"><span>Whenever the leader recei=
-ves a client SET request, the appendEntriesRPC is used to replicate the log=
- to all nodes. </span><span class=3D"c1 c20">(In the case of the GET reques=
-t, the value can immediately be returned as long as the lease is acquired).=
-</span></li><li class=3D"c21 c18 li-bullet-0"><span class=3D"c1">To synchro=
-nize a follower's log with the leader's, the leader identifies the latest m=
-atching log entry (same PrevLogIndex and PrevLogTerm), removes entries in t=
-he follower's log beyond that point, and transmits all subsequent leader en=
-tries. </span></li><li class=3D"c21 c18 li-bullet-0"><span class=3D"c1">Onc=
-e the majority of nodes have replicated the log, a SUCCESS reply is sent to=
- the client. Otherwise, it replies with a FAIL message. (Refer to the Clien=
-t Interaction section)</span></li><li class=3D"c21 c18 li-bullet-0"><span c=
-lass=3D"c1">Successful AppendEntries ensure log consistency for the remaind=
-er of the term.<br></span></li></ol><ol class=3D"c0 lst-kix_i9ca40vqrhsb-0"=
- start=3D"3"><li class=3D"c10 li-bullet-0"><span class=3D"c2">Replicate Log=
- Reply:</span></li></ol><ol class=3D"c0 lst-kix_i9ca40vqrhsb-1 start" start=
-=3D"1"><li class=3D"c21 c18 li-bullet-0"><span>A node accepts an AppendEntr=
-iesRPC request only when certain conditions are met. Please refer to the ps=
-eudo-code for more information.</span></li></ol><h2 class=3D"c30" id=3D"h.t=
-0bervjqv4iq"><span class=3D"c6">7</span><span class=3D"c6">. Committing Ent=
-ries</span></h2><p class=3D"c21"><span class=3D"c1">Conditions that need to=
- be satisfied for the nodes to commit an entry have been specified in the p=
-seudo-code. The following are the required functionalities:</span></p><p cl=
-ass=3D"c21 c22"><span class=3D"c1"></span></p><ol class=3D"c0 lst-kix_jft9g=
-ay2o8id-0 start" start=3D"1"><li class=3D"c10 li-bullet-0"><span class=3D"c=
-2">Leader Committing an Entry</span></li></ol><ol class=3D"c0 lst-kix_jft9g=
-ay2o8id-1 start" start=3D"1"><li class=3D"c21 c18 li-bullet-0"><span>The le=
-ader</span><span class=3D"c1">&nbsp;should commit an entry only when a majo=
-rity of the nodes have acknowledged appending the entry and,</span></li><li=
- class=3D"c21 c18 li-bullet-0"><span class=3D"c1">the latest entry to be co=
-mmitted belongs to the same term as that of the leader.</span></li></ol><p =
-class=3D"c21 c22 c45"><span class=3D"c1"></span></p><ol class=3D"c0 lst-kix=
-_jft9gay2o8id-0" start=3D"2"><li class=3D"c10 li-bullet-0"><span class=3D"c=
-2">Follower Committing an Entry</span></li></ol><ol class=3D"c0 lst-kix_jft=
-9gay2o8id-1 start" start=3D"1"><li class=3D"c21 c18 li-bullet-0"><span>Foll=
-ower nodes should use the LeaderCommit field in the AppendEntry RPC they re=
-ceive in each heartbeat to commit entries.</span></li></ol><p class=3D"c9">=
-<span class=3D"c1"></span></p><h2 class=3D"c30" id=3D"h.1tvtuq3xky32"><span=
- class=3D"c6">8</span><span class=3D"c6">. Print Statements &amp; Dump.txt<=
-/span></h2><p class=3D"c13"><span>Add print statements wherever necessary t=
-o decipher what state each node is in and what operations are being perform=
-ed. </span><span class=3D"c11 c6">You are required to print a dump file for=
- each node with the naming convention mentioned in Section 2.</span></p><p =
-class=3D"c13"><span>This dump file </span><span class=3D"c6">MUST </span><s=
-pan>contain the following </span><span class=3D"c1">print statements:</span=
-></p><ul class=3D"c0 lst-kix_2t75xt2o4s3-0 start"><li class=3D"c8 c27 li-bu=
-llet-0"><span>Before the leader sends heartbeats to the followers:<br></spa=
-n><span class=3D"c1 c25">"Leader {NodeID of Leader} sending heartbeat &amp;=
- Renewing Lease"</span></li><li class=3D"c8 c27 li-bullet-0"><span>If the l=
-eader fails to renew its lease:<br></span><span class=3D"c1 c25">"Leader {N=
-odeID of Leader} lease renewal failed. Stepping Down."</span></li><li class=
-=3D"c8 c27 li-bullet-0"><span class=3D"c1">When a new leader is selected, i=
-t waits for the old leader=E2=80=99s timeout to end:</span></li></ul><p cla=
-ss=3D"c8"><span class=3D"c1 c25">=E2=80=9CNew Leader waiting for Old Leader=
- Lease to timeout.=E2=80=9D</span></p><ul class=3D"c0 lst-kix_2t75xt2o4s3-0=
-"><li class=3D"c8 c27 li-bullet-0"><span>When the election timer times out =
-for any node:<br></span><span class=3D"c1 c25">=E2=80=9CNode {NodeID} elect=
-ion timer timed out, Starting election."</span></li><li class=3D"c8 c27 li-=
-bullet-0"><span>Whenever a node becomes a leader:<br></span><span class=3D"=
-c1 c25">"Node {NodeID} became the leader for term {TermNumber}."</span></li=
-><li class=3D"c8 c27 li-bullet-0"><span>When the follower node has crashed:=
-<br></span><span class=3D"c1 c25">=E2=80=9CError occurred while sending RPC=
- to Node {followerNodeID}."</span></li><li class=3D"c8 c27 li-bullet-0"><sp=
-an>Whenever a follower node successfully </span><span class=3D"c6">commits =
-(not appends)</span><span>&nbsp;an entry to its logs:<br></span><span class=
-=3D"c25">"Node {NodeID of follower} (follower) committed the entry {entry o=
-peration} to the state machine."</span><span class=3D"c1"><br>Example of an=
- entry operation: =E2=80=9CSET x 6=E2=80=9D</span></li><li class=3D"c8 c27 =
-li-bullet-0"><span class=3D"c1">Whenever a leader node receives a request (=
-SET or GET) from the client:</span></li></ul><p class=3D"c8"><span class=3D=
-"c1 c25">=E2=80=9CNode {NodeID of leader} (leader) received an {entry opera=
-tion} request.=E2=80=9D</span></p><ul class=3D"c0 lst-kix_2t75xt2o4s3-0"><l=
-i class=3D"c8 c27 li-bullet-0"><span>Whenever a leader node successfully </=
-span><span class=3D"c6">commits (not appends)</span><span>&nbsp;an entry to=
- its logs:<br></span><span class=3D"c1 c25">"Node {NodeID of leader} (leade=
-r) committed the entry {entry operation} to the state machine."</span></li>=
-<li class=3D"c8 c27 li-bullet-0"><span>Whenever a follower node receives </=
-span><span class=3D"c6">and accepts </span><span>an append entry request an=
-d appends the operation to its logs:<br></span><span class=3D"c1 c25">"Node=
- {NodeID of follower} accepted AppendEntries RPC from {NodeID of leader}."<=
-/span></li></ul><ul class=3D"c0 lst-kix_knssfnai3sts-0 start"><li class=3D"=
-c8 c27 li-bullet-0"><span>Whenever a follower node receives </span><span cl=
-ass=3D"c6">and rejects </span><span class=3D"c1">an append entry request:</=
-span></li></ul><p class=3D"c12"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
-nbsp;&nbsp;</span><span class=3D"c1 c25">"Node {NodeID of follower} rejecte=
-d AppendEntries RPC from {NodeID of leader}."</span></p><ul class=3D"c0 lst=
--kix_tj5hsgmdnrrt-0 start"><li class=3D"c8 c27 li-bullet-0"><span>Whenever =
-a node </span><span class=3D"c6">grants</span><span>&nbsp;a vote to a candi=
-date in a particular term:<br></span><span class=3D"c1 c25">"Vote granted f=
-or Node {Candidate NodeID} in term {term of the vote}."</span></li><li clas=
-s=3D"c8 c27 li-bullet-0"><span>Whenever a node </span><span class=3D"c6">de=
-nies</span><span>&nbsp;a vote to a candidate in a particular term:<br></spa=
-n><span class=3D"c1 c25">"Vote denied for Node {Candidate NodeID} in term {=
-term of the vote}."</span></li><li class=3D"c8 c27 li-bullet-0"><span>Whene=
-ver a leader node steps down and becomes a follower:<br></span><span class=
-=3D"c1 c25">"{NodeID} Stepping down"</span></li></ul><p class=3D"c9"><span =
-class=3D"c1 c25"></span></p><h2 class=3D"c30" id=3D"h.n8ge3q5addcm"><span c=
-lass=3D"c6">9</span><span class=3D"c6">. Test Case Scenarios</span></h2><p =
-class=3D"c21 c22"><span class=3D"c1 c20"></span></p><p class=3D"c21"><span =
-class=3D"c1">0. Start the cluster with 5 nodes. Wait for the leader to be e=
-lected and a NO-OP entry to be appended in all the logs.</span></p><p class=
-=3D"c21 c22"><span class=3D"c6 c11"></span></p><p class=3D"c21"><span class=
-=3D"c6">[Leader Election]</span><span class=3D"c1">&nbsp;</span></p><p clas=
-s=3D"c21 c22"><span class=3D"c1"></span></p><p class=3D"c21"><span class=3D=
-"c1">1. Have the client perform 3 set requests and then 3 get requests</spa=
-n></p><p class=3D"c21 c22"><span class=3D"c1"></span></p><p class=3D"c21"><=
-span class=3D"c7">Verify if the set request has been replicated in each log=
-.</span></p><p class=3D"c21"><span class=3D"c7">Get requests should be retu=
-rned immediately without any additional heartbeats by the leader.</span></p=
-><p class=3D"c21 c22"><span class=3D"c11 c6"></span></p><p class=3D"c21"><s=
-pan class=3D"c11 c6">[Log Replication, Basic Functionality]</span></p><p cl=
-ass=3D"c21 c22"><span class=3D"c1"></span></p><p class=3D"c21"><span class=
-=3D"c1">2. Terminate one or two of the follower nodes and perform 3 SET req=
-uests and 3 GET requests. Restart the terminated followers.</span></p><p cl=
-ass=3D"c21 c22"><span class=3D"c1"></span></p><p class=3D"c21"><span class=
-=3D"c7">Verify if the terminated follower rejoins the cluster with updated =
-logs and state.</span></p><p class=3D"c21"><span class=3D"c11 c6">[Fault To=
-lerance, Follower Catch-up]</span></p><p class=3D"c21 c22"><span class=3D"c=
-1"></span></p><p class=3D"c21"><span class=3D"c1">3. Terminate the current =
-leader process. Wait for the new leader to be elected &amp; perform 2 set a=
-nd 2 get requests. Restart the terminated (old leader) process.</span></p><=
-p class=3D"c21 c22"><span class=3D"c1"></span></p><p class=3D"c21"><span cl=
-ass=3D"c7">Verify if a new leader is elected &amp; cluster continues operat=
-ion without data loss in the logs. Also, ensure the old leader node should =
-join the cluster as a follower with an updated state.</span></p><p class=3D=
-"c21"><span class=3D"c11 c6">[Fault Tolerance, Leader Failure, Leader Elect=
-ion, Log Replication]</span></p><p class=3D"c21 c22"><span class=3D"c1"></s=
-pan></p><p class=3D"c21"><span class=3D"c1">4. Terminate 3 (majority) follo=
+li><li class=3D"c2 c9 li-bullet-0"><span class=3D"c6 c10 c34">Through the R=
+equestVoteReply RPC, the voters must also propagate the longest remaining d=
+uration time of an old leader=E2=80=99s lease (known to that voter) to the =
+new candidate it is voting for.</span></li></ul><p class=3D"c8 c17"><span c=
+lass=3D"c6 c10 c34"></span></p><p class=3D"c8"><span class=3D"c54">Please n=
+ote that the heartbeat (entires[] field in the heartbeat) may not be empty.=
+ It may contain some entries (depending on what the follower is lacking).</=
+span></p><h2 class=3D"c23" id=3D"h.f5tmd4g04go"><span class=3D"c0">5</span>=
+<span class=3D"c7 c0">. Election Functionalities</span></h2><p class=3D"c1"=
+><span class=3D"c6 c10">Nodes must implement the following functionality wi=
+th regard to the leader election process.</span></p><p class=3D"c1 c17"><sp=
+an class=3D"c6 c10"></span></p><ol class=3D"c5 lst-kix_fpy1luvoz4gw-0 start=
+" start=3D"1"><li class=3D"c1 c13 c9 li-bullet-0"><span class=3D"c3">Start =
+Election: </span></li></ol><ol class=3D"c5 lst-kix_fpy1luvoz4gw-1 start" st=
+art=3D"1"><li class=3D"c8 c9 c12 li-bullet-0"><span class=3D"c6 c10">All fo=
+llower nodes keep an election timer and listen to either the heartbeat even=
+t or a request for a vote event. </span></li><li class=3D"c8 c9 c12 li-bull=
+et-0"><span>The election timeout should be</span><span>&nbsp;</span><span c=
+lass=3D"c0">randomized</span><span class=3D"c0">&nbsp;</span><span>(</span>=
+<span>5-10 seconds</span><span class=3D"c6 c10">) to prevent multiple candi=
+dates from starting the election.</span></li><li class=3D"c8 c9 c12 li-bull=
+et-0"><span class=3D"c6 c10">If no event is received in this duration, the =
+node converts to a candidate, increments the term number, and sends vote re=
+quests to other nodes.</span></li><li class=3D"c8 c9 c12 li-bullet-0"><span=
+ class=3D"c6 c10 c34">While receiving votes, the candidate must keep track =
+of the maximum old leader lease duration received from voters.</span></li><=
+/ol><p class=3D"c8 c17"><span class=3D"c6 c10"></span></p><ol class=3D"c5 l=
+st-kix_fpy1luvoz4gw-0" start=3D"2"><li class=3D"c1 c13 c9 li-bullet-0"><spa=
+n class=3D"c3">Receive Voting Request</span></li></ol><ol class=3D"c5 lst-k=
+ix_fpy1luvoz4gw-1 start" start=3D"1"><li class=3D"c1 c9 c12 li-bullet-0"><s=
+pan class=3D"c6 c10">For a specific term, any node should vote for only one=
+ candidate.</span></li><li class=3D"c1 c9 c12 li-bullet-0"><span class=3D"c=
+6 c10">A node votes for a candidate only when certain conditions are met. P=
+lease refer to the pseudo-code for more information.</span></li></ol><p cla=
+ss=3D"c1 c17 c12"><span class=3D"c6 c10"></span></p><ol class=3D"c5 lst-kix=
+_fpy1luvoz4gw-0" start=3D"3"><li class=3D"c1 c9 c13 li-bullet-0"><span clas=
+s=3D"c3">Leader State</span></li></ol><ol class=3D"c5 lst-kix_fpy1luvoz4gw-=
+1 start" start=3D"1"><li class=3D"c16 c9 c12 li-bullet-0"><span class=3D"c6=
+ c10">If a candidate node receives a majority of votes, it moves to the Lea=
+der state. </span></li><li class=3D"c8 c9 c12 li-bullet-0"><span class=3D"c=
+6 c10 c34">Any new leader must also wait for the maximum of the old leader'=
+s lease timer (received through the RequestVote Reply RPC and its own) to r=
+un out before acquiring its own lease.</span></li><li class=3D"c16 c9 c12 l=
+i-bullet-0"><span>Once in the Leader state </span><span class=3D"c34">and t=
+he old lease timer has run out, the node starts its lease timer,</span><spa=
+n>&nbsp;appends a </span><span class=3D"c0">NO-OP</span><span>&nbsp;entry t=
+o the log, and sends heartbeats to all other nodes.</span></li><li class=3D=
+"c16 c9 c12 li-bullet-0"><span>Implementing Leader Lease requires additiona=
+l changes, specified in detail in a later section on </span><span class=3D"=
+c0">Modifications to Standard Raft</span><span>.</span></li></ol><h2 class=
+=3D"c23" id=3D"h.ur5ve0ec9o6t"><span class=3D"c7 c0">6. Log Replication Fun=
+ctionalities</span></h2><p class=3D"c1"><span class=3D"c6 c10">The nodes pe=
+rform the following functionality in order to replicate the logs correctly =
+to all nodes and maintain log integrity.</span></p><p class=3D"c1 c17"><spa=
+n class=3D"c6 c10"></span></p><ol class=3D"c5 lst-kix_i9ca40vqrhsb-0 start"=
+ start=3D"1"><li class=3D"c1 c13 c9 li-bullet-0"><span class=3D"c3">Periodi=
+c Heartbeats:</span></li></ol><ol class=3D"c5 lst-kix_i9ca40vqrhsb-1 start"=
+ start=3D"1"><li class=3D"c1 c9 c12 li-bullet-0"><span>The leader sends per=
+iodic heartbeats </span><span class=3D"c0">(~1 second/heartbeat)</span><spa=
+n class=3D"c6 c10">&nbsp;to all nodes to maintain its leader state.</span><=
+/li><li class=3D"c1 c9 c12 li-bullet-0"><span>This heartbeat utilizes the s=
+ame appendEntriesRPC.</span></li><li class=3D"c8 c9 c12 li-bullet-0"><span =
+class=3D"c6 c10 c34">The leader also reacquires its lease at each heartbeat=
+ by restarting the lease timer and propagating the lease duration</span></l=
+i></ol><ol class=3D"c5 lst-kix_i9ca40vqrhsb-2 start" start=3D"1"><li class=
+=3D"c8 c9 c21 li-bullet-0"><span class=3D"c6 c14 c10">Lease duration or Lea=
+se period can be any FIXED value between 2 seconds and 10 seconds i.e. you =
+can pre-decide and choose any value between 2 seconds and 10 seconds. Once =
+you decide the lease duration, it remains the same throughout the execution=
+ of Raft.</span></li></ol><ol class=3D"c5 lst-kix_i9ca40vqrhsb-1" start=3D"=
+4"><li class=3D"c8 c9 c12 li-bullet-0"><span class=3D"c6 c10 c34">The leade=
+r needs to step down if it cannot reacquire the lease (did not receive a su=
+ccessful acknowledgment from the majority of followers within the lease dur=
+ation).</span></li><li class=3D"c8 c9 c12 li-bullet-0"><span class=3D"c34">=
+At each heartbeat, the followers also monitor and keep track of the duratio=
+n of the lease.</span><span class=3D"c6 c10"><br></span></li></ol><ol class=
+=3D"c5 lst-kix_i9ca40vqrhsb-0" start=3D"2"><li class=3D"c1 c13 c9 li-bullet=
+-0"><span class=3D"c3">Replicate Log Request:</span></li></ol><ol class=3D"=
+c5 lst-kix_i9ca40vqrhsb-1 start" start=3D"1"><li class=3D"c1 c9 c12 li-bull=
+et-0"><span>Whenever the leader receives a client SET request, the appendEn=
+triesRPC is used to replicate the log to all nodes. </span><span class=3D"c=
+6 c10 c34">(In the case of the GET request, the value can immediately be re=
+turned as long as the lease is acquired).</span></li><li class=3D"c1 c9 c12=
+ li-bullet-0"><span class=3D"c6 c10">To synchronize a follower's log with t=
+he leader's, the leader identifies the latest matching log entry (same Prev=
+LogIndex and PrevLogTerm), removes entries in the follower's log beyond tha=
+t point, and transmits all subsequent leader entries. </span></li><li class=
+=3D"c1 c9 c12 li-bullet-0"><span class=3D"c6 c10">Once the majority of node=
+s have replicated the log, a SUCCESS reply is sent to the client. Otherwise=
+, it replies with a FAIL message. (Refer to the Client Interaction section)=
+</span></li><li class=3D"c1 c9 c12 li-bullet-0"><span class=3D"c6 c10">Succ=
+essful AppendEntries ensure log consistency for the remainder of the term.<=
+br></span></li></ol><ol class=3D"c5 lst-kix_i9ca40vqrhsb-0" start=3D"3"><li=
+ class=3D"c1 c13 c9 li-bullet-0"><span class=3D"c3">Replicate Log Reply:</s=
+pan></li></ol><ol class=3D"c5 lst-kix_i9ca40vqrhsb-1 start" start=3D"1"><li=
+ class=3D"c1 c9 c12 li-bullet-0"><span>A node accepts an AppendEntriesRPC r=
+equest only when certain conditions are met. Please refer to the pseudo-cod=
+e for more information.</span></li></ol><h2 class=3D"c23" id=3D"h.t0bervjqv=
+4iq"><span class=3D"c0">7</span><span class=3D"c0">. Committing Entries</sp=
+an></h2><p class=3D"c1"><span class=3D"c6 c10">Conditions that need to be s=
+atisfied for the nodes to commit an entry have been specified in the pseudo=
+-code. The following are the required functionalities:</span></p><p class=
+=3D"c1 c17"><span class=3D"c6 c10"></span></p><ol class=3D"c5 lst-kix_jft9g=
+ay2o8id-0 start" start=3D"1"><li class=3D"c1 c13 c9 li-bullet-0"><span clas=
+s=3D"c3">Leader Committing an Entry</span></li></ol><ol class=3D"c5 lst-kix=
+_jft9gay2o8id-1 start" start=3D"1"><li class=3D"c1 c9 c12 li-bullet-0"><spa=
+n>The leader</span><span class=3D"c6 c10">&nbsp;should commit an entry only=
+ when a majority of the nodes have acknowledged appending the entry and,</s=
+pan></li><li class=3D"c1 c9 c12 li-bullet-0"><span class=3D"c6 c10">the lat=
+est entry to be committed belongs to the same term as that of the leader.</=
+span></li></ol><p class=3D"c1 c17 c12"><span class=3D"c6 c10"></span></p><o=
+l class=3D"c5 lst-kix_jft9gay2o8id-0" start=3D"2"><li class=3D"c1 c13 c9 li=
+-bullet-0"><span class=3D"c3">Follower Committing an Entry</span></li></ol>=
+<ol class=3D"c5 lst-kix_jft9gay2o8id-1 start" start=3D"1"><li class=3D"c1 c=
+9 c12 li-bullet-0"><span>Follower nodes should use the LeaderCommit field i=
+n the AppendEntry RPC they receive in each heartbeat to commit entries.</sp=
+an></li></ol><p class=3D"c8 c17"><span class=3D"c6 c10"></span></p><h2 clas=
+s=3D"c23" id=3D"h.1tvtuq3xky32"><span class=3D"c0">8</span><span class=3D"c=
+0">. Print Statements &amp; Dump.txt</span></h2><p class=3D"c16"><span>Add =
+print statements wherever necessary to decipher what state each node is in =
+and what operations are being performed. </span><span class=3D"c6 c0">You a=
+re required to print a dump file for each node with the naming convention m=
+entioned in Section 2.</span></p><p class=3D"c16"><span>This dump file </sp=
+an><span class=3D"c0">MUST </span><span>contain the following </span><span =
+class=3D"c6 c10">print statements:</span></p><ul class=3D"c5 lst-kix_2t75xt=
+2o4s3-0 start"><li class=3D"c2 c9 li-bullet-0"><span>Before the leader send=
+s heartbeats to the followers:<br></span><span class=3D"c6 c10 c14">"Leader=
+ {NodeID of Leader} sending heartbeat &amp; Renewing Lease"</span></li><li =
+class=3D"c2 c9 li-bullet-0"><span>If the leader fails to renew its lease:<b=
+r></span><span class=3D"c6 c14 c10">"Leader {NodeID of Leader} lease renewa=
+l failed. Stepping Down."</span></li><li class=3D"c2 c9 li-bullet-0"><span =
+class=3D"c6 c10">When a new leader is selected, it waits for the old leader=
+=E2=80=99s timeout to end:</span></li></ul><p class=3D"c2"><span class=3D"c=
+6 c14 c10">=E2=80=9CNew Leader waiting for Old Leader Lease to timeout.=E2=
+=80=9D</span></p><ul class=3D"c5 lst-kix_2t75xt2o4s3-0"><li class=3D"c2 c9 =
+li-bullet-0"><span>When the election timer times out for any node:<br></spa=
+n><span class=3D"c6 c14 c10">=E2=80=9CNode {NodeID} election timer timed ou=
+t, Starting election."</span></li><li class=3D"c2 c9 li-bullet-0"><span>Whe=
+never a node becomes a leader:<br></span><span class=3D"c6 c14 c10">"Node {=
+NodeID} became the leader for term {TermNumber}."</span></li><li class=3D"c=
+2 c9 li-bullet-0"><span>When the follower node has crashed:<br></span><span=
+ class=3D"c6 c14 c10">=E2=80=9CError occurred while sending RPC to Node {fo=
+llowerNodeID}."</span></li><li class=3D"c2 c9 li-bullet-0"><span>Whenever a=
+ follower node successfully </span><span class=3D"c0">commits (not appends)=
+</span><span>&nbsp;an entry to its logs:<br></span><span class=3D"c14">"Nod=
+e {NodeID of follower} (follower) committed the entry {entry operation} to =
+the state machine."</span><span class=3D"c6 c10"><br>Example of an entry op=
+eration: =E2=80=9CSET x 6=E2=80=9D</span></li><li class=3D"c2 c9 li-bullet-=
+0"><span class=3D"c6 c10">Whenever a leader node receives a request (SET or=
+ GET) from the client:</span></li></ul><p class=3D"c2"><span class=3D"c6 c1=
+4 c10">=E2=80=9CNode {NodeID of leader} (leader) received an {entry operati=
+on} request.=E2=80=9D</span></p><ul class=3D"c5 lst-kix_2t75xt2o4s3-0"><li =
+class=3D"c2 c9 li-bullet-0"><span>Whenever a leader node successfully </spa=
+n><span class=3D"c0">commits (not appends)</span><span>&nbsp;an entry to it=
+s logs:<br></span><span class=3D"c6 c14 c10">"Node {NodeID of leader} (lead=
+er) committed the entry {entry operation} to the state machine."</span></li=
+><li class=3D"c2 c9 li-bullet-0"><span>Whenever a follower node receives </=
+span><span class=3D"c0">and accepts </span><span>an append entry request an=
+d appends the operation to its logs:<br></span><span class=3D"c6 c14 c10">"=
+Node {NodeID of follower} accepted AppendEntries RPC from {NodeID of leader=
+}."</span></li></ul><ul class=3D"c5 lst-kix_knssfnai3sts-0 start"><li class=
+=3D"c2 c9 li-bullet-0"><span>Whenever a follower node receives </span><span=
+ class=3D"c0">and rejects </span><span class=3D"c6 c10">an append entry req=
+uest:</span></li></ul><p class=3D"c8"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;</span><span class=3D"c6 c14 c10">"Node {NodeID of followe=
+r} rejected AppendEntries RPC from {NodeID of leader}."</span></p><ul class=
+=3D"c5 lst-kix_tj5hsgmdnrrt-0 start"><li class=3D"c2 c9 li-bullet-0"><span>=
+Whenever a node </span><span class=3D"c0">grants</span><span>&nbsp;a vote t=
+o a candidate in a particular term:<br></span><span class=3D"c6 c14 c10">"V=
+ote granted for Node {Candidate NodeID} in term {term of the vote}."</span>=
+</li><li class=3D"c2 c9 li-bullet-0"><span>Whenever a node </span><span cla=
+ss=3D"c0">denies</span><span>&nbsp;a vote to a candidate in a particular te=
+rm:<br></span><span class=3D"c6 c14 c10">"Vote denied for Node {Candidate N=
+odeID} in term {term of the vote}."</span></li><li class=3D"c2 c9 li-bullet=
+-0"><span>Whenever a leader node steps down and becomes a follower:<br></sp=
+an><span class=3D"c6 c14 c10">"{NodeID} Stepping down"</span></li></ul><p c=
+lass=3D"c8 c17"><span class=3D"c6 c14 c10"></span></p><h2 class=3D"c23" id=
+=3D"h.n8ge3q5addcm"><span class=3D"c0">9</span><span class=3D"c0">. Test Ca=
+se Scenarios</span></h2><p class=3D"c1 c17"><span class=3D"c6 c10 c34"></sp=
+an></p><p class=3D"c1"><span class=3D"c6 c10">0. Start the cluster with 5 n=
+odes. Wait for the leader to be elected and a NO-OP entry to be appended in=
+ all the logs.</span></p><p class=3D"c1 c17"><span class=3D"c6 c0"></span><=
+/p><p class=3D"c1"><span class=3D"c0">[Leader Election]</span><span class=
+=3D"c6 c10">&nbsp;</span></p><p class=3D"c1 c17"><span class=3D"c6 c10"></s=
+pan></p><p class=3D"c1"><span class=3D"c6 c10">1. Have the client perform 3=
+ set requests and then 3 get requests</span></p><p class=3D"c1 c17"><span c=
+lass=3D"c6 c10"></span></p><p class=3D"c1"><span class=3D"c27 c10">Verify i=
+f the set request has been replicated in each log.</span></p><p class=3D"c1=
+"><span class=3D"c27 c10">Get requests should be returned immediately witho=
+ut any additional heartbeats by the leader.</span></p><p class=3D"c1 c17"><=
+span class=3D"c6 c0"></span></p><p class=3D"c1"><span class=3D"c6 c0">[Log =
+Replication, Basic Functionality]</span></p><p class=3D"c1 c17"><span class=
+=3D"c6 c10"></span></p><p class=3D"c1"><span class=3D"c6 c10">2. Terminate =
+one or two of the follower nodes and perform 3 SET requests and 3 GET reque=
+sts. Restart the terminated followers.</span></p><p class=3D"c1 c17"><span =
+class=3D"c6 c10"></span></p><p class=3D"c1"><span class=3D"c10 c27">Verify =
+if the terminated follower rejoins the cluster with updated logs and state.=
+</span></p><p class=3D"c1"><span class=3D"c0 c6">[Fault Tolerance, Follower=
+ Catch-up]</span></p><p class=3D"c1 c17"><span class=3D"c6 c10"></span></p>=
+<p class=3D"c1"><span class=3D"c6 c10">3. Terminate the current leader proc=
+ess. Wait for the new leader to be elected &amp; perform 2 set and 2 get re=
+quests. Restart the terminated (old leader) process.</span></p><p class=3D"=
+c1 c17"><span class=3D"c6 c10"></span></p><p class=3D"c1"><span class=3D"c2=
+7 c10">Verify if a new leader is elected &amp; cluster continues operation =
+without data loss in the logs. Also, ensure the old leader node should join=
+ the cluster as a follower with an updated state.</span></p><p class=3D"c1"=
+><span class=3D"c6 c0">[Fault Tolerance, Leader Failure, Leader Election, L=
+og Replication]</span></p><p class=3D"c1 c17"><span class=3D"c6 c10"></span=
+></p><p class=3D"c1"><span class=3D"c6 c10">4. Terminate 3 (majority) follo=
 wer nodes, and before the lease times out, send a Get request to the leader=
 . Also, observe if the leader=E2=80=99s lease times out after some time and=
- the leader steps down to become a follower node.</span></p><p class=3D"c21=
- c22"><span class=3D"c1"></span></p><p class=3D"c21"><span class=3D"c7">The=
- leader should be able to return the correct value for the GET request if i=
-t's within the lease interval. Timing is crucial, and the dump.txt can veri=
-fy if the request was received timely. The lease should also time-out since=
- the leader can't reach any of the follower nodes. </span></p><p class=3D"c=
-21"><span class=3D"c11 c6">[O(1) Read Request, Leader Lease Timeout]</span>=
-</p><p class=3D"c21 c22"><span class=3D"c11 c6"></span></p><p class=3D"c21"=
-><span class=3D"c1">5. Terminate all the nodes except two follower nodes, s=
-end a Get and Set request to any of the followers.</span></p><p class=3D"c2=
-1 c22"><span class=3D"c1"></span></p><p class=3D"c21"><span class=3D"c7">Bo=
-th Get and Set requests should fail ultimately as there is no leader presen=
-t in the system. No node will be able to become the leader.</span></p><p cl=
-ass=3D"c21"><span class=3D"c11 c6">[Failure in absence of leader in the sys=
-tem]</span></p><p class=3D"c21 c22"><span class=3D"c11 c6"></span></p><p cl=
-ass=3D"c21"><span class=3D"c6">Note: </span><span class=3D"c7">We will not =
-be checking network partitions explicitly as it is difficult to simulate a =
-network partition without any hard-coding or changes to the default algorit=
-hm. But the above test case scenarios cover most of the aspects related to =
-network partition.</span></p><p class=3D"c56"><span class=3D"c41 c64">Assum=
-ptions</span></p><ul class=3D"c0 lst-kix_g4yxl2ndua5-0 start"><li class=3D"=
-c8 c27 li-bullet-0"><span class=3D"c1">You need only to create one cluster =
-of the database using Raft. This cluster contains multiple nodes, but the n=
-umber of nodes can remain fixed from the start (nodes need not be dynamical=
-ly added or removed).</span></li><li class=3D"c8 c27 li-bullet-0"><span>You=
- can use interrupts to stop a node/program (for example, Ctrl+C to stop the=
- process). To emulate restarting the node, the program for the node will be=
- executed again.</span></li></ul></div></div></body></html>
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+ the leader steps down to become a follower node.</span></p><p class=3D"c1 =
+c17"><span class=3D"c6 c10"></span></p><p class=3D"c1"><span class=3D"c27 c=
+10">The leader should be able to return the correct value for the GET reque=
+st if it's within the lease interval. Timing is crucial, and the dump.txt c=
+an verify if the request was received timely. The lease should also time-ou=
+t since the leader can't reach any of the follower nodes. </span></p><p cla=
+ss=3D"c1"><span class=3D"c6 c0">[O(1) Read Request, Leader Lease Timeout]</=
+span></p><p class=3D"c1 c17"><span class=3D"c6 c0"></span></p><p class=3D"c=
+1"><span class=3D"c6 c10">5. Terminate all the nodes except two follower no=
+des, send a Get and Set request to any of the followers.</span></p><p class=
+=3D"c1 c17"><span class=3D"c6 c10"></span></p><p class=3D"c1"><span class=
+=3D"c27 c10">Both Get and Set requests should fail ultimately as there is n=
+o leader present in the system. No node will be able to become the leader.<=
+/span></p><p class=3D"c1"><span class=3D"c6 c0">[Failure in absence of lead=
+er in the system]</span></p><p class=3D"c1 c17"><span class=3D"c6 c0"></spa=
+n></p><p class=3D"c1"><span class=3D"c0">Note: </span><span class=3D"c27 c1=
+0">We will not be checking network partitions explicitly as it is difficult=
+ to simulate a network partition without any hard-coding or changes to the =
+default algorithm. But the above test case scenarios cover most of the aspe=
+cts related to network partition.</span></p><p class=3D"c24 c32"><span clas=
+s=3D"c10 c20">Assumptions</span></p><ul class=3D"c5 lst-kix_g4yxl2ndua5-0 s=
+tart"><li class=3D"c2 c9 li-bullet-0"><span class=3D"c6 c10">You need only =
+to create one cluster of the database using Raft. This cluster contains mul=
+tiple nodes, but the number of nodes can remain fixed from the start (nodes=
+ need not be dynamically added or removed).</span></li><li class=3D"c2 c9 l=
+i-bullet-0"><span>You can use interrupts to stop a node/program (for exampl=
+e, Ctrl+C to stop the process). To emulate restarting the node, the program=
+ for the node will be executed again.</span></li></ul></div></div></body></=
+html>
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-73a71e14-9dbe-401d-8913-1df5389715e3@mhtml.blink
+Content-Location: cid:css-4577bc3a-6f42-430d-8c02-3af9c025ae64@mhtml.blink
 
 @charset "utf-8";
 
@@ -654,7 +674,7 @@ o 25px; }
 @media only screen and (max-device-width: 800px) {
   #contents { padding: 150px 5% 80px; }
 }
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css?family=Google+Sans
@@ -788,7 +808,7 @@ OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyk.woff2") forma=
 t("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2D=
 A, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,=
  U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css?family=Roboto
@@ -831,10 +851,10 @@ A720-A7FF; }
 format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6,=
  U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+=
 2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-beaf7954-132d-43b2-9021-eb036703f3c7@mhtml.blink
+Content-Location: cid:css-3822d3fa-32b6-4b7c-a8dd-f37418c74313@mhtml.blink
 
 @charset "utf-8";
 
@@ -3206,192 +3226,174 @@ ol { margin: 0px; padding: 0px; }
 
 table td, table th { padding: 0px; }
 
-.c57 { border-style: solid; padding: 5pt; border-color: rgb(0, 0, 0); borde=
+.c61 { border-style: solid; padding: 5pt; border-color: rgb(0, 0, 0); borde=
 r-width: 0pt; vertical-align: top; background-color: rgb(25, 23, 28); width=
 : 504pt; }
 
-.c2 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: underline; ve=
+.c3 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: underline; ve=
 rtical-align: baseline; text-decoration-skip-ink: none; font-size: 11pt; fo=
 nt-family: Arial; font-style: normal; }
 
-.c33 { background-color: rgb(25, 23, 28); color: rgb(212, 212, 212); font-w=
-eight: 400; text-decoration: none; vertical-align: baseline; font-size: 11p=
-t; font-family: Consolas; font-style: normal; }
+.c36 { background-color: rgb(25, 23, 28); color: rgb(212, 212, 212); text-d=
+ecoration: none; vertical-align: baseline; font-size: 11pt; font-family: Co=
+nsolas; font-style: normal; }
 
-.c10 { margin-left: 36pt; padding-top: 0pt; padding-left: 0pt; padding-bott=
-om: 0pt; line-height: 1.15; orphans: 2; widows: 2; text-align: left; }
-
-.c16 { color: rgb(0, 0, 0); text-decoration: underline; vertical-align: bas=
-eline; text-decoration-skip-ink: none; font-size: 11pt; font-family: Arial;=
- font-style: normal; }
-
-.c36 { color: rgb(102, 102, 102); font-weight: 400; text-decoration: none; =
-vertical-align: baseline; font-size: 13pt; font-family: Arial; font-style: =
-normal; }
-
-.c7 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
-l-align: baseline; font-size: 11pt; font-family: Arial; font-style: italic;=
- }
-
-.c3 { margin-left: 36pt; padding-top: 0pt; padding-bottom: 0pt; line-height=
-: 1.21952; text-align: left; margin-right: 60.4pt; height: 11pt; }
-
-.c14 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertic=
-al-align: baseline; font-size: 11pt; font-family: "Courier New"; font-style=
-: normal; }
-
-.c1 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
-l-align: baseline; font-size: 11pt; font-family: Arial; font-style: normal;=
- }
-
-.c47 { margin-left: 0.7pt; padding-top: 20pt; padding-bottom: 6pt; line-hei=
-ght: 1.21952; break-after: avoid; text-align: left; margin-right: 60.4pt; }
-
-.c15 { color: rgb(102, 102, 102); font-weight: 400; text-decoration: none; =
-vertical-align: baseline; font-size: 12pt; font-family: Arial; font-style: =
-normal; }
-
-.c28 { padding-top: 0pt; padding-bottom: 3pt; line-height: 1.15; break-afte=
+.c15 { padding-top: 0pt; padding-bottom: 3pt; line-height: 1.15; break-afte=
 r: avoid; orphans: 2; widows: 2; text-align: center; }
 
-.c31 { color: rgb(212, 212, 212); font-weight: 400; text-decoration: none; =
-vertical-align: baseline; font-size: 11pt; font-family: "Courier New"; font=
--style: normal; }
+.c7 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline;=
+ font-size: 16pt; font-family: Arial; font-style: normal; }
 
-.c38 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertic=
-al-align: baseline; font-size: 8pt; font-family: Arial; font-style: normal;=
- }
-
-.c65 { font-weight: 400; text-decoration: none; vertical-align: baseline; f=
-ont-size: 15pt; font-family: Arial; font-style: normal; }
-
-.c41 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertic=
-al-align: baseline; font-family: Arial; font-style: normal; }
-
-.c11 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
-; font-size: 11pt; font-family: Arial; font-style: normal; }
-
-.c29 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
-; font-size: 16pt; font-family: Arial; font-style: normal; }
-
-.c55 { padding-top: 0pt; padding-bottom: 6pt; line-height: 1.1; break-after=
-: avoid; text-align: left; margin-right: 19.9pt; }
-
-.c9 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-ali=
-gn: left; margin-right: 60.4pt; height: 11pt; }
-
-.c21 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; orphans: 2=
-; widows: 2; text-align: left; }
+.c11 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
+ign: left; margin-right: 4.5pt; height: 11pt; }
 
 .c44 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
 ; font-size: 18pt; font-family: Arial; font-style: normal; }
 
-.c8 { margin-left: 36pt; padding-top: 0pt; padding-bottom: 0pt; line-height=
+.c2 { margin-left: 36pt; padding-top: 0pt; padding-bottom: 0pt; line-height=
 : 1.21952; text-align: left; margin-right: 60.4pt; }
 
-.c24 { margin-left: 1.5pt; padding-top: 14.5pt; padding-bottom: 6pt; line-h=
-eight: 1; break-after: avoid; text-align: left; }
+.c20 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 20pt; font-family: Arial; font-style: normal; }
 
-.c51 { padding-top: 20pt; padding-bottom: 6pt; line-height: 1.21952; break-=
+.c22 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 11pt; font-family: "Courier New"; font-style: normal; }
+
+.c1 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; orphans: 2;=
+ widows: 2; text-align: left; }
+
+.c48 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 25pt; font-family: Arial; font-style: normal; }
+
+.c27 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 11pt; font-family: Arial; font-style: italic; }
+
+.c29 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 22pt; font-family: Arial; font-style: normal; }
+
+.c30 { color: rgb(102, 102, 102); text-decoration: none; vertical-align: ba=
+seline; font-size: 13pt; font-family: Arial; font-style: normal; }
+
+.c40 { padding-top: 20pt; padding-bottom: 6pt; line-height: 1.21952; break-=
 after: avoid; text-align: left; margin-right: 60.4pt; }
 
-.c30 { padding-top: 14.5pt; padding-bottom: 6pt; line-height: 1; break-afte=
+.c50 { padding-top: 0pt; padding-bottom: 6pt; line-height: 1.1; break-after=
+: avoid; text-align: left; margin-right: 19.9pt; }
+
+.c6 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline;=
+ font-size: 11pt; font-family: Arial; font-style: normal; }
+
+.c58 { color: rgb(212, 212, 212); text-decoration: none; vertical-align: ba=
+seline; font-size: 11pt; font-style: normal; }
+
+.c23 { padding-top: 14.5pt; padding-bottom: 6pt; line-height: 1; break-afte=
 r: avoid; text-align: left; }
 
-.c17 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
+.c43 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
 ign: left; margin-right: 4.5pt; }
 
-.c56 { margin-left: 1.5pt; padding-top: 14.5pt; padding-bottom: 0pt; line-h=
-eight: 1; text-align: left; }
+.c42 { color: rgb(0, 0, 0); vertical-align: baseline; font-size: 11pt; font=
+-family: Arial; font-style: normal; }
 
-.c13 { padding-top: 9.7pt; padding-bottom: 0pt; line-height: 1.10155; text-=
+.c55 { text-decoration: none; vertical-align: baseline; font-size: 15pt; fo=
+nt-family: Arial; font-style: normal; }
+
+.c8 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-ali=
+gn: left; margin-right: 60.4pt; }
+
+.c16 { padding-top: 9.7pt; padding-bottom: 0pt; line-height: 1.10155; text-=
 align: left; margin-right: 19.9pt; }
 
-.c12 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
-ign: left; margin-right: 60.4pt; }
+.c57 { text-decoration: none; vertical-align: baseline; font-family: Arial;=
+ font-style: normal; }
 
-.c5 { text-decoration-skip-ink: none; color: rgb(17, 85, 204); text-decorat=
-ion: underline; }
-
-.c34 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(139, 135, 146); font-weight: 400; }
-
-.c49 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(212, 212, 212); font-weight: 400; }
-
-.c63 { border-spacing: 0px; border-collapse: collapse; margin-right: auto; =
-}
-
-.c46 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(149, 90, 231); font-weight: 400; }
-
-.c54 { text-decoration-skip-ink: none; color: rgb(255, 0, 0); text-decorati=
-on: underline; }
-
-.c62 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(255, 0, 0); font-weight: 400; }
-
-.c23 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; text-align=
+.c47 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; text-align=
 : left; }
 
-.c53 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(86, 156, 214); font-weight: 400; }
+.c32 { padding-top: 14.5pt; padding-bottom: 0pt; line-height: 1; text-align=
+: left; }
 
-.c26 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
-(170, 87, 60); font-weight: 400; }
+.c25 { border-spacing: 0px; border-collapse: collapse; margin-right: auto; =
+}
 
-.c60 { text-decoration-skip-ink: none; text-decoration: underline; }
+.c35 { text-decoration-skip-ink: none; color: rgb(17, 85, 204); text-decora=
+tion: underline; }
 
-.c66 { background-color: rgb(255, 255, 255); max-width: 504pt; padding: 67.=
+.c4 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb(=
+86, 156, 214); font-weight: 400; }
+
+.c31 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
+(139, 135, 146); }
+
+.c19 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
+(170, 87, 60); }
+
+.c38 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
+(212, 212, 212); }
+
+.c37 { background-color: rgb(255, 255, 255); max-width: 504pt; padding: 67.=
 5pt 54pt 72pt; }
 
-.c42 { background-color: rgb(244, 204, 204); font-size: 16pt; }
+.c41 { text-decoration-skip-ink: none; text-decoration: underline; }
 
-.c0 { padding: 0px; margin: 0px; }
+.c56 { background-color: rgb(25, 23, 28); font-family: Consolas; color: rgb=
+(149, 90, 231); }
 
-.c37 { font-weight: 400; font-family: "Courier New"; }
+.c18 { color: rgb(102, 102, 102); font-size: 12pt; }
 
-.c18 { margin-left: 72pt; padding-left: 0pt; }
+.c63 { color: rgb(0, 0, 0); font-size: 8pt; }
 
-.c4 { color: inherit; text-decoration: inherit; }
+.c54 { background-color: rgb(255, 217, 102); font-style: italic; }
 
-.c40 { margin-left: 0.6pt; text-indent: 0.2pt; }
+.c5 { padding: 0px; margin: 0px; }
 
-.c19 { margin-left: 108pt; padding-left: 0pt; }
+.c45 { margin-left: 0.6pt; text-indent: 0.2pt; }
 
-.c48 { color: rgb(102, 102, 102); }
+.c26 { color: inherit; text-decoration: inherit; }
 
-.c35 { margin-left: 36pt; }
+.c60 { background-color: rgb(25, 23, 28); font-family: Consolas; }
 
-.c20 { background-color: rgb(0, 255, 255); }
+.c24 { margin-left: 1.5pt; }
 
-.c58 { font-size: 14pt; }
+.c14 { background-color: rgb(255, 255, 0); }
 
-.c39 { height: 0pt; }
+.c13 { margin-left: 36pt; }
 
-.c52 { font-size: 16pt; }
+.c64 { background-color: rgb(255, 217, 102); }
 
-.c64 { font-size: 20pt; }
+.c28 { background-color: rgb(244, 204, 204); }
 
-.c22 { height: 11pt; }
+.c46 { font-size: 22pt; }
 
-.c6 { font-weight: 700; }
+.c10 { font-weight: 400; }
 
-.c50 { font-size: 10pt; }
+.c34 { background-color: rgb(0, 255, 255); }
 
-.c59 { font-size: 12pt; }
+.c62 { font-size: 14pt; }
 
-.c61 { font-size: 25pt; }
+.c59 { height: 0pt; }
 
-.c43 { margin-left: 144pt; }
+.c53 { margin-left: 144pt; }
 
-.c25 { background-color: rgb(255, 255, 0); }
+.c33 { font-family: "Courier New"; }
 
-.c45 { margin-left: 72pt; }
+.c9 { padding-left: 0pt; }
 
-.c32 { font-size: 22pt; }
+.c51 { color: rgb(255, 0, 0); }
 
-.c27 { padding-left: 0pt; }
+.c0 { font-weight: 700; }
+
+.c39 { color: rgb(102, 102, 102); }
+
+.c49 { margin-left: 0.7pt; }
+
+.c21 { margin-left: 108pt; }
+
+.c17 { height: 11pt; }
+
+.c52 { font-size: 10pt; }
+
+.c12 { margin-left: 72pt; }
 
 .title { padding-top: 0pt; color: rgb(0, 0, 0); font-size: 26pt; padding-bo=
 ttom: 3pt; font-family: Arial; line-height: 1.15; break-after: avoid; orpha=
@@ -3429,7 +3431,7 @@ phans: 2; widows: 2; text-align: left; }
 h6 { padding-top: 12pt; color: rgb(102, 102, 102); font-size: 11pt; padding=
 -bottom: 4pt; font-family: Arial; line-height: 1.15; break-after: avoid; fo=
 nt-style: italic; orphans: 2; widows: 2; text-align: left; }
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://themes.googleusercontent.com/fonts/css?kit=lhDjYqiy3mZ0x6ROQEUoUw
@@ -3442,10 +3444,10 @@ y=3D3d1eb1871fcc58a1&v=3Dv19") format("woff2"); unicode-range: U+0-FF, U+13=
 1, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-2=
 06F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD=
 ; }
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
-Content-Location: https://lh7-us.googleusercontent.com/eHkCkh0XcfO6-fDZeIzZv1gEatj5UHYGd46ZNraJtnJCmFTCyzvaVPJHZ1-RxwcdqAx4YZMibo8OR6G2t1jVfaoy6leRXsLGdtSMkWoR1umBl8wUaJyHheuUSf-8dxGxNTkyxwCVvgnHPHcZJK7XdTo
+Content-Location: https://lh7-us.googleusercontent.com/fJIW9QPv6g8Ps5OiatGjt0giX5Nrct6hF8DDJ_5GNj8YK61POTmy6oXQa1uXPaxwgPuSI1ggkr4n3s46ksY8yU-M9jhsCsJpNW4gJlOqUu3A2D7IPpmamLfvUs9S1XDqIlpyOIpKuC5j9AqDLkOV4Ng
 
 iVBORw0KGgoAAAANSUhEUgAAAdAAAAJNCAYAAACBTSQAAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAAEPoAABD6AcvHGlIAAP+lSURBVHhe7J0JvE1VF8C3IREpY4NkHisyFxIl
@@ -4961,10 +4963,10 @@ QF9PREs9fbHWKrOeHX8XCoVCoTCT+fNf/rf1o18O+Yvu54morwAtFAqFQmFhZEyu/F643DPafxUK
 hUKhsHDywmV7y8KOM1A8/J9PtC6+eSgEUKFQKBQKCxOE5w7/uEJ7rzNdBWihUCgUCoXuFCvcQqFQ
 KBTGQBGghUKhUCiMgSJAC4VCoVAYNa3W/w/Cz3NS0JWGhQAAAABJRU5ErkJggg==
 
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
-Content-Location: https://lh7-us.googleusercontent.com/r4apLRSXkL37CONGVVuBHalnu2P1qGImAi_P9Hb6YCtGtO6aJmgdTAg_vbXF3skz6PkLKM-JUQDieMR3fvH0BBeuqVvi_0vmm1M4GpQbuyCKZ786_xChE7YNnAawAlQzpMQ-utGil1lGXv4Ky4oHQWg
+Content-Location: https://lh7-us.googleusercontent.com/OEIAGyewIEde3txds9Er_cLhiJ6pQ_gyRUKuJmc5fZFV6Byj-9wYoc5F5BfMICPA3_3tkvagjjRwjLlwMQ4og0797xrnqRJwfreSYQXzQ4FOt7v-h537dsF979tbztHQVyGws6MLjlJxzAAZEL_xP5E
 
 iVBORw0KGgoAAAANSUhEUgAAAdAAAAFfCAYAAAD+u50NAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAAEPoAABD6AcvHGlIAAMGpSURBVHhe7Z0JvE1VF8A3SskQQtFMGdJgipIk
@@ -5839,10 +5841,10 @@ AaomXEVRFEVJAxWgiqIoipIGKkAVRVEUJQ1UgCqKoihKGqgAVRRFUZQ0UAGqKIqiKGmgAlRRFEVR
 z/qaUANd/sdG02f4HPmrKIqiKHsSJfYrbFqfeoQ5o/aOhdODJBSgiqIoiqLERr1wFUVRFCUNVIAq
 iqIoShqoAFUURVGUTGPM/wECIgPuUelZcQAAAABJRU5ErkJggg==
 
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma----
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
-Content-Location: https://lh7-us.googleusercontent.com/R6SQzLVrzyO2C_kVsCmypIamUgh1vWnoNY5VlTwSlfaJOU1_azn95l3aPrgS9qAlFnvU-6lp8Tm-uPyla72qTQbvOnGYIugDHS3WyDIXypdhrE0iUkuQkRJs6wvdG_lk9DaZUKpZos7S5aI0Q9U-2Hw
+Content-Location: https://lh7-us.googleusercontent.com/NV_O1UcSilKJCq76jgagRxbsHplP1wLQsmYO-t2ooBIXa06Y0fczsTIBHBs8xOnSrtzbJWZv27niETUC147W_zUwsC4OI_A_etlpRP2rVUoLlt-ldEW5vkn3S6JF0jQFkBWMm_bUb_SzmKzixAqKm9s
 
 iVBORw0KGgoAAAANSUhEUgAAAfYAAAJWCAYAAACqH6XPAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAAEPoAABD6AcvHGlIAAP+lSURBVHhe7J0JuE5VF4B3xlKkzKkQSUrGkpQh
@@ -7390,4 +7392,4 @@ xqx1ZvKslPUOIJJVfLoEu6IoiqIoyYNOd1MURVGUXESRIw50lBVTsJ9V/XhZlEZRFEVRlOSC4fHL
 m1Xy9/YTsyve8f1Pf8imKIqiKEr2U/Xk40yRI1Pc94YTl2BXFEVRFCVnoGPsiqIoipKLUMGuKIqi
 KLkIFeyKoiiKkmsw5v8BwBB++fc/is0AAAAASUVORK5CYII=
 
-------MultipartBoundary--r4nc8mSaV7o8xPxPocKR8sGjcPAHjXzaKnFsrCpmma------
+------MultipartBoundary--T5evXtXZuQEBewjs4AfrLRVvj1Di2RhrGsv89eCa2g------

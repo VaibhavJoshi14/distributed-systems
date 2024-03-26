@@ -90,7 +90,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
         self.leaderLeaseDuration = 10 # seconds
         self.leaseStartTime = None
-
+        self.wait = False
         self.start_leader_communication_monitoring()
 
 
@@ -247,7 +247,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         # we don't want a leader which has an outdated log.
         logOk = request.cLogTerm > lastTerm or (request.cLogTerm == lastTerm and request.cLogLength >= len(self.log))
 
-        if request.cTerm == self.currentTerm and logOk and self.votedFor in {request.cId, None}:
+        if request.cTerm == self.currentTerm and logOk and self.votedFor in {request.cId, None} and self.wait == False:
             self.votedFor = request.cId
             self.writeMetadata()
             with open(self.dump_file, 'a') as f:
@@ -381,7 +381,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                         with open(self.dump_file, 'a') as f:
                             f.write(f"New Leader waiting for Old Leader Lease to timeout.\n")
                             print(f"New Leader waiting for Old Leader Lease to timeout.")
+                        self.wait = True
                         time.sleep(maxRemainingLeaderLease - (curTime - timeLease))
+                        self.wait = False
                     
                     # start own lease
                     self.leaseStartTime = time.time()

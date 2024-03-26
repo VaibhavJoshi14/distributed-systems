@@ -318,16 +318,18 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                 # wait for the remaining duration of lease, so that others could GET.
                 curr_time = time.time()
                 if (curr_time - self.leaseStartTime < self.leaderLeaseDuration):
-                    time.sleep(self.leaderLeaseDuration - (curr_time - self.leaseStartTime)) # this sleeps only the heartbeats
-                
-                # step down and become a follower
-                with open(self.dump_file, 'a') as f:
-                    f.write(f"Leader {self.nodeId} lease renewal failed. Stepping Down.\n")
-                    print(f"Leader {self.nodeId} lease renewal failed. Stepping Down.")
-                self.currentRole = "follower"
-                self.reset_election_timeout()
-                
-                break
+                    # Sleep for the heartbeat interval
+                    time.sleep(self.heartbeatInterval)
+                    continue
+                    #time.sleep(self.leaderLeaseDuration - (curr_time - self.leaseStartTime)) # this sleeps only the heartbeats
+                else:
+                    # step down and become a follower
+                    with open(self.dump_file, 'a') as f:
+                        f.write(f"Leader {self.nodeId} lease renewal failed. Stepping Down.\n")
+                        print(f"Leader {self.nodeId} lease renewal failed. Stepping Down.")
+                    self.currentRole = "follower"
+                    self.reset_election_timeout()
+                    break
 
             # Sleep for the heartbeat interval
             time.sleep(self.heartbeatInterval)

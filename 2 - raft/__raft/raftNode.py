@@ -391,7 +391,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                             print(f"New Leader waiting for Old Leader Lease to timeout.")
                         self.wait = True
                         time.sleep(maxRemainingLeaderLease - (curTime - timeLease))
-                        self.wait = False
+                        
                     
                     # start own lease
                     self.leaseStartTime = time.time()
@@ -422,6 +422,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
                     # Start sending heartbeat messages
                     self.start_heartbeat()
+                    self.wait = False
                     break
 
                 elif response.term > self.currentTerm:

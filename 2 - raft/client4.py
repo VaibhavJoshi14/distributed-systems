@@ -4,7 +4,9 @@ import time
 
 client_addr = "localhost:50050"
 # addresses of each raft node
-cluster_nodes = {0: "34.136.207.16:50051", 1: "34.41.113.214:50052", 2: "104.154.47.196:50053", 3: "35.193.216.62:50054", 4: "localhost:50055"}
+cluster_nodes = {0: "35.224.28.71:50051", 1: "34.136.207.16:50052", 2: "104.154.47.196:50053", 3: "localhost:50054", 4: "localhost:50055"}
+
+#cluster_nodes = {0: "localhost:50051", 1: "localhost:50052", 2: "localhost:50053", 3: "localhost:50054", 4: "localhost:50055"}
 
 class Client:
     def __init__(self, client_addr, cluster_nodes):
@@ -16,6 +18,7 @@ class Client:
     def get(self, key):
         while True:
             # keep trying until request succeeds
+            response = None
             with grpc.insecure_channel(self.cluster_nodes[self.leaderId]) as channel:
                 req = "GET " + key
                 stub = raft_pb2_grpc.RaftClientServiceStub(channel)
@@ -33,7 +36,7 @@ class Client:
                     self.leaderId = (self.leaderId + 1) % len(self.cluster_nodes)
             
             # change the currentLeaderId here because that would be the reason of failure
-            if (self.leaderId != None):
+            if (self.leaderId != None and response != None):
                 self.leaderId = response.leaderId    
 
 

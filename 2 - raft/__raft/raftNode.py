@@ -315,17 +315,17 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                 self.leaderLeaseDuration = 10 # seconds
                 self.leaseStartTime = time.time()
             else:
-                # step down and become a follower
-                self.currentRole = "follower"
-                with open(self.dump_file, 'a') as f:
-                    f.write(f"Leader {self.nodeId} lease renewal failed. Stepping Down.\n")
-                    print(f"Leader {self.nodeId} lease renewal failed. Stepping Down.")
-                self.reset_election_timeout()
-                
                 # wait for the remaining duration of lease, so that others could GET.
                 curr_time = time.time()
                 if (curr_time - self.leaseStartTime < self.leaderLeaseDuration):
-                    time.sleep(self.leaderLeaseDuration - (curr_time - self.leaseStartTime))
+                    time.sleep(self.leaderLeaseDuration - (curr_time - self.leaseStartTime)) # this sleeps only the heartbeats
+                
+                # step down and become a follower
+                with open(self.dump_file, 'a') as f:
+                    f.write(f"Leader {self.nodeId} lease renewal failed. Stepping Down.\n")
+                    print(f"Leader {self.nodeId} lease renewal failed. Stepping Down.")
+                self.currentRole = "follower"
+                self.reset_election_timeout()
                 
                 break
 
@@ -600,7 +600,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                 continue
             current_time = time.time()
 
-            if current_time - self.last_leader_communication_time > self.election_timeout:
+            if current_time - self.last_leader_communication_time > self.election_timeout and self.wait == False:
                 # if this condition is satisfied, assume that leader has failed, and start a new election.
                                
                 # Save to dump file that a new election is being started

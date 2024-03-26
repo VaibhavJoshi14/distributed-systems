@@ -321,6 +321,12 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     f.write(f"Leader {self.nodeId} lease renewal failed. Stepping Down.\n")
                     print(f"Leader {self.nodeId} lease renewal failed. Stepping Down.")
                 self.reset_election_timeout()
+                
+                # wait for the remaining duration of lease, so that others could GET.
+                curr_time = time.time()
+                if (curr_time - self.leaseStartTime < self.leaderLeaseDuration):
+                    time.sleep(self.leaderLeaseDuration - (curr_time - self.leaseStartTime))
+                
                 break
 
             # Sleep for the heartbeat interval

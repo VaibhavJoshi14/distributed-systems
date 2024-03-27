@@ -455,7 +455,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         if request.Request.split()[0] == "GET" and time.time() - self.leaseStartTime <= self.leaderLeaseDuration:
             key = request.Request.split()[1]
             return raft_pb2.ServeClientReply(data=self.db.get(key), success=True)
-            
+        elif time.time() - self.leaseStartTime > self.leaderLeaseDuration: # return a failed rpc since lease has expired
+            return raft_pb2.ServeClientReply(success=False)
+
         # Append the set type request to leader's log
         entry = request.Request + " " + str(self.currentTerm) 
         self.log.append(entry)

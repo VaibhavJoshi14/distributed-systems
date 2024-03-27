@@ -64,3 +64,7 @@ Error occurred while sending RPC to Node 4.
 Leader 0 sending heartbeat & Renewing Lease
 Error occurred while sending RPC to Node 4.
 Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 4.
+Leader 0 sending heartbeat & Renewing Lease

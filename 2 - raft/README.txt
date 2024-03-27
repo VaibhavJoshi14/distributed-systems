@@ -11,11 +11,7 @@ A menu-driven client is provided in clientMenu.py.
 If a new raft node i needs to be created, first create a folder logs_node_i, and create three empty files inside it: dump.txt, logs.txt, metadata.txt.
 
 -------------------------------------------------------
-Implementation details:
-    * Leader sends heartbeat every second.
-    * Leader sends a lease duration of 3 seconds.
-    * Election timeout is set to a random number in 15 to 21 seconds
-    * The details of implementation follow the Martin Kleppmann's lecture provided.
+The details of implementation follow the Martin Kleppmann's lecture provided.
 
 --------------------------------------------------------------------------------------------------------------------------
 

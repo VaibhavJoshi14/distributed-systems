@@ -88,7 +88,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         self.server.start()
         print("Server started, listening on " + port)
         
-        self.leaderLeaseDuration = 5 # seconds
+        self.leaderLeaseDuration = 10 # seconds
         self.leaseStartTime = None
         self.wait = False
         self.start_leader_communication_monitoring()
@@ -315,7 +315,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             
             if acq >= need:
                 # renew the lease, if it gets majority votes
-                self.leaderLeaseDuration = 5 # seconds
+                self.leaderLeaseDuration = 10 # seconds
                 self.leaseStartTime = time.time()
             else:
                 # wait for the remaining duration of lease, so that others could GET.

@@ -1,4 +1,4 @@
-Run each of the nodes (nodei.py for i in [0..4]) from a terminal in the same directory as the node python files.
+Run each of the nodes (nodei.py for i in [0..4]) from terminals in the same directory as the node python files.
 
 For a fresh start of raft nodes, delete the files inside logs_node_i for each i, but 
 do not delete the directories.

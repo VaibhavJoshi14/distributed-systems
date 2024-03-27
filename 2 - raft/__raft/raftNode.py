@@ -258,7 +258,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     oldLease = self.leaderLeaseDuration - int(ceil(time.time() - self.leaseStartTime)) 
                 else:
                     oldLease = 0
-                print("here ", oldLease)
+                #print("here ", oldLease)
             else:
                 oldLease = 0
 

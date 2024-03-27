@@ -88,7 +88,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         self.server.start()
         print("Server started, listening on " + port)
         
-        self.leaderLeaseDuration = 10 # seconds
+        self.leaderLeaseDuration = 5 # seconds
         self.leaseStartTime = None
         self.wait = False
         self.start_leader_communication_monitoring()
@@ -157,10 +157,9 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
 
         # --------------When the above if condition is false, then process the log request.----------------------------------
         
-        # update the lease duration when the appendEntries rpc is accepted, and it is a heartbeat.
-        if request.leaseDuration != None:
-            self.leaderLeaseDuration = request.leaseDuration
-            self.leaseStartTime = time.time()
+        # update the lease duration when the appendEntries rpc is accepted.
+        self.leaderLeaseDuration = request.leaseDuration
+        self.leaseStartTime = time.time()
 
         # suffix is the new log entries that the leader wants the follower to append
         suffix = list(request.suffix)
@@ -222,14 +221,15 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         """
         Reset the election timeout.
         """
-        # Adjust these values based on your requirements
         min_timeout = 15000   # in milliseconds
-        max_timeout = 21000   # in milliseconds
+        max_timeout = 25000   # in milliseconds
         self.election_timeout = random.randint(min_timeout, max_timeout) / 1000  # Convert to seconds
         self.last_leader_communication_time = time.time()
 
 
     def RequestVote(self, request, context):
+        self.reset_election_timeout()
+
         # if candidate's term is greater than our term, we set the term as the candidate's term,
         # transition to follower state.
         if request.cTerm > self.currentTerm:
@@ -237,8 +237,6 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             self.currentRole = "follower"
             self.votedFor = None
             self.writeMetadata()
-        
-        self.reset_election_timeout()
 
         lastTerm = 0
         if len(self.log) > 0:
@@ -247,18 +245,23 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         # we don't want a leader which has an outdated log.
         logOk = request.cLogTerm > lastTerm or (request.cLogTerm == lastTerm and request.cLogLength >= len(self.log))
 
-        if request.cTerm == self.currentTerm and logOk and self.votedFor in {request.cId, None} and self.wait == False:
+        if request.cTerm == self.currentTerm and logOk and self.votedFor in {request.cId, None}:
             self.votedFor = request.cId
             self.writeMetadata()
             with open(self.dump_file, 'a') as f:
                 f.write(f"Vote granted for Node {request.cId} in term {self.currentTerm}.\n")
                 print(f"Vote granted for Node {request.cId} in term {self.currentTerm}.")
             
+             # old leader's lease duration to send
             if self.leaseStartTime != None:
-                oldLease = int(ceil(time.time() - self.leaseStartTime)) 
+                if int(ceil(time.time() - self.leaseStartTime)) < self.leaderLeaseDuration:
+                    oldLease = self.leaderLeaseDuration - int(ceil(time.time() - self.leaseStartTime)) 
+                else:
+                    oldLease = 0
+                print("here ", oldLease)
             else:
                 oldLease = 0
-            
+
             return raft_pb2.RequestVoteReply(term=self.currentTerm, voteGranted=True, oldLeaderRemainingLease = oldLease)
         
         else:
@@ -306,13 +309,13 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             # Send AppendEntries RPC to the followers
             for follower_id in self.cluster_nodes:
                 if follower_id != self.nodeId:
-                    response = self.replicateLog(self.nodeId, follower_id, True)
+                    response = self.replicateLog(self.nodeId, follower_id)
                     if response != None and response.success == True:
                         acq += 1
             
             if acq >= need:
                 # renew the lease, if it gets majority votes
-                self.leaderLeaseDuration = 10 # seconds
+                self.leaderLeaseDuration = 5 # seconds
                 self.leaseStartTime = time.time()
             else:
                 # wait for the remaining duration of lease, so that others could GET.
@@ -390,6 +393,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                             f.write(f"New Leader waiting for Old Leader Lease to timeout.\n")
                             print(f"New Leader waiting for Old Leader Lease to timeout.")
                         self.wait = True
+                        print("sleep ",maxRemainingLeaderLease - (curTime - timeLease) , maxRemainingLeaderLease)
                         time.sleep(maxRemainingLeaderLease - (curTime - timeLease))
                         
                     
@@ -406,7 +410,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                         if fid != self.nodeId:
                             self.sentLength[fid] = len(self.log)
                             self.ackedLength[fid] = 0
-                            self.replicateLog(self.nodeId, fid, False)
+                            self.replicateLog(self.nodeId, fid)
 
                     entry = "NO-OP " + str(self.currentTerm)
                     self.log.append(entry)
@@ -418,7 +422,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
                     for fid in self.cluster_nodes:
                         if fid != self.nodeId:
-                            self.replicateLog(self.nodeId, fid, False)
+                            self.replicateLog(self.nodeId, fid)
 
                     # Start sending heartbeat messages
                     self.start_heartbeat()
@@ -466,19 +470,14 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
         
         for fid in self.cluster_nodes:
             if fid != self.nodeId:
-                self.replicateLog(self.nodeId, fid, False)
+                self.replicateLog(self.nodeId, fid)
 
         return raft_pb2.ServeClientReply(success=True)
 
 
 
     # This is the log append request sending rpc.
-    def replicateLog(self, leaderId, followerId, isHeartbeat):
-        
-        if isHeartbeat == True:
-            _leaseDuration = self.leaderLeaseDuration
-        else:
-            _leaseDuration = None
+    def replicateLog(self, leaderId, followerId):
 
         prefixLen = self.sentLength[followerId]
         # all remaining log entries that need to be sent
@@ -497,7 +496,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
                     leaderId = leaderId,
                     term = self.currentTerm,
                     prefixTerm = prefixTerm,
-                    leaseDuration = _leaseDuration
+                    leaseDuration = self.leaderLeaseDuration
                 )
         response = None
         # Establish gRPC channel to the follower
@@ -532,7 +531,7 @@ class RaftNode(raft_pb2_grpc.RaftNodeServicesServicer, raft_pb2_grpc.RaftClientS
             # and send one more log entry to the follower. This could take a number of iterations to do this.
             elif self.sentLength[response.senderId] > 0:
                 self.sentLength[response.senderId] = self.sentLength[response.senderId] - 1
-                self.replicateLog(self.nodeId, response.senderId, False)
+                self.replicateLog(self.nodeId, response.senderId)
         # when the follower is at a higher term, then the leader should shift to a 'follower' state.
         elif response.term > self.currentTerm:
             self.currentTerm = response.term

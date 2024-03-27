@@ -5,7 +5,7 @@ import time
 client_addr = "localhost:50050"
 # addresses of each raft node
 cluster_nodes = {0: "35.224.28.71:50051", 1: "34.136.207.16:50052", 2: "104.154.47.196:50053", 3: "localhost:50054", 4: "localhost:50055"}
-#cluster_nodes = {0: "localhost:50051", 1: "localhost:50052", 2: "localhost:50053", 3: "localhost:50054", 4: "localhost:50055"}
+cluster_nodes = {0: "localhost:50051", 1: "localhost:50052", 2: "localhost:50053", 3: "localhost:50054", 4: "localhost:50055"}
 class Client:
     def __init__(self, client_addr, cluster_nodes):
         self.client_addr = client_addr

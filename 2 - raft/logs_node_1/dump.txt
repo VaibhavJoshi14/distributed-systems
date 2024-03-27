@@ -1,0 +1,20 @@
+Vote granted for Node 0 in term 1.
+Node 1 accepted AppendEntries RPC from 0.
+Node 1 (follower) committed the entry NO-OP 1 to the state machine.
+Node 1 election timer timed out, Starting election.
+Node 1 became the leader for term 2.
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Error occurred while sending RPC to Node 0.
+Node 1 (leader) committed the entry NO-OP 2 to the state machine.
+Error occurred while sending RPC to Node 4.
+Leader 1 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 0.
+Error occurred while sending RPC to Node 4.
+Leader 1 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 4.
+Leader 1 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 4.
+Leader 1 sending heartbeat & Renewing Lease
+Node 1 accepted AppendEntries RPC from 0.
+Node 1 (follower) committed the entry NO-OP 4 to the state machine.

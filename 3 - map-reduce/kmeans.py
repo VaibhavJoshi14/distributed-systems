@@ -125,6 +125,7 @@ if __name__ == "__main__":
     ret = kmeans_cluster(df=df, k=2)
 
     print("Clusters assigned ", ret['clusterId'])
+    print("Centroids", ret['centroids'])
     import seaborn as sns
     import matplotlib.pyplot as plt
     from sklearn.manifold import TSNE

@@ -4,7 +4,9 @@ import numpy as np
 # This algorithm will become extremely slow to be usable for large datasets.
 # df must only contain numeric data. Type checking for non-numeric data is not performed.
 # k is the number of clusters of the data df that should be formed (Integer).
-def kmeans_cluster(df, k):
+# max_attempts need not be changed, but can be increased if clustering is not able to find the required 
+# number of clusters.
+def kmeans_cluster(df, k, max_attempts = 100):
     # Step 1: Randomly initialize k cluster centroids.
     centroids = init_centroids(df, k)
     # will contain the clusterId assigned to each point.
@@ -22,10 +24,9 @@ def kmeans_cluster(df, k):
         # Step 2.2: Recompute the centroid of each cluster
         _centroids = compute_cluster_centroids(df, clusterId, k)
         
-        # retry when lesser clusters are identified. This depends on the random initialization. It is not a good way since it
-        # can go to infinite loop if the clusters cannot be larger.
-        if num_distinct_values(clusterId, k) < k:
-            return kmeans_cluster(df, k)
+        # retry when lesser clusters are identified. This depends on the random initialization.
+        if num_distinct_values(clusterId, k) < k and max_attempts > 0:
+            return kmeans_cluster(df, k, max_attempts-1)
 
         max_iter -= 1
         if (max_iter > 0 and has_changed(centroids, _centroids) == True) == False:
@@ -142,9 +143,8 @@ if __name__ == "__main__":
     )
     plt.show()
     
-    
-    
-    """import pandas as pd
+    """
+    import pandas as pd
     df = pd.read_csv('datasets/wdbc.data', header=None) # set k = 2 for this.
     df = pd.DataFrame(df.to_numpy()[:, 2:].astype('float64'))
 

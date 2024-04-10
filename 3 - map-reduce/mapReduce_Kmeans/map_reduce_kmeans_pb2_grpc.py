@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import map_reduce_kmeans_pb2 as map__reduce__kmeans__pb2
+from mapReduce_Kmeans import map_reduce_kmeans_pb2 as map__reduce__kmeans__pb2
 
 
 class MapperStub(object):

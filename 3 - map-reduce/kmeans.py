@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 import numpy as np
+
 # The algorithm clusters using k-means.
 # df must only contain numeric data. Type checking for non-numeric data is not performed.
 # k is the number of clusters of the data df that should be formed (Integer).
@@ -8,15 +9,14 @@ import numpy as np
 # max_attempts need not be changed, but can be increased if clustering is not able to find the required 
 # number of clusters.
 
-def kmeans_cluster(df, k, max_attempts = 100):
+def kmeans_cluster(df, k, maxIter = 100, maxAttempts = 100):
     # Step 1: Randomly initialize k cluster centroids.
     centroids = init_centroids(df, k)
     # will contain the clusterId assigned to each point.
     clusterId = [0 for i in range(len(df))]
 
     _centroids = []
-    max_iter = 100
-    
+    max_iter = maxIter
     # Step 2: Repeat until the centroids converge or the max iter limit has reached.
     while True:
         # Step 2.1: Assign each point of the data to the nearest centroid.  
@@ -25,7 +25,7 @@ def kmeans_cluster(df, k, max_attempts = 100):
 
         # Step 2.2: Recompute the centroid of each cluster
         _centroids = compute_cluster_centroids(df, clusterId, k)
-
+        
         max_iter -= 1
         if (max_iter > 0 and centroids != _centroids) == False:
             break
@@ -33,8 +33,8 @@ def kmeans_cluster(df, k, max_attempts = 100):
         centroids = preprocess(_centroids.copy(), df, k)
         
         # retry when lesser clusters are identified. This depends on the random initialization.
-        if len(centroids) < k and max_attempts > 0:
-            return kmeans_cluster(df, k, max_attempts-1)
+        if len(centroids) < k and maxAttempts > 0:
+            return kmeans_cluster(df, k, maxIter, maxAttempts-1)
     
     return {"centroids": centroids, "clusterId": clusterId}
 

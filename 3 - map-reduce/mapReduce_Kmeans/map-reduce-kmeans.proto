@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 message Data {
-  repeated double data = 1; // stores a list of values. Used for sending centroids
+  repeated double data = 1; // stores a list of double values. Used for sending centroids
 }
 
 message MapRequest {
@@ -18,9 +18,15 @@ message Reply {
   string message = 1; //either SUCCESS or FAIL
 }
 
-// This rpc service is sent by the master to each mapper
+// This rpc service is sent by the master to each mapper.
+// This rpc server needs to be initialized in each mapper.
 service Mapper {
   rpc Map(MapRequest) returns (Reply) {}
+
+  // This message is sent by each reducer to all the mappers to get the inputs 
+  // for the steps that the reducer has to perform.
+  rpc GetInputFromMapper(ReduceInputRequest) returns (ReduceInputReply) {}
+  
 }
 
 message ReduceInitRequest {
@@ -45,15 +51,12 @@ message Empty {
   
 }
 
+// This rpc needs to be initialized in each reducer.
 service Reducer {
   // This message is sent by the master to the reducers for initialization, after
   // all the mappers complete their tasks.
   rpc ReduceInit(ReduceInitRequest) returns (Reply) {}
 
-  // This message is sent by each reducer to all the mappers to get the inputs 
-  // for the steps that the reducer has to perform.
-  rpc GetInputFromMapper(ReduceInputRequest) returns (ReduceInputReply) {}
-  
   // This message is sent by the master to each reducer to get the reduced data.
   rpc GetReduceOutput(Empty) returns (ReduceInputReply) {}
 }

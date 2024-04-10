@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+message Data {
+  repeated double data = 1; // stores a list of values. Used for sending centroids
+}
+
+message MapRequest {
+  // These two indices tell the chunk of data to map.
+  // The input data is assumed to be already available with each mapper.
+  int32 inputStartIndex = 1;
+  int32 inputEndIndex = 2;
+
+  repeated Data centroids = 3;  // stores the list of all centroids.
+  int32 numReducers = 4;        // stores the number of reducers.
+}
+
+message Reply {
+  string message = 1; //either SUCCESS or FAIL
+}
+
+// This rpc service is sent by the master to each mapper
+service Mapper {
+  rpc Map(MapRequest) returns (Reply) {}
+}
+
+message ReduceInitRequest {
+  int32 numMappers = 1;
+  int32 numReducers = 2;
+}
+
+message ReduceInputRequest {
+  int32 reducerId = 1;
+}
+
+message KeyValueData {
+  int32 key = 1;            // id of nearest centroid to which data point belongs.
+  repeated double data = 2; // the data point.
+}
+
+message ReduceInputReply {
+  repeated KeyValueData data = 1;
+}
+
+message Empty {
+  
+}
+
+service Reducer {
+  // This message is sent by the master to the reducers for initialization, after
+  // all the mappers complete their tasks.
+  rpc ReduceInit(ReduceInitRequest) returns (Reply) {}
+
+  // This message is sent by each reducer to all the mappers to get the inputs 
+  // for the steps that the reducer has to perform.
+  rpc GetInputFromMapper(ReduceInputRequest) returns (ReduceInputReply) {}
+  
+  // This message is sent by the master to each reducer to get the reduced data.
+  rpc GetReduceOutput(Empty) returns (ReduceInputReply) {}
+}
+
+

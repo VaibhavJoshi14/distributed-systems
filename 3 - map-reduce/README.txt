@@ -1,3 +1,5 @@
+It is assumed that the input data to be clustered is one file only, not separate chunks of files.
+-------------------------------------------------------------------------------------------------------------
 For creating a new mapper, create a mapper<i>.py file (copy from existing), and 
 provide it an ip-port distinct. Update this ip-port on master.py also. Create a directory M<i>
 inside directory Mappers.

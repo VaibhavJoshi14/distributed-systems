@@ -35,25 +35,26 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         # Step 1: Randomly initialize k cluster centroids.
         centroids = self.init_centroids(df, k)
 
-        # will contain the clusterId assigned to each point.
-        clusterId = [0 for i in range(len(df))]
-
         _centroids = []
         max_iter = maxIter
 
         # Produce splits, according to the number of mappers
-        part = int(len(df) / self.numMappers)
-        splits = [[part * i, part * (i+1) - 1] for i in range(self.numMappers - 1)]
-        splits.append([part * (self.numMappers - 1), len(df) - 1])
+        splits = self.generateSplits(df)
         print("Splits on data of size ", len(df), "for numMappers ", self.numMappers, " are ", splits)
+        
+        with open('dump.txt', 'a') as f:
+            f.write("\nDump file of master process.\n")
         
         # Step 2: Repeat until the centroids converge or the max iter limit has reached.
         while True:
-            
-            # Converting centroids to the grpc message format Data.
-            _centroids_ = []
-            for i in range(len(centroids)):
-                _centroids_.append(map_reduce_kmeans_pb2.Data(data=centroids[i]))
+            with open('dump.txt', 'a') as f:
+                f.write("-------------------------------------------\n")
+                f.write("Iteration:" + str(maxIter - max_iter) + "\n")
+                f.write("Current centroids" + centroids.__str__()+ "\n")
+                
+                print("-------------------------------------------")
+                print("Iteration:", maxIter - max_iter)
+                print("Current centroids", centroids)
 
             # Send the Map rpc to each mapper to work on their splits.
             for i in range(self.numMappers):
@@ -62,7 +63,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
                     inputEndIndex = splits[i][1],
                     inputFile = inputFile,
                     dfHasHeader = dfHasHeader,
-                    centroids = _centroids_,
+                    centroids = self.getDataCentroids(centroids),
                     numReducers = self.numReducers
                 )
 
@@ -77,8 +78,6 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
             # Wait till all the mappers complete
             while(sum(self.mappersResponded) < self.numMappers):
                 time.sleep(0.01)
-            
-            print("Wait completed")
 
             """# Step 2.1: Assign each point of the data to the nearest centroid.  
             for index, dataPoint in df.iterrows():
@@ -106,6 +105,20 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         return {"centroids": centroids, "clusterId": clusterId}
     
 
+    def generateSplits(self, df):
+        part = int(len(df) / self.numMappers)
+        splits = [[part * i, part * (i+1) - 1] for i in range(self.numMappers - 1)]
+        splits.append([part * (self.numMappers - 1), len(df) - 1])
+        return splits
+
+    # Used for converting centroids to the grpc message format Data.
+    def getDataCentroids(self, centroids):
+        _centroids_ = []
+        for i in range(len(centroids)):
+            _centroids_.append(map_reduce_kmeans_pb2.Data(data=centroids[i]))
+        return _centroids_
+    
+    
     # Initializes centroids randomly from the set of input data.
     def init_centroids(self, df, k):
         return df.sample(n=k, random_state=1, ignore_index=True).values.tolist()
@@ -125,7 +138,9 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
     
 
     def MapResponse(self, request, context):
-        self.mappersResponded[request.id] = 1
-        print("The new value", self.mappersResponded[request.id])
+        self.mappersResponded[request.id - 1] = 1
+        with open('dump.txt', 'a') as f:
+            f.write("Mapper " + str(request.id) + " completed its job (SUCCESS).\n")
+            print("Mapper", request.id, "completed its job (SUCCESS).")
         return map_reduce_kmeans_pb2.Reply(message="Ok")
 

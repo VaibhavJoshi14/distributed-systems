@@ -88,7 +88,7 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
         # Send to the master that it has done its job.
         with grpc.insecure_channel(self.masterAddress) as channel:
             stub = map_reduce_kmeans_pb2_grpc.MapperResponseStub(channel)
-            response = stub.MapResponse(map_reduce_kmeans_pb2.Empty(id = self.selfId - 1))
+            response = stub.MapResponse(map_reduce_kmeans_pb2.Empty(id = self.selfId))
 
 
     def getNumDistinctValues(self, Keys):

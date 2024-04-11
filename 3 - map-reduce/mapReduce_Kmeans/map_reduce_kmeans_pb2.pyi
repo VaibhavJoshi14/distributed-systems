@@ -62,5 +62,7 @@ class ReduceInputRequest(_message.Message):
     def __init__(self, reducerId: _Optional[int] = ...) -> None: ...
 
 class Empty(_message.Message):
-    __slots__ = ()
-    def __init__(self) -> None: ...
+    __slots__ = ("id",)
+    ID_FIELD_NUMBER: _ClassVar[int]
+    id: int
+    def __init__(self, id: _Optional[int] = ...) -> None: ...

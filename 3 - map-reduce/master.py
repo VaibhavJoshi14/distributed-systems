@@ -7,8 +7,9 @@ dfHasHeader = False # determine whether the data has header or not. This must be
 
 # Addresses of master, mappers, and reducers. The size of the list of mapperAddresses specify 
 # the number of mappers, and the size of the list of reducerAddresses specify the number of reducers.
+# The number of reducers must be atleast the number numCentroids.
 masterAddress = "localhost:50050"
-mapperAddresses = ["localhost:50051",] #"localhost:50052", "localhost:50053"]
+mapperAddresses = ["localhost:50051", "localhost:50052" , "localhost:50053"]
 reducerAddresses = ["localhost:50054", "localhost:50055"]
 
 

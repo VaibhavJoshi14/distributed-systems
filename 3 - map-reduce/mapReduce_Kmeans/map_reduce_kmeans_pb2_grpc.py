@@ -120,7 +120,7 @@ class MapperResponseStub(object):
         """
         self.MapResponse = channel.unary_unary(
                 '/MapperResponse/MapResponse',
-                request_serializer=map__reduce__kmeans__pb2.AllKeyValueData.SerializeToString,
+                request_serializer=map__reduce__kmeans__pb2.Empty.SerializeToString,
                 response_deserializer=map__reduce__kmeans__pb2.Reply.FromString,
                 )
 
@@ -141,7 +141,7 @@ def add_MapperResponseServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'MapResponse': grpc.unary_unary_rpc_method_handler(
                     servicer.MapResponse,
-                    request_deserializer=map__reduce__kmeans__pb2.AllKeyValueData.FromString,
+                    request_deserializer=map__reduce__kmeans__pb2.Empty.FromString,
                     response_serializer=map__reduce__kmeans__pb2.Reply.SerializeToString,
             ),
     }
@@ -168,7 +168,7 @@ class MapperResponse(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/MapperResponse/MapResponse',
-            map__reduce__kmeans__pb2.AllKeyValueData.SerializeToString,
+            map__reduce__kmeans__pb2.Empty.SerializeToString,
             map__reduce__kmeans__pb2.Reply.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

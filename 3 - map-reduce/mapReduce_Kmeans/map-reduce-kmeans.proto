@@ -44,7 +44,7 @@ message AllKeyValueData {
 // This rpc is called by each mapper to the master, to give the output of the map task.
 // This rpc server needs to be initialized in master.
 service MapperResponse {
-  rpc MapResponse(AllKeyValueData) returns (Reply) {}
+  rpc MapResponse(Empty) returns (Reply) {}
 }
 
 
@@ -58,7 +58,7 @@ message ReduceInputRequest {
 }
 
 message Empty {
-  
+  int32 id = 1;
 }
 
 // This rpc needs to be initialized in each reducer.

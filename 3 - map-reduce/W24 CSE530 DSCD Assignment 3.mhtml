@@ -1,24 +1,24 @@
 From: <Saved by Blink>
 Snapshot-Content-Location: https://docs.google.com/document/d/e/2PACX-1vQ6UvQzah5o2mcVjFpb6llZrOaqPz6PiQ4m_7zYlRDeYdHWJ77ziYN22-HyE0VDnHBxojsHPnqu1nf7/pub
 Subject: W24 CSE530 DSCD Assignment 3
-Date: Mon, 8 Apr 2024 13:52:44 +0530
+Date: Thu, 11 Apr 2024 17:41:17 +0530
 MIME-Version: 1.0
 Content-Type: multipart/related;
 	type="text/html";
-	boundary="----MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----"
+	boundary="----MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----"
 
 
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----
 Content-Type: text/html
-Content-ID: <frame-C8640266C646FAB5484314F7B74A4A7D@mhtml.blink>
+Content-ID: <frame-D13199E22830406D2CAC389FF0E42EC8@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://docs.google.com/document/d/e/2PACX-1vQ6UvQzah5o2mcVjFpb6llZrOaqPz6PiQ4m_7zYlRDeYdHWJ77ziYN22-HyE0VDnHBxojsHPnqu1nf7/pub
 
 <!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
 t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
-"cid:css-af869bd3-4e3e-4542-91a3-30bb71c8187a@mhtml.blink" /><link rel=3D"s=
-tylesheet" type=3D"text/css" href=3D"cid:css-e9e2db28-52f4-4849-a511-bc18a6=
-3a45f0@mhtml.blink" /><title>W24 CSE530 DSCD Assignment 3</title><link rel=
+"cid:css-b17f52b3-d7ae-4f88-94f0-383f3716ae6d@mhtml.blink" /><link rel=3D"s=
+tylesheet" type=3D"text/css" href=3D"cid:css-c1035436-53fa-48f0-bb42-550a38=
+d819b8@mhtml.blink" /><title>W24 CSE530 DSCD Assignment 3</title><link rel=
 =3D"shortcut icon" href=3D"https://ssl.gstatic.com/docs/documents/images/ki=
 x-favicon-2023q4.ico"><meta name=3D"referrer" content=3D"strict-origin-when=
 -cross-origin"></head><body><div id=3D"banners"><div id=3D"publish-banner">=
@@ -34,303 +34,347 @@ blank" title=3D"Learn more" href=3D"https://support.google.com/docs/answer/=
 183965">Learn more</a></span></div></div><div id=3D"title-banner"><div id=
 =3D"title">W24 CSE530 DSCD Assignment 3</div><div id=3D"interval"><span>Upd=
 ated automatically every 5 minutes</span></div></div></div><div id=3D"conte=
-nts"><div class=3D"c40 doc-content"><p class=3D"c33 title" id=3D"h.va15sqxu=
-i2va"><span class=3D"c28 c1">CSE530 Distributed Systems</span></p><p class=
-=3D"c33 title" id=3D"h.ay6dvum65ujd"><span class=3D"c1 c28">Winter 2024</sp=
-an></p><p class=3D"c33 title" id=3D"h.oo5gc6khs2td"><span class=3D"c28 c1">=
-Assignment-3</span></p><p class=3D"c36 c23"><span class=3D"c15 c1"></span><=
-/p><p class=3D"c36"><span class=3D"c15 c1">VERY IMPORTANT: </span></p><p cl=
-ass=3D"c11"><span class=3D"c0">Use of LLM-based tools such as ChatGPT, etc.=
-, is ALLOWED. But if you are not able to answer questions in the demo/viva =
-or if you are not able to explain your code, then you will be penalized. Yo=
-u cannot justify - =E2=80=9CChatGPT produced the code, I don=E2=80=99t know=
- the exact purpose of this line of code!=E2=80=9D </span></p><ol class=3D"c=
-17 lst-kix_2kut5qs2l6dq-0 start" start=3D"1"><li class=3D"c3 li-bullet-0"><=
-span>Similar to assignment 1 and 2, we will be asking you to share your rel=
-evant conversations with ChatGPT and other LLM-based tools. This will not b=
-e used for judging you in any way. But it will be used for research purpose=
-s so that we can build better LLM-based tools for students (you!!). </span>=
-<span class=3D"c1">Do note that we will have </span><span class=3D"c1 c25">=
-10% weightage</span><span class=3D"c16 c1">&nbsp;in this assignment=E2=80=
-=99s evaluation for sharing these details. </span></li><li class=3D"c3 li-b=
-ullet-0"><span class=3D"c29 c1">Please fill </span><span class=3D"c18 c29 c=
-1"><a class=3D"c12" href=3D"https://www.google.com/url?q=3Dhttps://docs.goo=
-gle.com/forms/d/e/1FAIpQLSc4ze1hDU7490R2aQn66fsGfDxzuhhqgS7mSf6wgQHs-cN6NQ/=
-viewform&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712568098765891&amp;usg=
-=3DAOvVaw2lp-eBTpgEWMqU2sHXO2NL">this google form</a></span><span class=3D"=
-c1 c14">&nbsp;for sharing all your interactions with LLM-based tools.</span=
-></li></ol><ol class=3D"c17 lst-kix_2kut5qs2l6dq-1 start" start=3D"1"><li c=
-lass=3D"c6 li-bullet-0"><span class=3D"c1 c29">Please go through the above =
-google form before you start using LLMs so that you are aware of the kind o=
-f information you need to share with us.</span><span class=3D"c1 c39">&nbsp=
-;</span></li></ol><h1 class=3D"c2" id=3D"h.uhlvtw8enm27"><span class=3D"c1 =
-c35">Problem Statement</span></h1><p class=3D"c11"><span class=3D"c0">Imple=
-menting MapReduce framework from scratch to perform K-means clustering on a=
- given dataset in a distributed manner.</span></p><h1 class=3D"c2" id=3D"h.=
-c5snoc7uzn3g"><span class=3D"c35 c1 c42">Implementing K-Means using MapRedu=
-ce from scratch</span></h1><p class=3D"c11 c23"><span class=3D"c41 c1 c43">=
-</span></p><p class=3D"c11"><span class=3D"c1 c37">0. Learning Resources</s=
-pan></p><p class=3D"c11"><span class=3D"c0">For this part of this assignmen=
-t, you would need to be familiar with</span></p><ul class=3D"c17 lst-kix_tv=
-29jvsq58s-0 start"><li class=3D"c3 li-bullet-0"><span>K-Means clustering al=
-gorithm: </span><span class=3D"c18"><a class=3D"c12" href=3D"https://www.go=
-ogle.com/url?q=3Dhttps://towardsdatascience.com/k-means-clustering-algorith=
-m-applications-evaluation-methods-and-drawbacks-aa03e644b48a&amp;sa=3DD&amp=
-;source=3Deditors&amp;ust=3D1712568098767259&amp;usg=3DAOvVaw218rSIy4rI8qUY=
-IxwGZdfo">K-means Clustering: Algorithm, Applications, Evaluation Methods, =
-and Drawbacks</a></span></li><li class=3D"c3 li-bullet-0"><span class=3D"c1=
-8"><a class=3D"c12" href=3D"https://www.google.com/url?q=3Dhttps://static.g=
-oogleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04=
-.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712568098767630&amp;usg=3DA=
-OvVaw09uve9ZxxIH9JIV9jaz5UY">MapReduce Model</a></span></li><li class=3D"c3=
- li-bullet-0"><span class=3D"c18"><a class=3D"c12" href=3D"https://www.goog=
-le.com/url?q=3Dhttps://stanford.edu/~rezab/classes/cme323/S16/projects_repo=
-rts/bodoia.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712568098767971&a=
-mp;usg=3DAOvVaw19xR4p0A9glQgSR8hJcc9R">K-Means algorithm using MapReduce Fr=
-amework</a></span><span>&nbsp;</span><span class=3D"c1">(Section: 3.1)</spa=
-n></li></ul><h1 class=3D"c2 c38" id=3D"h.nwkx5uq38kvu"><span class=3D"c7 c1=
-"></span></h1><h1 class=3D"c2" id=3D"h.r7sy3nzm0p"><span class=3D"c31 c1">S=
-etup:</span></h1><p class=3D"c11 c23"><span class=3D"c0"></span></p><ol cla=
-ss=3D"c17 lst-kix_5pfwmf1sbfh-0 start" start=3D"1"><li class=3D"c3 li-bulle=
-t-0"><span class=3D"c0">For the sake of simplicity, we will deploy the enti=
-re MapReduce framework on one machine. But note that each mapper and each r=
-educer, as well as the master, will be a SEPARATE PROCESS (having an IP add=
-ress (localhost) and a distinct port no.) on the same machine. Additionally=
-, each mapper and each reducer will store their intermediate/output data in=
- a separate file directory in the local file system (format specified in th=
-e =E2=80=9CSample Input &amp; Output=E2=80=9D section). </span></li></ol><o=
-l class=3D"c17 lst-kix_5pfwmf1sbfh-1 start" start=3D"1"><li class=3D"c6 li-=
-bullet-0"><span class=3D"c0">Mapper persists intermediate data</span></li><=
-li class=3D"c6 li-bullet-0"><span class=3D"c0">Reducer persists final outpu=
-t data</span></li></ol><ol class=3D"c17 lst-kix_5pfwmf1sbfh-0" start=3D"2">=
-<li class=3D"c3 li-bullet-0"><span class=3D"c30 c1">The use of </span><span=
- class=3D"c18 c1 c30"><a class=3D"c12" href=3D"https://www.google.com/url?q=
-=3Dhttps://grpc.io/&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712568098768=
-987&amp;usg=3DAOvVaw05afL4z7SC6GfcSxcmHvPz">gRPC</a></span><span class=3D"c=
-30 c1 c41">&nbsp;for RPCs is mandatory for this assignment.</span></li><li =
-class=3D"c3 li-bullet-0"><span class=3D"c0">You may use any programming lan=
-guage you wish to use. We recommend using Python.</span></li><li class=3D"c=
-3 li-bullet-0"><span class=3D"c20 c1 c34">Google Cloud is not required for =
-this assignment. </span></li></ol><h1 class=3D"c2" id=3D"h.pelqznru0tkr"><s=
-pan class=3D"c1 c31">The K-Means algorithm</span></h1><p class=3D"c4 c11 c3=
-2"><span class=3D"c13 c8">The K-means algorithm is an iterative algorithm t=
-hat partitions a dataset into K clusters. The algorithm proceeds as follows=
-:</span></p><ol class=3D"c17 lst-kix_mqsfmes6h6hx-0 start" start=3D"1"><li =
-class=3D"c4 c6 li-bullet-0"><span class=3D"c13 c8">Randomly initialize K cl=
-uster centroids.</span></li><li class=3D"c4 c6 li-bullet-0"><span class=3D"=
-c13 c8">Assign each data point to the nearest cluster centroid.</span></li>=
-<li class=3D"c4 c6 li-bullet-0"><span class=3D"c13 c8">Recompute the cluste=
-r centroids based on the mean of the data points assigned to each cluster.<=
-/span></li><li class=3D"c4 c6 li-bullet-0"><span class=3D"c8">Repeat steps =
-2 and 3 for a fixed number of iterations or until convergence (i.e., until =
-the cluster centroids no longer </span><span class=3D"c0">change significan=
-tly).</span></li></ol><p class=3D"c11"><span>Refer to </span><span class=3D=
-"c1">Section 3.1</span><span>&nbsp;of this </span><span class=3D"c18"><a cl=
-ass=3D"c12" href=3D"https://www.google.com/url?q=3Dhttps://stanford.edu/~re=
-zab/classes/cme323/S16/projects_reports/bodoia.pdf&amp;sa=3DD&amp;source=3D=
-editors&amp;ust=3D1712568098770211&amp;usg=3DAOvVaw3LuQVDDsCsdDWxcO1q_-3T">=
-paper</a></span><span>&nbsp;for an explanation of how the K-Means clusterin=
-g algorithm can be performed in a distributed manner. Note that you must </=
-span><span class=3D"c1">implement the k-means algorithm from scratch (witho=
-ut using any library providing K-means algorithm function)</span><span clas=
-s=3D"c0">.</span></p><p class=3D"c11 c23"><span class=3D"c0"></span></p><h1=
- class=3D"c2" id=3D"h.knbiyzq4ocnu"><span class=3D"c7 c1">Implementation De=
-tails:</span></h1><p class=3D"c4 c11 c32"><span class=3D"c13 c8">Your imple=
-mentation should include the following components:</span></p><ol class=3D"c=
-17 lst-kix_42fcxgt7mtu1-0 start" start=3D"1"><li class=3D"c3 c4 li-bullet-0=
-"><span class=3D"c8 c1">Master: </span><span class=3D"c0">The master progra=
-m/process is responsible for running and communicating with the other compo=
-nents in the system. When running the master program, the following paramet=
-ers should be provided as input:</span></li></ol><ul class=3D"c17 lst-kix_4=
-2fcxgt7mtu1-1 start"><li class=3D"c6 li-bullet-0"><span class=3D"c0">number=
- of mappers (M)</span></li><li class=3D"c6 li-bullet-0"><span class=3D"c0">=
-number of reducers (R)</span></li><li class=3D"c6 li-bullet-0"><span class=
-=3D"c0">number of centroids (K)</span></li><li class=3D"c6 li-bullet-0"><sp=
-an class=3D"c0">number of iterations for K-Means (Note: program should stop=
- if the algorithm converges before)</span></li><li class=3D"c4 c6 li-bullet=
--0"><span class=3D"c8">Other necessary information (This should be reasonab=
-le. Please check with us - if you are not sure!)</span></li></ul><ol class=
-=3D"c17 lst-kix_42fcxgt7mtu1-0" start=3D"2"><li class=3D"c4 c3 li-bullet-0"=
-><span class=3D"c8 c1">Input Split (invoked by master):</span><span class=
-=3D"c8">&nbsp;</span><span>You will need to write code to divide the input =
-data </span><span class=3D"c1">(single file)</span><span>&nbsp;into smaller=
- chunks that can be processed in parallel by multiple mappers. Your code do=
-es not need to produce separate input files for each mapper, but each mappe=
-r should process a different chunk of the file.</span></li><li class=3D"c4 =
-c3 li-bullet-0"><span class=3D"c8 c1">Map (invoked by mapper):</span></li><=
-/ol><ul class=3D"c17 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c4 c6 li-bu=
-llet-0"><span class=3D"c13 c8">You will need to write code to apply the Map=
- function to each input split to generate intermediate key-value pairs.</sp=
-an></li><li class=3D"c4 c6 li-bullet-0"><span class=3D"c13 c8">Mapper shoul=
-d read the input split by itself (based on the information provided by the =
-master). Master should not send the input data points to the mapper.</span>=
-</li><li class=3D"c4 c6 li-bullet-0"><span class=3D"c8 c13">Inputs to the M=
-ap function: </span></li></ul><ul class=3D"c17 lst-kix_42fcxgt7mtu1-2 start=
-"><li class=3D"c4 c11 c21 li-bullet-0"><span class=3D"c20 c8 c1">Input spli=
-t assigned by the master: This split contains a list of data points</span><=
-/li><li class=3D"c4 c11 c21 li-bullet-0"><span class=3D"c20 c8 c1">List of =
-Centroids from the previous iteration</span></li><li class=3D"c4 c11 c21 li=
--bullet-0"><span class=3D"c13 c8">Other necessary information (This should =
-be reasonable. Please check with us - if you are not sure!)</span></li></ul=
-><ul class=3D"c17 lst-kix_42fcxgt7mtu1-1"><li class=3D"c4 c6 li-bullet-0"><=
-span class=3D"c13 c8">Output from the Map function:</span></li></ul><ul cla=
-ss=3D"c17 lst-kix_42fcxgt7mtu1-2 start"><li class=3D"c4 c11 c21 li-bullet-0=
-"><span class=3D"c8">Key:</span><span class=3D"c8 c1 c20">&nbsp;index of th=
-e nearest centroid to which the data point belongs</span></li><li class=3D"=
-c4 c11 c21 li-bullet-0"><span class=3D"c8">Value: </span><span class=3D"c8 =
-c1">value of the data point itself.</span></li></ul><ul class=3D"c17 lst-ki=
-x_42fcxgt7mtu1-1"><li class=3D"c4 c6 li-bullet-0"><span class=3D"c0">The ou=
-tput of each Map function should be written to a file in the mapper=E2=80=
-=99s directory on the local file system. (Look at the directory structure g=
-iven below)</span></li><li class=3D"c4 c6 li-bullet-0"><span class=3D"c0">N=
-ote that each mapper needs to run as a separate process.</span></li></ul><o=
-l class=3D"c17 lst-kix_42fcxgt7mtu1-0" start=3D"4"><li class=3D"c3 li-bulle=
-t-0"><span class=3D"c1">Partition (</span><span class=3D"c8 c1">invoked by =
-mapper</span><span class=3D"c16 c1">): </span></li></ol><ul class=3D"c17 ls=
-t-kix_42fcxgt7mtu1-1 start"><li class=3D"c6 li-bullet-0"><span class=3D"c0"=
->The output of the Map function (as mentioned in the mapper above) also nee=
-ds to be partitioned into a set of smaller partitions. </span></li><li clas=
-s=3D"c6 li-bullet-0"><span class=3D"c0">In this step, you will write a func=
-tion that takes the list of key-value pairs generated by the Map function a=
-nd partitions them into smaller partitions. </span></li><li class=3D"c6 li-=
-bullet-0"><span class=3D"c0">The partitioning function should ensure that a=
-ll key-value pairs with the same key are sent to the same partition. </span=
-></li><li class=3D"c6 li-bullet-0"><span class=3D"c0">Each partition is pic=
-ked up by a specific reducer during shuffling and sorting. </span></li><li =
-class=3D"c6 li-bullet-0"><span class=3D"c0">If there are M mappers and R re=
-ducers, each mapper should have R file partitions. This means that there wi=
-ll be M*R partitions in total.</span></li><li class=3D"c6 li-bullet-0"><spa=
-n class=3D"c0">This step is performed by the mapper.</span></li></ul><ol cl=
-ass=3D"c17 lst-kix_42fcxgt7mtu1-0" start=3D"5"><li class=3D"c3 li-bullet-0"=
-><span class=3D"c1">Shuffle and sort (</span><span class=3D"c8 c1">invoked =
-by reducer</span><span class=3D"c1">):</span><span class=3D"c0">&nbsp;</spa=
-n></li></ol><ul class=3D"c17 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c6 =
-li-bullet-0"><span class=3D"c0">You must write code to sort the intermediat=
-e key-value pairs by key and group the values that belong to the same key. =
-</span></li><li class=3D"c6 li-bullet-0"><span class=3D"c0">This is typical=
-ly done by sending the intermediate key-value pairs to the reducers based o=
-n the key. </span></li><li class=3D"c6 li-bullet-0"><span>This step is perf=
-ormed by the reducer.</span></li></ul><ol class=3D"c17 lst-kix_42fcxgt7mtu1=
--0" start=3D"6"><li class=3D"c4 c3 li-bullet-0"><span class=3D"c8 c1">Reduc=
-e (invoked by reducer):</span><span class=3D"c13 c8">&nbsp;</span></li></ol=
-><ul class=3D"c17 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c4 c6 li-bulle=
-t-0"><span class=3D"c8">The reducer </span><span class=3D"c1 c8">will recei=
-ve the intermediate key-value pairs from the mapper</span><span class=3D"c8=
-">, perform the shuffle &amp; sort function as mentioned, and </span><span>=
-produce a set of final key-value pairs as output</span><span class=3D"c8">.=
- </span></li><li class=3D"c4 c6 li-bullet-0"><span class=3D"c0">You will ne=
-ed to write code to apply the Reduce function to each group of values that =
-belong to the same key to generate the final output.</span></li><li class=
-=3D"c4 c6 li-bullet-0"><span class=3D"c0">Input to the reduce function:</sp=
-an></li></ul><ul class=3D"c17 lst-kix_42fcxgt7mtu1-2 start"><li class=3D"c4=
- c11 c21 li-bullet-0"><span>Key: </span><span class=3D"c16 c1">Centroid id<=
-/span></li><li class=3D"c4 c11 c21 li-bullet-0"><span>Value: </span><span c=
-lass=3D"c1">List of all the data points which belong to this centroid id </=
-span><span class=3D"c0">(this information is available after shuffle and so=
-rting)</span></li><li class=3D"c4 c11 c21 li-bullet-0"><span class=3D"c8">O=
-ther necessary information (This should be reasonable. Please check with us=
- - if you are not sure!)</span></li></ul><ul class=3D"c17 lst-kix_42fcxgt7m=
-tu1-1"><li class=3D"c4 c6 li-bullet-0"><span class=3D"c0">Output of the red=
-uce function:</span></li></ul><ul class=3D"c17 lst-kix_42fcxgt7mtu1-2 start=
-"><li class=3D"c4 c11 c21 li-bullet-0"><span>Key: </span><span class=3D"c1 =
-c16">Centroid Id</span></li><li class=3D"c4 c11 c21 li-bullet-0"><span>Valu=
-e: </span><span class=3D"c1">Updated Centroid</span></li></ul><ul class=3D"=
-c17 lst-kix_42fcxgt7mtu1-1"><li class=3D"c4 c6 li-bullet-0"><span class=3D"=
-c0">The output of each Reduce function should be written to a file in the r=
-educer=E2=80=99s directory on the local file system. </span></li><li class=
-=3D"c4 c6 li-bullet-0"><span>Note that each reducer needs to run as a separ=
-ate process.</span></li></ul><ol class=3D"c17 lst-kix_42fcxgt7mtu1-0" start=
-=3D"7"><li class=3D"c3 li-bullet-0"><span class=3D"c1">Centroid Compilation=
- (</span><span class=3D"c8 c1">invoked by master</span><span class=3D"c1">)=
-:</span><span class=3D"c0">&nbsp;The master needs to parse the output gener=
-ated by all the reducers to compile the final list of (K) centroids and sto=
-re them in a single file. This list of centroids is considered as input for=
- the next iteration. Before the first iteration, the centroids should be ra=
-ndomly selected from the input data points.</span></li></ol><p class=3D"c4 =
-c11 c32"><span class=3D"c1">Note:</span><span>&nbsp;Reducers </span><span c=
-lass=3D"c1">should not read</span><span class=3D"c0">&nbsp;their input key-=
-value pairs from the generated intermediate files; instead, they should per=
-form gRPC calls to the mappers to get the input. (Mapper however should rea=
-d the input data points from the input files itself). The gRPC communicatio=
-n between the three processes for each iteration looks something like this:=
-</span></p><ol class=3D"c17 lst-kix_59tb2gc5u4p4-0 start" start=3D"1"><li c=
-lass=3D"c4 c3 li-bullet-0"><span class=3D"c0">Master =E2=87=94 Mapper (mast=
-er sends necessary parameters to mapper, mapper performs map &amp; partitio=
-n)</span></li><li class=3D"c4 c3 li-bullet-0"><span class=3D"c0">Master =E2=
-=87=94 Reducer (after all mappers have returned to master successfully, mas=
-ter invokes reducers with the necessary parameters)</span></li><li class=3D=
-"c4 c3 li-bullet-0"><span class=3D"c0">Reducer =E2=87=94 Mapper (after invo=
-cation, reducers communicates with the mapper to get the input before the s=
-huffle, sort, and reduce step)</span></li></ol><h1 class=3D"c2" id=3D"h.ge0=
-ro5nbjd67"><span class=3D"c7 c1">Sample input and output files:</span></h1>=
-<p class=3D"c11"><span>We will provide sample input and output files for ea=
-ch application to have uniformity in evaluation</span><span>. You should en=
-sure that your code runs successfully in the provided format of sample inpu=
-t files and generates the final output files in the same format as the samp=
-le output files.</span></p><p class=3D"c11 c23"><span class=3D"c5"></span><=
-/p><p class=3D"c11"><span class=3D"c5">Data/</span></p><p class=3D"c11"><sp=
-an class=3D"c5">=E2=94=9C=E2=94=80 Input/</span></p><p class=3D"c11"><span =
-class=3D"c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 </span><span class=3D"c18 =
-c10"><a class=3D"c12" href=3D"https://www.google.com/url?q=3Dhttps://drive.=
-google.com/file/d/1Zz43M5rvSBwjzwvwQvrX2kGWGQGEDxJD/view?usp%3Ddrive_link&a=
-mp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712568098779162&amp;usg=3DAOvVaw3=
-IypixDAxhtowFCzKd2Wuu">points.txt</a></span><span class=3D"c10">&nbsp;</spa=
-n><span class=3D"c10 c26">(initial points)</span></p><p class=3D"c11"><span=
- class=3D"c5">=E2=94=9C=E2=94=80 Mappers/</span></p><p class=3D"c11"><span =
-class=3D"c5">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 M1/</span></p><p class=3D"c=
-11"><span class=3D"c5">=E2=94=82 &nbsp;=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 p=
-artition_1.txt</span></p><p class=3D"c11"><span class=3D"c5">=E2=94=82 &nbs=
-p;=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 partition_2.txt</span></p><p class=3D"=
-c11"><span class=3D"c24 c10">... </span></p><p class=3D"c11"><span class=3D=
-"c10">=E2=94=82 &nbsp;=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 partition_R.txt </=
-span><span class=3D"c10 c24">(R based on the number of reducers)</span></p>=
-<p class=3D"c11"><span class=3D"c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 M2/=
- </span><span class=3D"c10 c26">...</span></p><p class=3D"c11"><span class=
-=3D"c10">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 M3/ </span><span class=3D"c10 c=
-26">...</span></p><p class=3D"c11"><span class=3D"c10 c26">...</span></p><p=
- class=3D"c11"><span class=3D"c5">=E2=94=9C=E2=94=80 Reducers/</span></p><p=
- class=3D"c11"><span class=3D"c5">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 R1.txt=
-</span></p><p class=3D"c11"><span class=3D"c5">=E2=94=82 &nbsp;=E2=94=9C=E2=
-=94=80 R2.txt</span></p><p class=3D"c11"><span class=3D"c10">=E2=94=9C=E2=
-=94=80 </span><span class=3D"c18 c10"><a class=3D"c12" href=3D"https://www.=
-google.com/url?q=3Dhttps://drive.google.com/file/d/13cLbXiWwE7NaRmHxzdgRmZs=
-_mhYyvveg/view?usp%3Ddrive_link&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1=
-712568098781236&amp;usg=3DAOvVaw1ZzeowhAAHeCgRzRu3dyXq">centroids.txt</a></=
-span><span class=3D"c10">&nbsp;</span><span class=3D"c10 c26">(final list o=
-f centroids)</span></p><h1 class=3D"c2" id=3D"h.nfkhu4gpn3z0"><span class=
-=3D"c7 c1">Print Statements:</span></h1><p class=3D"c11"><span class=3D"c0"=
->Display the following data while executing the master program for each ite=
-ration:</span></p><ol class=3D"c17 lst-kix_5qil7o6gd9mx-0 start" start=3D"1=
-"><li class=3D"c3 li-bullet-0"><span class=3D"c0">Iteration number</span></=
-li><li class=3D"c3 li-bullet-0"><span class=3D"c0">Execution of gRPC calls =
-to Mappers or Reducers</span></li><li class=3D"c3 li-bullet-0"><span class=
-=3D"c0">gRPC responses for each Mapper and Reducer function (SUCCESS/FAILUR=
-E)</span></li><li class=3D"c3 li-bullet-0"><span>Centroids generated after =
-each iteration (including the randomly initialized centroids)</span></li></=
-ol><h1 class=3D"c2" id=3D"h.p2ce9k2a9jkn"><span class=3D"c7 c1">Deliverable=
-s</span></h1><ol class=3D"c17 lst-kix_ih97f5qhtl49-0 start" start=3D"1"><li=
- class=3D"c3 li-bullet-0"><span>Submit a zipped file containing the entire =
-code with the given directory structure.</span></li></ol><h1 class=3D"c2" i=
-d=3D"h.gr2fkwqesnj5"><span class=3D"c31 c1">Evaluation</span></h1><p class=
-=3D"c11"><span class=3D"c0">Your assignment will be evaluated on the follow=
-ing criteria:</span></p><ol class=3D"c17 lst-kix_dwhemvvzbb3k-0 start" star=
-t=3D"1"><li class=3D"c3 li-bullet-0"><span class=3D"c0">You must test the m=
-aster with different numbers of mappers, reducers, centroids, and iteration=
-s. </span></li><li class=3D"c3 li-bullet-0"><span class=3D"c16 c1">You can =
-either set up the mapper and reducer processes before running the master pr=
-ocess, or you can allow the master process to spawn the mapper and reducer =
-processes as and when required.</span></li><li class=3D"c3 li-bullet-0"><sp=
-an class=3D"c0">The outputs of </span></li></ol><ol class=3D"c17 lst-kix_dw=
-hemvvzbb3k-1 start" start=3D"1"><li class=3D"c6 li-bullet-0"><span class=3D=
-"c0">Mappers</span></li><li class=3D"c6 li-bullet-0"><span class=3D"c0">Red=
-ucers</span></li></ol><p class=3D"c9"><span class=3D"c0">will be verified f=
-or different configurations.</span></p><p class=3D"c11 c23"><span class=3D"=
-c0"></span></p><p class=3D"c11 c23"><span class=3D"c0"></span></p></div></d=
-iv></body></html>
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----
+nts"><div class=3D"c27 doc-content"><p class=3D"c30 title" id=3D"h.va15sqxu=
+i2va"><span class=3D"c37 c23">CSE530 Distributed Systems</span></p><p class=
+=3D"c30 title" id=3D"h.ay6dvum65ujd"><span class=3D"c23 c37">Winter 2024</s=
+pan></p><p class=3D"c30 title" id=3D"h.oo5gc6khs2td"><span class=3D"c37 c23=
+">Assignment-3</span></p><p class=3D"c19 c39"><span class=3D"c43 c23 c45"><=
+/span></p><p class=3D"c39"><span class=3D"c45 c43 c23">VERY IMPORTANT: </sp=
+an></p><p class=3D"c0"><span class=3D"c8">Use of LLM-based tools such as Ch=
+atGPT, etc., is ALLOWED. But if you are not able to answer questions in the=
+ demo/viva or if you are not able to explain your code, then you will be pe=
+nalized. You cannot justify - =E2=80=9CChatGPT produced the code, I don=E2=
+=80=99t know the exact purpose of this line of code!=E2=80=9D </span></p><o=
+l class=3D"c3 lst-kix_2kut5qs2l6dq-0 start" start=3D"1"><li class=3D"c0 c5 =
+li-bullet-0"><span>Similar to assignment 1 and 2, we will be asking you to =
+share your relevant conversations with ChatGPT and other LLM-based tools. T=
+his will not be used for judging you in any way. But it will be used for re=
+search purposes so that we can build better LLM-based tools for students (y=
+ou!!). </span><span class=3D"c23">Do note that we will have </span><span cl=
+ass=3D"c43 c46 c23">10% weightage</span><span class=3D"c25 c23">&nbsp;in th=
+is assignment=E2=80=99s evaluation for sharing these details. </span></li><=
+li class=3D"c0 c5 li-bullet-0"><span class=3D"c7">Please fill </span><span =
+class=3D"c21 c7"><a class=3D"c31" href=3D"https://www.google.com/url?q=3Dht=
+tps://docs.google.com/forms/d/e/1FAIpQLSc4ze1hDU7490R2aQn66fsGfDxzuhhqgS7mS=
+f6wgQHs-cN6NQ/viewform&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712841007=
+755415&amp;usg=3DAOvVaw3CJhBp3B3Z_ddIzrwlWT-y">this google form</a></span><=
+span class=3D"c25 c7">&nbsp;for sharing all your interactions with LLM-base=
+d tools.</span></li></ol><ol class=3D"c3 lst-kix_2kut5qs2l6dq-1 start" star=
+t=3D"1"><li class=3D"c0 c14 li-bullet-0"><span class=3D"c7">Please go throu=
+gh the above google form before you start using LLMs so that you are aware =
+of the kind of information you need to share with us.</span><span class=3D"=
+c23 c36">&nbsp;</span></li></ol><h1 class=3D"c13" id=3D"h.uhlvtw8enm27"><sp=
+an class=3D"c43 c23">Problem Statement</span></h1><p class=3D"c0"><span cla=
+ss=3D"c8">Implementing MapReduce framework from scratch to perform K-means =
+clustering on a given dataset in a distributed manner.</span></p><h1 class=
+=3D"c13" id=3D"h.c5snoc7uzn3g"><span class=3D"c43 c44 c23 c47">Implementing=
+ K-Means using MapReduce from scratch</span></h1><p class=3D"c0 c19"><span =
+class=3D"c23 c40"></span></p><p class=3D"c0"><span class=3D"c23 c41">0. Lea=
+rning Resources</span></p><p class=3D"c0"><span class=3D"c8">For this part =
+of this assignment, you would need to be familiar with</span></p><ul class=
+=3D"c3 lst-kix_tv29jvsq58s-0 start"><li class=3D"c0 c5 li-bullet-0"><span>K=
+-Means clustering algorithm: </span><span class=3D"c21"><a class=3D"c31" hr=
+ef=3D"https://www.google.com/url?q=3Dhttps://towardsdatascience.com/k-means=
+-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e64=
+4b48a&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D1712841007756668&amp;usg=3D=
+AOvVaw1YdHvyiZTYeq3aWKWk6cFj">K-means Clustering: Algorithm, Applications, =
+Evaluation Methods, and Drawbacks</a></span></li><li class=3D"c0 c5 li-bull=
+et-0"><span class=3D"c21"><a class=3D"c31" href=3D"https://www.google.com/u=
+rl?q=3Dhttps://static.googleusercontent.com/media/research.google.com/en//a=
+rchive/mapreduce-osdi04.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D17128=
+41007757026&amp;usg=3DAOvVaw21iyZdjkAvgOdPB1xFpUxH">MapReduce Model</a></sp=
+an></li><li class=3D"c0 c5 li-bullet-0"><span class=3D"c21"><a class=3D"c31=
+" href=3D"https://www.google.com/url?q=3Dhttps://stanford.edu/~rezab/classe=
+s/cme323/S16/projects_reports/bodoia.pdf&amp;sa=3DD&amp;source=3Deditors&am=
+p;ust=3D1712841007757363&amp;usg=3DAOvVaw1n7VgfsoWZd2oOnT1lJKOL">K-Means al=
+gorithm using MapReduce Framework</a></span><span>&nbsp;</span><span class=
+=3D"c23">(Section: 3.1)</span></li></ul><h1 class=3D"c13 c49" id=3D"h.nwkx5=
+uq38kvu"><span class=3D"c4"></span></h1><h1 class=3D"c13" id=3D"h.r7sy3nzm0=
+p"><span class=3D"c23 c38">Setup:</span></h1><p class=3D"c0 c19"><span clas=
+s=3D"c8"></span></p><ol class=3D"c3 lst-kix_5pfwmf1sbfh-0 start" start=3D"1=
+"><li class=3D"c0 c5 li-bullet-0"><span class=3D"c8">For the sake of simpli=
+city, we will deploy the entire MapReduce framework on one machine. But not=
+e that each mapper and each reducer, as well as the master, will be a SEPAR=
+ATE PROCESS (having an IP address (localhost) and a distinct port no.) on t=
+he same machine. Additionally, each mapper and each reducer will store thei=
+r intermediate/output data in a separate file directory in the local file s=
+ystem (format specified in the =E2=80=9CSample Input &amp; Output=E2=80=9D =
+section). </span></li></ol><ol class=3D"c3 lst-kix_5pfwmf1sbfh-1 start" sta=
+rt=3D"1"><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">Mapper persist=
+s intermediate data</span></li><li class=3D"c0 c14 li-bullet-0"><span class=
+=3D"c8">Reducer persists final output data</span></li></ol><ol class=3D"c3 =
+lst-kix_5pfwmf1sbfh-0" start=3D"2"><li class=3D"c0 c5 li-bullet-0"><span cl=
+ass=3D"c23 c28">The use of </span><span class=3D"c21 c28 c23"><a class=3D"c=
+31" href=3D"https://www.google.com/url?q=3Dhttps://grpc.io/&amp;sa=3DD&amp;=
+source=3Deditors&amp;ust=3D1712841007758334&amp;usg=3DAOvVaw37YALU51JHOJIvf=
+E-Veutl">gRPC</a></span><span class=3D"c28 c23 c42">&nbsp;for RPCs is manda=
+tory for this assignment.</span></li><li class=3D"c0 c5 li-bullet-0"><span =
+class=3D"c8">You may use any programming language you wish to use. We recom=
+mend using Python.</span></li><li class=3D"c0 c5 li-bullet-0"><span class=
+=3D"c33 c23 c46">Google Cloud is not required for this assignment. </span><=
+/li></ol><h1 class=3D"c13" id=3D"h.pelqznru0tkr"><span class=3D"c38 c23">Th=
+e K-Means algorithm</span></h1><p class=3D"c15 c0 c29"><span class=3D"c18 c=
+6">The K-means algorithm is an iterative algorithm that partitions a datase=
+t into K clusters. The algorithm proceeds as follows:</span></p><ol class=
+=3D"c3 lst-kix_mqsfmes6h6hx-0 start" start=3D"1"><li class=3D"c2 c0 li-bull=
+et-0"><span class=3D"c18 c6">Randomly initialize K cluster centroids.</span=
+></li><li class=3D"c2 c0 li-bullet-0"><span class=3D"c18 c6">Assign each da=
+ta point to the nearest cluster centroid.</span></li><li class=3D"c2 c0 li-=
+bullet-0"><span class=3D"c6 c18">Recompute the cluster centroids based on t=
+he mean of the data points assigned to each cluster.</span></li><li class=
+=3D"c2 c0 li-bullet-0"><span class=3D"c6">Repeat steps 2 and 3 for a fixed =
+number of iterations or until convergence (i.e., until the cluster centroid=
+s no longer </span><span class=3D"c8">change significantly).</span></li></o=
+l><p class=3D"c0"><span>Refer to </span><span class=3D"c23">Section 3.1</sp=
+an><span>&nbsp;of this </span><span class=3D"c21"><a class=3D"c31" href=3D"=
+https://www.google.com/url?q=3Dhttps://stanford.edu/~rezab/classes/cme323/S=
+16/projects_reports/bodoia.pdf&amp;sa=3DD&amp;source=3Deditors&amp;ust=3D17=
+12841007759416&amp;usg=3DAOvVaw0xFdrKCsVxXFF56xyJhDAf">paper</a></span><spa=
+n>&nbsp;for an explanation of how the K-Means clustering algorithm can be p=
+erformed in a distributed manner. Note that you must </span><span class=3D"=
+c23">implement the k-means algorithm from scratch (without using any librar=
+y providing K-means algorithm function)</span><span class=3D"c8">.</span></=
+p><p class=3D"c0 c19"><span class=3D"c8"></span></p><h1 class=3D"c13" id=3D=
+"h.knbiyzq4ocnu"><span class=3D"c4">Implementation Details:</span></h1><p c=
+lass=3D"c15 c0 c29"><span class=3D"c18 c6">Your implementation should inclu=
+de the following components:</span></p><ol class=3D"c3 lst-kix_42fcxgt7mtu1=
+-0 start" start=3D"1"><li class=3D"c15 c0 c5 li-bullet-0"><span class=3D"c1=
+">Master: </span><span class=3D"c8">The master program/process is responsib=
+le for running and communicating with the other components in the system. W=
+hen running the master program, the following parameters should be provided=
+ as input:</span></li></ol><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><l=
+i class=3D"c0 c14 li-bullet-0"><span class=3D"c8">number of mappers (M)</sp=
+an></li><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">number of reduc=
+ers (R)</span></li><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">numb=
+er of centroids (K)</span></li><li class=3D"c0 c14 li-bullet-0"><span class=
+=3D"c8">number of iterations for K-Means (Note: program should stop if the =
+algorithm converges before)</span></li><li class=3D"c2 c0 li-bullet-0"><spa=
+n class=3D"c6">Other necessary information (This should be reasonable. Plea=
+se check with us - if you are not sure!)</span></li></ul><ol class=3D"c3 ls=
+t-kix_42fcxgt7mtu1-0" start=3D"2"><li class=3D"c0 c5 c15 li-bullet-0"><span=
+ class=3D"c1 c17">Input Split (invoked by master):</span><span class=3D"c17=
+ c6">&nbsp;</span><span class=3D"c17">You will need to write code to divide=
+ the input data </span><span class=3D"c24 c23 c17">(single file)</span><spa=
+n class=3D"c17 c24">&nbsp;</span><span class=3D"c17">into smaller chunks th=
+at can be processed in parallel by multiple mappers. </span><span class=3D"=
+c24 c17">Your code does not need to produce separate input files for each m=
+apper, but </span><span class=3D"c17">each mapper should process a differen=
+t chunk of the </span><span class=3D"c24 c17">file</span><span class=3D"c17=
+">&nbsp;input data</span><span class=3D"c8 c17">.<br>For partitioning the i=
+nput data across different mappers, there are two possibilities:</span></li=
+></ol><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c2 c0 li-b=
+ullet-0"><span class=3D"c43 c23 c17">Scenario 1: </span><span class=3D"c8 c=
+17">Input data contains only one big file. Each mapper reads the entire inp=
+ut file and then processes only the indices allocated to it by the master.<=
+/span></li><li class=3D"c2 c0 li-bullet-0"><span class=3D"c43 c23 c17">Scen=
+ario 2: </span><span class=3D"c8 c17">=E2=81=A0=E2=81=A0Input data contains=
+ multiple files. Each mapper is responsible for a subset of these files (ex=
+act subset of files is allocated by Master).</span></li></ul><p class=3D"c1=
+5 c0 c5"><span class=3D"c8 c17">In both the above scenarios, the master doe=
+s not distribute the actual data to the mappers as that is going to be unne=
+cessary network traffic. <br><br>For the purpose of this assignment, you ar=
+e free to choose either one or both of the above scenarios.</span></p><ol c=
+lass=3D"c3 lst-kix_42fcxgt7mtu1-0" start=3D"3"><li class=3D"c15 c0 c5 li-bu=
+llet-0"><span class=3D"c1">Map (invoked by mapper):</span></li></ol><ul cla=
+ss=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c2 c0 li-bullet-0"><spa=
+n class=3D"c18 c6">You will need to write code to apply the Map function to=
+ each input split to generate intermediate key-value pairs.</span></li><li =
+class=3D"c0 c2 li-bullet-0"><span class=3D"c18 c6">Mapper should read the i=
+nput split by itself (based on the information provided by the master). Mas=
+ter should not send the input data points to the mapper.</span></li><li cla=
+ss=3D"c2 c0 li-bullet-0"><span class=3D"c1">Inputs to the Map function:</sp=
+an><span class=3D"c18 c6">&nbsp;</span></li></ul><ul class=3D"c3 lst-kix_42=
+fcxgt7mtu1-2 start"><li class=3D"c15 c0 c20 li-bullet-0"><span class=3D"c33=
+ c1">Input split assigned by the master: </span></li></ul><ul class=3D"c3 l=
+st-kix_42fcxgt7mtu1-3 start"><li class=3D"c10 c0 li-bullet-0"><span class=
+=3D"c6 c16">This split contains a list of data points</span></li><li class=
+=3D"c0 c10 li-bullet-0"><span class=3D"c18 c6">Range of Indices (Scenario 1=
+) or List of file names (Scenario 2)</span></li></ul><ul class=3D"c3 lst-ki=
+x_42fcxgt7mtu1-2"><li class=3D"c15 c0 c20 li-bullet-0"><span class=3D"c33 c=
+1">List of Centroids from the previous iteration</span></li><li class=3D"c1=
+5 c0 c20 li-bullet-0"><span class=3D"c18 c6">Other necessary information (T=
+his should be reasonable. Please check with us - if you are not sure!)</spa=
+n></li></ul><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1"><li class=3D"c2 c0 li-b=
+ullet-0"><span class=3D"c1">Output from the Map function:</span><span class=
+=3D"c18 c6">&nbsp;For each data point processed by the map function, the fu=
+nction outputs: </span></li></ul><ul class=3D"c3 lst-kix_42fcxgt7mtu1-2 sta=
+rt"><li class=3D"c15 c0 c20 li-bullet-0"><span class=3D"c6">Key:</span><spa=
+n class=3D"c33 c1">&nbsp;index of the nearest centroid to which the data po=
+int belongs</span></li><li class=3D"c15 c0 c20 li-bullet-0"><span class=3D"=
+c6">Value: </span><span class=3D"c1">value of the data point itself.</span>=
+</li></ul><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1"><li class=3D"c2 c0 li-bul=
+let-0"><span class=3D"c8">The output of each Map function should be written=
+ to a file in the mapper=E2=80=99s directory on the local file system. (Loo=
+k at the directory structure given below)</span></li><li class=3D"c2 c0 li-=
+bullet-0"><span class=3D"c8">Note that each mapper needs to run as a separa=
+te process.</span></li></ul><ol class=3D"c3 lst-kix_42fcxgt7mtu1-0" start=
+=3D"4"><li class=3D"c0 c5 li-bullet-0"><span class=3D"c23">Partition (</spa=
+n><span class=3D"c1">invoked by mapper</span><span class=3D"c25 c23">): </s=
+pan></li></ol><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c0=
+ c14 li-bullet-0"><span class=3D"c8">The output of the Map function (as men=
+tioned in the mapper above) also needs to be partitioned into a set of smal=
+ler partitions. </span></li><li class=3D"c0 c14 li-bullet-0"><span class=3D=
+"c8">In this step, you will write a function that takes the list of key-val=
+ue pairs generated by the Map function and partitions them into smaller par=
+titions. </span></li><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">Th=
+e partitioning function should ensure that all key-value pairs with the sam=
+e key are sent to the same partition. </span></li><li class=3D"c0 c14 li-bu=
+llet-0"><span class=3D"c8">Each partition is picked up by a specific reduce=
+r during shuffling and sorting. </span></li><li class=3D"c0 c14 li-bullet-0=
+"><span class=3D"c8">If there are M mappers and R reducers, each mapper sho=
+uld have R file partitions. This means that there will be M*R partitions in=
+ total.</span></li><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">This=
+ step is performed by the mapper.</span></li></ul><ol class=3D"c3 lst-kix_4=
+2fcxgt7mtu1-0" start=3D"5"><li class=3D"c0 c5 li-bullet-0"><span class=3D"c=
+23">Shuffle and sort (</span><span class=3D"c1">invoked by reducer</span><s=
+pan class=3D"c23">):</span><span class=3D"c8">&nbsp;</span></li></ol><ul cl=
+ass=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c0 c14 li-bullet-0"><s=
+pan class=3D"c8">You must write code to sort the intermediate key-value pai=
+rs by key and group the values that belong to the same key. </span></li><li=
+ class=3D"c0 c14 li-bullet-0"><span class=3D"c8">This is typically done by =
+sending the intermediate key-value pairs to the reducers based on the key. =
+</span></li><li class=3D"c0 c14 li-bullet-0"><span>This step is performed b=
+y the reducer.</span></li></ul><ol class=3D"c3 lst-kix_42fcxgt7mtu1-0" star=
+t=3D"6"><li class=3D"c15 c0 c5 li-bullet-0"><span class=3D"c1">Reduce (invo=
+ked by reducer):</span><span class=3D"c18 c6">&nbsp;</span></li></ol><ul cl=
+ass=3D"c3 lst-kix_42fcxgt7mtu1-1 start"><li class=3D"c2 c0 li-bullet-0"><sp=
+an class=3D"c6">The reducer </span><span class=3D"c1">will receive the inte=
+rmediate key-value pairs from the mapper</span><span class=3D"c6">, perform=
+ the shuffle &amp; sort function as mentioned, and </span><span>produce a s=
+et of final key-value pairs as output</span><span class=3D"c6">. </span></l=
+i><li class=3D"c2 c0 li-bullet-0"><span class=3D"c8">You will need to write=
+ code to apply the Reduce function to each group of values that belong to t=
+he same key to generate the final output.</span></li><li class=3D"c2 c0 li-=
+bullet-0"><span class=3D"c8">Input to the reduce function:</span></li></ul>=
+<ul class=3D"c3 lst-kix_42fcxgt7mtu1-2 start"><li class=3D"c15 c0 c20 li-bu=
+llet-0"><span>Key: </span><span class=3D"c25 c23">Centroid id</span></li><l=
+i class=3D"c15 c0 c20 li-bullet-0"><span>Value: </span><span class=3D"c23">=
+List of all the data points which belong to this centroid id </span><span c=
+lass=3D"c8">(this information is available after shuffle and sorting)</span=
+></li><li class=3D"c15 c0 c20 li-bullet-0"><span class=3D"c6">Other necessa=
+ry information (This should be reasonable. Please check with us - if you ar=
+e not sure!)</span></li></ul><ul class=3D"c3 lst-kix_42fcxgt7mtu1-1"><li cl=
+ass=3D"c2 c0 li-bullet-0"><span class=3D"c8">Output of the reduce function:=
+</span></li></ul><ul class=3D"c3 lst-kix_42fcxgt7mtu1-2 start"><li class=3D=
+"c15 c0 c20 li-bullet-0"><span>Key: </span><span class=3D"c23 c25">Centroid=
+ Id</span></li><li class=3D"c15 c0 c20 li-bullet-0"><span>Value: </span><sp=
+an class=3D"c23">Updated Centroid</span></li></ul><ul class=3D"c3 lst-kix_4=
+2fcxgt7mtu1-1"><li class=3D"c2 c0 li-bullet-0"><span class=3D"c8">The outpu=
+t of each Reduce function should be written to a file in the reducer=E2=80=
+=99s directory on the local file system. </span></li><li class=3D"c2 c0 li-=
+bullet-0"><span>Note that each reducer needs to run as a separate process.<=
+/span></li></ul><ol class=3D"c3 lst-kix_42fcxgt7mtu1-0" start=3D"7"><li cla=
+ss=3D"c0 c5 li-bullet-0"><span class=3D"c23">Centroid Compilation (</span><=
+span class=3D"c1">invoked by master</span><span class=3D"c23">):</span><spa=
+n class=3D"c8">&nbsp;The master needs to parse the output generated by all =
+the reducers to compile the final list of (K) centroids and store them in a=
+ single file. This list of centroids is considered as input for the next it=
+eration. Before the first iteration, the centroids should be randomly selec=
+ted from the input data points.</span></li></ol><p class=3D"c15 c0 c29"><sp=
+an class=3D"c43 c23">Important Notes:</span></p><ol class=3D"c3 lst-kix_bq4=
+8mzhg6ydi-0 start" start=3D"1"><li class=3D"c15 c0 c5 li-bullet-0"><span>Re=
+ducers </span><span class=3D"c23">should not read</span><span class=3D"c8">=
+&nbsp;their input key-value pairs from the generated intermediate files; in=
+stead, they should perform gRPC calls to the mappers to get the input. (Map=
+per however should read the input data points from the input files itself).=
+</span></li><li class=3D"c15 c0 c5 li-bullet-0"><span class=3D"c23 c17 c43"=
+>Fault Tolerance:</span><span class=3D"c8 c17">&nbsp;Your implementation sh=
+ould take care of any failures associated with mapper or reducer. If a mapp=
+er or reducer fails, then the master should re-run that task to ensure that=
+ the computations finish. We will test two failure scenarios:</span></li></=
+ol><ol class=3D"c3 lst-kix_bq48mzhg6ydi-1 start" start=3D"1"><li class=3D"c=
+2 c0 li-bullet-0"><span class=3D"c8 c17">Mapper/reducer may encounter an er=
+ror due to which it is not able to complete the allocated task. In that cas=
+e, it will return "unsuccessful or failed" message to master.</span></li><l=
+i class=3D"c2 c0 li-bullet-0"><span class=3D"c8 c17">We may force stop a ma=
+pper or reducer process.</span></li></ol><p class=3D"c15 c0 c5"><span class=
+=3D"c8 c17">In both cases, master should ensure the failed task gets reassi=
+gned to the same or different mapper/reducer.</span></p><p class=3D"c15 c0 =
+c29"><span class=3D"c45 c43 c23">gRPC communication:</span></p><p class=3D"=
+c15 c0 c29"><span class=3D"c8">The gRPC communication between the three pro=
+cesses for each iteration looks something like this:</span></p><ol class=3D=
+"c3 lst-kix_59tb2gc5u4p4-0 start" start=3D"1"><li class=3D"c15 c0 c5 li-bul=
+let-0"><span class=3D"c8">Master =E2=87=94 Mapper (master sends necessary p=
+arameters to mapper, mapper performs map &amp; partition)</span></li><li cl=
+ass=3D"c15 c0 c5 li-bullet-0"><span class=3D"c8">Master =E2=87=94 Reducer (=
+after all mappers have returned to master successfully, master invokes redu=
+cers with the necessary parameters)</span></li><li class=3D"c15 c0 c5 li-bu=
+llet-0"><span class=3D"c8">Reducer =E2=87=94 Mapper (after invocation, redu=
+cers communicates with the mapper to get the input before the shuffle, sort=
+, and reduce step)</span></li></ol><h1 class=3D"c13" id=3D"h.ge0ro5nbjd67">=
+<span class=3D"c4">Sample input and output files:</span></h1><p class=3D"c0=
+"><span>We will provide sample input and output files for each application =
+to have uniformity in evaluation</span><span>. You should ensure that your =
+code runs successfully in the provided format of sample input files and gen=
+erates the final output files in the same format as the sample output files=
+.</span></p><p class=3D"c0 c19"><span class=3D"c26 c11"></span></p><p class=
+=3D"c0"><span class=3D"c26 c11">Data/</span></p><p class=3D"c0"><span class=
+=3D"c26 c11">=E2=94=9C=E2=94=80 Input/</span></p><p class=3D"c0"><span clas=
+s=3D"c11">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 </span><span class=3D"c11 c21"=
+><a class=3D"c31" href=3D"https://www.google.com/url?q=3Dhttps://drive.goog=
+le.com/file/d/1Zz43M5rvSBwjzwvwQvrX2kGWGQGEDxJD/view?usp%3Ddrive_link&amp;s=
+a=3DD&amp;source=3Deditors&amp;ust=3D1712841007767887&amp;usg=3DAOvVaw3OXo8=
+e9DsDlgFq3aIZ9DaV">points.txt</a></span><span class=3D"c11">&nbsp;</span><s=
+pan class=3D"c11 c32">(initial points)</span></p><p class=3D"c0"><span clas=
+s=3D"c26 c11">=E2=94=9C=E2=94=80 Mappers/</span></p><p class=3D"c0"><span c=
+lass=3D"c26 c11">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 M1/</span></p><p class=
+=3D"c0"><span class=3D"c26 c11">=E2=94=82 &nbsp;=E2=94=82 &nbsp;=E2=94=9C=
+=E2=94=80 partition_1.txt</span></p><p class=3D"c0"><span class=3D"c26 c11"=
+>=E2=94=82 &nbsp;=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 partition_2.txt</span><=
+/p><p class=3D"c0"><span class=3D"c48 c11 c32">... </span></p><p class=3D"c=
+0"><span class=3D"c11">=E2=94=82 &nbsp;=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 p=
+artition_R.txt </span><span class=3D"c11 c32 c48">(R based on the number of=
+ reducers)</span></p><p class=3D"c0"><span class=3D"c11">=E2=94=82 &nbsp;=
+=E2=94=9C=E2=94=80 M2/ </span><span class=3D"c11 c32">...</span></p><p clas=
+s=3D"c0"><span class=3D"c11">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 M3/ </span>=
+<span class=3D"c11 c32">...</span></p><p class=3D"c0"><span class=3D"c11 c3=
+2">...</span></p><p class=3D"c0"><span class=3D"c26 c11">=E2=94=9C=E2=94=80=
+ Reducers/</span></p><p class=3D"c0"><span class=3D"c26 c11">=E2=94=82 &nbs=
+p;=E2=94=9C=E2=94=80 R1.txt</span></p><p class=3D"c0"><span class=3D"c26 c1=
+1">=E2=94=82 &nbsp;=E2=94=9C=E2=94=80 R2.txt</span></p><p class=3D"c0"><spa=
+n class=3D"c11">=E2=94=9C=E2=94=80 </span><span class=3D"c21 c11"><a class=
+=3D"c31" href=3D"https://www.google.com/url?q=3Dhttps://drive.google.com/fi=
+le/d/13cLbXiWwE7NaRmHxzdgRmZs_mhYyvveg/view?usp%3Ddrive_link&amp;sa=3DD&amp=
+;source=3Deditors&amp;ust=3D1712841007769086&amp;usg=3DAOvVaw0kpGdTIjY5qpU7=
+D_ZMyjsm">centroids.txt</a></span><span class=3D"c11">&nbsp;</span><span cl=
+ass=3D"c11 c32">(final list of centroids)</span></p><h1 class=3D"c13" id=3D=
+"h.nfkhu4gpn3z0"><span class=3D"c4">Print Statements:</span></h1><p class=
+=3D"c0"><span class=3D"c8 c34">Please log/print everything in a dump.txt fi=
+le (just like we did in assignment 2) for easy debugging/monitoring.</span>=
+</p><p class=3D"c0 c19"><span class=3D"c8"></span></p><p class=3D"c0"><span=
+>Print/</span><span class=3D"c8">Display the following data while executing=
+ the master program for each iteration:</span></p><ol class=3D"c3 lst-kix_5=
+qil7o6gd9mx-0 start" start=3D"1"><li class=3D"c0 c5 li-bullet-0"><span clas=
+s=3D"c8">Iteration number</span></li><li class=3D"c0 c5 li-bullet-0"><span =
+class=3D"c8">Execution of gRPC calls to Mappers or Reducers</span></li><li =
+class=3D"c0 c5 li-bullet-0"><span class=3D"c8">gRPC responses for each Mapp=
+er and Reducer function (SUCCESS/FAILURE)</span></li><li class=3D"c0 c5 li-=
+bullet-0"><span>Centroids generated after each iteration (including the ran=
+domly initialized centroids)</span></li></ol><h1 class=3D"c13" id=3D"h.p2ce=
+9k2a9jkn"><span class=3D"c4">Deliverables</span></h1><ol class=3D"c3 lst-ki=
+x_ih97f5qhtl49-0 start" start=3D"1"><li class=3D"c0 c5 li-bullet-0"><span>S=
+ubmit a zipped file containing the entire code with the given directory str=
+ucture.</span></li></ol><h1 class=3D"c13" id=3D"h.gr2fkwqesnj5"><span class=
+=3D"c38 c23">Evaluation</span></h1><p class=3D"c0"><span class=3D"c8">Your =
+assignment will be evaluated on the following criteria:</span></p><ol class=
+=3D"c3 lst-kix_dwhemvvzbb3k-0 start" start=3D"1"><li class=3D"c0 c5 li-bull=
+et-0"><span class=3D"c8">You must test the master with different numbers of=
+ mappers, reducers, centroids, and iterations. </span></li><li class=3D"c0 =
+c5 li-bullet-0"><span class=3D"c25 c23">You can either set up the mapper an=
+d reducer processes before running the master process, or you can allow the=
+ master process to spawn the mapper and reducer processes as and when requi=
+red.</span></li><li class=3D"c0 c5 li-bullet-0"><span class=3D"c8">The outp=
+uts of </span></li></ol><ol class=3D"c3 lst-kix_dwhemvvzbb3k-1 start" start=
+=3D"1"><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">Mappers</span></=
+li><li class=3D"c0 c14 li-bullet-0"><span class=3D"c8">Reducers</span></li>=
+</ol><p class=3D"c0 c50"><span class=3D"c8">will be verified for different =
+configurations.</span></p><p class=3D"c0 c19"><span class=3D"c8"></span></p=
+><p class=3D"c0 c19"><span class=3D"c8"></span></p></div></div></body></htm=
+l>
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-af869bd3-4e3e-4542-91a3-30bb71c8187a@mhtml.blink
+Content-Location: cid:css-b17f52b3-d7ae-4f88-94f0-383f3716ae6d@mhtml.blink
 
 @charset "utf-8";
 
@@ -399,7 +443,7 @@ o 25px; }
 @media only screen and (max-device-width: 800px) {
   #contents { padding: 150px 5% 80px; }
 }
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css?family=Google+Sans
@@ -533,7 +577,7 @@ OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyk.woff2") forma=
 t("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2D=
 A, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,=
  U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css?family=Roboto
@@ -576,10 +620,10 @@ A720-A7FF; }
 format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6,=
  U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+=
 2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG----
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-e9e2db28-52f4-4849-a511-bc18a63a45f0@mhtml.blink
+Content-Location: cid:css-c1035436-53fa-48f0-bb42-550a38d819b8@mhtml.blink
 
 @charset "utf-8";
 
@@ -657,6 +701,9 @@ ol.lst-kix_yqxhj322f8sf-0.start { counter-reset: lst-ctn-kix_yqxhj322f8sf-0=
 ol.lst-kix_mqsfmes6h6hx-8.start { counter-reset: lst-ctn-kix_mqsfmes6h6hx-8=
  0; }
 
+.lst-kix_bq48mzhg6ydi-1 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+1 1; }
+
 ol.lst-kix_dl39zeqa9f0x-5.start { counter-reset: lst-ctn-kix_dl39zeqa9f0x-5=
  0; }
 
@@ -722,6 +769,9 @@ ol.lst-kix_8whgzp445lj1-4.start { counter-reset: lst-ctn-kix_8whgzp445lj1-4=
 
 .lst-kix_989s663pg266-7 > li { counter-increment: lst-ctn-kix_989s663pg266-=
 7 1; }
+
+.lst-kix_bq48mzhg6ydi-8 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+8 1; }
 
 ol.lst-kix_ozzeh1mryxc8-7.start { counter-reset: lst-ctn-kix_ozzeh1mryxc8-7=
  0; }
@@ -901,6 +951,9 @@ f113evz8-6) ". "; }
 .lst-kix_4h9ff113evz8-8 > li::before { content: "" counter(lst-ctn-kix_4h9f=
 f113evz8-8, lower-roman) ". "; }
 
+.lst-kix_i9x0fc38kp80-6 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+6 1; }
+
 ol.lst-kix_5pfwmf1sbfh-7 { list-style-type: none; }
 
 .lst-kix_dudsn6roh0yh-0 > li::before { content: "=E2=80=A2  "; }
@@ -911,6 +964,9 @@ ol.lst-kix_vpeidfmyvg3n-8.start { counter-reset: lst-ctn-kix_vpeidfmyvg3n-8=
  0; }
 
 .lst-kix_walauj5p0ps9-7 > li::before { content: "=E2=80=93  "; }
+
+.lst-kix_i9x0fc38kp80-5 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+5 1; }
 
 .lst-kix_dwhemvvzbb3k-4 > li { counter-increment: lst-ctn-kix_dwhemvvzbb3k-=
 4 1; }
@@ -955,6 +1011,9 @@ ol.lst-kix_4h9ff113evz8-5 { list-style-type: none; }
 
 ol.lst-kix_4h9ff113evz8-4 { list-style-type: none; }
 
+ol.lst-kix_bq48mzhg6ydi-6.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-6=
+ 0; }
+
 ol.lst-kix_4h9ff113evz8-3 { list-style-type: none; }
 
 ol.lst-kix_4h9ff113evz8-2 { list-style-type: none; }
@@ -966,6 +1025,12 @@ ol.lst-kix_1pr1wp7lwnbi-5.start { counter-reset: lst-ctn-kix_1pr1wp7lwnbi-5=
  0; }
 
 ol.lst-kix_yqxhj322f8sf-5.start { counter-reset: lst-ctn-kix_yqxhj322f8sf-5=
+ 0; }
+
+ol.lst-kix_i9x0fc38kp80-6.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-6=
+ 0; }
+
+ol.lst-kix_bq48mzhg6ydi-7.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-7=
  0; }
 
 ul.lst-kix_eh71tznm0ows-1 { list-style-type: none; }
@@ -1004,9 +1069,15 @@ ol.lst-kix_484wwjnmdun4-8.start { counter-reset: lst-ctn-kix_484wwjnmdun4-8=
 .lst-kix_x01ix4w1f5qv-8 > li::before { content: "" counter(lst-ctn-kix_x01i=
 x4w1f5qv-8, lower-roman) ". "; }
 
+.lst-kix_bq48mzhg6ydi-0 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+0 1; }
+
 .lst-kix_pi407cykgcfs-1 > li::before { content: "=E2=97=8B  "; }
 
 .lst-kix_pi407cykgcfs-5 > li::before { content: "=E2=96=A0  "; }
+
+ol.lst-kix_i9x0fc38kp80-5.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-5=
+ 0; }
 
 .lst-kix_pi407cykgcfs-6 > li::before { content: "=E2=97=8F  "; }
 
@@ -1032,6 +1103,9 @@ ol.lst-kix_989s663pg266-5 { list-style-type: none; }
 
 .lst-kix_x01ix4w1f5qv-3 > li::before { content: "" counter(lst-ctn-kix_x01i=
 x4w1f5qv-3) ". "; }
+
+ol.lst-kix_bq48mzhg6ydi-1.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-1=
+ 0; }
 
 ol.lst-kix_989s663pg266-0 { list-style-type: none; }
 
@@ -1082,6 +1156,9 @@ ol.lst-kix_vpeidfmyvg3n-4.start { counter-reset: lst-ctn-kix_vpeidfmyvg3n-4=
  0; }
 
 .lst-kix_8whgzp445lj1-2 > li { counter-increment: lst-ctn-kix_8whgzp445lj1-=
+2 1; }
+
+.lst-kix_bq48mzhg6ydi-2 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
 2 1; }
 
 ul.lst-kix_leobc72uvvyt-8 { list-style-type: none; }
@@ -1207,6 +1284,9 @@ ol.lst-kix_989s663pg266-8.start { counter-reset: lst-ctn-kix_989s663pg266-8=
 
 ol.lst-kix_9grptezi3371-7 { list-style-type: none; }
 
+ol.lst-kix_i9x0fc38kp80-1.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-1=
+ 0; }
+
 ol.lst-kix_bqr8enm7r17v-3.start { counter-reset: lst-ctn-kix_bqr8enm7r17v-3=
  0; }
 
@@ -1242,6 +1322,9 @@ f113evz8-7, lower-latin) ". "; }
 
 .lst-kix_vpeidfmyvg3n-8 > li { counter-increment: lst-ctn-kix_vpeidfmyvg3n-=
 8 1; }
+
+ol.lst-kix_bq48mzhg6ydi-2.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-2=
+ 0; }
 
 .lst-kix_walauj5p0ps9-6 > li::before { content: "=E2=80=A2  "; }
 
@@ -1302,6 +1385,9 @@ ol.lst-kix_5pfwmf1sbfh-8.start { counter-reset: lst-ctn-kix_5pfwmf1sbfh-8 0=
 ul.lst-kix_leobc72uvvyt-1 { list-style-type: none; }
 
 ul.lst-kix_leobc72uvvyt-0 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-0.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-0=
+ 0; }
 
 .lst-kix_c2ezjhvczgn0-6 > li::before { content: "=E2=80=A2  "; }
 
@@ -1444,6 +1530,9 @@ ol.lst-kix_9grptezi3371-6.start { counter-reset: lst-ctn-kix_9grptezi3371-6=
 .lst-kix_9grptezi3371-7 > li::before { content: "" counter(lst-ctn-kix_9grp=
 tezi3371-7, lower-latin) ". "; }
 
+.lst-kix_i9x0fc38kp80-0 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+0 1; }
+
 .lst-kix_9grptezi3371-4 > li::before { content: "" counter(lst-ctn-kix_9grp=
 tezi3371-4, lower-latin) ". "; }
 
@@ -1576,6 +1665,9 @@ ul.lst-kix_dudsn6roh0yh-8 { list-style-type: none; }
 
 ul.lst-kix_dudsn6roh0yh-5 { list-style-type: none; }
 
+ol.lst-kix_bq48mzhg6ydi-3.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-3=
+ 0; }
+
 ul.lst-kix_dudsn6roh0yh-6 { list-style-type: none; }
 
 .lst-kix_9grptezi3371-4 > li { counter-increment: lst-ctn-kix_9grptezi3371-=
@@ -1595,6 +1687,9 @@ ol.lst-kix_ozzeh1mryxc8-4 { list-style-type: none; }
 ol.lst-kix_ozzeh1mryxc8-1 { list-style-type: none; }
 
 ol.lst-kix_ozzeh1mryxc8-2 { list-style-type: none; }
+
+.lst-kix_i9x0fc38kp80-7 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+7 1; }
 
 ol.lst-kix_ozzeh1mryxc8-0 { list-style-type: none; }
 
@@ -1644,8 +1739,14 @@ dn48nigt-6) ". "; }
 ol.lst-kix_kuzujec7u0jd-3.start { counter-reset: lst-ctn-kix_kuzujec7u0jd-3=
  0; }
 
+.lst-kix_i9x0fc38kp80-2 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-2, lower-roman) ". "; }
+
 .lst-kix_vpeidfmyvg3n-5 > li { counter-increment: lst-ctn-kix_vpeidfmyvg3n-=
 5 1; }
+
+.lst-kix_bq48mzhg6ydi-7 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+7 1; }
 
 .lst-kix_ozzeh1mryxc8-0 > li::before { content: "" counter(lst-ctn-kix_ozze=
 h1mryxc8-0) ". "; }
@@ -1655,6 +1756,9 @@ ol.lst-kix_989s663pg266-2.start { counter-reset: lst-ctn-kix_989s663pg266-2=
 
 .lst-kix_bqr8enm7r17v-3 > li { counter-increment: lst-ctn-kix_bqr8enm7r17v-=
 3 1; }
+
+.lst-kix_i9x0fc38kp80-0 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-0) ". "; }
 
 ul.lst-kix_15vc0ij11tff-5 { list-style-type: none; }
 
@@ -1677,6 +1781,9 @@ ul.lst-kix_15vc0ij11tff-8 { list-style-type: none; }
 ul.lst-kix_mtfr86xkgns5-7 { list-style-type: none; }
 
 ul.lst-kix_15vc0ij11tff-1 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-5.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-5=
+ 0; }
 
 ul.lst-kix_mtfr86xkgns5-6 { list-style-type: none; }
 
@@ -1726,6 +1833,9 @@ ul.lst-kix_mtfr86xkgns5-0 { list-style-type: none; }
 
 .lst-kix_dwhemvvzbb3k-6 > li::before { content: "" counter(lst-ctn-kix_dwhe=
 mvvzbb3k-6) ". "; }
+
+ol.lst-kix_bq48mzhg6ydi-8.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-8=
+ 0; }
 
 .lst-kix_leobc72uvvyt-6 > li::before { content: "=E2=97=8F  "; }
 
@@ -1847,6 +1957,9 @@ ul.lst-kix_6507pkgdcfp8-1 { list-style-type: none; }
 
 ul.lst-kix_6507pkgdcfp8-0 { list-style-type: none; }
 
+.lst-kix_bq48mzhg6ydi-6 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+6 1; }
+
 .lst-kix_8whgzp445lj1-1 > li::before { content: "" counter(lst-ctn-kix_8whg=
 zp445lj1-1, lower-latin) ". "; }
 
@@ -1946,10 +2059,16 @@ ol.lst-kix_9grptezi3371-8.start { counter-reset: lst-ctn-kix_9grptezi3371-8=
 .lst-kix_ic7be5blqmc3-5 > li { counter-increment: lst-ctn-kix_ic7be5blqmc3-=
 5 1; }
 
+.lst-kix_i9x0fc38kp80-8 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-8, lower-roman) ". "; }
+
 .lst-kix_z415d2f0lj2g-7 > li::before { content: "-  "; }
 
 .lst-kix_ic7be5blqmc3-2 > li::before { content: "" counter(lst-ctn-kix_ic7b=
 e5blqmc3-2, lower-roman) ". "; }
+
+.lst-kix_i9x0fc38kp80-5 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-5, lower-roman) ". "; }
 
 .lst-kix_dl39zeqa9f0x-2 > li::before { content: "" counter(lst-ctn-kix_dl39=
 zeqa9f0x-2) ". "; }
@@ -2138,6 +2257,9 @@ ol.lst-kix_5afwdn48nigt-6 { list-style-type: none; }
 .lst-kix_1pr1wp7lwnbi-3 > li { counter-increment: lst-ctn-kix_1pr1wp7lwnbi-=
 3 1; }
 
+.lst-kix_i9x0fc38kp80-3 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+3 1; }
+
 ol.lst-kix_5afwdn48nigt-7 { list-style-type: none; }
 
 .lst-kix_gw1sinxguzsw-8 > li::before { content: "=E2=80=A2  "; }
@@ -2172,6 +2294,9 @@ inline-block; min-width: 18pt; }
 
 .lst-kix_x01ix4w1f5qv-5 > li { counter-increment: lst-ctn-kix_x01ix4w1f5qv-=
 5 1; }
+
+.lst-kix_bq48mzhg6ydi-3 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+3 1; }
 
 .lst-kix_bgj1ixkur2p-8 > li::before { content: "=E2=96=A0  "; }
 
@@ -2237,6 +2362,9 @@ f5qhtl49-0) ". "; }
 
 ul.lst-kix_sblvmubkpnj6-2 { list-style-type: none; }
 
+ol.lst-kix_i9x0fc38kp80-8.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-8=
+ 0; }
+
 ul.lst-kix_sblvmubkpnj6-0 { list-style-type: none; }
 
 .lst-kix_ih97f5qhtl49-1 > li::before { content: "" counter(lst-ctn-kix_ih97=
@@ -2247,9 +2375,15 @@ ul.lst-kix_myd7ldeux23n-0 { list-style-type: none; }
 .lst-kix_ic7be5blqmc3-2 > li { counter-increment: lst-ctn-kix_ic7be5blqmc3-=
 2 1; }
 
+ol.lst-kix_bq48mzhg6ydi-4.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-4=
+ 0; }
+
 ul.lst-kix_myd7ldeux23n-3 { list-style-type: none; }
 
 .lst-kix_mtfr86xkgns5-8 > li::before { content: "=E2=80=A2  "; }
+
+.lst-kix_i9x0fc38kp80-2 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+2 1; }
 
 ul.lst-kix_myd7ldeux23n-4 { list-style-type: none; }
 
@@ -2332,6 +2466,9 @@ f5qhtl49-5, lower-roman) ". "; }
 
 ul.lst-kix_rmrgeo5obg5t-3 { list-style-type: none; }
 
+ol.lst-kix_i9x0fc38kp80-3.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-3=
+ 0; }
+
 .lst-kix_484wwjnmdun4-2 > li { counter-increment: lst-ctn-kix_484wwjnmdun4-=
 2 1; }
 
@@ -2348,6 +2485,9 @@ ol.lst-kix_kuzujec7u0jd-1 { list-style-type: none; }
 
 ul.lst-kix_pi407cykgcfs-0 { list-style-type: none; }
 
+.lst-kix_bq48mzhg6ydi-8 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-8, lower-roman) ". "; }
+
 ol.lst-kix_kuzujec7u0jd-0 { list-style-type: none; }
 
 ul.lst-kix_pi407cykgcfs-3 { list-style-type: none; }
@@ -2358,6 +2498,12 @@ ul.lst-kix_pi407cykgcfs-3 { list-style-type: none; }
 ol.lst-kix_kuzujec7u0jd-5 { list-style-type: none; }
 
 ul.lst-kix_pi407cykgcfs-4 { list-style-type: none; }
+
+.lst-kix_bq48mzhg6ydi-6 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-6) ". "; }
+
+.lst-kix_bq48mzhg6ydi-7 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-7, lower-latin) ". "; }
 
 ol.lst-kix_kuzujec7u0jd-4 { list-style-type: none; }
 
@@ -2371,6 +2517,12 @@ ul.lst-kix_pi407cykgcfs-2 { list-style-type: none; }
 4 1; }
 
 ol.lst-kix_kuzujec7u0jd-2 { list-style-type: none; }
+
+.lst-kix_bq48mzhg6ydi-4 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-4, lower-latin) ". "; }
+
+.lst-kix_bq48mzhg6ydi-5 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-5, lower-roman) ". "; }
 
 ol.lst-kix_kuzujec7u0jd-8 { list-style-type: none; }
 
@@ -2388,6 +2540,12 @@ ul.lst-kix_rstlvn5jwt6p-0 { list-style-type: none; }
 
 ul.lst-kix_rstlvn5jwt6p-1 { list-style-type: none; }
 
+.lst-kix_bq48mzhg6ydi-0 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-0) ". "; }
+
+.lst-kix_bq48mzhg6ydi-1 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-1, lower-latin) ". "; }
+
 ul.lst-kix_rstlvn5jwt6p-2 { list-style-type: none; }
 
 ol.lst-kix_5pfwmf1sbfh-0.start { counter-reset: lst-ctn-kix_5pfwmf1sbfh-0 0=
@@ -2396,6 +2554,12 @@ ol.lst-kix_5pfwmf1sbfh-0.start { counter-reset: lst-ctn-kix_5pfwmf1sbfh-0 0=
 ul.lst-kix_rstlvn5jwt6p-3 { list-style-type: none; }
 
 ul.lst-kix_2k28gz85g15t-0 { list-style-type: none; }
+
+.lst-kix_bq48mzhg6ydi-2 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-2, lower-roman) ". "; }
+
+.lst-kix_bq48mzhg6ydi-3 > li::before { content: "" counter(lst-ctn-kix_bq48=
+mzhg6ydi-3) ". "; }
 
 .lst-kix_kuzujec7u0jd-7 > li { counter-increment: lst-ctn-kix_kuzujec7u0jd-=
 7 1; }
@@ -2447,6 +2611,9 @@ ol.lst-kix_5afwdn48nigt-6.start { counter-reset: lst-ctn-kix_5afwdn48nigt-6=
 
 ol.lst-kix_bqr8enm7r17v-0.start { counter-reset: lst-ctn-kix_bqr8enm7r17v-0=
  0; }
+
+.lst-kix_bq48mzhg6ydi-5 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+5 1; }
 
 .lst-kix_v4j73wvfwadv-5 > li { counter-increment: lst-ctn-kix_v4j73wvfwadv-=
 5 1; }
@@ -2747,6 +2914,12 @@ ol.lst-kix_v4j73wvfwadv-7.start { counter-reset: lst-ctn-kix_v4j73wvfwadv-7=
 ol.lst-kix_59tb2gc5u4p4-2.start { counter-reset: lst-ctn-kix_59tb2gc5u4p4-2=
  0; }
 
+.lst-kix_i9x0fc38kp80-7 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-7, lower-latin) ". "; }
+
+.lst-kix_i9x0fc38kp80-6 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-6) ". "; }
+
 .lst-kix_ic7be5blqmc3-4 > li::before { content: "" counter(lst-ctn-kix_ic7b=
 e5blqmc3-4, lower-latin) ". "; }
 
@@ -2873,6 +3046,12 @@ ol.lst-kix_5qil7o6gd9mx-8.start { counter-reset: lst-ctn-kix_5qil7o6gd9mx-8=
 .lst-kix_484wwjnmdun4-0 > li::before { content: "" counter(lst-ctn-kix_484w=
 wjnmdun4-0) ". "; }
 
+.lst-kix_bq48mzhg6ydi-4 > li { counter-increment: lst-ctn-kix_bq48mzhg6ydi-=
+4 1; }
+
+.lst-kix_i9x0fc38kp80-3 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-3) ". "; }
+
 .lst-kix_bqr8enm7r17v-0 > li { counter-increment: lst-ctn-kix_bqr8enm7r17v-=
 0 1; }
 
@@ -2967,6 +3146,9 @@ ol.lst-kix_vpeidfmyvg3n-2 { list-style-type: none; }
 
 .lst-kix_59tb2gc5u4p4-4 > li { counter-increment: lst-ctn-kix_59tb2gc5u4p4-=
 4 1; }
+
+ol.lst-kix_bq48mzhg6ydi-0.start { counter-reset: lst-ctn-kix_bq48mzhg6ydi-0=
+ 0; }
 
 ol.lst-kix_vpeidfmyvg3n-0 { list-style-type: none; }
 
@@ -3139,6 +3321,9 @@ ol.lst-kix_5pfwmf1sbfh-4.start { counter-reset: lst-ctn-kix_5pfwmf1sbfh-4 0=
 ol.lst-kix_1pr1wp7lwnbi-2.start { counter-reset: lst-ctn-kix_1pr1wp7lwnbi-2=
  0; }
 
+.lst-kix_i9x0fc38kp80-4 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+4 1; }
+
 ol.lst-kix_2kut5qs2l6dq-0 { list-style-type: none; }
 
 ol.lst-kix_2kut5qs2l6dq-1 { list-style-type: none; }
@@ -3163,11 +3348,27 @@ ol.lst-kix_2kut5qs2l6dq-8 { list-style-type: none; }
 .lst-kix_ih97f5qhtl49-1 > li { counter-increment: lst-ctn-kix_ih97f5qhtl49-=
 1 1; }
 
+ol.lst-kix_bq48mzhg6ydi-4 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-5 { list-style-type: none; }
+
 .lst-kix_5pfwmf1sbfh-1 > li::before { content: "" counter(lst-ctn-kix_5pfwm=
 f1sbfh-1, lower-latin) ". "; }
 
+ol.lst-kix_bq48mzhg6ydi-6 { list-style-type: none; }
+
 ol.lst-kix_dwhemvvzbb3k-6.start { counter-reset: lst-ctn-kix_dwhemvvzbb3k-6=
  0; }
+
+ol.lst-kix_bq48mzhg6ydi-7 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-0 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-1 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-2 { list-style-type: none; }
+
+ol.lst-kix_bq48mzhg6ydi-3 { list-style-type: none; }
 
 ol.lst-kix_5afwdn48nigt-5.start { counter-reset: lst-ctn-kix_5afwdn48nigt-5=
  0; }
@@ -3182,6 +3383,8 @@ ol.lst-kix_vpeidfmyvg3n-0.start { counter-reset: lst-ctn-kix_vpeidfmyvg3n-0=
 
 .lst-kix_484wwjnmdun4-8 > li { counter-increment: lst-ctn-kix_484wwjnmdun4-=
 8 1; }
+
+ol.lst-kix_bq48mzhg6ydi-8 { list-style-type: none; }
 
 ol.lst-kix_bqr8enm7r17v-8.start { counter-reset: lst-ctn-kix_bqr8enm7r17v-8=
  0; }
@@ -3238,6 +3441,9 @@ ul.lst-kix_hv3y0tlbtno1-6 { list-style-type: none; }
 .lst-kix_v4j73wvfwadv-4 > li { counter-increment: lst-ctn-kix_v4j73wvfwadv-=
 4 1; }
 
+ol.lst-kix_i9x0fc38kp80-2.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-2=
+ 0; }
+
 .lst-kix_2k28gz85g15t-7 > li::before { content: "-  "; }
 
 .lst-kix_5afwdn48nigt-7 > li { counter-increment: lst-ctn-kix_5afwdn48nigt-=
@@ -3284,6 +3490,9 @@ ol.lst-kix_ih97f5qhtl49-1.start { counter-reset: lst-ctn-kix_ih97f5qhtl49-1=
 .lst-kix_x01ix4w1f5qv-3 > li { counter-increment: lst-ctn-kix_x01ix4w1f5qv-=
 3 1; }
 
+ol.lst-kix_i9x0fc38kp80-4.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-4=
+ 0; }
+
 ol.lst-kix_ih97f5qhtl49-0 { list-style-type: none; }
 
 .lst-kix_ic7be5blqmc3-0 > li::before { content: "" counter(lst-ctn-kix_ic7b=
@@ -3296,6 +3505,9 @@ ul.lst-kix_walauj5p0ps9-8 { list-style-type: none; }
 ol.lst-kix_ih97f5qhtl49-2 { list-style-type: none; }
 
 ol.lst-kix_ih97f5qhtl49-3 { list-style-type: none; }
+
+.lst-kix_i9x0fc38kp80-4 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-4, lower-latin) ". "; }
 
 ul.lst-kix_walauj5p0ps9-6 { list-style-type: none; }
 
@@ -3365,6 +3577,9 @@ ol.lst-kix_dl39zeqa9f0x-7 { list-style-type: none; }
 .lst-kix_leobc72uvvyt-2 > li::before { content: "=E2=96=A0  "; }
 
 .lst-kix_rstlvn5jwt6p-7 > li::before { content: "=E2=97=8B  "; }
+
+ol.lst-kix_i9x0fc38kp80-7.start { counter-reset: lst-ctn-kix_i9x0fc38kp80-7=
+ 0; }
 
 .lst-kix_mqsfmes6h6hx-1 > li::before { content: "" counter(lst-ctn-kix_mqsf=
 mes6h6hx-1, lower-latin) ". "; }
@@ -3651,6 +3866,9 @@ x4w1f5qv-2, lower-roman) ". "; }
 
 .lst-kix_7mzbiznvo430-6 > li::before { content: "-  "; }
 
+.lst-kix_i9x0fc38kp80-1 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+1 1; }
+
 .lst-kix_8whgzp445lj1-8 > li::before { content: "" counter(lst-ctn-kix_8whg=
 zp445lj1-8, lower-roman) ". "; }
 
@@ -3692,19 +3910,43 @@ h1mryxc8-1, lower-latin) ". "; }
 .lst-kix_484wwjnmdun4-2 > li::before { content: "" counter(lst-ctn-kix_484w=
 wjnmdun4-2, lower-roman) ". "; }
 
+.lst-kix_i9x0fc38kp80-8 > li { counter-increment: lst-ctn-kix_i9x0fc38kp80-=
+8 1; }
+
 ol.lst-kix_ih97f5qhtl49-7.start { counter-reset: lst-ctn-kix_ih97f5qhtl49-7=
  0; }
+
+.lst-kix_i9x0fc38kp80-1 > li::before { content: "" counter(lst-ctn-kix_i9x0=
+fc38kp80-1, lower-latin) ". "; }
 
 .lst-kix_8whgzp445lj1-8 > li { counter-increment: lst-ctn-kix_8whgzp445lj1-=
 8 1; }
 
 .lst-kix_hv3y0tlbtno1-4 > li::before { content: "-  "; }
 
+ol.lst-kix_i9x0fc38kp80-7 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-6 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-5 { list-style-type: none; }
+
 .lst-kix_dwhemvvzbb3k-7 > li::before { content: "" counter(lst-ctn-kix_dwhe=
 mvvzbb3k-7, lower-latin) ". "; }
 
+ol.lst-kix_i9x0fc38kp80-4 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-3 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-2 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-1 { list-style-type: none; }
+
+ol.lst-kix_i9x0fc38kp80-0 { list-style-type: none; }
+
 ol.lst-kix_4h9ff113evz8-0.start { counter-reset: lst-ctn-kix_4h9ff113evz8-0=
  0; }
+
+ol.lst-kix_i9x0fc38kp80-8 { list-style-type: none; }
 
 ul.lst-kix_70b7lho240qs-8 { list-style-type: none; }
 
@@ -3810,129 +4052,145 @@ ol { margin: 0px; padding: 0px; }
 
 table td, table th { padding: 0px; }
 
-.c4 { border-style: solid; border-width: 0pt; border-color: rgb(227, 227, 2=
-27); background-color: rgb(255, 255, 255); padding-right: 0pt; }
+.c10 { border-style: solid; border-width: 0pt; border-color: rgb(227, 227, =
+227); padding-left: 0pt; background-color: rgb(255, 255, 255); margin-left:=
+ 144pt; padding-right: 0pt; }
 
-.c15 { color: rgb(0, 0, 0); text-decoration: underline; vertical-align: bas=
+.c2 { border-style: solid; border-width: 0pt; border-color: rgb(227, 227, 2=
+27); padding-left: 0pt; background-color: rgb(255, 255, 255); margin-left: =
+72pt; padding-right: 0pt; }
+
+.c15 { border-style: solid; border-width: 0pt; border-color: rgb(227, 227, =
+227); background-color: rgb(255, 255, 255); padding-right: 0pt; }
+
+.c22 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: underline; v=
+ertical-align: baseline; text-decoration-skip-ink: none; font-size: 11pt; f=
+ont-family: Arial; font-style: normal; }
+
+.c4 { color: rgb(0, 0, 0); font-weight: 700; text-decoration: underline; ve=
+rtical-align: baseline; text-decoration-skip-ink: none; font-size: 16pt; fo=
+nt-family: Arial; font-style: normal; }
+
+.c16 { font-weight: 400; text-decoration: line-through; vertical-align: bas=
 eline; text-decoration-skip-ink: none; font-size: 11pt; font-family: Arial;=
  font-style: normal; }
 
-.c7 { color: rgb(0, 0, 0); text-decoration: underline; vertical-align: base=
-line; text-decoration-skip-ink: none; font-size: 16pt; font-family: Arial; =
-font-style: normal; }
-
-.c28 { color: rgb(0, 0, 0); text-decoration: underline; vertical-align: bas=
+.c37 { color: rgb(0, 0, 0); text-decoration: underline; vertical-align: bas=
 eline; text-decoration-skip-ink: none; font-size: 26pt; font-family: Arial;=
  font-style: normal; }
 
-.c3 { margin-left: 36pt; padding-top: 0pt; padding-left: 0pt; padding-botto=
-m: 0pt; line-height: 1.15; orphans: 2; widows: 2; text-align: left; }
-
-.c6 { margin-left: 72pt; padding-top: 0pt; padding-left: 0pt; padding-botto=
-m: 0pt; line-height: 1.15; orphans: 2; widows: 2; text-align: left; }
-
-.c33 { padding-top: 0pt; padding-bottom: 3pt; line-height: 1.15; break-afte=
+.c30 { padding-top: 0pt; padding-bottom: 3pt; line-height: 1.15; break-afte=
 r: avoid; orphans: 2; widows: 2; text-align: center; }
 
-.c22 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertic=
-al-align: baseline; font-size: 16pt; font-family: Arial; font-style: normal=
+.c9 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
+l-align: baseline; font-size: 16pt; font-family: Arial; font-style: normal;=
+ }
+
+.c35 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertic=
+al-align: baseline; font-size: 20pt; font-family: Arial; font-style: normal=
 ; }
 
-.c5 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
-l-align: baseline; font-size: 11pt; font-family: "Courier New"; font-style:=
- normal; }
-
-.c2 { padding-top: 20pt; padding-bottom: 6pt; line-height: 1.15; break-afte=
-r: avoid; orphans: 2; widows: 2; text-align: left; }
-
-.c0 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
+.c8 { color: rgb(0, 0, 0); font-weight: 400; text-decoration: none; vertica=
 l-align: baseline; font-size: 11pt; font-family: Arial; font-style: normal;=
  }
 
-.c9 { padding-top: 0pt; text-indent: 36pt; padding-bottom: 0pt; line-height=
-: 1.15; orphans: 2; widows: 2; text-align: left; }
+.c13 { padding-top: 20pt; padding-bottom: 6pt; line-height: 1.15; break-aft=
+er: avoid; orphans: 2; widows: 2; text-align: left; }
 
-.c14 { background-color: rgb(0, 255, 255); color: rgb(0, 0, 0); text-decora=
-tion: none; vertical-align: baseline; font-size: 11pt; font-family: Arial; =
-font-style: normal; }
-
-.c13 { font-weight: 400; text-decoration: none; vertical-align: baseline; f=
+.c18 { font-weight: 400; text-decoration: none; vertical-align: baseline; f=
 ont-size: 11pt; font-family: Arial; font-style: normal; }
 
-.c11 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; orphans: 2=
-; widows: 2; text-align: left; }
-
-.c37 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+.c41 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
 ; font-size: 16pt; font-family: Arial; font-style: normal; }
 
-.c19 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
-; font-size: 20pt; font-family: Arial; font-style: normal; }
+.c40 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 15pt; font-family: Arial; font-style: normal; }
 
-.c16 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+.c12 { background-color: rgb(244, 204, 204); text-decoration: none; vertica=
+l-align: baseline; font-size: 11pt; font-family: Arial; font-style: normal;=
+ }
+
+.c25 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
 ; font-size: 11pt; font-family: Arial; font-style: normal; }
 
-.c41 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
-; font-family: Arial; font-style: normal; }
+.c0 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.15; orphans: 2;=
+ widows: 2; text-align: left; }
 
-.c24 { color: rgb(102, 102, 102); text-decoration: none; vertical-align: ba=
-seline; font-size: 11pt; font-style: normal; }
-
-.c20 { text-decoration: none; vertical-align: baseline; font-size: 11pt; fo=
-nt-family: Arial; font-style: normal; }
-
-.c36 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
-ign: left; margin-right: 60.4pt; }
-
-.c42 { color: rgb(0, 0, 0); vertical-align: baseline; font-size: 20pt; font=
+.c45 { color: rgb(0, 0, 0); vertical-align: baseline; font-size: 11pt; font=
 -family: Arial; font-style: normal; }
 
-.c31 { text-decoration-skip-ink: none; font-size: 16pt; text-decoration: un=
+.c33 { text-decoration: none; vertical-align: baseline; font-size: 11pt; fo=
+nt-family: Arial; font-style: normal; }
+
+.c39 { padding-top: 0pt; padding-bottom: 0pt; line-height: 1.21952; text-al=
+ign: left; margin-right: 60.4pt; }
+
+.c26 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-size: 11pt; font-style: normal; }
+
+.c42 { color: rgb(0, 0, 0); text-decoration: none; vertical-align: baseline=
+; font-family: Arial; font-style: normal; }
+
+.c21 { color: rgb(17, 85, 204); text-decoration: underline; text-decoration=
+-skip-ink: none; }
+
+.c38 { text-decoration-skip-ink: none; font-size: 16pt; text-decoration: un=
 derline; }
 
-.c25 { text-decoration-skip-ink: none; color: rgb(255, 0, 0); text-decorati=
-on: underline; }
+.c47 { color: rgb(0, 0, 0); vertical-align: baseline; font-family: Arial; f=
+ont-style: normal; }
 
-.c18 { text-decoration-skip-ink: none; color: rgb(17, 85, 204); text-decora=
-tion: underline; }
+.c48 { text-decoration: none; vertical-align: baseline; font-size: 11pt; fo=
+nt-style: normal; }
 
-.c35 { text-decoration-skip-ink: none; text-decoration: underline; }
-
-.c40 { background-color: rgb(255, 255, 255); max-width: 468pt; padding: 72p=
+.c27 { background-color: rgb(255, 255, 255); max-width: 468pt; padding: 72p=
 t; }
 
-.c10 { font-weight: 400; font-family: "Courier New"; }
+.c24 { text-decoration-skip-ink: none; text-decoration: line-through; }
 
-.c12 { color: inherit; text-decoration: inherit; }
+.c43 { text-decoration-skip-ink: none; text-decoration: underline; }
 
-.c17 { padding: 0px; margin: 0px; }
+.c1 { color: rgb(13, 13, 13); font-weight: 700; }
 
-.c21 { padding-left: 0pt; margin-left: 108pt; }
+.c20 { padding-left: 0pt; margin-left: 108pt; }
 
-.c44 { background-color: rgb(244, 204, 204); }
+.c5 { margin-left: 36pt; padding-left: 0pt; }
 
-.c39 { font-size: 14pt; }
+.c11 { font-weight: 400; font-family: "Courier New"; }
 
-.c38 { height: 20pt; }
+.c7 { background-color: rgb(0, 255, 255); font-weight: 700; }
 
-.c32 { padding-left: 0pt; }
+.c14 { margin-left: 72pt; padding-left: 0pt; }
 
-.c8 { color: rgb(13, 13, 13); }
+.c3 { padding: 0px; margin: 0px; }
 
-.c29 { background-color: rgb(0, 255, 255); }
+.c31 { color: inherit; text-decoration: inherit; }
 
-.c27 { font-weight: 400; }
+.c44 { font-size: 20pt; }
 
-.c34 { color: rgb(255, 0, 0); }
+.c46 { color: rgb(255, 0, 0); }
 
-.c43 { font-size: 15pt; }
+.c49 { height: 20pt; }
 
-.c23 { height: 11pt; }
+.c32 { color: rgb(102, 102, 102); }
 
-.c30 { font-size: 12pt; }
+.c28 { font-size: 12pt; }
 
-.c26 { color: rgb(102, 102, 102); }
+.c23 { font-weight: 700; }
 
-.c1 { font-weight: 700; }
+.c36 { font-size: 14pt; }
+
+.c34 { background-color: rgb(255, 229, 153); }
+
+.c17 { background-color: rgb(255, 242, 204); }
+
+.c6 { color: rgb(13, 13, 13); }
+
+.c19 { height: 11pt; }
+
+.c29 { padding-left: 0pt; }
+
+.c50 { text-indent: 36pt; }
 
 .title { padding-top: 0pt; color: rgb(0, 0, 0); font-size: 26pt; padding-bo=
 ttom: 3pt; font-family: Arial; line-height: 1.15; break-after: avoid; orpha=
@@ -3970,4 +4228,4 @@ phans: 2; widows: 2; text-align: left; }
 h6 { padding-top: 12pt; color: rgb(102, 102, 102); font-size: 11pt; padding=
 -bottom: 4pt; font-family: Arial; line-height: 1.15; break-after: avoid; fo=
 nt-style: italic; orphans: 2; widows: 2; text-align: left; }
-------MultipartBoundary--9lDQD65rxuqNS54pQGF01I2OiK8LQLVtWUKPBQ4UXG------
+------MultipartBoundary--9wE2fc01ft6YNV5inyXyl7ARWDlkCaH2epRr67A1BG------

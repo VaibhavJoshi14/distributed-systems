@@ -4,6 +4,7 @@ import grpc
 from mapReduce_Kmeans import map_reduce_kmeans_pb2, map_reduce_kmeans_pb2_grpc
 import threading
 from concurrent import futures
+import time
 
 class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
     def __init__(self, selfAddress, mapperAddresses, reducerAddresses):
@@ -21,6 +22,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         self.server.add_insecure_port("[::]:" + port)
         self.server.start()
         print("Server started, listening on " + port)
+        self.mappersResponded = [0 for i in range(self.numMappers)]
 
 
     # Inputs to the function kmeans:
@@ -71,7 +73,12 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
                     # job is thus done parallely by each mapper, which reply
                     # later after completion to the master.
                     response = stub.Map(request)
+
+            # Wait till all the mappers complete
+            while(sum(self.mappersResponded) < self.numMappers):
+                time.sleep(0.01)
             
+            print("Wait completed")
 
             """# Step 2.1: Assign each point of the data to the nearest centroid.  
             for index, dataPoint in df.iterrows():
@@ -90,6 +97,11 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
             # retry when lesser clusters are identified. This depends on the random initialization.
             if len(centroids) < k and maxAttempts > 0:
                 return self.kmeans(df, inputFile, k, maxIter, maxAttempts-1, dfHasHeader)
+            
+            # Reset these counters.
+            for i in range(self.numMappers):
+                self.mappersResponded[i] = 0
+
         
         return {"centroids": centroids, "clusterId": clusterId}
     
@@ -110,3 +122,10 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
             centroids.remove([])
     
         return centroids
+    
+
+    def MapResponse(self, request, context):
+        self.mappersResponded[request.id] = 1
+        print("The new value", self.mappersResponded[request.id])
+        return map_reduce_kmeans_pb2.Reply(message="Ok")
+

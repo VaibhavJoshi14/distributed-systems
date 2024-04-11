@@ -6,9 +6,10 @@ import threading
 from concurrent import futures
 
 class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
-    def __init__(self, selfAddress, selfId):
+    def __init__(self, selfAddress, selfId, masterAddress):
         self.selfAddress = selfAddress
         self.selfId = selfId
+        self.masterAddress = masterAddress
 
         # initialize the grpc server
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=1))
@@ -29,6 +30,7 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
         self.mapThread = threading.Thread(target=self.__map)
         self.mapThread.daemon = True
         self.mapThread.start()
+        self.partitions = None
 
 
     # This is the rpc that is called by the master for starting a map task
@@ -60,16 +62,37 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
             
             # Assign each point of the data to the nearest centroid.  
             for index, dataPoint in self.df.iterrows():
-                Keys[index] = self.assign_nearest_centroid(list(dataPoint), centroids)
+                idx = index if self.currentRequest.inputStartIndex == 0 else index % self.currentRequest.inputStartIndex
+                Keys[idx] = self.assign_nearest_centroid(list(dataPoint), centroids)
 
-            self.partition(Keys=Keys, Values=self.df)
+            self.partition(Keys=Keys, Values=self.df.values.tolist())
 
             self.currentRequest = None
 
 
     def partition(self, Keys, Values):
         # All key-value pairs with the same key are sent to the same partition.
+        num = self.getNumDistinctValues(Keys)
+        self.partitions = [[] for i in range(num)]
+        for i in range(len(Keys)):
+            self.partitions[Keys[i]].append(Values[i])
+
+        print("The partitions are ")
+        for i in range(num):
+            with open("Mappers/M" + str(self.selfId) + "/partition_" + str(i+1), 'a') as f:
+                f.write(self.partitions[i].__str__())
+                f.write("\n-----------------------------------------------------------------------------------------\n")
+            print(self.partitions[i])
         
+        
+        # Send to the master that it has done its job.
+        with grpc.insecure_channel(self.masterAddress) as channel:
+            stub = map_reduce_kmeans_pb2_grpc.MapperResponseStub(channel)
+            response = stub.MapResponse(map_reduce_kmeans_pb2.Empty(id = self.selfId - 1))
+
+
+    def getNumDistinctValues(self, Keys):
+        return len(set(Keys))
 
 
     def euclidean_distance(self, point1, point2):

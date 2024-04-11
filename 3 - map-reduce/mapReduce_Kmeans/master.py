@@ -5,6 +5,8 @@ from mapReduce_Kmeans import map_reduce_kmeans_pb2, map_reduce_kmeans_pb2_grpc
 import threading
 from concurrent import futures
 import time
+# Fault tolerance can be ensured by each of the mapper processes sending a heartbeat at 
+# regular intervals to the master [Not done].
 
 class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
     def __init__(self, selfAddress, mapperAddresses, reducerAddresses):
@@ -24,6 +26,10 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         print("Server started, listening on " + port)
         self.mappersResponded = [0 for i in range(self.numMappers)]
 
+        self.dumpFile = 'dump.txt'
+        with open(self.dumpFile, 'w') as f:
+            f.write("\nDump file of master process\n" )
+
 
     # Inputs to the function kmeans:
     #    df: dataframe (pandas) to cluster.
@@ -42,12 +48,9 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         splits = self.generateSplits(df)
         print("Splits on data of size ", len(df), "for numMappers ", self.numMappers, " are ", splits)
         
-        with open('dump.txt', 'a') as f:
-            f.write("\nDump file of master process.\n")
-        
         # Step 2: Repeat until the centroids converge or the max iter limit has reached.
         while True:
-            with open('dump.txt', 'a') as f:
+            with open(self.dumpFile, 'a') as f:
                 f.write("-------------------------------------------\n")
                 f.write("Iteration:" + str(maxIter - max_iter) + "\n")
                 f.write("Current centroids" + centroids.__str__()+ "\n")
@@ -68,6 +71,11 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
                 )
 
                 with grpc.insecure_channel(self.mapperAddresses[i]) as channel:
+                    
+                    with open(self.dumpFile, 'a') as f:
+                        f.write("Sending Map request to mapper " + str(i+1) + ".\n")
+                        print("Sending Map request to mapper " + str(i+1) + ".")
+
                     stub = map_reduce_kmeans_pb2_grpc.MapperStub(channel)
                     # it just sends the request, and the Mapper immediately
                     # replies with Ok, and the mapper starts the job. The 
@@ -139,7 +147,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
 
     def MapResponse(self, request, context):
         self.mappersResponded[request.id - 1] = 1
-        with open('dump.txt', 'a') as f:
+        with open(self.dumpFile, 'a') as f:
             f.write("Mapper " + str(request.id) + " completed its job (SUCCESS).\n")
             print("Mapper", request.id, "completed its job (SUCCESS).")
         return map_reduce_kmeans_pb2.Reply(message="Ok")

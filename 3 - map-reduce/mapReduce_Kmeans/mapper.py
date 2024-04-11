@@ -6,8 +6,9 @@ import threading
 from concurrent import futures
 
 class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
-    def __init__(self, selfAddress):
+    def __init__(self, selfAddress, selfId):
         self.selfAddress = selfAddress
+        self.selfId = selfId
 
         # initialize the grpc server
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=1))
@@ -32,14 +33,14 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
 
     # This is the rpc that is called by the master for starting a map task
     def Map(self, request, context):
-        if self.currentFile != None:
+        if self.currentFile == None:
             self.currentFile = request.inputFile
             if request.dfHasHeader == True:
-                self.df = pd.read_csv(request.inputFile)[request.inputStartIndex: request.inputEndIndex + 1, :]
+                self.df = pd.read_csv(request.inputFile).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
             else:
-                self.df = pd.read_csv(request.inputFile, header = None)[request.inputStartIndex: request.inputEndIndex + 1, :]
+                self.df = pd.read_csv(request.inputFile, header = None).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
             self.numReducers = request.numReducers
-
+        
         self.currentRequest = request
         
         return map_reduce_kmeans_pb2.Reply(message="Ok")
@@ -51,9 +52,53 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
             if self.currentRequest == None:
                 continue
             # Else procees the request
-            centroids = self.currentRequest.centroids
+            Keys = [0 for i in range(len(self.df))]
+            
+            # Convert the centroids from grpc message format to list format
+            centroids = self.getCentroids(self.currentRequest.centroids)
+            print("Received centroids ", centroids)
+            
+            # Assign each point of the data to the nearest centroid.  
+            for index, dataPoint in self.df.iterrows():
+                Keys[index] = self.assign_nearest_centroid(list(dataPoint), centroids)
 
-    
+            self.partition(Keys=Keys, Values=self.df)
+
+            self.currentRequest = None
+
+
+    def partition(self, Keys, Values):
+        # All key-value pairs with the same key are sent to the same partition.
+        
+
+
+    def euclidean_distance(self, point1, point2):
+        return np.linalg.norm(np.array(point1) - np.array(point2))
+
+
+    # assign the nearest centroid to a data point from the list of centroids, using Euclidean distance.
+    def assign_nearest_centroid(self, dataPoint, centroids):
+        nearest = 0
+        nearest_distance = self.euclidean_distance(dataPoint, centroids[0])
+        #print(centroids)
+        for i in range(1, len(centroids)):
+            if centroids[i] != []:
+                dist = self.euclidean_distance(dataPoint, centroids[i])
+                if dist < nearest_distance:
+                    nearest = i
+                    nearest_distance = dist
+        return nearest
+
+
+    def getCentroids(self, centroids):
+        centroids = list(centroids)
+        _centroids = []
+            
+        for j in range(len(centroids)):
+            _centroids.append(centroids[j].data)
+
+        return _centroids
+
     def join(self):
         while (self.mapThread.is_alive()):
             self.mapThread.join(1)

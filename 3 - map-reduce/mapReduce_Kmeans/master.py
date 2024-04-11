@@ -48,7 +48,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
         # Step 2: Repeat until the centroids converge or the max iter limit has reached.
         while True:
             
-            # Converting centroids to the grpc proto datatype.
+            # Converting centroids to the grpc message format Data.
             _centroids_ = []
             for i in range(len(centroids)):
                 _centroids_.append(map_reduce_kmeans_pb2.Data(data=centroids[i]))

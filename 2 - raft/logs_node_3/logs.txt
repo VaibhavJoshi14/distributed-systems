@@ -1,0 +1,5 @@
+NO-OP 1
+SET apples 5 1
+SET oranges 2 1
+NO-OP 2
+SET apples 15 2

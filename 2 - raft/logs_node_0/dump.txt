@@ -1,0 +1,274 @@
+Node 0 election timer timed out, Starting election.
+Node 0 became the leader for term 1.
+Node 0 (leader) committed the entry NO-OP 1 to the state machine.
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Node 0 (leader) received an SET apples 5 request.
+Node 0 (leader) committed the entry SET apples 5 to the state machine.
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Node 0 (leader) received an GET apples request.
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Node 0 (leader) received an SET oranges 2 request.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Error occurred while sending RPC to Node 2.
+Node 0 (leader) committed the entry SET oranges 2 to the state machine.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Node 0 (leader) received an GET oranges request.
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Error occurred while sending RPC to Node 2.
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Leader 0 sending heartbeat & Renewing Lease
+Node 0 accepted AppendEntries RPC from 4.
+Node 0 (follower) committed the entry NO-OP 2 to the state machine.
+Node 0 (follower) committed the entry SET apples 15 2 to the state machine.

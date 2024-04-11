@@ -9,13 +9,16 @@ message MapRequest {
   // The input data is assumed to be already available with each mapper.
   int32 inputStartIndex = 1;
   int32 inputEndIndex = 2;
+  
+  string inputFile = 3;         // The name (path) of the file containing the data points.
+  bool dfHasHeader = 4;         // Tell whether the df has header or not. This must be sent as well.
 
-  repeated Data centroids = 3;  // stores the list of all centroids.
-  int32 numReducers = 4;        // stores the number of reducers.
+  repeated Data centroids = 5;  // stores the list of all centroids.
+  int32 numReducers = 6;        // stores the number of reducers.
 }
 
 message Reply {
-  string message = 1; //either SUCCESS or FAIL
+  string message = 1; // replies Ok
 }
 
 // This rpc service is sent by the master to each mapper.
@@ -25,9 +28,25 @@ service Mapper {
 
   // This message is sent by each reducer to all the mappers to get the inputs 
   // for the steps that the reducer has to perform.
-  rpc GetInputFromMapper(ReduceInputRequest) returns (ReduceInputReply) {}
+  rpc GetInputFromMapper(ReduceInputRequest) returns (AllKeyValueData) {}
   
 }
+
+message KeyValueData {
+  int32 key = 1;            // id of nearest centroid to which data point belongs.
+  repeated double data = 2; // the data point.
+}
+
+message AllKeyValueData {
+  repeated KeyValueData data = 1;
+}
+
+// This rpc is called by each mapper to the master, to give the output of the map task.
+// This rpc server needs to be initialized in master.
+service MapperResponse {
+  rpc MapResponse(AllKeyValueData) returns (Reply) {}
+}
+
 
 message ReduceInitRequest {
   int32 numMappers = 1;
@@ -36,15 +55,6 @@ message ReduceInitRequest {
 
 message ReduceInputRequest {
   int32 reducerId = 1;
-}
-
-message KeyValueData {
-  int32 key = 1;            // id of nearest centroid to which data point belongs.
-  repeated double data = 2; // the data point.
-}
-
-message ReduceInputReply {
-  repeated KeyValueData data = 1;
 }
 
 message Empty {
@@ -58,7 +68,7 @@ service Reducer {
   rpc ReduceInit(ReduceInitRequest) returns (Reply) {}
 
   // This message is sent by the master to each reducer to get the reduced data.
-  rpc GetReduceOutput(Empty) returns (ReduceInputReply) {}
+  rpc GetReduceOutput(Empty) returns (AllKeyValueData) {}
 }
 
 

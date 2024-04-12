@@ -8,7 +8,7 @@ import time
 # Fault tolerance can be ensured by each of the mapper processes sending a heartbeat at 
 # regular intervals to the master [Not done].
 
-class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
+class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
     def __init__(self, selfAddress, mapperAddresses, reducerAddresses):
         self.selfAddress = selfAddress
         self.mapperAddresses = mapperAddresses
@@ -18,7 +18,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
 
         # initialize the grpc server
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=1))
-        map_reduce_kmeans_pb2_grpc.add_MapperResponseServicer_to_server(self, self.server)
+        map_reduce_kmeans_pb2_grpc.add_MasterServicesServicer_to_server(self, self.server)
         
         port = self.selfAddress.split(":")[1]
         self.server.add_insecure_port("[::]:" + port)
@@ -83,9 +83,25 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
                     # later after completion to the master.
                     response = stub.Map(request)
 
-            # Wait till all the mappers complete
+            # Wait till all the mappers have completed.
             while(sum(self.mappersResponded) < self.numMappers):
                 time.sleep(0.01)
+            # Reset these counters. For use in next iteration.
+            for i in range(self.numMappers):
+                self.mappersResponded[i] = 0
+
+
+            # After all mappers have returned to master successfully, master invokes 
+            # reducers with necessary parameters.
+            for i in range(self.numReducers):
+                with grpc.insecure_channel(self.reducerAddresses[i]) as channel:
+                    with open(self.dumpFile, 'a') as f:
+                        f.write("Sending ReduceInit request to reducer " + str(i+1) + ".\n")
+                        print("Sending ReduceInit request to reducer " + str(i+1) + ".")
+                    stub = map_reduce_kmeans_pb2_grpc.ReducerStub(channel)
+                    response = stub.ReduceInit(map_reduce_kmeans_pb2.Empty(id=0))
+
+
 
             """# Step 2.1: Assign each point of the data to the nearest centroid.  
             for index, dataPoint in df.iterrows():
@@ -105,9 +121,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MapperResponseServicer):
             if len(centroids) < k and maxAttempts > 0:
                 return self.kmeans(df, inputFile, k, maxIter, maxAttempts-1, dfHasHeader)
             
-            # Reset these counters.
-            for i in range(self.numMappers):
-                self.mappersResponded[i] = 0
+            
 
         
         return {"centroids": centroids, "clusterId": clusterId}

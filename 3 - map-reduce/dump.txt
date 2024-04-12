@@ -1,0 +1,658 @@
+
+Dump file of master process
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Mapper 2 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.

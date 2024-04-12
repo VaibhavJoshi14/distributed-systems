@@ -87,7 +87,7 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
         
         # Send to the master that it has done its job.
         with grpc.insecure_channel(self.masterAddress) as channel:
-            stub = map_reduce_kmeans_pb2_grpc.MapperResponseStub(channel)
+            stub = map_reduce_kmeans_pb2_grpc.MasterServicesStub(channel)
             response = stub.MapResponse(map_reduce_kmeans_pb2.Empty(id = self.selfId))
 
 
@@ -121,6 +121,22 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
             _centroids.append(centroids[j].data)
 
         return _centroids
+
+
+    # This rpc is called by each reducer to get their share of reduce job.
+    def GetInputFromMapper(self, request, context):
+        idx = request.reducerId - 1
+        toSend = self.partitions[idx]
+        
+        response = map_reduce_kmeans_pb2.KeyValueDataList()
+        for msg in toSend:
+            resp = map_reduce_kmeans_pb2.KeyValueData()
+            resp.key = idx
+            resp.data.extend(msg)
+            response.data.append(resp) 
+        
+        return response
+
 
     def join(self):
         while (self.mapThread.is_alive()):

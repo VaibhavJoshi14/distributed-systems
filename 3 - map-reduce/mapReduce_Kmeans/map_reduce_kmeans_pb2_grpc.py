@@ -24,7 +24,7 @@ class MapperStub(object):
         self.GetInputFromMapper = channel.unary_unary(
                 '/Mapper/GetInputFromMapper',
                 request_serializer=map__reduce__kmeans__pb2.ReduceInputRequest.SerializeToString,
-                response_deserializer=map__reduce__kmeans__pb2.AllKeyValueData.FromString,
+                response_deserializer=map__reduce__kmeans__pb2.KeyValueDataList.FromString,
                 )
 
 
@@ -58,7 +58,7 @@ def add_MapperServicer_to_server(servicer, server):
             'GetInputFromMapper': grpc.unary_unary_rpc_method_handler(
                     servicer.GetInputFromMapper,
                     request_deserializer=map__reduce__kmeans__pb2.ReduceInputRequest.FromString,
-                    response_serializer=map__reduce__kmeans__pb2.AllKeyValueData.SerializeToString,
+                    response_serializer=map__reduce__kmeans__pb2.KeyValueDataList.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -102,14 +102,13 @@ class Mapper(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/Mapper/GetInputFromMapper',
             map__reduce__kmeans__pb2.ReduceInputRequest.SerializeToString,
-            map__reduce__kmeans__pb2.AllKeyValueData.FromString,
+            map__reduce__kmeans__pb2.KeyValueDataList.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
 
-class MapperResponseStub(object):
-    """This rpc is called by each mapper to the master, to give the output of the map task.
-    This rpc server needs to be initialized in master.
+class MasterServicesStub(object):
+    """This rpc server needs to be initialized in master.
     """
 
     def __init__(self, channel):
@@ -119,41 +118,57 @@ class MapperResponseStub(object):
             channel: A grpc.Channel.
         """
         self.MapResponse = channel.unary_unary(
-                '/MapperResponse/MapResponse',
+                '/MasterServices/MapResponse',
                 request_serializer=map__reduce__kmeans__pb2.Empty.SerializeToString,
+                response_deserializer=map__reduce__kmeans__pb2.Reply.FromString,
+                )
+        self.ReduceResponse = channel.unary_unary(
+                '/MasterServices/ReduceResponse',
+                request_serializer=map__reduce__kmeans__pb2.KeyValueDataList.SerializeToString,
                 response_deserializer=map__reduce__kmeans__pb2.Reply.FromString,
                 )
 
 
-class MapperResponseServicer(object):
-    """This rpc is called by each mapper to the master, to give the output of the map task.
-    This rpc server needs to be initialized in master.
+class MasterServicesServicer(object):
+    """This rpc server needs to be initialized in master.
     """
 
     def MapResponse(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+        """This rpc is called by each mapper to the master, to tell that they have completed their task.
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def ReduceResponse(self, request, context):
+        """This message is sent by each reducer to the master, after it has done its reduce job.
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_MapperResponseServicer_to_server(servicer, server):
+def add_MasterServicesServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'MapResponse': grpc.unary_unary_rpc_method_handler(
                     servicer.MapResponse,
                     request_deserializer=map__reduce__kmeans__pb2.Empty.FromString,
                     response_serializer=map__reduce__kmeans__pb2.Reply.SerializeToString,
             ),
+            'ReduceResponse': grpc.unary_unary_rpc_method_handler(
+                    servicer.ReduceResponse,
+                    request_deserializer=map__reduce__kmeans__pb2.KeyValueDataList.FromString,
+                    response_serializer=map__reduce__kmeans__pb2.Reply.SerializeToString,
+            ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'MapperResponse', rpc_method_handlers)
+            'MasterServices', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
  # This class is part of an EXPERIMENTAL API.
-class MapperResponse(object):
-    """This rpc is called by each mapper to the master, to give the output of the map task.
-    This rpc server needs to be initialized in master.
+class MasterServices(object):
+    """This rpc server needs to be initialized in master.
     """
 
     @staticmethod
@@ -167,8 +182,25 @@ class MapperResponse(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/MapperResponse/MapResponse',
+        return grpc.experimental.unary_unary(request, target, '/MasterServices/MapResponse',
             map__reduce__kmeans__pb2.Empty.SerializeToString,
+            map__reduce__kmeans__pb2.Reply.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def ReduceResponse(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/MasterServices/ReduceResponse',
+            map__reduce__kmeans__pb2.KeyValueDataList.SerializeToString,
             map__reduce__kmeans__pb2.Reply.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -186,13 +218,8 @@ class ReducerStub(object):
         """
         self.ReduceInit = channel.unary_unary(
                 '/Reducer/ReduceInit',
-                request_serializer=map__reduce__kmeans__pb2.ReduceInitRequest.SerializeToString,
-                response_deserializer=map__reduce__kmeans__pb2.Reply.FromString,
-                )
-        self.GetReduceOutput = channel.unary_unary(
-                '/Reducer/GetReduceOutput',
                 request_serializer=map__reduce__kmeans__pb2.Empty.SerializeToString,
-                response_deserializer=map__reduce__kmeans__pb2.AllKeyValueData.FromString,
+                response_deserializer=map__reduce__kmeans__pb2.Reply.FromString,
                 )
 
 
@@ -201,15 +228,9 @@ class ReducerServicer(object):
     """
 
     def ReduceInit(self, request, context):
-        """This message is sent by the master to the reducers for initialization, after
-        all the mappers complete their tasks.
-        """
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def GetReduceOutput(self, request, context):
-        """This message is sent by the master to each reducer to get the reduced data.
+        """This message is sent by the master to all the reducers, after
+        all the mappers complete their tasks, just to tell to start communicating with
+        each mapper for getting their tasks.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -220,13 +241,8 @@ def add_ReducerServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'ReduceInit': grpc.unary_unary_rpc_method_handler(
                     servicer.ReduceInit,
-                    request_deserializer=map__reduce__kmeans__pb2.ReduceInitRequest.FromString,
-                    response_serializer=map__reduce__kmeans__pb2.Reply.SerializeToString,
-            ),
-            'GetReduceOutput': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetReduceOutput,
                     request_deserializer=map__reduce__kmeans__pb2.Empty.FromString,
-                    response_serializer=map__reduce__kmeans__pb2.AllKeyValueData.SerializeToString,
+                    response_serializer=map__reduce__kmeans__pb2.Reply.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -251,24 +267,7 @@ class Reducer(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/Reducer/ReduceInit',
-            map__reduce__kmeans__pb2.ReduceInitRequest.SerializeToString,
-            map__reduce__kmeans__pb2.Reply.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def GetReduceOutput(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/Reducer/GetReduceOutput',
             map__reduce__kmeans__pb2.Empty.SerializeToString,
-            map__reduce__kmeans__pb2.AllKeyValueData.FromString,
+            map__reduce__kmeans__pb2.Reply.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

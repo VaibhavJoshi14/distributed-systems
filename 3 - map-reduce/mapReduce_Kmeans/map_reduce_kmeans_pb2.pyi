@@ -41,19 +41,11 @@ class KeyValueData(_message.Message):
     data: _containers.RepeatedScalarFieldContainer[float]
     def __init__(self, key: _Optional[int] = ..., data: _Optional[_Iterable[float]] = ...) -> None: ...
 
-class AllKeyValueData(_message.Message):
+class KeyValueDataList(_message.Message):
     __slots__ = ("data",)
     DATA_FIELD_NUMBER: _ClassVar[int]
     data: _containers.RepeatedCompositeFieldContainer[KeyValueData]
     def __init__(self, data: _Optional[_Iterable[_Union[KeyValueData, _Mapping]]] = ...) -> None: ...
-
-class ReduceInitRequest(_message.Message):
-    __slots__ = ("numMappers", "numReducers")
-    NUMMAPPERS_FIELD_NUMBER: _ClassVar[int]
-    NUMREDUCERS_FIELD_NUMBER: _ClassVar[int]
-    numMappers: int
-    numReducers: int
-    def __init__(self, numMappers: _Optional[int] = ..., numReducers: _Optional[int] = ...) -> None: ...
 
 class ReduceInputRequest(_message.Message):
     __slots__ = ("reducerId",)

@@ -28,7 +28,7 @@ service Mapper {
 
   // This message is sent by each reducer to all the mappers to get the inputs 
   // for the steps that the reducer has to perform.
-  rpc GetInputFromMapper(ReduceInputRequest) returns (AllKeyValueData) {}
+  rpc GetInputFromMapper(ReduceInputRequest) returns (KeyValueDataList) {}
   
 }
 
@@ -37,20 +37,18 @@ message KeyValueData {
   repeated double data = 2; // the data point.
 }
 
-message AllKeyValueData {
+message KeyValueDataList {
   repeated KeyValueData data = 1;
 }
 
-// This rpc is called by each mapper to the master, to give the output of the map task.
+
 // This rpc server needs to be initialized in master.
-service MapperResponse {
+service MasterServices {
+  // This rpc is called by each mapper to the master, to tell that they have completed their task.
   rpc MapResponse(Empty) returns (Reply) {}
-}
 
-
-message ReduceInitRequest {
-  int32 numMappers = 1;
-  int32 numReducers = 2;
+  // This message is sent by each reducer to the master, after it has done its reduce job.
+  rpc ReduceResponse(KeyValueDataList) returns (Reply) {}
 }
 
 message ReduceInputRequest {
@@ -63,12 +61,10 @@ message Empty {
 
 // This rpc needs to be initialized in each reducer.
 service Reducer {
-  // This message is sent by the master to the reducers for initialization, after
-  // all the mappers complete their tasks.
-  rpc ReduceInit(ReduceInitRequest) returns (Reply) {}
-
-  // This message is sent by the master to each reducer to get the reduced data.
-  rpc GetReduceOutput(Empty) returns (AllKeyValueData) {}
+  // This message is sent by the master to all the reducers, after
+  // all the mappers complete their tasks, just to tell to start communicating with
+  // each mapper for getting their tasks.
+  rpc ReduceInit(Empty) returns (Reply) {}
 }
 
 

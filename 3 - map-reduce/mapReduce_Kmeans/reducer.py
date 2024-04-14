@@ -22,7 +22,6 @@ class Reducer(map_reduce_kmeans_pb2_grpc.ReducerServicer):
         self.reduceThread = threading.Thread(target=self.ShuffleAndSort)
         self.reduceThread.daemon = True
         self.reduceThread.start()
-        
 
         port = self.selfAddress.split(":")[1]
         self.server.add_insecure_port("[::]:" + port)
@@ -52,12 +51,15 @@ class Reducer(map_reduce_kmeans_pb2_grpc.ReducerServicer):
             
             print(self.data)
             print(self.keys)
-            
+
+            #reduce
+            self.ReduceFunc()
+
+
             #reset, for next iteration.
             self.startWorking = False
             self.data = []
             self.keys = []
-
 
     def extractDataFromResponse(self, response):
         response = response.data
@@ -65,6 +67,54 @@ class Reducer(map_reduce_kmeans_pb2_grpc.ReducerServicer):
             self.data.append(dt.data)
             self.keys.append(dt.key)
 
+
+    def ReduceFunc(self):
+
+        # Perform pairwise summation over the values for each unique key
+        unique_keys = set(self.keys)
+        results = {}
+        for key in unique_keys:
+            indices = [i for i, k in enumerate(self.keys) if k == key]
+            values = [self.data[i] for i in indices]
+            summed_value = np.sum(values, axis=0)
+            results[key] = summed_value
+        print(results)
+
+        print("Reducer", self.selfId, "sending response to master.")
+
+        # Prepare data for master
+        response_list = map_reduce_kmeans_pb2.KeyValueDataList()
+
+        # Populate response_list with key-value pairs from the results
+        for key, value in results.items():
+            data_entry = map_reduce_kmeans_pb2.KeyValueData()
+            data_entry.key = key
+            data_entry.data.extend(value)
+            response_list.data.append(data_entry)
+        
+        # print(response_list.data)
+        # print(response_list)
+
+        # Send data to master 
+        with grpc.insecure_channel(self.masterAddress) as channel:
+                    stub = map_reduce_kmeans_pb2_grpc.MasterServicesStub(channel)
+                    response = stub.ReduceResponse(response_list)
+                    print(response)
+        
+        # Write the result to a file specific to the reducer's ID
+        output_file = f"Reducers/reducer_{self.selfId}_output.txt"
+        
+        try :
+            with open(output_file, "a") as f:
+                for key, value in results.items():
+                    f.write(f"Key: {key}, Summed Value: {value}\n")
+                f.close()
+        except:
+            with open(output_file, "w") as f:
+                for key, value in results.items():
+                    f.write(f"Key: {key}, Summed Value: {value}\n")
+                f.close()
+    
     def join(self):
         self.server.wait_for_termination()
 

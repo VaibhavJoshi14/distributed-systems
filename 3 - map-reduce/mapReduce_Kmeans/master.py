@@ -166,3 +166,11 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
             print("Mapper", request.id, "completed its job (SUCCESS).")
         return map_reduce_kmeans_pb2.Reply(message="Ok")
 
+    def ReduceResponse(self, request, context):
+        # Process the received list
+        for item in request.data:
+            print("Received data:", item.key, item.data)
+            # Process the data as needed
+
+        # Return a response
+        return map_reduce_kmeans_pb2.Reply(message="Master received Data successfully")

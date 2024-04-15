@@ -84,7 +84,8 @@ class Reducer(map_reduce_kmeans_pb2_grpc.ReducerServicer):
 
         # Prepare data for master
         response_list = map_reduce_kmeans_pb2.KeyValueDataList()
-
+        response_list.id = self.selfId
+        
         # Populate response_list with key-value pairs from the results
         for key, value in results.items():
             data_entry = map_reduce_kmeans_pb2.KeyValueData()
@@ -99,10 +100,10 @@ class Reducer(map_reduce_kmeans_pb2_grpc.ReducerServicer):
         with grpc.insecure_channel(self.masterAddress) as channel:
                     stub = map_reduce_kmeans_pb2_grpc.MasterServicesStub(channel)
                     response = stub.ReduceResponse(response_list)
-                    print(response)
+                    print("Response from master: ",response.message)
         
         # Write the result to a file specific to the reducer's ID
-        output_file = f"Reducers/reducer_{self.selfId}_output.txt"
+        output_file = f"Reducers/R{self.selfId}.txt"
         
         try :
             with open(output_file, "a") as f:

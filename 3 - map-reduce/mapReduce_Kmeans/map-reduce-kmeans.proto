@@ -38,7 +38,8 @@ message KeyValueData {
 }
 
 message KeyValueDataList {
-  repeated KeyValueData data = 1;
+  int32 id = 1;
+  repeated KeyValueData data = 2;
 }
 
 

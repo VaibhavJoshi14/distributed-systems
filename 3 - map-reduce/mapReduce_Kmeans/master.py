@@ -25,6 +25,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         self.server.start()
         print("Server started, listening on " + port)
         self.mappersResponded = [0 for i in range(self.numMappers)]
+        self.reducersResponded = [0 for i in range(self.numReducers)]
 
         self.dumpFile = 'dump.txt'
         with open(self.dumpFile, 'w') as f:
@@ -101,7 +102,12 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
                     stub = map_reduce_kmeans_pb2_grpc.ReducerStub(channel)
                     response = stub.ReduceInit(map_reduce_kmeans_pb2.Empty(id=0))
 
-
+            # Wait till all the mappers have completed.
+            while(sum(self.reducersResponded) < self.numReducers):
+                time.sleep(0.01)
+            # Reset these counters. For use in next iteration.
+            for i in range(self.numReducers):
+                self.reducersResponded[i] = 0
 
             """# Step 2.1: Assign each point of the data to the nearest centroid.  
             for index, dataPoint in df.iterrows():
@@ -166,7 +172,13 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
             print("Mapper", request.id, "completed its job (SUCCESS).")
         return map_reduce_kmeans_pb2.Reply(message="Ok")
 
+
     def ReduceResponse(self, request, context):
+        self.reducersResponded[request.id - 1] = 1
+        with open(self.dumpFile, 'a') as f:
+            f.write("Reducer " + str(request.id) + " completed its job (SUCCESS).\n")
+            print("Reducer", request.id, "completed its job (SUCCESS).")
+
         # Process the received list
         for item in request.data:
             print("Received data:", item.key, item.data)

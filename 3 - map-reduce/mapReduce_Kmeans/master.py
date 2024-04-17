@@ -26,6 +26,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         print("Server started, listening on " + port)
         self.mappersResponded = [0 for i in range(self.numMappers)]
         self.reducersResponded = [0 for i in range(self.numReducers)]
+        self.newCentroids = [None] * self.numReducers
 
         self.dumpFile = 'dump.txt'
         with open(self.dumpFile, 'w') as f:
@@ -102,7 +103,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
                     stub = map_reduce_kmeans_pb2_grpc.ReducerStub(channel)
                     response = stub.ReduceInit(map_reduce_kmeans_pb2.Empty(id=0))
 
-            # Wait till all the mappers have completed.
+            # Wait till all the Reducers have completed.
             while(sum(self.reducersResponded) < self.numReducers):
                 time.sleep(0.01)
             # Reset these counters. For use in next iteration.
@@ -115,13 +116,17 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
 
             # Step 2.2: Recompute the centroid of each cluster
             _centroids = compute_cluster_centroids(df, clusterId, k)"""
-        
-
+            # update new centroid values
+            _centroids = self.newCentroids
+            # 
             max_iter -= 1
             if (max_iter > 0 and centroids != _centroids) == False:
                 break
             
             centroids = self.preprocess(_centroids.copy(), df, k)
+            _centroids = []
+            self.newCentroids = self.newCentroids = [None] * self.numReducers
+            print("updated centroids to : ", centroids)
 
             # retry when lesser clusters are identified. This depends on the random initialization.
             if len(centroids) < k and maxAttempts > 0:
@@ -182,6 +187,7 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         # Process the received list
         for item in request.data:
             print("Received data:", item.key, item.data)
+            self.newCentroids[request.id - 1 ] = item.data 
             # Process the data as needed
 
         # Return a response

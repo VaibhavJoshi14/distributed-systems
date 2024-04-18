@@ -1,0 +1,6 @@
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]

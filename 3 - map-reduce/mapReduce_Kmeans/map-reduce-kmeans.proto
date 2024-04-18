@@ -12,9 +12,10 @@ message MapRequest {
   
   string inputFile = 3;         // The name (path) of the file containing the data points.
   bool dfHasHeader = 4;         // Tell whether the df has header or not. This must be sent as well.
+  string dfSep = 5;             // The separator in the datafile (like "," or " ").
 
-  repeated Data centroids = 5;  // stores the list of all centroids.
-  int32 numReducers = 6;        // stores the number of reducers.
+  repeated Data centroids = 6;  // stores the list of all centroids.
+  int32 numReducers = 7;        // stores the number of reducers.
 }
 
 message Reply {

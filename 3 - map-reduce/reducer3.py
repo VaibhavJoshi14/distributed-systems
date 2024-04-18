@@ -1,5 +1,5 @@
-selfId = 1
-selfAddress = "localhost:50054"
+selfId = 3
+selfAddress = "localhost:50056"
 masterAddress = "localhost:50050"
 mapperAddresses = ["localhost:50051", "localhost:50052", "localhost:50053"]
 

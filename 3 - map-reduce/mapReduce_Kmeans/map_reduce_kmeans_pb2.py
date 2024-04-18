@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17map-reduce-kmeans.proto\"\x14\n\x04\x44\x61ta\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"\x93\x01\n\nMapRequest\x12\x17\n\x0finputStartIndex\x18\x01 \x01(\x05\x12\x15\n\rinputEndIndex\x18\x02 \x01(\x05\x12\x11\n\tinputFile\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x66HasHeader\x18\x04 \x01(\x08\x12\x18\n\tcentroids\x18\x05 \x03(\x0b\x32\x05.Data\x12\x13\n\x0bnumReducers\x18\x06 \x01(\x05\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t\")\n\x0cKeyValueData\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x0c\n\x04\x64\x61ta\x18\x02 \x03(\x01\";\n\x10KeyValueDataList\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x1b\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\r.KeyValueData\"\'\n\x12ReduceInputRequest\x12\x11\n\treducerId\x18\x01 \x01(\x05\"\x13\n\x05\x45mpty\x12\n\n\x02id\x18\x01 \x01(\x05\x32\x66\n\x06Mapper\x12\x1c\n\x03Map\x12\x0b.MapRequest\x1a\x06.Reply\"\x00\x12>\n\x12GetInputFromMapper\x12\x13.ReduceInputRequest\x1a\x11.KeyValueDataList\"\x00\x32`\n\x0eMasterServices\x12\x1f\n\x0bMapResponse\x12\x06.Empty\x1a\x06.Reply\"\x00\x12-\n\x0eReduceResponse\x12\x11.KeyValueDataList\x1a\x06.Reply\"\x00\x32)\n\x07Reducer\x12\x1e\n\nReduceInit\x12\x06.Empty\x1a\x06.Reply\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17map-reduce-kmeans.proto\"\x14\n\x04\x44\x61ta\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"\xa2\x01\n\nMapRequest\x12\x17\n\x0finputStartIndex\x18\x01 \x01(\x05\x12\x15\n\rinputEndIndex\x18\x02 \x01(\x05\x12\x11\n\tinputFile\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x66HasHeader\x18\x04 \x01(\x08\x12\r\n\x05\x64\x66Sep\x18\x05 \x01(\t\x12\x18\n\tcentroids\x18\x06 \x03(\x0b\x32\x05.Data\x12\x13\n\x0bnumReducers\x18\x07 \x01(\x05\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t\")\n\x0cKeyValueData\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x0c\n\x04\x64\x61ta\x18\x02 \x03(\x01\";\n\x10KeyValueDataList\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x1b\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\r.KeyValueData\"\'\n\x12ReduceInputRequest\x12\x11\n\treducerId\x18\x01 \x01(\x05\"\x13\n\x05\x45mpty\x12\n\n\x02id\x18\x01 \x01(\x05\x32\x66\n\x06Mapper\x12\x1c\n\x03Map\x12\x0b.MapRequest\x1a\x06.Reply\"\x00\x12>\n\x12GetInputFromMapper\x12\x13.ReduceInputRequest\x1a\x11.KeyValueDataList\"\x00\x32`\n\x0eMasterServices\x12\x1f\n\x0bMapResponse\x12\x06.Empty\x1a\x06.Reply\"\x00\x12-\n\x0eReduceResponse\x12\x11.KeyValueDataList\x1a\x06.Reply\"\x00\x32)\n\x07Reducer\x12\x1e\n\nReduceInit\x12\x06.Empty\x1a\x06.Reply\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -24,21 +24,21 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_DATA']._serialized_start=27
   _globals['_DATA']._serialized_end=47
   _globals['_MAPREQUEST']._serialized_start=50
-  _globals['_MAPREQUEST']._serialized_end=197
-  _globals['_REPLY']._serialized_start=199
-  _globals['_REPLY']._serialized_end=223
-  _globals['_KEYVALUEDATA']._serialized_start=225
-  _globals['_KEYVALUEDATA']._serialized_end=266
-  _globals['_KEYVALUEDATALIST']._serialized_start=268
-  _globals['_KEYVALUEDATALIST']._serialized_end=327
-  _globals['_REDUCEINPUTREQUEST']._serialized_start=329
-  _globals['_REDUCEINPUTREQUEST']._serialized_end=368
-  _globals['_EMPTY']._serialized_start=370
-  _globals['_EMPTY']._serialized_end=389
-  _globals['_MAPPER']._serialized_start=391
-  _globals['_MAPPER']._serialized_end=493
-  _globals['_MASTERSERVICES']._serialized_start=495
-  _globals['_MASTERSERVICES']._serialized_end=591
-  _globals['_REDUCER']._serialized_start=593
-  _globals['_REDUCER']._serialized_end=634
+  _globals['_MAPREQUEST']._serialized_end=212
+  _globals['_REPLY']._serialized_start=214
+  _globals['_REPLY']._serialized_end=238
+  _globals['_KEYVALUEDATA']._serialized_start=240
+  _globals['_KEYVALUEDATA']._serialized_end=281
+  _globals['_KEYVALUEDATALIST']._serialized_start=283
+  _globals['_KEYVALUEDATALIST']._serialized_end=342
+  _globals['_REDUCEINPUTREQUEST']._serialized_start=344
+  _globals['_REDUCEINPUTREQUEST']._serialized_end=383
+  _globals['_EMPTY']._serialized_start=385
+  _globals['_EMPTY']._serialized_end=404
+  _globals['_MAPPER']._serialized_start=406
+  _globals['_MAPPER']._serialized_end=508
+  _globals['_MASTERSERVICES']._serialized_start=510
+  _globals['_MASTERSERVICES']._serialized_end=606
+  _globals['_REDUCER']._serialized_start=608
+  _globals['_REDUCER']._serialized_end=649
 # @@protoc_insertion_point(module_scope)

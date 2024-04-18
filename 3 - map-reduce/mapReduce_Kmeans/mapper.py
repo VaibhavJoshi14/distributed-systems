@@ -35,12 +35,13 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
 
     # This is the rpc that is called by the master for starting a map task
     def Map(self, request, context):
+        print("-------------------------------------------")
         if self.currentFile == None:
             self.currentFile = request.inputFile
             if request.dfHasHeader == True:
-                self.df = pd.read_csv(request.inputFile).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
+                self.df = pd.read_csv(request.inputFile, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
             else:
-                self.df = pd.read_csv(request.inputFile, header = None).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
+                self.df = pd.read_csv(request.inputFile, header = None, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
             self.numReducers = request.numReducers
         
         self.currentRequest = request
@@ -61,9 +62,10 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
             print("Received centroids ", centroids)
             
             # Assign each point of the data to the nearest centroid.  
+            idx = 0
             for index, dataPoint in self.df.iterrows():
-                idx = index if self.currentRequest.inputStartIndex == 0 else index % self.currentRequest.inputStartIndex
                 Keys[idx] = self.assign_nearest_centroid(list(dataPoint), centroids)
+                idx += 1
 
             self.partition(Keys=Keys, Values=self.df.values.tolist())
 
@@ -72,13 +74,13 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
 
     def partition(self, Keys, Values):
         # All key-value pairs with the same key are sent to the same partition.
-        num = self.getNumDistinctValues(Keys)
-        self.partitions = [[] for i in range(num)]
+        
+        self.partitions = [[] for i in range(self.numReducers)]
         for i in range(len(Keys)):
             self.partitions[Keys[i]].append(Values[i])
 
         print("The partitions are ")
-        for i in range(num):
+        for i in range(self.numReducers):
             with open("Mappers/M" + str(self.selfId) + "/partition_" + str(i+1), 'a') as f:
                 f.write(self.partitions[i].__str__())
                 f.write("\n-----------------------------------------------------------------------------------------\n")
@@ -126,6 +128,7 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
     # This rpc is called by each reducer to get their share of reduce job.
     def GetInputFromMapper(self, request, context):
         idx = request.reducerId - 1
+        
         toSend = self.partitions[idx]
         
         response = map_reduce_kmeans_pb2.KeyValueDataList()

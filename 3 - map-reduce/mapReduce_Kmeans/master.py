@@ -31,7 +31,8 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         self.dumpFile = 'dump.txt'
         with open(self.dumpFile, 'w') as f:
             f.write("\nDump file of master process\n" )
-
+        
+        self.centroidsFile = 'centroids.txt'
 
     # Inputs to the function kmeans:
     #    df: dataframe (pandas) to cluster.
@@ -39,16 +40,19 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
     #    k: number of centroids (integer).
     #    maxIter: maximum iterations to run the algorithm for (integer).
     #    maxAttempts: maximum retries to make if the clusters returned are less than k (integer).
-    def kmeans(self, df, inputFile, k, maxIter=100, maxAttempts=100, dfHasHeader=True):
+    def kmeans(self, df, inputFile, k, maxIter=100, maxAttempts=100, dfHasHeader=True, dfSep=","):
         # Step 1: Randomly initialize k cluster centroids.
         centroids = self.init_centroids(df, k)
 
+        # will contain the clusterId assigned to each point.
+        clusterId = [0 for i in range(len(df))]
+        
         _centroids = []
         max_iter = maxIter
 
         # Produce splits, according to the number of mappers
         splits = self.generateSplits(df)
-        print("Splits on data of size ", len(df), "for numMappers ", self.numMappers, " are ", splits)
+        print("Splits on data of size ", len(df), "for numMappers", self.numMappers, "are", splits)
         
         # Step 2: Repeat until the centroids converge or the max iter limit has reached.
         while True:
@@ -60,7 +64,8 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
                 print("-------------------------------------------")
                 print("Iteration:", maxIter - max_iter)
                 print("Current centroids", centroids)
-
+            
+            
             # Send the Map rpc to each mapper to work on their splits.
             for i in range(self.numMappers):
                 request = map_reduce_kmeans_pb2.MapRequest(
@@ -68,10 +73,11 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
                     inputEndIndex = splits[i][1],
                     inputFile = inputFile,
                     dfHasHeader = dfHasHeader,
-                    centroids = self.getDataCentroids(centroids),
-                    numReducers = self.numReducers
+                    numReducers = self.numReducers,
+                    dfSep = dfSep
                 )
-
+                self.getDataCentroids(centroids, request)
+                
                 with grpc.insecure_channel(self.mapperAddresses[i]) as channel:
                     
                     with open(self.dumpFile, 'a') as f:
@@ -109,33 +115,31 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
             # Reset these counters. For use in next iteration.
             for i in range(self.numReducers):
                 self.reducersResponded[i] = 0
-
-            """# Step 2.1: Assign each point of the data to the nearest centroid.  
-            for index, dataPoint in df.iterrows():
-                clusterId[index] = assign_nearest_centroid(list(dataPoint), centroids)
-
-            # Step 2.2: Recompute the centroid of each cluster
-            _centroids = compute_cluster_centroids(df, clusterId, k)"""
-            # update new centroid values
-            _centroids = self.newCentroids
-            # 
+            
             max_iter -= 1
-            if (max_iter > 0 and centroids != _centroids) == False:
+            if (max_iter > 0 and centroids != self.newCentroids) == False:
                 break
             
-            centroids = self.preprocess(_centroids.copy(), df, k)
-            _centroids = []
-            self.newCentroids = self.newCentroids = [None] * self.numReducers
-            print("updated centroids to : ", centroids)
-
+            # update new centroid values
+            centroids = self.preprocess(self.newCentroids.copy(), df, k)
+            
+            #self.newCentroids = [None] * self.numReducers
+            
+            with open(self.centroidsFile, 'a') as f:
+                f.write("-------------------------------------------\n")
+                f.write(centroids.__str__() + "\n")
+            
             # retry when lesser clusters are identified. This depends on the random initialization.
             if len(centroids) < k and maxAttempts > 0:
                 return self.kmeans(df, inputFile, k, maxIter, maxAttempts-1, dfHasHeader)
             
-            
-
+        
+        
+        for index, dataPoint in df.iterrows():
+            clusterId[index] = self.assign_nearest_centroid(list(dataPoint), centroids)
         
         return {"centroids": centroids, "clusterId": clusterId}
+
     
 
     def generateSplits(self, df):
@@ -145,12 +149,9 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         return splits
 
     # Used for converting centroids to the grpc message format Data.
-    def getDataCentroids(self, centroids):
-        _centroids_ = []
+    def getDataCentroids(self, centroids, request):
         for i in range(len(centroids)):
-            _centroids_.append(map_reduce_kmeans_pb2.Data(data=centroids[i]))
-        return _centroids_
-    
+            request.centroids.append(map_reduce_kmeans_pb2.Data(data=centroids[i]))
     
     # Initializes centroids randomly from the set of input data.
     def init_centroids(self, df, k):
@@ -187,8 +188,25 @@ class Master(map_reduce_kmeans_pb2_grpc.MasterServicesServicer):
         # Process the received list
         for item in request.data:
             print("Received data:", item.key, item.data)
-            self.newCentroids[request.id - 1 ] = item.data 
+            self.newCentroids[request.id - 1] = item.data 
             # Process the data as needed
 
         # Return a response
         return map_reduce_kmeans_pb2.Reply(message="Master received Data successfully")
+
+
+    def assign_nearest_centroid(self, dataPoint, centroids):
+        nearest = 0
+        nearest_distance = self.euclidean_distance(dataPoint, centroids[0])
+        #print(centroids)
+        for i in range(1, len(centroids)):
+            if centroids[i] != []:
+                dist = self.euclidean_distance(dataPoint, centroids[i])
+                if dist < nearest_distance:
+                    nearest = i
+                    nearest_distance = dist
+        return nearest
+
+
+    def euclidean_distance(self, point1, point2):
+        return np.linalg.norm(np.array(point1) - np.array(point2))

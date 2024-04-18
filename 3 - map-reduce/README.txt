@@ -14,6 +14,11 @@ The mappers (mapper<i>.py for i in [1..x]),
     master (master.py)
 need to be run in separate terminals. Run them in the order specified above.
 
+A commented out snippet is present in master.py which can be un-commented to produce a TSNE visualization
+of the clusters computed from the kmeans algorithm.
+
+Two extra datasets, seeds_dataset.txt, and wdbc.data have been added to check the implementation. They can 
+be tried appropriately. These datasets were taken from https://archive.ics.uci.edu/.
 --------------------------------------------------------------------------------------------------------------
 Compile the proto file using: runs on pip version 23.1.1 only in windows
     python -m grpc_tools.protoc -I./ --python_out=. --pyi_out=. --grpc_python_out=. map-reduce-kmeans.proto

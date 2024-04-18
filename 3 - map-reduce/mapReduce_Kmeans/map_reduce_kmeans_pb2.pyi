@@ -12,20 +12,22 @@ class Data(_message.Message):
     def __init__(self, data: _Optional[_Iterable[float]] = ...) -> None: ...
 
 class MapRequest(_message.Message):
-    __slots__ = ("inputStartIndex", "inputEndIndex", "inputFile", "dfHasHeader", "centroids", "numReducers")
+    __slots__ = ("inputStartIndex", "inputEndIndex", "inputFile", "dfHasHeader", "dfSep", "centroids", "numReducers")
     INPUTSTARTINDEX_FIELD_NUMBER: _ClassVar[int]
     INPUTENDINDEX_FIELD_NUMBER: _ClassVar[int]
     INPUTFILE_FIELD_NUMBER: _ClassVar[int]
     DFHASHEADER_FIELD_NUMBER: _ClassVar[int]
+    DFSEP_FIELD_NUMBER: _ClassVar[int]
     CENTROIDS_FIELD_NUMBER: _ClassVar[int]
     NUMREDUCERS_FIELD_NUMBER: _ClassVar[int]
     inputStartIndex: int
     inputEndIndex: int
     inputFile: str
     dfHasHeader: bool
+    dfSep: str
     centroids: _containers.RepeatedCompositeFieldContainer[Data]
     numReducers: int
-    def __init__(self, inputStartIndex: _Optional[int] = ..., inputEndIndex: _Optional[int] = ..., inputFile: _Optional[str] = ..., dfHasHeader: bool = ..., centroids: _Optional[_Iterable[_Union[Data, _Mapping]]] = ..., numReducers: _Optional[int] = ...) -> None: ...
+    def __init__(self, inputStartIndex: _Optional[int] = ..., inputEndIndex: _Optional[int] = ..., inputFile: _Optional[str] = ..., dfHasHeader: bool = ..., dfSep: _Optional[str] = ..., centroids: _Optional[_Iterable[_Union[Data, _Mapping]]] = ..., numReducers: _Optional[int] = ...) -> None: ...
 
 class Reply(_message.Message):
     __slots__ = ("message",)

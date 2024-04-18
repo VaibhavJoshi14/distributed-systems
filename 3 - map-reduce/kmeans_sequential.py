@@ -1,3 +1,4 @@
+# This file is not used in the distributed system. Just kept for reference.
 import pandas as pd
 import random
 import numpy as np
@@ -19,10 +20,11 @@ def kmeans_cluster(df, k, maxIter = 100, maxAttempts = 100):
     max_iter = maxIter
     # Step 2: Repeat until the centroids converge or the max iter limit has reached.
     while True:
+        print("current centroids", centroids)
         # Step 2.1: Assign each point of the data to the nearest centroid.  
         for index, dataPoint in df.iterrows():
             clusterId[index] = assign_nearest_centroid(list(dataPoint), centroids)
-
+        print("current clusterids",  clusterId)
         # Step 2.2: Recompute the centroid of each cluster
         _centroids = compute_cluster_centroids(df, clusterId, k)
         
@@ -83,6 +85,7 @@ def compute_cluster_centroids(df, clusterId, k):
             if clusterId[index] == i:
                 dataPoints.append(list(row))
         if dataPoints != []:
+            print(i, dataPoints)
             centroids[i] = list(np.mean(dataPoints, axis=0))
         else:
             continue

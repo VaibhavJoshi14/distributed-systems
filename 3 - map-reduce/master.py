@@ -7,8 +7,8 @@ dfHasHeader = False # determine whether the data has header or not. This must be
 sep = "," # separator in the data file.
 
 # The below would require setting 3 reducer addresses in master.py here.
-#inputFile = "Input/seeds_dataset.txt"
-#numCentroids = 3
+#inputFile = "Input/wdbc.data"
+#numCentroids = 2
 #maxIter = 100
 #dfHasHeader = False
 #sep = ","

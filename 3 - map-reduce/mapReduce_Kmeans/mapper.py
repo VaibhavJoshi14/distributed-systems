@@ -36,13 +36,13 @@ class Mapper(map_reduce_kmeans_pb2_grpc.MapperServicer):
     # This is the rpc that is called by the master for starting a map task
     def Map(self, request, context):
         print("-------------------------------------------")
-        if self.currentFile == None:
-            self.currentFile = request.inputFile
-            if request.dfHasHeader == True:
-                self.df = pd.read_csv(request.inputFile, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
-            else:
-                self.df = pd.read_csv(request.inputFile, header = None, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
-            self.numReducers = request.numReducers
+        
+        self.currentFile = request.inputFile
+        if request.dfHasHeader == True:
+            self.df = pd.read_csv(request.inputFile, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
+        else:
+            self.df = pd.read_csv(request.inputFile, header = None, sep=request.dfSep).iloc[request.inputStartIndex: request.inputEndIndex + 1, :]
+        self.numReducers = request.numReducers
         
         self.currentRequest = request
         

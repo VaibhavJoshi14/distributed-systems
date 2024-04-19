@@ -1,441 +1,29 @@
 ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [9.54736842 1.04736842]
-Key: 0, Mean Value: [9.54736842 1.04736842]
-Key: 0, Mean Value: [10.4  -0.29]
-Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
-ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
-ERROR Scenario 1
-Key: 0, Mean Value: [9.54736842 1.04736842]
-ERROR Scenario 1
-ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
-Key: 0, Mean Value: [9.54736842 1.04736842]
-Key: 0, Mean Value: [9.54736842 1.04736842]
-Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
 Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
 ERROR Scenario 1
 ERROR Scenario 1
-Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 ERROR Scenario 1
 ERROR Scenario 1
@@ -443,18 +31,118 @@ ERROR Scenario 1
 ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
-ERROR Scenario 1
-Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
+Key: 0, Mean Value: [1.74302119e+01 2.08743644e+01 1.14808305e+02 9.68086864e+02
+ 9.94898729e-02 1.34673771e-01 1.45340297e-01 8.10285169e-02
+ 1.87445339e-01 6.11928814e-02 5.79336017e-01 1.17528856e+00
+ 4.11383898e+00 6.84944068e+01 6.53672881e-03 3.06472246e-02
+ 3.97399831e-02 1.45709958e-02 1.99295678e-02 3.89127458e-03
+ 2.07693644e+01 2.79186017e+01 1.38522627e+02 1.37297542e+03
+ 1.37236949e-01 3.33455720e-01 3.99628305e-01 1.67176610e-01
+ 3.06131780e-01 8.59649576e-02]
+Key: 0, Mean Value: [1.74302119e+01 2.08743644e+01 1.14808305e+02 9.68086864e+02
+ 9.94898729e-02 1.34673771e-01 1.45340297e-01 8.10285169e-02
+ 1.87445339e-01 6.11928814e-02 5.79336017e-01 1.17528856e+00
+ 4.11383898e+00 6.84944068e+01 6.53672881e-03 3.06472246e-02
+ 3.97399831e-02 1.45709958e-02 1.99295678e-02 3.89127458e-03
+ 2.07693644e+01 2.79186017e+01 1.38522627e+02 1.37297542e+03
+ 1.37236949e-01 3.33455720e-01 3.99628305e-01 1.67176610e-01
+ 3.06131780e-01 8.59649576e-02]
+Key: 0, Mean Value: [1.74302119e+01 2.08743644e+01 1.14808305e+02 9.68086864e+02
+ 9.94898729e-02 1.34673771e-01 1.45340297e-01 8.10285169e-02
+ 1.87445339e-01 6.11928814e-02 5.79336017e-01 1.17528856e+00
+ 4.11383898e+00 6.84944068e+01 6.53672881e-03 3.06472246e-02
+ 3.97399831e-02 1.45709958e-02 1.99295678e-02 3.89127458e-03
+ 2.07693644e+01 2.79186017e+01 1.38522627e+02 1.37297542e+03
+ 1.37236949e-01 3.33455720e-01 3.99628305e-01 1.67176610e-01
+ 3.06131780e-01 8.59649576e-02]
+Key: 0, Mean Value: [1.85872455e+01 2.13553892e+01 1.22770359e+02 1.09506587e+03
+ 1.01193353e-01 1.43158563e-01 1.65647126e-01 9.33967665e-02
+ 1.90322754e-01 6.09057485e-02 6.70531737e-01 1.18796168e+00
+ 4.72862275e+00 8.36194611e+01 6.63172455e-03 3.11987485e-02
+ 4.15656287e-02 1.52326707e-02 2.01487246e-02 3.86543114e-03
+ 2.25619760e+01 2.86394012e+01 1.50552096e+02 1.59886407e+03
+ 1.40729222e-01 3.50768024e-01 4.35737725e-01 1.84297964e-01
+ 3.13853892e-01 8.64106587e-02]
 ERROR Scenario 1
 ERROR Scenario 1
 ERROR Scenario 1
 ERROR Scenario 1
 ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [1.85872455e+01 2.13553892e+01 1.22770359e+02 1.09506587e+03
+ 1.01193353e-01 1.43158563e-01 1.65647126e-01 9.33967665e-02
+ 1.90322754e-01 6.09057485e-02 6.70531737e-01 1.18796168e+00
+ 4.72862275e+00 8.36194611e+01 6.63172455e-03 3.11987485e-02
+ 4.15656287e-02 1.52326707e-02 2.01487246e-02 3.86543114e-03
+ 2.25619760e+01 2.86394012e+01 1.50552096e+02 1.59886407e+03
+ 1.40729222e-01 3.50768024e-01 4.35737725e-01 1.84297964e-01
+ 3.13853892e-01 8.64106587e-02]
+Key: 0, Mean Value: [1.91898571e+01 2.17396429e+01 1.26879286e+02 1.16365214e+03
+ 1.00789571e-01 1.45911000e-01 1.72432571e-01 9.78867857e-02
+ 1.90890714e-01 6.04202857e-02 7.22680000e-01 1.22153071e+00
+ 5.10655714e+00 9.23777857e+01 6.67892143e-03 3.20193286e-02
+ 4.24815000e-02 1.55911500e-02 2.01486429e-02 3.94510714e-03
+ 2.34069286e+01 2.89810714e+01 1.56394286e+02 1.71195714e+03
+ 1.39537000e-01 3.51994000e-01 4.41487143e-01 1.88552500e-01
+ 3.11987143e-01 8.56360714e-02]
+Key: 0, Mean Value: [1.93125373e+01 2.17529851e+01 1.27774627e+02 1.17809776e+03
+ 1.01137015e-01 1.48124627e-01 1.75798358e-01 9.99135821e-02
+ 1.91673134e-01 6.05712687e-02 7.36030597e-01 1.22025746e+00
+ 5.20199254e+00 9.45639552e+01 6.57345522e-03 3.21727388e-02
+ 4.24417910e-02 1.56317388e-02 2.03008955e-02 3.94211940e-03
+ 2.36102239e+01 2.89879851e+01 1.57826119e+02 1.73962687e+03
+ 1.40227910e-01 3.57818358e-01 4.49308209e-01 1.91837836e-01
+ 3.12751493e-01 8.61060448e-02]
+Key: 0, Mean Value: [1.93329323e+01 2.17054135e+01 1.27921053e+02 1.18050376e+03
+ 1.01261729e-01 1.48469173e-01 1.76424586e-01 1.00266165e-01
+ 1.91918797e-01 6.06020301e-02 7.38133083e-01 1.22134962e+00
+ 5.21535338e+00 9.49099248e+01 6.57849624e-03 3.21341128e-02
+ 4.24052632e-02 1.56322030e-02 2.03544361e-02 3.94249624e-03
+ 2.36450376e+01 2.89493985e+01 1.58060150e+02 1.74425564e+03
+ 1.40425865e-01 3.58182406e-01 4.50127820e-01 1.92214060e-01
+ 3.13435338e-01 8.61654887e-02]
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [1.93329323e+01 2.17054135e+01 1.27921053e+02 1.18050376e+03
+ 1.01261729e-01 1.48469173e-01 1.76424586e-01 1.00266165e-01
+ 1.91918797e-01 6.06020301e-02 7.38133083e-01 1.22134962e+00
+ 5.21535338e+00 9.49099248e+01 6.57849624e-03 3.21341128e-02
+ 4.24052632e-02 1.56322030e-02 2.03544361e-02 3.94249624e-03
+ 2.36450376e+01 2.89493985e+01 1.58060150e+02 1.74425564e+03
+ 1.40425865e-01 3.58182406e-01 4.50127820e-01 1.92214060e-01
+ 3.13435338e-01 8.61654887e-02]
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [1.93799237e+01 2.16945802e+01 1.28231298e+02 1.18592977e+03
+ 1.01294580e-01 1.48612977e-01 1.76939466e-01 1.00698779e-01
+ 1.91539695e-01 6.06029008e-02 7.42803817e-01 1.22253817e+00
+ 5.25058015e+00 9.56781679e+01 6.59868702e-03 3.21766947e-02
+ 4.24197710e-02 1.56739847e-02 2.03039695e-02 3.95338931e-03
+ 2.37094656e+01 2.89126718e+01 1.58496183e+02 1.75302290e+03
+ 1.40424733e-01 3.57757710e-01 4.49306107e-01 1.92431069e-01
+ 3.11881679e-01 8.61654962e-02]
+ERROR Scenario 1
+Key: 0, Mean Value: [1.93799237e+01 2.16945802e+01 1.28231298e+02 1.18592977e+03
+ 1.01294580e-01 1.48612977e-01 1.76939466e-01 1.00698779e-01
+ 1.91539695e-01 6.06029008e-02 7.42803817e-01 1.22253817e+00
+ 5.25058015e+00 9.56781679e+01 6.59868702e-03 3.21766947e-02
+ 4.24197710e-02 1.56739847e-02 2.03039695e-02 3.95338931e-03
+ 2.37094656e+01 2.89126718e+01 1.58496183e+02 1.75302290e+03
+ 1.40424733e-01 3.57757710e-01 4.49306107e-01 1.92431069e-01
+ 3.11881679e-01 8.61654962e-02]
+Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
@@ -464,7 +152,14 @@ ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
 ERROR Scenario 1
@@ -472,13 +167,53 @@ ERROR Scenario 1
 Key: 0, Mean Value: [10.4  -0.29]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
-ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 ERROR Scenario 1
 Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [10.4  -0.29]
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [10.4  -0.29]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+Key: 0, Mean Value: [9.54736842 1.04736842]
+ERROR Scenario 1
+Key: 0, Mean Value: [10.4  -0.29]
 Key: 0, Mean Value: [9.54736842 1.04736842]
 Key: 0, Mean Value: [9.54736842 1.04736842]

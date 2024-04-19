@@ -4,6 +4,485 @@ Dump file of master process
 Iteration:0
 Current centroids[[11.2, -1.2], [8.1, 3.4]]
 Sending Map request to mapper 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:0
+Current centroids[[11.2, -1.2], [8.1, 3.4]]
+Sending Map request to mapper 1.
 Sending Map request to mapper 2.
 Mapper 1 completed its job (SUCCESS).
 Sending Map request to mapper 3.
@@ -25,7 +504,327 @@ Mapper 3 completed its job (SUCCESS).
 Sending ReduceInit request to reducer 1.
 Sending ReduceInit request to reducer 2.
 Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:1
+Current centroids[[10.4, -0.29], [3.585714285714285, 5.738095238095239]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
 Reducer 2 completed its job (SUCCESS).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 did not complete its job (FAILURE).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper response FAILURE Scenario 1.
+Sending Map request to mapper 3.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+Mapper response FAILURE Scenario 1.
+-------------------------------------------
+Iteration:2
+Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
+Sending Map request to mapper 1.
+Sending Map request to mapper 2.
+Mapper 1 completed its job (SUCCESS).
+Sending Map request to mapper 3.
+Mapper 2 completed its job (SUCCESS).
+Mapper 3 completed its job (SUCCESS).
+Sending ReduceInit request to reducer 1.
+Sending ReduceInit request to reducer 2.
+Reducer 1 completed its job (SUCCESS).
+Reducer 2 did not complete its job (FAILURE).
 -------------------------------------------
 Iteration:2
 Current centroids[[9.54736842105263, 1.0473684210526315], [-0.17500000000000002, 8.141666666666667]]
